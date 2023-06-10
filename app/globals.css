@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --title-shadow-1: #ff0f7b;
+  --title-shadow-2: #f89b29;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,3 +27,43 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.title-shadow {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.title-shadow:before {
+    content: 'Text Length';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to top left,var(--title-shadow-1),var(--title-shadow-2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 12px transparent;
+    font-family: Nunito,system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,Cantarell,"Noto Sans",sans-serif;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 800;
+    filter: blur(17px);
+    z-index: -1;
+    animation: color 6s infinite linear;
+    background: linear-gradient(130deg,#ff7e00,#00f,#5cff00,#ffeda0);
+    background-size: 200% 200%;
+    border-radius: 36px;
+    transform: scale(1.2) skew(-12deg,2deg);
+  }
+
+  @keyframes color {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
