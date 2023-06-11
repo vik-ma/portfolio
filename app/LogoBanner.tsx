@@ -17,55 +17,55 @@ export default function LogoBanner() {
     <div className="flex w-full items-center justify-between">
       <div>
         <PythonLogo />
-        <p className="text-center font-bold">Python</p>
+        <p className="text-center font-bold py-1">Python</p>
       </div>
       <div>
         <ReactLogo />
-        <p className="text-center font-bold">React</p>
+        <p className="text-center font-bold py-1">React</p>
       </div>
       <div>
         <JavaScriptLogo />
-        <p className="text-center font-bold">JavaScript</p>
+        <p className="text-center font-bold py-1">JavaScript</p>
       </div>
       <div>
         <TypeScriptLogo />
-        <p className="text-center font-bold">TypeScript</p>
+        <p className="text-center font-bold py-1">TypeScript</p>
       </div>
       <div>
         <HTMLLogo />
-        <p className="text-center font-bold">HTML</p>
+        <p className="text-center font-bold py-1">HTML</p>
       </div>
       <div>
         <CSSLogo />
-        <p className="text-center font-bold">CSS</p>
+        <p className="text-center font-bold py-1">CSS</p>
       </div>
       <div>
         <DjangoLogo />
-        <p className="text-center font-bold">Django</p>
+        <p className="text-center font-bold py-1">Django</p>
       </div>
       <div>
         <NextJSLogo />
-        <p className="text-center font-bold">Next.js</p>
+        <p className="text-center font-bold py-1">Next.js</p>
       </div>
       <div>
         <PostgresLogo />
-        <p className="text-center font-bold">PostgreSQL</p>
+        <p className="text-center font-bold py-1">PostgreSQL</p>
       </div>
       <div>
         <GraphQLLogo />
-        <p className="text-center font-bold">GraphQL</p>
+        <p className="text-center font-bold py-1">GraphQL</p>
       </div>
       <div>
         <TailwindLogo />
-        <p className="text-center font-bold">Tailwind CSS</p>
+        <p className="text-center font-bold py-1">Tailwind CSS</p>
       </div>
       <div>
         <DockerLogo />
-        <p className="text-center font-bold">Docker</p>
+        <p className="text-center font-bold py-1">Docker</p>
       </div>
       <div>
         <GitLogo />
-        <p className="text-center font-bold">Git</p>
+        <p className="text-center font-bold py-1">Git</p>
       </div>
     </div>
   );
