@@ -16,56 +16,84 @@ export default function LogoBanner() {
   return (
     <div className="mx-auto">
       <div className="grid grid-cols-7 gap-4">
-        <div className="flex flex-wrap items-center justify-center p-3">
-          <PythonLogo />
+        <div className="items-center justify-center p-3">
+          <div className="logo-container">
+            <PythonLogo />
+          </div>
           <p className="text-center font-bold py-1">Python</p>
         </div>
-        <div className="flex flex-wrap items-center justify-center p-3">
-          <ReactLogo />
+        <div className="items-center justify-center p-3">
+          <div className="logo-container">
+            <ReactLogo />
+          </div>
           <p className="text-center font-bold py-1">React</p>
         </div>
-        <div className="flex flex-wrap items-center justify-center p-3">
-          <JavaScriptLogo />
+        <div className="items-center justify-center p-3">
+          <div className="logo-container">
+            <JavaScriptLogo />
+          </div>
           <p className="text-center font-bold py-1">JavaScript</p>
         </div>
-        <div className="flex flex-wrap items-center justify-center p-3">
-          <TypeScriptLogo />
+        <div className="items-center justify-center p-3">
+          <div className="logo-container">
+            <TypeScriptLogo />
+          </div>
           <p className="text-center font-bold py-1">TypeScript</p>
         </div>
-        <div className="flex flex-wrap items-center justify-center p-3">
-          <HTMLLogo />
+        <div className="items-center justify-center p-3">
+          <div className="logo-container">
+            <HTMLLogo />
+          </div>
           <p className="text-center font-bold py-1">HTML</p>
         </div>
-        <div className="flex flex-wrap items-center justify-center p-3">
-          <CSSLogo />
+        <div className="items-center justify-center p-3">
+          <div className="logo-container">
+            <CSSLogo />
+          </div>
           <p className="text-center font-bold py-1">CSS</p>
         </div>
-        <div className="flex flex-wrap items-center justify-center p-3 whitespace-nowrap">
-          <TailwindLogo />
-          <p className="text-center font-bold py-1">Tailwind CSS</p>
+        <div className="items-center justify-center p-3">
+          <div className="logo-container">
+            <TailwindLogo />
+          </div>
+          <p className="text-center font-bold py-1 whitespace-nowrap">
+            Tailwind CSS
+          </p>
         </div>
-        <div className="flex flex-wrap items-center justify-center p-3">
-          <DjangoLogo />
+        <div className="items-center justify-center p-3">
+          <div className="logo-container">
+            <DjangoLogo />
+          </div>
           <p className="text-center font-bold py-1">Django</p>
         </div>
-        <div className="flex flex-wrap items-center justify-center p-3">
-          <NextJSLogo />
+        <div className="items-center justify-center p-3">
+          <div className="logo-container">
+            <NextJSLogo />
+          </div>
           <p className="text-center font-bold py-1">Next.js</p>
         </div>
-        <div className="flex flex-wrap items-center justify-center p-3">
-          <PostgresLogo />
+        <div className="items-center justify-center p-3">
+          <div className="logo-container">
+            <PostgresLogo />
+          </div>
           <p className="text-center font-bold py-1">PostgreSQL</p>
         </div>
-        <div className="flex flex-wrap items-center justify-center p-3">
-          <GraphQLLogo />
+        <div className="items-center justify-center p-3">
+          <div className="logo-container">
+            <GraphQLLogo />
+          </div>
           <p className="text-center font-bold py-1">GraphQL</p>
         </div>
-        <div className="flex flex-wrap items-center justify-center p-3">
-          <DockerLogo />
+        <div className="items-center justify-center p-3">
+          <div className="logo-container">
+            <DockerLogo />
+          </div>
           <p className="text-center font-bold py-1">Docker</p>
         </div>
-        <div className="flex flex-wrap items-center justify-center p-3">
-          <GitLogo />
+        <div className="items-center justify-center p-3">
+          <div className="logo-container">
+            <GitLogo />
+          </div>
           <p className="text-center font-bold py-1">Git</p>
         </div>
       </div>
