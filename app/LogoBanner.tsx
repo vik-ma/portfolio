@@ -1,5 +1,5 @@
 import PythonLogo from "./icons/PythonLogo";
-import ReactLogo from "./icons/React";
+import ReactLogo from "./icons/ReactLogo";
 import JavaScriptLogo from "./icons/JavaScriptLogo";
 import TypeScriptLogo from "./icons/TypeScriptLogo";
 import HTMLLogo from "./icons/HTMLLogo";
