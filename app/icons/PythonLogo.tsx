@@ -1,7 +1,7 @@
 export default function PythonLogo() {
   // SVG Icon depicting the Python Logo
   return (
-    <svg width="100px" height="100px" viewBox="0 0 128 128">
+    <svg viewBox="0 0 128 128">
       <linearGradient
         id="python-original-a"
         gradientUnits="userSpaceOnUse"

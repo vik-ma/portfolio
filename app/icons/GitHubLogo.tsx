@@ -1,7 +1,7 @@
 export default function GitHubLogo() {
   // SVG Icon depicting the GitHub Logo
   return (
-    <svg width="100px" height="100px" viewBox="0 0 128 128">
+    <svg viewBox="0 0 128 128">
       <g fill="#181616">
         <path
           fill-rule="evenodd"
