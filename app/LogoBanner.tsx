@@ -40,7 +40,7 @@ export default function LogoBanner() {
           <CSSLogo />
           <p className="text-center font-bold py-1">CSS</p>
         </div>
-        <div className="flex flex-wrap items-center justify-center p-3">
+        <div className="flex flex-wrap items-center justify-center p-3 whitespace-nowrap">
           <TailwindLogo />
           <p className="text-center font-bold py-1">Tailwind CSS</p>
         </div>
