@@ -41,6 +41,10 @@ export default function LogoBanner() {
           <p className="text-center font-bold py-1">CSS</p>
         </div>
         <div>
+          <TailwindLogo />
+          <p className="text-center font-bold py-1">Tailwind CSS</p>
+        </div>
+        <div>
           <DjangoLogo />
           <p className="text-center font-bold py-1">Django</p>
         </div>
@@ -55,10 +59,6 @@ export default function LogoBanner() {
         <div>
           <GraphQLLogo />
           <p className="text-center font-bold py-1">GraphQL</p>
-        </div>
-        <div>
-          <TailwindLogo />
-          <p className="text-center font-bold py-1">Tailwind CSS</p>
         </div>
         <div>
           <DockerLogo />
