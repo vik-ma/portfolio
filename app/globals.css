@@ -61,10 +61,34 @@ body {
   }
 }
 
-.logo-wrapper {
+.lang-list-container {
+  width: 830px;
+}
+
+.logo-wrapper {  
   min-width: fit-content;
 }
 
 .logo-container {
-    min-width: 80px;
+  min-width: 80px;
 }
+
+@media (max-width: 830px) {
+  .lang-list-container {
+    width: 550px;
+  }
+}
+
+@media (max-width: 640px) {
+  .lang-list-container {
+    width: 450px;
+  }
+}
+
+@media (max-width: 490px) {
+  .lang-list-container {
+    width: 350px;
+  }
+}
+
+
