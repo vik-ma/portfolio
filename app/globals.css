@@ -63,7 +63,7 @@ body {
 }
 
 .langs-box {
-  background-color: #252525;
+  background-color: #242424;
   border-radius: 20px;
 }
 
@@ -81,7 +81,7 @@ body {
 
 @media (max-width: 830px) {
   .lang-list-container {
-    width: 550px;
+    width: 580px;
   }
 }
 
