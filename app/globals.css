@@ -62,6 +62,10 @@ body {
   }
 }
 
+.langs-box {
+  background-color: #242424;
+}
+
 .lang-list-container {
   width: 830px;
 }

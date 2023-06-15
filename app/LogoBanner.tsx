@@ -14,7 +14,7 @@ import GitLogo from "./icons/GitLogo";
 
 export default function LogoBanner() {
   return (
-    <div className="w-screen py-2 langs-container">
+    <div className="py-2 rounded-3xl langs-box">
       <div className="flex flex-wrap justify-center lang-list-container mx-auto">
         <div className="text-center items-center p-3 logo-wrapper">
           <div className="logo-container m-auto">
