@@ -63,7 +63,7 @@ body {
 }
 
 .langs-box {
-  background-color: #242424;
+  background-color: #1b1b1b;
 }
 
 .lang-list-container {
@@ -101,6 +101,6 @@ body {
 
 @media (max-width: 490px) {
   .lang-list-container {
-    width: 350px;
+    width: 300px;
   }
 }
