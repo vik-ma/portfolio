@@ -14,87 +14,89 @@ import GitLogo from "./icons/GitLogo";
 
 export default function LogoBanner() {
   return (
-    <div className="py-2 md:py-3 rounded-3xl langs-box border-2 border">
-      <div className="flex flex-wrap justify-center lang-list-container md:gap-y-1 mx-auto">
-        <div className="text-center items-center p-3 logo-wrapper">
-          <div className="logo-container m-auto">
-            <PythonLogo />
+    <div className="rounded-3xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1.5">
+      <div className="py-2 md:py-3 langs-box">
+        <div className="flex flex-wrap justify-center lang-list-container md:gap-y-1 mx-auto">
+          <div className="text-center items-center p-3 logo-wrapper">
+            <div className="logo-container m-auto">
+              <PythonLogo />
+            </div>
+            <p className="font-bold py-1 text-xs md:text-sm">Python</p>
           </div>
-          <p className="font-bold py-1 text-xs md:text-sm">Python</p>
-        </div>
-        <div className="text-center items-center p-3 logo-wrapper">
-          <div className="logo-container m-auto">
-            <ReactLogo />
+          <div className="text-center items-center p-3 logo-wrapper">
+            <div className="logo-container m-auto">
+              <ReactLogo />
+            </div>
+            <p className="font-bold py-1 text-xs md:text-sm">React</p>
           </div>
-          <p className="font-bold py-1 text-xs md:text-sm">React</p>
-        </div>
-        <div className="text-center items-center p-3 logo-wrapper">
-          <div className="logo-container m-auto">
-            <JavaScriptLogo />
+          <div className="text-center items-center p-3 logo-wrapper">
+            <div className="logo-container m-auto">
+              <JavaScriptLogo />
+            </div>
+            <p className="font-bold py-1 text-xs md:text-sm logo-text">
+              JavaScript
+            </p>
           </div>
-          <p className="font-bold py-1 text-xs md:text-sm logo-text">JavaScript</p>
-        </div>
-        <div className="text-center items-center p-3 logo-wrapper">
-          <div className="logo-container m-auto">
-            <TypeScriptLogo />
+          <div className="text-center items-center p-3 logo-wrapper">
+            <div className="logo-container m-auto">
+              <TypeScriptLogo />
+            </div>
+            <p className="font-bold py-1 text-xs md:text-sm">TypeScript</p>
           </div>
-          <p className="font-bold py-1 text-xs md:text-sm">TypeScript</p>
-        </div>
-        <div className="text-center items-center p-3 logo-wrapper">
-          <div className="logo-container m-auto">
-            <HTMLLogo />
+          <div className="text-center items-center p-3 logo-wrapper">
+            <div className="logo-container m-auto">
+              <HTMLLogo />
+            </div>
+            <p className="font-bold py-1 text-xs md:text-sm">HTML</p>
           </div>
-          <p className="font-bold py-1 text-xs md:text-sm">HTML</p>
-        </div>
-        <div className="text-center items-center p-3 logo-wrapper">
-          <div className="logo-container m-auto">
-            <CSSLogo />
+          <div className="text-center items-center p-3 logo-wrapper">
+            <div className="logo-container m-auto">
+              <CSSLogo />
+            </div>
+            <p className="font-bold py-1 text-xs md:text-sm">CSS</p>
           </div>
-          <p className="font-bold py-1 text-xs md:text-sm">CSS</p>
-        </div>
-        <div className="text-center items-center p-3 logo-wrapper">
-          <div className="logo-container m-auto">
-            <TailwindLogo />
+          <div className="text-center items-center p-3 logo-wrapper">
+            <div className="logo-container m-auto">
+              <TailwindLogo />
+            </div>
+            <p className="font-bold py-1 text-xs md:text-sm">Tailwind</p>
           </div>
-          <p className="font-bold py-1 text-xs md:text-sm">
-            Tailwind
-          </p>
-        </div>
-        <div className="text-center items-center p-3 logo-wrapper">
-          <div className="logo-container m-auto">
-            <DjangoLogo />
+          <div className="text-center items-center p-3 logo-wrapper">
+            <div className="logo-container m-auto">
+              <DjangoLogo />
+            </div>
+            <p className="font-bold py-1 text-xs md:text-sm">Django</p>
           </div>
-          <p className="font-bold py-1 text-xs md:text-sm">Django</p>
-        </div>
-        <div className="text-center items-center p-3 logo-wrapper">
-          <div className="logo-container m-auto">
-            <NextJSLogo />
+          <div className="text-center items-center p-3 logo-wrapper">
+            <div className="logo-container m-auto">
+              <NextJSLogo />
+            </div>
+            <p className="font-bold py-1 text-xs md:text-sm">Next.js</p>
           </div>
-          <p className="font-bold py-1 text-xs md:text-sm">Next.js</p>
-        </div>
-        <div className="text-center items-center p-3 logo-wrapper">
-          <div className="logo-container m-auto">
-            <PostgresLogo />
+          <div className="text-center items-center p-3 logo-wrapper">
+            <div className="logo-container m-auto">
+              <PostgresLogo />
+            </div>
+            <p className="font-bold py-1 text-xs md:text-sm">PostgreSQL</p>
           </div>
-          <p className="font-bold py-1 text-xs md:text-sm">PostgreSQL</p>
-        </div>
-        <div className="text-center items-center p-3 logo-wrapper">
-          <div className="logo-container m-auto">
-            <GraphQLLogo />
+          <div className="text-center items-center p-3 logo-wrapper">
+            <div className="logo-container m-auto">
+              <GraphQLLogo />
+            </div>
+            <p className="font-bold py-1 text-xs md:text-sm">GraphQL</p>
           </div>
-          <p className="font-bold py-1 text-xs md:text-sm">GraphQL</p>
-        </div>
-        <div className="text-center items-center p-3 logo-wrapper">
-          <div className="logo-container m-auto">
-            <DockerLogo />
+          <div className="text-center items-center p-3 logo-wrapper">
+            <div className="logo-container m-auto">
+              <DockerLogo />
+            </div>
+            <p className="font-bold py-1 text-xs md:text-sm">Docker</p>
           </div>
-          <p className="font-bold py-1 text-xs md:text-sm">Docker</p>
-        </div>
-        <div className="text-center items-center p-3 logo-wrapper">
-          <div className="logo-container m-auto">
-            <GitLogo />
+          <div className="text-center items-center p-3 logo-wrapper">
+            <div className="logo-container m-auto">
+              <GitLogo />
+            </div>
+            <p className="font-bold py-1 text-xs md:text-sm">Git</p>
           </div>
-          <p className="font-bold py-1 text-xs md:text-sm">Git</p>
         </div>
       </div>
     </div>
