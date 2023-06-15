@@ -71,12 +71,21 @@ body {
 }
 
 .logo-container {
-  min-width: 80px;
+  width: 80px;
 }
 
 @media (max-width: 830px) {
   .lang-list-container {
     width: 550px;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo-container {
+    width: 40px;
+  }
+  .lang-list-container {
+    width: 500px;
   }
 }
 
@@ -92,4 +101,6 @@ body {
   }
 }
 
+.langs-container {
 
+}
