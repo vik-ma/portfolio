@@ -64,6 +64,7 @@ body {
 
 .langs-box {
   background-color: #242424;
+  /* background: linear-gradient(to bottom, #2e2e2e 15%, rgb(29, 29, 29) 100%); */
   border-radius: 20px;
 }
 
@@ -96,7 +97,7 @@ body {
 
 @media (max-width: 640px) {
   .lang-list-container {
-    width: 450px;
+    width: 400px;
   }
 }
 
