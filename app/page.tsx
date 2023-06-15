@@ -9,8 +9,13 @@ export default function Home() {
           <span className="header-shadow-anim">Header</span>
         </h1>
       </div>
-      <div className="font-mono text-sm">
-        <LogoBanner />
+      <div className="text-center">
+        <h2 className="pb-4 text-5xl font-extrabold bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent">
+          Languages and Tools
+        </h2>
+        <div className="font-mono text-sm">
+          <LogoBanner />
+        </div>
       </div>
     </main>
   );
