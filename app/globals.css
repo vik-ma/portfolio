@@ -72,6 +72,10 @@ body {
   width: 830px;
 }
 
+.projects-container {
+  width: 840px;
+}
+
 .logo-wrapper {  
   min-width: fit-content;
 }
@@ -80,21 +84,12 @@ body {
   width: 80px;
 }
 
-.projects-container {
-  width: 830px;
-}
-
-.project-box {
-  background-color: #242424;
-  border: 1px solid rgb(212, 212, 212);
-}
-
 @media (max-width: 850px) {
   .lang-list-container {
     width: 580px;
   }
   .projects-container {
-    width: 580px;
+    width: 610px;
   }
 }
 
@@ -106,7 +101,7 @@ body {
     width: 500px;
   }
   .projects-container {
-    width: 500px;
+    width: 510px;
   }
 }
 
@@ -115,7 +110,7 @@ body {
     width: 400px;
   }
   .projects-container {
-    width: 400px;
+    width: 410px;
   }
 }
 
@@ -124,6 +119,38 @@ body {
     width: 300px;
   }
   .projects-container {
-    width: 300px;
+    width: 340px;
   }
+}
+
+.project-box {
+  background-color: #242424;
+  position: relative;
+  border: 1px solid rgb(212, 212, 212);
+}
+
+.project-box:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top left, #ff3d00 0%, #0400ff 100% );
+  transform: translate3d(0px, 20px, 0px) scale(0.95);
+  filter: blur(20px);
+  opacity: var(0.7);
+  transition: opacity 0.3s;
+}
+
+.project-box::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
 }
