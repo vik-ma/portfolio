@@ -38,10 +38,10 @@ export default function Home() {
         </h2>
       </div>
       <div className="grid grid-cols-2 gap-4 font-mono text-md text-amber-50">
-        <div>Col 1</div>
-        <div>Col 2</div>
-        <div>Col 1</div>
-        <div>Col 2</div>
+        <div className="p-2 border-white border-2 project-box">Col 1</div>
+        <div className="p-2 border-white border-2 project-box">Col 2</div>
+        <div className="p-2 border-white border-2 project-box">Col 1</div>
+        <div className="p-2 border-white border-2 project-box">Col 2</div>
       </div>
     </main>
   );

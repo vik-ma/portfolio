@@ -80,9 +80,17 @@ body {
   width: 80px;
 }
 
-@media (max-width: 830px) {
+.project-box {
+  background-color: #242424;
+  width: 410px;
+}
+
+@media (max-width: 850px) {
   .lang-list-container {
     width: 580px;
+  }
+  .project-box {
+    width: 300px;
   }
 }
 
