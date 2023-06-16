@@ -86,6 +86,7 @@ body {
 
 .project-box {
   background-color: #242424;
+  border: 1px solid rgb(212, 212, 212);
 }
 
 @media (max-width: 850px) {
