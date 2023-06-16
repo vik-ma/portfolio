@@ -41,7 +41,9 @@ export default function LogoBanner() {
             <div className="logo-container m-auto">
               <TypeScriptLogo />
             </div>
-            <p className="font-bold py-1 text-xs md:text-sm mt-0.5">TypeScript</p>
+            <p className="font-bold py-1 text-xs md:text-sm mt-0.5">
+              TypeScript
+            </p>
           </div>
           <div className="text-center items-center p-3 logo-wrapper">
             <div className="logo-container m-auto">
@@ -77,7 +79,9 @@ export default function LogoBanner() {
             <div className="logo-container m-auto">
               <PostgresLogo />
             </div>
-            <p className="font-bold py-1 text-xs md:text-sm mt-0.5">PostgreSQL</p>
+            <p className="font-bold py-1 text-xs md:text-sm mt-0.5">
+              PostgreSQL
+            </p>
           </div>
           <div className="text-center items-center p-3 logo-wrapper">
             <div className="logo-container m-auto">
