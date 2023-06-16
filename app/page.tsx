@@ -22,11 +22,6 @@ export default function Home() {
           Projects
         </h2>
       </div> */}
-      <div className="text-center">
-        <h2 className="pb-4 text-4xl md:text-6xl font-extrabold bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-amber-900 via-amber-100 to-amber-900 bg-clip-text text-transparent">
-          Projects
-        </h2>
-      </div>
       {/* <div className="text-center">
         <h2 className="pb-4 text-4xl md:text-6xl font-extrabold bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-neutral-700 via-neutral-100 to-neutral-700 bg-clip-text text-transparent">
           Projects
@@ -37,6 +32,17 @@ export default function Home() {
           Projects
         </h2>
       </div> */}
+      <div className="text-center">
+        <h2 className="pb-4 text-4xl md:text-6xl font-extrabold bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-amber-900 via-amber-100 to-amber-900 bg-clip-text text-transparent">
+          Projects
+        </h2>
+      </div>
+      <div className="grid grid-cols-2 gap-4 font-mono text-md text-amber-50">
+        <div>Col 1</div>
+        <div>Col 2</div>
+        <div>Col 1</div>
+        <div>Col 2</div>
+      </div>
     </main>
   );
 }
