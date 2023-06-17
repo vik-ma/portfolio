@@ -133,12 +133,12 @@ body {
   content: "";
   z-index: -1;
   position: absolute;
-  top: -20px;
+  top: -5px;
   right: 0;
   bottom: 0;
   left: 0;
-  transform: translate3d(0px, 12px, 0px) scale(1);
-  filter: blur(18px);
+  transform: translate3d(0px, 4px, 0px) scale(1);
+  filter: blur(14px);
   /* opacity: var(0.7);
   transition: opacity 0.3s; */
 }
@@ -166,3 +166,20 @@ body {
 #project-pathfinding:before {
   background: linear-gradient(to top left, #4c00ff 0%, #cc00ff 100%);
 }
+
+#project-wfc:before {
+  background: linear-gradient(to top left, #d9ff00 0%, #ff21a2 100%);
+}
+
+#project-ocr:before {
+  background: linear-gradient(to top left, #ff0000 0%, #d3026a 100%);
+}
+
+#project-file-opener:before {
+  background: linear-gradient(to top left, #4c00ff 0%, #00eeff 100%);
+}
+
+#project-link-opener:before {
+  background: linear-gradient(to top left, #4c00ff 0%, #00eeff 100%);
+}
+

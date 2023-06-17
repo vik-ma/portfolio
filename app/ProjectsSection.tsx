@@ -5,8 +5,10 @@ export default function ProjectsSection() {
         <div className="grid grid-cols-1 w-full md:grid-cols-2 gap-x-10 gap-y-10 font-mono text-md text-amber-50">
           <div className="p-2 project-box" id="project-pps">Col 1</div>
           <div className="p-2 project-box" id="project-pathfinding">Col 2</div>
-          <div className="p-2 project-box">Col 1</div>
-          <div className="p-2 project-box">Col 2</div>
+          <div className="p-2 project-box" id="project-wfc">Col 1</div>
+          <div className="p-2 project-box" id="project-ocr">Col 2</div>
+          <div className="p-2 project-box" id="project-file-opener">Col 1</div>
+          <div className="p-2 project-box" id="project-link-opener">Col 2</div>
         </div>
       </div>
     </div>
