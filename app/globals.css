@@ -133,15 +133,14 @@ body {
   content: "";
   z-index: -1;
   position: absolute;
-  top: 0;
+  top: -20px;
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to top left, #ff3d00 0%, #0400ff 100% );
-  transform: translate3d(0px, 20px, 0px) scale(0.95);
-  filter: blur(20px);
-  opacity: var(0.7);
-  transition: opacity 0.3s;
+  transform: translate3d(0px, 15px, 0px) scale(1.05);
+  filter: blur(15px);
+  /* opacity: var(0.7);
+  transition: opacity 0.3s; */
 }
 
 .project-box::after {
@@ -153,4 +152,12 @@ body {
   bottom: 0;
   left: 0;
   background: inherit;
+}
+
+#project-pps:before {
+  background: linear-gradient(to top left, #ff3d00 0%, #0400ff 100%);
+}
+
+#project-pathfinding:before {
+  background: linear-gradient(to top left, #4c00ff 0%, #cc00ff 100%);
 }
