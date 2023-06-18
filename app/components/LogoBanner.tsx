@@ -1,16 +1,16 @@
-import PythonLogo from "./icons/PythonLogo";
-import ReactLogo from "./icons/ReactLogo";
-import JavaScriptLogo from "./icons/JavaScriptLogo";
-import TypeScriptLogo from "./icons/TypeScriptLogo";
-import HTMLLogo from "./icons/HTMLLogo";
-import CSSLogo from "./icons/CSSLogo";
-import DjangoLogo from "./icons/DjangoLogo";
-import NextJSLogo from "./icons/NextJSLogo";
-import PostgresLogo from "./icons/PostgresLogo";
-import GraphQLLogo from "./icons/GraphQLLogo";
-import TailwindLogo from "./icons/TailwindLogo";
-import DockerLogo from "./icons/DockerLogo";
-import GitLogo from "./icons/GitLogo";
+import PythonLogo from "../icons/PythonLogo";
+import ReactLogo from "../icons/ReactLogo";
+import JavaScriptLogo from "../icons/JavaScriptLogo";
+import TypeScriptLogo from "../icons/TypeScriptLogo";
+import HTMLLogo from "../icons/HTMLLogo";
+import CSSLogo from "../icons/CSSLogo";
+import DjangoLogo from "../icons/DjangoLogo";
+import NextJSLogo from "../icons/NextJSLogo";
+import PostgresLogo from "../icons/PostgresLogo";
+import GraphQLLogo from "../icons/GraphQLLogo";
+import TailwindLogo from "../icons/TailwindLogo";
+import DockerLogo from "../icons/DockerLogo";
+import GitLogo from "../icons/GitLogo";
 
 export default function LogoBanner() {
   return (
