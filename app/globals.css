@@ -169,8 +169,8 @@ body {
 }
 
 .project-box:hover {
-  transform: scale(1.03);
-  transition: ease-in 0.15s;
+  transform: scale(1.05);
+  transition: ease 0.2s;
 }
 
 #project-pps:before {
