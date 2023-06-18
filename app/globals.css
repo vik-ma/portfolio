@@ -140,7 +140,7 @@ body {
 .project-box {
   background-color: #242424;
   position: relative;
-  border: 1px solid rgba(173, 173, 173, 0.178);
+  border: 1px solid rgba(173, 173, 173, 0.5);
 }
 
 .project-box::before {
