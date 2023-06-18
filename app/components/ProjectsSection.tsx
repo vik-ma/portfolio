@@ -1,6 +1,6 @@
 export default function ProjectsSection() {
   return (
-      <div className="py-2 md:py-3 md:mt-1 rounded-3xl projects-section-box">
+      <div className="py-2 md:py-3 md:mt-1 rounded-2xl projects-section-box">
         <div className="flex flex-wrap justify-center projects-container md:gap-x-2 md:gap-y-1 mx-auto">
           <div className="grid grid-cols-1 w-full md:grid-cols-2 py-4 px-7 gap-x-8 gap-y-10 font-mono text-md text-amber-50">
             <div className="p-2 project-box" id="project-pps">
