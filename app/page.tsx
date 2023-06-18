@@ -17,9 +17,7 @@ export default function Home() {
           <h2 className="pb-4 text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent">
             Languages and Tools
           </h2>
-          <div className="font-mono text-sm text-amber-50">
-            <LogoBanner />
-          </div>
+          <LogoBanner />
         </div>
       </section>
       {/* <div className="text-center">
