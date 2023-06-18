@@ -79,6 +79,7 @@ body {
 .projects-section-box {
   background-color: #202020;
   border: 1px solid rgba(70, 70, 70, 0.8);
+  box-shadow: 0px 0px 12px rgb(0, 0, 0);
 }
 
 .lang-list-container {
