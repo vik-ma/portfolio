@@ -25,6 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb)); */
   background: radial-gradient(circle at 30%, #333, rgb(26, 26, 26) 50%);
+  background-attachment: fixed;
 }
 
 .header-shadow-anim {
