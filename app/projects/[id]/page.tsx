@@ -1,6 +1,7 @@
 import { ProjectsInfo } from "@/app/ProjectsInfo";
 import { ProjectsInfoProps } from "@/typings";
 import ProjectPage from "@/app/components/ProjectPage";
+import Link from "next/link";
 
 type PageProps = {
   params: {
@@ -14,14 +15,22 @@ export default function Project({ params: { id } }: PageProps) {
 
   return (
     <div className="flex h-screen justify-center items-center">
-      <div className="px-4 md:px-5 py-3 md:py-4 rounded-xl project-modal-wrapper">
-        <h1
-          className={`pb-2 text-3xl md:text-5xl font-extrabold bg-clip-text text-transparent ${project?.cssGradient}`}
-        >
-          {project?.name}
-        </h1>
+      <div>
+        <Link href="/#projects">
+          <button className="mb-5 py-2.5 px-4 rounded-xl font-bold text-lg text-zinc-100 bg-neutral-800 hover:bg-neutral-700">
+            Back To Projects
+          </button>
+        </Link>
         <br />
-        <ProjectPage project={project} />
+        <div className="px-4 md:px-5 py-3 md:py-4 rounded-xl project-modal-wrapper">
+          <h1
+            className={`pb-2 text-3xl md:text-5xl font-extrabold bg-clip-text text-transparent ${project?.cssGradient}`}
+          >
+            {project?.name}
+          </h1>
+          <br />
+          <ProjectPage project={project} />
+        </div>
       </div>
     </div>
   );
