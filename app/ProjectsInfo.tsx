@@ -1,26 +1,38 @@
 export const ProjectsInfo = {
   "price-performance-scraper": {
     name: "Price-Performance Scraper",
-    description: "Price-Performance Scraper Description",
+    shortDescription: "Short Description",
+    fullDescription: "Price-Performance Scraper Description",
+    cssId: "project-pps",
   },
   "pathfinding-race": {
     name: "Pathfinding Race",
-    description: "Pathfinding Race Description",
+    shortDescription: "Short Description",
+    fullDescription: "Pathfinding Race Description",
+    cssId: "project-pathfinding",
   },
   "paint-a-wave-function-collapse": {
     name: "Paint A Wave Function Collapse",
-    description: "Paint A Wave Function Collapse Description",
+    shortDescription: "Short Description",
+    fullDescription: "Paint A Wave Function Collapse Description",
+    cssId: "project-wfc",
   },
   "screenshot-ocr": {
     name: "Screenshot OCR",
-    description: "Screenshot OCR Description",
+    shortDescription: "Short Description",
+    fullDescription: "Screenshot OCR Description",
+    cssId: "project-ocr",
   },
   "file-opener": {
     name: "File Opener",
-    description: "File Opener Description",
+    shortDescription: "Short Description",
+    fullDescription: "File Opener Description",
+    cssId: "project-file-opener",
   },
   "link-opener": {
     name: "Link Opener",
-    description: "Link Opener Description",
+    shortDescription: "Short Description",
+    fullDescription: "Link Opener Description",
+    cssId: "project-link-opener",
   },
 };

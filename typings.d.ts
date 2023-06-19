@@ -1,6 +1,8 @@
 export interface ProjectsInfoProps {
     [key: string]: {
         name: string;
-        description: string;
+        shortDescription: string;
+        fullDescription: string;
+        cssId: string;
       };
   };
