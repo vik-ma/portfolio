@@ -15,7 +15,7 @@ export default function ProjectsSection() {
                   <h3 className="text-xl font-bold text-zinc-100">
                     {value.name}
                   </h3>
-                  <p className="text-gray-300">{value.shortDescription}</p>
+                  <p className="project-short-desc">{value.shortDescription}</p>
                 </div>
               </div>
             </Link>
