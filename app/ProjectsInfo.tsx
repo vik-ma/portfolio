@@ -1,32 +1,26 @@
-export const ProjectList = [
-  {
-    id: "price-performance-scraper",
+export const ProjectsInfo = {
+  "price-performance-scraper": {
     name: "Price-Performance Scraper",
     description: "Price-Performance Scraper Description",
   },
-  {
-    id: "pathfinding-race",
+  "pathfinding-race": {
     name: "Pathfinding Race",
     description: "Pathfinding Race Description",
   },
-  {
-    id: "paint-a-wave-function-collapse",
+  "paint-a-wave-function-collapse": {
     name: "Paint A Wave Function Collapse",
     description: "Paint A Wave Function Collapse Description",
   },
-  {
-    id: "screenshot-ocr",
+  "screenshot-ocr": {
     name: "Screenshot OCR",
     description: "Screenshot OCR Description",
   },
-  {
-    id: "file-opener",
+  "file-opener": {
     name: "File Opener",
     description: "File Opener Description",
   },
-  {
-    id: "link-opener",
+  "link-opener": {
     name: "Link Opener",
     description: "Link Opener Description",
   },
-];
+};

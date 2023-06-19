@@ -1,7 +1,7 @@
-"use client"
-import ReactModal from "react-modal";
+
 
 export default function ProjectsSection() {
+
   return (
     <div className="py-2 md:py-3 md:mt-1 rounded-2xl projects-section-box">
       <div className="flex flex-wrap justify-center projects-container md:gap-x-2 md:gap-y-1 mx-auto">
@@ -26,6 +26,7 @@ export default function ProjectsSection() {
           </div>
         </div>
       </div>
+
     </div>
   );
 }

@@ -1,8 +1,12 @@
 import Image from "next/image";
 import LogoBanner from "./components/LogoBanner";
 import ProjectsSection from "./components/ProjectsSection";
+import { ProjectsInfo } from "@/app/ProjectsInfo";
+import { ProjectsInfoProps } from "@/typings";
+import Link from "next/link";
 
 export default function Home() {
+  const projects: ProjectsInfoProps = ProjectsInfo;
   return (
     <main className="flex min-h-screen flex-col items-center justify-between py-20 px-2 md:px-5">
       <header className="py-7">
@@ -43,6 +47,13 @@ export default function Home() {
         </div>
         <ProjectsSection />
       </section>
+      <div className="text-white">
+        {Object.keys(projects).map((key) => (
+          <Link key={key} href={`/projects/${key}`}>
+            <div>{key}</div>
+          </Link>
+        ))}
+      </div>
     </main>
   );
 }

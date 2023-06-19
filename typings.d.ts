@@ -1,5 +1,6 @@
-export type ProjectListProps = {
-    id: string;
-    name: string;
-    description: string;
+export interface ProjectsInfoProps {
+    [key: string]: {
+        name: string;
+        description: string;
+      };
   };
