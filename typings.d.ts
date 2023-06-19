@@ -4,6 +4,7 @@ export interface ProjectsInfoProps {
         shortDescription: string;
         fullDescription: string;
         cssId: string;
+        cssGradient: string;
       };
   };
 
@@ -13,5 +14,6 @@ export interface ProjectProps {
         shortDescription: string;
         fullDescription: string;
         cssId: string;
+        cssGradient: string;
         };
 };

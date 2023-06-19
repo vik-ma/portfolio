@@ -16,8 +16,7 @@ export default function ProjectModal({ params: { id } }: PageProps) {
   return (
     <Modal>
       <h1
-        className="text-3xl md:text-5xl font-extrabold text-zinc-100"
-        // id={`${project?.cssId}-heading`}
+        className={`pb-2 text-3xl md:text-5xl font-extrabold bg-clip-text text-transparent ${project?.cssGradient}`}
       >
         {project?.name}
       </h1>
