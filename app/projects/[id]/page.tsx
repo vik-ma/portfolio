@@ -15,7 +15,10 @@ export default function Project({ params: { id } }: PageProps) {
   return (
     <div className="flex h-screen justify-center items-center">
       <div className="px-4 md:px-5 py-3 md:py-4 rounded-xl project-modal-wrapper">
-        <h1 className="text-3xl md:text-5xl font-extrabold text-zinc-100">
+        <h1
+          className="text-3xl md:text-5xl font-extrabold text-zinc-100"
+          // id={`${project?.cssId}-heading`}
+        >
           {project?.name}
         </h1>
         <br />
