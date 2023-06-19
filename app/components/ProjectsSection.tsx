@@ -11,7 +11,7 @@ export default function ProjectsSection() {
           {Object.entries(projects).map(([key, value]) => (
             <Link key={key} href={`/projects/${key}`}>
               <div className="p-2 project-box" id={value.cssId}>
-                <div className="project-box-content">
+                <div className="px-1 project-box-content">
                   <h3 className="text-xl font-bold text-zinc-100">
                     {value.name}
                   </h3>

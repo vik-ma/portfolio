@@ -1,6 +1,7 @@
 import { ProjectsInfo } from "@/app/ProjectsInfo";
 import { ProjectsInfoProps } from "@/typings";
 import Modal from "@/app/components/Modal";
+import ProjectPage from "@/app/components/ProjectPage";
 
 type PageProps = {
   params: {
@@ -14,9 +15,7 @@ export default function ProjectModal({ params: { id } }: PageProps) {
 
   return (
     <Modal>
-      <h1 className="text-6xl font-extrabold text-white">{project?.name}</h1>
-      <br />
-      <p className="text-white">Modal</p>
+      <ProjectPage project={project} />
     </Modal>
   );
 }

@@ -6,3 +6,12 @@ export interface ProjectsInfoProps {
         cssId: string;
       };
   };
+
+export interface ProjectProps {
+    project: {
+        name: string;
+        shortDescription: string;
+        fullDescription: string;
+        cssId: string;
+        };
+};
