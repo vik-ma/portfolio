@@ -12,5 +12,10 @@ export default function Project({ params: { id } }: PageProps) {
   const projects: ProjectsInfoProps = ProjectsInfo;
   const project = projects[id];
 
-  return <ProjectPage project={project} />;
+  return (
+    <div>
+      <h1 className="text-6xl font-extrabold text-white">{project?.name}</h1>
+      <ProjectPage project={project} />
+    </div>
+  );
 }

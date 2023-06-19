@@ -15,6 +15,7 @@ export default function ProjectModal({ params: { id } }: PageProps) {
 
   return (
     <Modal>
+      <h1 className="text-6xl font-extrabold text-white">{project?.name}</h1>
       <ProjectPage project={project} />
     </Modal>
   );

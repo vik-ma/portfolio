@@ -52,7 +52,7 @@ export default function Modal({ children }: ModalProps) {
     >
       <div
         ref={wrapper}
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 p-6"
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 p-6 rounded-xl project-modal-wrapper"
       >
         {children}
       </div>
