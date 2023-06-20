@@ -11,7 +11,7 @@ export default function ProjectPage({ project }: ProjectProps) {
           {project?.techStack.map((lang: string) => (
             <div
               key={`${project?.name}-${lang}`}
-              className="mr-1.5 mt-1 px-1 pb-0.5 md:px-1.5 md:pb-0 font-semibold text-xs md:text-sm rounded-md border border-neutral-600"
+              className="mr-1.5 mt-1 px-1 py-0.5 md:px-1.5 md:py-0 font-semibold text-xs md:text-sm rounded-md border border-neutral-600"
             >
               {lang}
             </div>
