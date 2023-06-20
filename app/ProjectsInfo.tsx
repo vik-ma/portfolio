@@ -5,7 +5,18 @@ export const ProjectsInfo = {
     fullDescription: "Price-Performance Scraper Description",
     cssId: "project-pps",
     cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
-    techStack: ["Python", "Django", "HTML", "CSS", "TypeScript", "React", "Next.js", "PostgreSQL", "Docker"]
+    techStack: [
+      "Python",
+      "Django",
+      "HTML",
+      "CSS",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "PostgreSQL",
+      "Docker",
+    ],
+    previewImgSrc: "/images/pathfinding-race-preview-1.png",
     // cssGradient: "bg-gradient-to-r from-violet-500 via-rose-500 to-orange-600",
   },
   "pathfinding-race": {
@@ -14,7 +25,8 @@ export const ProjectsInfo = {
     fullDescription: "Pathfinding Race Description",
     cssId: "project-pathfinding",
     cssGradient: "bg-gradient-to-r from-rose-600 to-amber-400",
-    techStack: ["HTML", "CSS", "JavaScript", "React"]
+    techStack: ["HTML", "CSS", "JavaScript", "React"],
+    previewImgSrc: "/images/pathfinding-race-preview-1.png",
     // cssGradient: "bg-gradient-to-r from-yellow-300 to-pink-600",
   },
   "paint-a-wave-function-collapse": {
@@ -23,7 +35,8 @@ export const ProjectsInfo = {
     fullDescription: "Paint A Wave Function Collapse Description",
     cssId: "project-wfc",
     cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
-    techStack: ["Python", "PyGame", "HTML", "CSS", "JavaScript", "WebAssembly"]
+    techStack: ["Python", "PyGame", "HTML", "CSS", "JavaScript", "WebAssembly"],
+    previewImgSrc: "/images/pathfinding-race-preview-1.png",
     // cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
   },
   "screenshot-ocr": {
@@ -32,7 +45,8 @@ export const ProjectsInfo = {
     fullDescription: "Screenshot OCR Description",
     cssId: "project-ocr",
     cssGradient: "bg-gradient-to-r from-rose-600 to-amber-400",
-    techStack: ["Python", "PyQt"]
+    techStack: ["Python", "PyQt"],
+    previewImgSrc: "/images/pathfinding-race-preview-1.png",
     // cssGradient: "bg-gradient-to-r from-rose-600 to-red-600",
   },
   "file-opener": {
@@ -41,7 +55,8 @@ export const ProjectsInfo = {
     fullDescription: "File Opener Description",
     cssId: "project-file-opener",
     cssGradient: "bg-gradient-to-r from-rose-600 to-yellow-400",
-    techStack: ["Python", "Tkinter"]
+    techStack: ["Python", "Tkinter"],
+    previewImgSrc: "/images/pathfinding-race-preview-1.png",
     // cssGradient: "bg-gradient-to-r from-orange-500 to-amber-400",
   },
   "link-opener": {
@@ -50,7 +65,8 @@ export const ProjectsInfo = {
     fullDescription: "Link Opener Description",
     cssId: "project-link-opener",
     cssGradient: "bg-gradient-to-r from-rose-600 to-yellow-400",
-    techStack: ["Python", "Tkinter"]
+    techStack: ["Python", "Tkinter"],
+    previewImgSrc: "/images/pathfinding-race-preview-1.png",
     // cssGradient: "bg-gradient-to-r from-blue-400 to-fuchsia-800",
   },
 };

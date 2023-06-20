@@ -1,6 +1,7 @@
 import { ProjectsInfo } from "@/app/ProjectsInfo";
 import { ProjectsInfoProps } from "@/typings";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ProjectsSection() {
   const projects: ProjectsInfoProps = ProjectsInfo;
@@ -16,9 +17,20 @@ export default function ProjectsSection() {
                     <h3 className="text-xl font-bold text-zinc-100">
                       {value.name}
                     </h3>
-                    <p className="project-short-desc">
-                      {value.shortDescription}
-                    </p>
+                    <div className="flex flex-row justify-between mt-1 mb-2">
+                      <p className="project-short-desc">
+                        {value.shortDescription}
+                      </p>
+                      <div className="mt-1">
+                        <Image
+                        className="object-contain"
+                          src={value.previewImgSrc}
+                          alt={`${value.name} Preview Image`}
+                          width="180"
+                          height="100"
+                        />
+                      </div>
+                    </div>
                   </div>
                   <div className="flex flex-wrap -ml-1 text-stone-200">
                     {value.techStack.map((lang: string) => (
