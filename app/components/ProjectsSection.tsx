@@ -23,10 +23,10 @@ export default function ProjectsSection() {
                       </p>
                       <div className="mt-1">
                         <Image
-                        className="object-contain"
+                          className="object-fill rounded-md border-2 border-neutral-500"
                           src={value.previewImgSrc}
                           alt={`${value.name} Preview Image`}
-                          width="180"
+                          width="160"
                           height="100"
                         />
                       </div>

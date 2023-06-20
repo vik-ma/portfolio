@@ -16,7 +16,7 @@ export const ProjectsInfo = {
       "PostgreSQL",
       "Docker",
     ],
-    previewImgSrc: "/images/pathfinding-race-preview-1.png",
+    previewImgSrc: "/images/pathfinding-race-preview-4.png",
     // cssGradient: "bg-gradient-to-r from-violet-500 via-rose-500 to-orange-600",
   },
   "pathfinding-race": {
@@ -36,7 +36,7 @@ export const ProjectsInfo = {
     cssId: "project-wfc",
     cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
     techStack: ["Python", "PyGame", "HTML", "CSS", "JavaScript", "WebAssembly"],
-    previewImgSrc: "/images/pathfinding-race-preview-1.png",
+    previewImgSrc: "/images/wfc-preview-1.png",
     // cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
   },
   "screenshot-ocr": {
@@ -46,7 +46,7 @@ export const ProjectsInfo = {
     cssId: "project-ocr",
     cssGradient: "bg-gradient-to-r from-rose-600 to-amber-400",
     techStack: ["Python", "PyQt"],
-    previewImgSrc: "/images/pathfinding-race-preview-1.png",
+    previewImgSrc: "/images/screenshot-ocr-preview.png",
     // cssGradient: "bg-gradient-to-r from-rose-600 to-red-600",
   },
   "file-opener": {
@@ -56,7 +56,7 @@ export const ProjectsInfo = {
     cssId: "project-file-opener",
     cssGradient: "bg-gradient-to-r from-rose-600 to-yellow-400",
     techStack: ["Python", "Tkinter"],
-    previewImgSrc: "/images/pathfinding-race-preview-1.png",
+    previewImgSrc: "/images/file-opener-preview.png",
     // cssGradient: "bg-gradient-to-r from-orange-500 to-amber-400",
   },
   "link-opener": {
@@ -66,7 +66,7 @@ export const ProjectsInfo = {
     cssId: "project-link-opener",
     cssGradient: "bg-gradient-to-r from-rose-600 to-yellow-400",
     techStack: ["Python", "Tkinter"],
-    previewImgSrc: "/images/pathfinding-race-preview-1.png",
+    previewImgSrc: "/images/link-opener-preview.png",
     // cssGradient: "bg-gradient-to-r from-blue-400 to-fuchsia-800",
   },
 };
