@@ -20,7 +20,6 @@ export default function ProjectModal({ params: { id } }: PageProps) {
       >
         {project?.name}
       </h1>
-      <br />
       <ProjectPage project={project} />
     </Modal>
   );

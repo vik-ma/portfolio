@@ -20,7 +20,7 @@ export default function ProjectsSection() {
                       {value.shortDescription}
                     </p>
                   </div>
-                  <div className="flex flex-wrap mb-0 -ml-1 text-stone-200">
+                  <div className="flex flex-wrap -ml-1 text-stone-200">
                     {value.techStack.map((lang: string) => (
                       <div
                         key={`${key}-${lang}`}
