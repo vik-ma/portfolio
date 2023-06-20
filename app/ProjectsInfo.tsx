@@ -61,7 +61,7 @@ export const ProjectsInfo = {
   },
   "link-opener": {
     name: "Link Opener",
-    shortDescription: "Short Description",
+    shortDescription: "Desktop GUI application to automate asd asd asd dsaadssadasd asdsadsad asd. asdsaddsad",
     fullDescription: "Link Opener Description",
     cssId: "project-link-opener",
     cssGradient: "bg-gradient-to-r from-rose-600 to-yellow-400",

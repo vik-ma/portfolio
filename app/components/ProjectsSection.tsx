@@ -18,12 +18,12 @@ export default function ProjectsSection() {
                       {value.name}
                     </h3>
                     <div className="flex flex-row justify-between mt-1 mb-2">
-                      <p className="project-short-desc">
+                      <p className="project-short-desc max-w-[50%]">
                         {value.shortDescription}
                       </p>
-                      <div className="mt-1">
+                      <div className="mt-1 rounded-md border-2 border-neutral-500">
                         <Image
-                          className="object-fill rounded-md border-2 border-neutral-500"
+                          className="object-fill rounded-md"
                           src={value.previewImgSrc}
                           alt={`${value.name} Preview Image`}
                           width="160"
