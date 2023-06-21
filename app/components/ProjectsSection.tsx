@@ -24,7 +24,7 @@ export default function ProjectsSection() {
                       <div className="mt-1 rounded-md thumbnail-container">
                         <Image
                           className="rounded-md"
-                          src={value.previewImgSrc}
+                          src={value.thumbnailImgSrc}
                           alt={`${value.name} Preview Image`}
                           width={160}
                           height={100}

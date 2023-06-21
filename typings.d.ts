@@ -6,7 +6,7 @@ export interface ProjectsInfoProps {
         cssId: string;
         cssGradient: string;
         techStack: string[];
-        previewImgSrc: string;
+        thumbnailImgSrc: string;
       };
   };
 
@@ -18,6 +18,6 @@ export interface ProjectProps {
         cssId: string;
         cssGradient: string;
         techStack: string[];
-        previewImgSrc: string;
+        thumbnailImgSrc: string;
         };
 };
