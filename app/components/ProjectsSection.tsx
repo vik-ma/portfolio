@@ -21,9 +21,9 @@ export default function ProjectsSection() {
                       <p className="project-short-desc max-w-[50%]">
                         {value.shortDescription}
                       </p>
-                      <div className="mt-1 rounded-md thumbnail-container">
+                      <div className="mt-1 rounded-sm thumbnail-container">
                         <Image
-                          className="rounded-md"
+                          className="rounded-sm"
                           src={value.thumbnailImgSrc}
                           alt={`${value.name} Preview Image`}
                           width={160}
