@@ -6,7 +6,20 @@ export default function ProjectPage({ project }: ProjectProps) {
     <div className="px-0.5">
       <div className="flex flex-col justify-between">
         <div className="flex flex-row justify-between mb-7">
-          {project?.fullDescription}
+          <div>{project?.fullDescription}</div>
+          <div className="thumbnail-container">
+            {project?.previewImgSrcList.map(
+              (imageSrc: string, index: number) => (
+                <Image
+                  key={index + 1}
+                  src={imageSrc}
+                  alt={`${project?.name} Preview Image ${index + 1}`}
+                  width={160}
+                  height={100}
+                />
+              )
+            )}
+          </div>
         </div>
         <div className="flex flex-wrap -ml-0.5 text-stone-200">
           {project?.techStack.map((lang: string) => (

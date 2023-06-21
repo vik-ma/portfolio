@@ -19,7 +19,13 @@ export const ProjectsInfo = {
       "Docker",
     ],
     thumbnailImgSrc: "/images/pps-thumbnail.png",
-    previewImgSrcList: [""],
+    previewImgSrcList: [
+      "/images/pps-preview-1.png",
+      "/images/pps-preview-2.png",
+      "/images/pps-preview-3.png",
+      "/images/pps-preview-4.png",
+      "/images/pps-preview-5.png",
+    ],
     // cssGradient: "bg-gradient-to-r from-violet-500 via-rose-500 to-orange-600",
   },
   "pathfinding-race": {
@@ -32,7 +38,13 @@ export const ProjectsInfo = {
     cssGradient: "bg-gradient-to-r from-rose-600 to-amber-400",
     techStack: ["HTML", "CSS", "JavaScript", "React"],
     thumbnailImgSrc: "/images/pathfinding-race-thumbnail.png",
-    previewImgSrcList: [""],
+    previewImgSrcList: [
+      "/images/pathfinding-race-preview-1.png",
+      "/images/pathfinding-race-preview-2.png",
+      "/images/pathfinding-race-preview-3.png",
+      "/images/pathfinding-race-preview-4.png",
+      "/images/pathfinding-race-preview-gif.gif",
+    ],
     // cssGradient: "bg-gradient-to-r from-yellow-300 to-pink-600",
   },
   "paint-a-wave-function-collapse": {
@@ -47,7 +59,11 @@ export const ProjectsInfo = {
     cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
     techStack: ["Python", "PyGame", "HTML", "CSS", "JavaScript", "WebAssembly"],
     thumbnailImgSrc: "/images/wfc-thumbnail.png",
-    previewImgSrcList: [""],
+    previewImgSrcList: [
+      "/images/wfc-preview-1.png",
+      "/images/wfc-preview-2.png",
+      "/images/wfc-preview-gif.gif",
+    ],
     // cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
   },
   "screenshot-ocr": {
@@ -60,7 +76,10 @@ export const ProjectsInfo = {
     cssGradient: "bg-gradient-to-r from-rose-600 to-amber-400",
     techStack: ["Python", "PyQt"],
     thumbnailImgSrc: "/images/screenshot-ocr-thumbnail.png",
-    previewImgSrcList: [""],
+    previewImgSrcList: [
+      "/images/screenshot-ocr-preview.png",
+      "/images/screenshot-ocr-preview-gif.gif",
+    ],
     // cssGradient: "bg-gradient-to-r from-rose-600 to-red-600",
   },
   "file-opener": {
@@ -71,7 +90,7 @@ export const ProjectsInfo = {
     cssGradient: "bg-gradient-to-r from-rose-600 to-yellow-400",
     techStack: ["Python", "Tkinter"],
     thumbnailImgSrc: "/images/file-opener-thumbnail.png",
-    previewImgSrcList: [""],
+    previewImgSrcList: ["/images/file-opener-preview.png"],
     // cssGradient: "bg-gradient-to-r from-orange-500 to-amber-400",
   },
   "link-opener": {
@@ -83,7 +102,7 @@ export const ProjectsInfo = {
     cssGradient: "bg-gradient-to-r from-rose-600 to-yellow-400",
     techStack: ["Python", "Tkinter"],
     thumbnailImgSrc: "/images/link-opener-thumbnail.png",
-    previewImgSrcList: [""],
+    previewImgSrcList: ["/images/link-opener-preview.png"],
     // cssGradient: "bg-gradient-to-r from-blue-400 to-fuchsia-800",
   },
 };
