@@ -21,13 +21,13 @@ export default function ProjectsSection() {
                       <p className="project-short-desc max-w-[50%]">
                         {value.shortDescription}
                       </p>
-                      <div className="mt-1 rounded-md border-2 border-neutral-500">
+                      <div className="mt-1 rounded-md thumbnail-container">
                         <Image
-                          className="object-fill rounded-md"
+                          className="rounded-md"
                           src={value.previewImgSrc}
                           alt={`${value.name} Preview Image`}
-                          width="160"
-                          height="100"
+                          width={160}
+                          height={100}
                         />
                       </div>
                     </div>

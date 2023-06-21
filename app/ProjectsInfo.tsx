@@ -16,7 +16,7 @@ export const ProjectsInfo = {
       "PostgreSQL",
       "Docker",
     ],
-    previewImgSrc: "/images/pathfinding-race-preview-4.png",
+    previewImgSrc: "/images/pps-thumbnail.png",
     // cssGradient: "bg-gradient-to-r from-violet-500 via-rose-500 to-orange-600",
   },
   "pathfinding-race": {
@@ -26,7 +26,7 @@ export const ProjectsInfo = {
     cssId: "project-pathfinding",
     cssGradient: "bg-gradient-to-r from-rose-600 to-amber-400",
     techStack: ["HTML", "CSS", "JavaScript", "React"],
-    previewImgSrc: "/images/pathfinding-race-preview-1.png",
+    previewImgSrc: "/images/pathfinding-race-thumbnail.png",
     // cssGradient: "bg-gradient-to-r from-yellow-300 to-pink-600",
   },
   "paint-a-wave-function-collapse": {
@@ -36,7 +36,7 @@ export const ProjectsInfo = {
     cssId: "project-wfc",
     cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
     techStack: ["Python", "PyGame", "HTML", "CSS", "JavaScript", "WebAssembly"],
-    previewImgSrc: "/images/wfc-preview-1.png",
+    previewImgSrc: "/images/wfc-thumbnail.png",
     // cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
   },
   "screenshot-ocr": {
@@ -46,7 +46,7 @@ export const ProjectsInfo = {
     cssId: "project-ocr",
     cssGradient: "bg-gradient-to-r from-rose-600 to-amber-400",
     techStack: ["Python", "PyQt"],
-    previewImgSrc: "/images/screenshot-ocr-preview.png",
+    previewImgSrc: "/images/screenshot-ocr-thumbnail.png",
     // cssGradient: "bg-gradient-to-r from-rose-600 to-red-600",
   },
   "file-opener": {
@@ -56,7 +56,7 @@ export const ProjectsInfo = {
     cssId: "project-file-opener",
     cssGradient: "bg-gradient-to-r from-rose-600 to-yellow-400",
     techStack: ["Python", "Tkinter"],
-    previewImgSrc: "/images/file-opener-preview.png",
+    previewImgSrc: "/images/file-opener-thumbnail.png",
     // cssGradient: "bg-gradient-to-r from-orange-500 to-amber-400",
   },
   "link-opener": {
@@ -66,7 +66,7 @@ export const ProjectsInfo = {
     cssId: "project-link-opener",
     cssGradient: "bg-gradient-to-r from-rose-600 to-yellow-400",
     techStack: ["Python", "Tkinter"],
-    previewImgSrc: "/images/link-opener-preview.png",
+    previewImgSrc: "/images/link-opener-thumbnail.png",
     // cssGradient: "bg-gradient-to-r from-blue-400 to-fuchsia-800",
   },
 };
