@@ -7,7 +7,7 @@ export default function ProjectPage({ project }: ProjectProps) {
       <div className="flex flex-col justify-between">
         <div className="flex flex-row justify-between mb-7">
           <div>{project?.fullDescription}</div>
-          <div className="thumbnail-container">
+          <div className="image-container">
             {project?.previewImgSrcList.map(
               (imageSrc: string, index: number) => (
                 <Image
