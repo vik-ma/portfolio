@@ -1,8 +1,10 @@
+import { ReactNode } from "react";
+
 export interface ProjectsInfoProps {
     [key: string]: {
         name: string;
         shortDescription: string;
-        fullDescription: string;
+        fullDescription: ReactNode;
         cssId: string;
         cssGradient: string;
         techStack: string[];
@@ -14,7 +16,7 @@ export interface ProjectProps {
     project: {
         name: string;
         shortDescription: string;
-        fullDescription: string;
+        fullDescription: ReactNode;
         cssId: string;
         cssGradient: string;
         techStack: string[];

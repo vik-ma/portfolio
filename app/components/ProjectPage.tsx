@@ -6,8 +6,7 @@ export default function ProjectPage({ project }: ProjectProps) {
     <div className="px-0.5">
       <div className="flex flex-col justify-between">
         <div className="flex flex-row justify-between mb-7">
-          <p className="text-white">{project?.fullDescription}</p>
-          
+          {project?.fullDescription}
         </div>
         <div className="flex flex-wrap -ml-0.5 text-stone-200">
           {project?.techStack.map((lang: string) => (

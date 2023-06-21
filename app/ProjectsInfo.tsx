@@ -2,7 +2,7 @@ export const ProjectsInfo = {
   "price-performance-scraper": {
     name: "Price-Performance Scraper",
     shortDescription: "Short Description",
-    fullDescription: "Price-Performance Scraper Description",
+    fullDescription: <p className="text-stone-100">Price-Performance Scraper Description</p>,
     cssId: "project-pps",
     cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
     techStack: [
@@ -22,7 +22,7 @@ export const ProjectsInfo = {
   "pathfinding-race": {
     name: "Pathfinding Race",
     shortDescription: "Short Description",
-    fullDescription: "Pathfinding Race Description",
+    fullDescription: <p className="text-stone-100">Pathfinding Race Description</p>,
     cssId: "project-pathfinding",
     cssGradient: "bg-gradient-to-r from-rose-600 to-amber-400",
     techStack: ["HTML", "CSS", "JavaScript", "React"],
@@ -32,7 +32,7 @@ export const ProjectsInfo = {
   "paint-a-wave-function-collapse": {
     name: "Paint A Wave Function Collapse",
     shortDescription: "Short Description",
-    fullDescription: "Paint A Wave Function Collapse Description",
+    fullDescription: <p className="text-stone-100">Paint A Wave Function Collapse Description</p>,
     cssId: "project-wfc",
     cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
     techStack: ["Python", "PyGame", "HTML", "CSS", "JavaScript", "WebAssembly"],
@@ -42,7 +42,7 @@ export const ProjectsInfo = {
   "screenshot-ocr": {
     name: "Screenshot OCR",
     shortDescription: "Short Description",
-    fullDescription: "Screenshot OCR Description",
+    fullDescription: <p className="text-stone-100">Screenshot OCR Description</p>,
     cssId: "project-ocr",
     cssGradient: "bg-gradient-to-r from-rose-600 to-amber-400",
     techStack: ["Python", "PyQt"],
@@ -52,7 +52,7 @@ export const ProjectsInfo = {
   "file-opener": {
     name: "File Opener",
     shortDescription: "Short Description",
-    fullDescription: "File Opener Description",
+    fullDescription: <p className="text-stone-100">File Opener Description</p>,
     cssId: "project-file-opener",
     cssGradient: "bg-gradient-to-r from-rose-600 to-yellow-400",
     techStack: ["Python", "Tkinter"],
@@ -62,7 +62,7 @@ export const ProjectsInfo = {
   "link-opener": {
     name: "Link Opener",
     shortDescription: "Desktop GUI application to automate asd asd asd dsaadssadasd asdsadsad asd. asdsaddsad",
-    fullDescription: "Link Opener Description",
+    fullDescription: <p className="text-stone-100">Link Opener Description</p>,
     cssId: "project-link-opener",
     cssGradient: "bg-gradient-to-r from-rose-600 to-yellow-400",
     techStack: ["Python", "Tkinter"],
