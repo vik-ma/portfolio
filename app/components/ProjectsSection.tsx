@@ -8,7 +8,7 @@ export default function ProjectsSection() {
   return (
     <div className="py-2 md:py-3 md:mt-1 rounded-2xl projects-section-box">
       <div className="flex flex-wrap justify-center projects-container md:gap-x-2 md:gap-y-1 mx-auto">
-        <div className="grid grid-cols-1 w-full md:grid-cols-2 py-3 md:py-4 px-5 md:px-7 gap-x-8 gap-y-7 md:gap-y-10 font-sans text-md text-amber-50">
+        <div className="grid grid-cols-1 w-full min-[870px]:grid-cols-2 py-3 md:py-4 px-5 md:px-7 gap-x-8 gap-y-7 md:gap-y-10 font-sans text-md text-amber-50">
           {Object.entries(projects).map(([key, value]) => (
             <Link key={key} href={`/projects/${key}`}>
               <div className="p-2 h-full project-box" id={value.cssId}>
@@ -21,9 +21,9 @@ export default function ProjectsSection() {
                       <p className="project-short-desc max-w-[50%]">
                         {value.shortDescription}
                       </p>
-                      <div className="mt-1 rounded-sm thumbnail-container">
+                      <div className="mt-1 rounded-sm max-h-min thumbnail-container">
                         <Image
-                          className="rounded-sm"
+                          className="rounded-sm max-h-min"
                           src={value.thumbnailImgSrc}
                           alt={`${value.name} Preview Image`}
                           width={160}

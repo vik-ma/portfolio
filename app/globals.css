@@ -106,7 +106,7 @@ body {
   width: 80px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 870px) {
   .lang-list-container {
     width: 580px;
   }
