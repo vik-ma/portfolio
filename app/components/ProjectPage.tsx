@@ -5,17 +5,18 @@ export default function ProjectPage({ project }: ProjectProps) {
   return (
     <div className="px-0.5">
       <div className="flex flex-col justify-between">
-        <div className="flex flex-row justify-between mb-7">
+        <div className="flex flex-col md:flex-row justify-between mb-7">
           <div>{project?.fullDescription}</div>
-          <div className="image-container">
+          <div className="flex">
             {project?.previewImgSrcList.map(
               (imageSrc: string, index: number) => (
                 <Image
+                  className="max-w-[50px] md:max-w-none"
                   key={index + 1}
                   src={imageSrc}
                   alt={`${project?.name} Preview Image ${index + 1}`}
-                  width={160}
-                  height={100}
+                  width={60}
+                  height={37}
                 />
               )
             )}
