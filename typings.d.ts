@@ -25,3 +25,8 @@ export interface ProjectProps {
         previewImgSrcList: string[];
         };
 };
+
+export interface ImageSliderProps {
+    name: string;
+    previewImgSrcList: string[];
+}
