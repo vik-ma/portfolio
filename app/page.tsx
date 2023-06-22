@@ -1,13 +1,16 @@
 import Image from "next/image";
 import LogoBanner from "./components/LogoBanner";
 import ProjectsSection from "./components/ProjectsSection";
+import HeroSection from "./components/HeroSection";
 
 
 export default function Home() {
 
   return (
+
     <main className="flex min-h-screen flex-col items-center justify-between py-20 px-2 md:px-5">
       <header className="py-7">
+      {/* <HeroSection /> */}
         <div>
           <h1 className="text-7xl font-extrabold">
             <span className="header-shadow-anim">Header</span>
@@ -46,5 +49,5 @@ export default function Home() {
         <ProjectsSection />
       </section>
     </main>
-  );
+    );
 }
