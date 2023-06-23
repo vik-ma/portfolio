@@ -2,6 +2,7 @@ import { ProjectsInfo } from "@/app/ProjectsInfo";
 import { ProjectsInfoProps } from "@/typings";
 import ProjectPage from "@/app/components/ProjectPage";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 type PageProps = {
   params: {
@@ -12,6 +13,8 @@ type PageProps = {
 export default function Project({ params: { id } }: PageProps) {
   const projects: ProjectsInfoProps = ProjectsInfo;
   const project = projects[id];
+
+  if (!project) return notFound();
 
   return (
     <div className="flex h-screen justify-center items-center">
