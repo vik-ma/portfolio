@@ -26,6 +26,7 @@ export const ProjectsInfo = {
       "/images/pps-preview-4.png",
       "/images/pps-preview-5.png",
     ],
+    // asd: "data:image/jpeg;base64,/9j//gAQTGF2YzYwLjE2LjEwMAD/2wBDAAgEBAQEBAUFBQUFBQYGBgYGBgYGBgYGBgYHBwcICAgHBwcGBgcHCAgICAkJCQgICAgJCQoKCgwMCwsODg4RERT/xABqAAEBAAAAAAAAAAAAAAAAAAACBwEBAQAAAAAAAAAAAAAAAAAAAgMQAAICAgIDAQEAAAAAAAAAAAMCEQEFBBMAtDFzMiERAAECBAQHAQAAAAAAAAAAAAECAyEAERIyUTGyE3JhgwRBIkL/wAARCAAFAAgDARIAAhIAAxIA/9oADAMBAAIRAxEAPwCdWullGI26ExSIPJWrIehpXDqq4KofE1QhJZ/7JKuJr306P7P8ct4a9kt982quREtV+B7JBw0ER0knCjma3GU343BRbeVUvz1EaxUc9Jsr9d3aJ//Z"
     // cssGradient: "bg-gradient-to-r from-violet-500 via-rose-500 to-orange-600",
   },
   "pathfinding-race": {
