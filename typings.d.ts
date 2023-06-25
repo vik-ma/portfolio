@@ -33,4 +33,5 @@ export interface ProjectProps {
 export interface ImageSliderProps {
     name: string;
     previewImgSrcList: string[];
+    previewImgBase64DataList: string[];
 }

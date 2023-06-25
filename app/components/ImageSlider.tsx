@@ -5,6 +5,7 @@ import Image from "next/image";
 export default function ImageSlider({
   name,
   previewImgSrcList,
+  previewImgBase64DataList,
 }: ImageSliderProps) {
   return (
     <div className="flex">
