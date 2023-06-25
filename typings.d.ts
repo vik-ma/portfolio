@@ -11,6 +11,7 @@ export interface ProjectsInfoProps {
         thumbnailImgSrc: string;
         thumbnailBase64Data: string;
         previewImgSrcList: string[];
+        previewImgBase64Data: string[];
       };
   };
 
@@ -25,6 +26,7 @@ export interface ProjectProps {
         thumbnailImgSrc: string;
         thumbnailBase64Data: string;
         previewImgSrcList: string[];
+        previewImgBase64Data: string[];
         };
 };
 
