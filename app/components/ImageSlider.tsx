@@ -17,6 +17,8 @@ export default function ImageSlider({
           alt={`${name} Preview Image ${index + 1}`}
           width={60}
           height={37}
+          placeholder="blur"
+          blurDataURL={previewImgBase64DataList[index]}
         />
       ))}
     </div>
