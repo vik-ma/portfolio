@@ -6,6 +6,8 @@ export default function ImageSlider({
   name,
   previewImgSrcList,
   previewImgBase64DataList,
+  previewImgWidthList,
+  previewImgHeightList
 }: ImageSliderProps) {
   return (
     <div className="flex">
@@ -15,8 +17,8 @@ export default function ImageSlider({
           key={index + 1}
           src={imageSrc}
           alt={`${name} Preview Image ${index + 1}`}
-          width={60}
-          height={37}
+          width={previewImgWidthList[index]}
+          height={previewImgHeightList[index]}
           placeholder="blur"
           blurDataURL={previewImgBase64DataList[index]}
         />

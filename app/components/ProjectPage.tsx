@@ -12,6 +12,8 @@ export default function ProjectPage({ project }: ProjectProps) {
             name={project?.name}
             previewImgSrcList={project?.previewImgSrcList}
             previewImgBase64DataList={project?.previewImgBase64DataList}
+            previewImgWidthList={project?.previewImgWidthList}
+            previewImgHeightList={project?.previewImgHeightList}
           />
         </div>
         <div className="flex flex-wrap -ml-0.5 text-stone-200">

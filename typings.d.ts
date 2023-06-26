@@ -12,6 +12,8 @@ export interface ProjectsInfoProps {
         thumbnailBase64Data: string;
         previewImgSrcList: string[];
         previewImgBase64DataList: string[];
+        previewImgWidthList: number[];
+        previewImgHeightList: number[];
       };
   };
 
@@ -27,6 +29,8 @@ export interface ProjectProps {
         thumbnailBase64Data: string;
         previewImgSrcList: string[];
         previewImgBase64DataList: string[];
+        previewImgWidthList: number[];
+        previewImgHeightList: number[];
         };
 };
 
@@ -34,4 +38,6 @@ export interface ImageSliderProps {
     name: string;
     previewImgSrcList: string[];
     previewImgBase64DataList: string[];
+    previewImgWidthList: number[];
+    previewImgHeightList: number[];
 }
