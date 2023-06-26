@@ -13,7 +13,7 @@ export default function ImageSlider({
     <div className="flex">
       {previewImgSrcList?.map((imageSrc: string, index: number) => (
         <Image
-          className="max-w-[50px] md:max-w-none"
+          className="max-w-[50px] md:max-w-none border border-neutral-700 ml-0.5"
           key={index + 1}
           src={imageSrc}
           alt={`${name} Preview Image ${index + 1}`}
