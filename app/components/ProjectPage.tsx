@@ -11,8 +11,8 @@ export default function ProjectPage({ project }: ProjectProps) {
           <ImageSlider
             name={project?.name}
             previewImgSrcList={project?.previewImgSrcList}
-            previewImgMainWidthList={project?.previewImgMainWidthList}
-            previewImgMainHeightList={project?.previewImgMainHeightList}
+            previewImgMainWidth={project?.previewImgMainWidth}
+            previewImgMainHeight={project?.previewImgMainHeight}
             previewImgBase64DataList={project?.previewImgBase64DataList}
             previewImgMenuWidthList={project?.previewImgMenuWidthList}
             previewImgMenuHeightList={project?.previewImgMenuHeightList}

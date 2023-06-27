@@ -6,8 +6,8 @@ import { useState } from "react";
 export default function ImageSlider({
   name,
   previewImgSrcList,
-  previewImgMainWidthList,
-  previewImgMainHeightList,
+  previewImgMainWidth,
+  previewImgMainHeight,
   previewImgBase64DataList,
   previewImgMenuWidthList,
   previewImgMenuHeightList,

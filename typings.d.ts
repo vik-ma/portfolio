@@ -11,8 +11,8 @@ export interface ProjectsInfoProps {
         thumbnailImgSrc: string;
         thumbnailBase64Data: string;
         previewImgSrcList: string[];
-        previewImgMainWidthList: number[];
-        previewImgMainHeightList: number[];
+        previewImgMainWidth: number;
+        previewImgMainHeight: number;
         previewImgBase64DataList: string[];
         previewImgMenuWidthList: number[];
         previewImgMenuHeightList: number[];
@@ -30,8 +30,8 @@ export interface ProjectProps {
         thumbnailImgSrc: string;
         thumbnailBase64Data: string;
         previewImgSrcList: string[];
-        previewImgMainWidthList: number[];
-        previewImgMainHeightList: number[];
+        previewImgMainWidth: number;
+        previewImgMainHeight: number;
         previewImgBase64DataList: string[];
         previewImgMenuWidthList: number[];
         previewImgMenuHeightList: number[];
@@ -41,8 +41,8 @@ export interface ProjectProps {
 export interface ImageSliderProps {
     name: string;
     previewImgSrcList: string[];
-    previewImgMainWidthList: number[];
-    previewImgMainHeightList: number[];
+    previewImgMainWidth: number;
+    previewImgMainHeight: number;
     previewImgBase64DataList: string[];
     previewImgMenuWidthList: number[];
     previewImgMenuHeightList: number[];
