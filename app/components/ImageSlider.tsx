@@ -25,7 +25,7 @@ export default function ImageSlider({
           }}
         >
           <Image
-            className="rounded m-auto"
+            className="rounded"
             src={previewImgSrcList[currentImageIndex]}
             alt={`${name} Preview Image ${currentImageIndex + 1}`}
             width={previewImgMainWidth}
