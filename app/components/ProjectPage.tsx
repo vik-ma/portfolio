@@ -1,5 +1,4 @@
 import { ProjectProps } from "@/typings";
-import Image from "next/image";
 import ImageSlider from "./ImageSlider";
 
 export default function ProjectPage({ project }: ProjectProps) {

@@ -18,9 +18,14 @@ export default function ImageSlider({
     <div className="flex justify-center">
       <div className="flex flex-col">
         <div
-          className={`flex flex-col h-[${previewImgMainHeight}px] justify-center bg-neutral-800 p-2 rounded outline outline-1 outline-neutral-500`}
+          className={`flex flex-col justify-center bg-neutral-800 rounded-md border border-1 border-neutral-500`}
+          style={{
+            width: `${previewImgMainWidth + 16}px`,
+            height: `${previewImgMainHeight + 17}px`,
+          }}
         >
           <Image
+            className="rounded m-auto"
             src={previewImgSrcList[currentImageIndex]}
             alt={`${name} Preview Image ${currentImageIndex + 1}`}
             width={previewImgMainWidth}
