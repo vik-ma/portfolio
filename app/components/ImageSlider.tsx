@@ -6,9 +6,11 @@ import { useState } from "react";
 export default function ImageSlider({
   name,
   previewImgSrcList,
+  previewImgMainWidthList,
+  previewImgMainHeightList,
   previewImgBase64DataList,
-  previewImgWidthList,
-  previewImgHeightList,
+  previewImgMenuWidthList,
+  previewImgMenuHeightList,
 }: ImageSliderProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
@@ -31,8 +33,8 @@ export default function ImageSlider({
               key={index + 1}
               src={imageSrc}
               alt={`${name} Preview Image ${index + 1}`}
-              width={previewImgWidthList[index]}
-              height={previewImgHeightList[index]}
+              width={previewImgMenuWidthList[index]}
+              height={previewImgMenuHeightList[index]}
               placeholder="blur"
               blurDataURL={previewImgBase64DataList[index]}
               onClick={() => setCurrentImageIndex(index)}

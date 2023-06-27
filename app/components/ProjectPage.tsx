@@ -11,9 +11,11 @@ export default function ProjectPage({ project }: ProjectProps) {
           <ImageSlider
             name={project?.name}
             previewImgSrcList={project?.previewImgSrcList}
+            previewImgMainWidthList={project?.previewImgMainWidthList}
+            previewImgMainHeightList={project?.previewImgMainHeightList}
             previewImgBase64DataList={project?.previewImgBase64DataList}
-            previewImgWidthList={project?.previewImgWidthList}
-            previewImgHeightList={project?.previewImgHeightList}
+            previewImgMenuWidthList={project?.previewImgMenuWidthList}
+            previewImgMenuHeightList={project?.previewImgMenuHeightList}
           />
         </div>
         <div className="flex flex-wrap -ml-0.5 text-stone-200">
