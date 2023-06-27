@@ -18,20 +18,19 @@ export default function ImageSlider({
     <div className="flex justify-center">
       <div className="flex flex-col">
         <div
-          className={`flex flex-col h-[${previewImgMainHeight}px] justify-center`}
+          className={`flex flex-col h-[${previewImgMainHeight}px] justify-center bg-neutral-800 p-2 rounded outline outline-1 outline-neutral-500`}
         >
           <Image
-            className="mb-1"
             src={previewImgSrcList[currentImageIndex]}
             alt={`${name} Preview Image ${currentImageIndex + 1}`}
             width={previewImgMainWidth}
             height={previewImgMainHeight}
           />
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-1">
           {previewImgSrcList?.map((imageSrc: string, index: number) => (
             <Image
-              className="max-w-[50px] md:max-w-none border border-neutral-700 mr-0.5"
+              className="max-w-[50px] md:max-w-none border border-neutral-700 mx-[1px]"
               key={index + 1}
               src={imageSrc}
               alt={`${name} Preview Image ${index + 1}`}
