@@ -17,13 +17,15 @@ export default function ImageSlider({
   return (
     <div className="flex justify-center">
       <div className="flex flex-col">
-        <div className="flex flex-col h-80 justify-center">
+        <div
+          className={`flex flex-col h-[${previewImgMainHeight}px] justify-center`}
+        >
           <Image
             className="mb-1"
             src={previewImgSrcList[currentImageIndex]}
             alt={`${name} Preview Image ${currentImageIndex + 1}`}
-            width={300}
-            height={200}
+            width={previewImgMainWidth}
+            height={previewImgMainHeight}
           />
         </div>
         <div className="flex justify-center">
