@@ -29,7 +29,7 @@ export default function ImageSlider({
 
   return (
     <div className="flex mt-0.5">
-      <div className="flex flex-col">
+      <div className="flex flex-col items-center">
         <div
           className={`flex flex-col p-1.5 justify-center bg-neutral-800 rounded-md border border-1 border-neutral-500`}
           style={{
@@ -58,7 +58,7 @@ export default function ImageSlider({
         <div className="flex justify-center mt-1.5">
           {previewImgSrcList?.map((imageSrc: string, index: number) => (
             <Image
-              className="max-w-[50px] md:max-w-none border border-neutral-700 mx-[1px]"
+              className="max-w-[50px] max-[870px]:max-w-none border border-neutral-700 mx-[1px]"
               key={index + 1}
               src={imageSrc}
               alt={`${name} Preview Image ${index + 1}`}
