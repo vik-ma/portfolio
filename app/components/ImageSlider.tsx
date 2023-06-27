@@ -18,10 +18,10 @@ export default function ImageSlider({
     <div className="flex justify-center">
       <div className="flex flex-col">
         <div
-          className={`flex flex-col justify-center bg-neutral-800 rounded-md border border-1 border-neutral-500`}
+          className={`flex flex-col p-1.5 justify-center bg-neutral-800 rounded-md border border-1 border-neutral-500`}
           style={{
-            width: `${previewImgMainWidth + 16}px`,
-            height: `${previewImgMainHeight + 17}px`,
+            width: `${previewImgMainWidth}px`,
+            height: `${previewImgMainHeight}px`,
           }}
         >
           <Image
