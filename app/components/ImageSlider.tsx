@@ -1,7 +1,7 @@
 "use client";
 import { ImageSliderProps } from "@/typings";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function ImageSlider({
   name,
@@ -13,26 +13,49 @@ export default function ImageSlider({
   previewImgMenuHeightList,
 }: ImageSliderProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
 
   return (
-    <div className="flex justify-center">
+    <div className="flex mt-0.5">
       <div className="flex flex-col">
         <div
           className={`flex flex-col p-1.5 justify-center bg-neutral-800 rounded-md border border-1 border-neutral-500`}
           style={{
-            width: `${previewImgMainWidth}px`,
-            height: `${previewImgMainHeight}px`,
+            width:
+              windowWidth > 870
+                ? `${previewImgMainWidth}px`
+                : `${Math.floor(previewImgMainWidth * 0.7)}px`,
+            height:
+              windowWidth > 870
+                ? `${previewImgMainHeight}px`
+                : `${Math.floor(previewImgMainHeight * 0.7)}px`,
           }}
         >
           <Image
             className="rounded"
             src={previewImgSrcList[currentImageIndex]}
             alt={`${name} Preview Image ${currentImageIndex + 1}`}
-            width={previewImgMainWidth}
+            width={
+              windowWidth > 870
+                ? previewImgMainWidth
+                : Math.floor(previewImgMainWidth * 0.7)
+            }
             height={previewImgMainHeight}
           />
         </div>
-        <div className="flex justify-center mt-1">
+        <div className="flex justify-center mt-1.5">
           {previewImgSrcList?.map((imageSrc: string, index: number) => (
             <Image
               className="max-w-[50px] md:max-w-none border border-neutral-700 mx-[1px]"
