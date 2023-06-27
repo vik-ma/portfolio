@@ -13,28 +13,32 @@ export default function ImageSlider({
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
   return (
-    <div>
-      <Image
-        className="mb-1"
-        src={previewImgSrcList[currentImageIndex]}
-        alt={`${name} Preview Image ${currentImageIndex + 1}`}
-        width={300}
-        height={200}
-      />
-      <div className="flex justify-center">
-        {previewImgSrcList?.map((imageSrc: string, index: number) => (
+    <div className="flex justify-center">
+      <div className="flex flex-col">
+        <div className="flex flex-col h-80 justify-center">
           <Image
-            className="max-w-[50px] md:max-w-none border border-neutral-700 mr-0.5"
-            key={index + 1}
-            src={imageSrc}
-            alt={`${name} Preview Image ${index + 1}`}
-            width={previewImgWidthList[index]}
-            height={previewImgHeightList[index]}
-            placeholder="blur"
-            blurDataURL={previewImgBase64DataList[index]}
-            onClick={() => setCurrentImageIndex(index)}
+            className="mb-1"
+            src={previewImgSrcList[currentImageIndex]}
+            alt={`${name} Preview Image ${currentImageIndex + 1}`}
+            width={300}
+            height={200}
           />
-        ))}
+        </div>
+        <div className="flex justify-center">
+          {previewImgSrcList?.map((imageSrc: string, index: number) => (
+            <Image
+              className="max-w-[50px] md:max-w-none border border-neutral-700 mr-0.5"
+              key={index + 1}
+              src={imageSrc}
+              alt={`${name} Preview Image ${index + 1}`}
+              width={previewImgWidthList[index]}
+              height={previewImgHeightList[index]}
+              placeholder="blur"
+              blurDataURL={previewImgBase64DataList[index]}
+              onClick={() => setCurrentImageIndex(index)}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
