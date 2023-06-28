@@ -13,7 +13,7 @@ export default function ImageSlider({
   previewImgMenuHeightList,
 }: ImageSliderProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
-  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState<number>(900);
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -53,6 +53,8 @@ export default function ImageSlider({
                 : Math.floor(previewImgMainWidth * 0.7)
             }
             height={previewImgMainHeight}
+            placeholder="blur"
+            blurDataURL={previewImgBase64DataList[currentImageIndex]}
           />
         </div>
         <div className="flex justify-center mt-1.5">
