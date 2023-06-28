@@ -3,10 +3,10 @@ import ImageSlider from "./ImageSlider";
 
 export default function ProjectPage({ project }: ProjectProps) {
   return (
-    <div className="px-0.5">
+    <div className="max-md:text-center px-0.5">
       <div className="flex flex-col justify-between">
         <div className="flex flex-col md:flex-row justify-between mb-7">
-          <div>{project?.fullDescription}</div>
+          <div className="mb-2 md:mb-none">{project?.fullDescription}</div>
           <ImageSlider
             name={project?.name}
             previewImgSrcList={project?.previewImgSrcList}
@@ -17,7 +17,7 @@ export default function ProjectPage({ project }: ProjectProps) {
             previewImgMenuHeightList={project?.previewImgMenuHeightList}
           />
         </div>
-        <div className="flex flex-wrap -ml-0.5 text-stone-200">
+        <div className="flex flex-wrap max-md:justify-center -ml-0.5 text-stone-200">
           {project?.techStack.map((lang: string) => (
             <div
               key={`${project?.name}-${lang}`}

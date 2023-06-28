@@ -29,10 +29,10 @@ export default function ImageSlider({
   }, []);
 
   return (
-    <div className="flex mt-0.5">
+    <div className="flex justify-center mt-0.5">
       <div className="flex flex-col items-center">
         <div
-          className={`flex flex-col p-1.5 justify-center bg-neutral-800 rounded-md border border-1 border-neutral-500`}
+          className={`flex flex-col p-1.5 justify-center rounded-md main-image-container`}
           style={{
             width:
               windowWidth > 870
