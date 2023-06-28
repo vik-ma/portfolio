@@ -58,7 +58,7 @@ export default function ImageSlider({
             blurDataURL={previewImgBase64DataList[currentImageIndex]}
           />
         </div>
-        <div className="flex justify-center mt-1.5">
+        <div className="flex justify-center mt-2">
           {previewImgSrcList?.map((imageSrc: string, index: number) => (
             <Image
               className="max-w-[50px] max-[870px]:max-w-none border border-neutral-700 hover:border-neutral-300 mx-[1px] cursor-pointer opacity-70 hover:opacity-100"

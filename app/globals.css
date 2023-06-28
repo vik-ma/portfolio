@@ -83,7 +83,7 @@ body {
   box-shadow: 0px 0px 12px rgb(0, 0, 0);
 }
 
-.project-modal-wrapper {
+.project-page-container {
   z-index: 2;
   width: 840px;
   background-color: #202020;
@@ -114,7 +114,7 @@ body {
   .projects-container {
     width: 610px;
   }
-  .project-modal-wrapper {
+  .project-page-container {
     width: 630px;
   }
 }
@@ -129,7 +129,7 @@ body {
   .projects-container {
     width: 510px;
   }
-  .project-modal-wrapper {
+  .project-page-container {
     width: 510px;
   }
 }
@@ -141,7 +141,7 @@ body {
   .projects-container {
     width: 410px;
   }
-  .project-modal-wrapper {
+  .project-page-container {
     width: 410px;
   }
 }
@@ -153,7 +153,7 @@ body {
   .projects-container {
     width: 340px;
   }
-  .project-modal-wrapper {
+  .project-page-container {
     width: 340px;
   }
 

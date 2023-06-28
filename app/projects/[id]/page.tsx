@@ -24,7 +24,7 @@ export default function Project({ params: { id } }: PageProps) {
             Back To Projects
           </button>
         </Link>
-        <div className="px-4 py-3 md:py-4 rounded-xl max-md:text-center project-modal-wrapper">
+        <div className="px-4 py-3 md:py-4 rounded-xl max-md:text-center project-page-container">
           <h1
             className={`pb-0.5 md:pb-2 text-3xl md:text-5xl font-extrabold bg-clip-text text-transparent ${project?.cssGradient}`}
           >
