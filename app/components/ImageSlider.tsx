@@ -16,15 +16,16 @@ export default function ImageSlider({
   const [windowWidth, setWindowWidth] = useState<number>(900);
 
   useEffect(() => {
-    const handleWindowResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
+    setWindowWidth(window.innerWidth);
+  }, []);
 
-    window.addEventListener("resize", handleWindowResize);
+  useEffect(() => {
+    window.addEventListener("resize", () => setWindowWidth(window.innerWidth));
 
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
+    return () =>
+      window.removeEventListener("resize", () =>
+        setWindowWidth(window.innerWidth)
+      );
   }, []);
 
   return (
@@ -60,7 +61,7 @@ export default function ImageSlider({
         <div className="flex justify-center mt-1.5">
           {previewImgSrcList?.map((imageSrc: string, index: number) => (
             <Image
-              className="max-w-[50px] max-[870px]:max-w-none border border-neutral-700 mx-[1px]"
+              className="max-w-[50px] max-[870px]:max-w-none border border-neutral-700 hover:border-neutral-400 mx-[1px] cursor-pointer"
               key={index + 1}
               src={imageSrc}
               alt={`${name} Preview Image ${index + 1}`}
