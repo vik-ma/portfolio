@@ -65,7 +65,7 @@ export default function ImageSlider({
               key={`thumbnail-div-${index + 1}`}
             >
               <Image
-                className="max-w-[50px] max-[870px]:max-w-none cursor-pointer hover:opacity-70"
+                className="max-w-[50px] max-[870px]:max-w-none h-full cursor-pointer hover:opacity-70"
                 key={`thumbnail-image-${index + 1}`}
                 src={imageSrc}
                 alt={`${name} Preview Image ${index + 1}`}
