@@ -47,3 +47,7 @@ export interface ImageSliderProps {
     previewImgMenuWidthList: number[];
     previewImgMenuHeightList: number[];
 }
+
+export interface ArrowIconProps {
+    color?: string;
+}
