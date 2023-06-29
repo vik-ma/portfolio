@@ -60,17 +60,22 @@ export default function ImageSlider({
         </div>
         <div className="flex justify-center mt-2">
           {previewImgSrcList?.map((imageSrc: string, index: number) => (
-            <Image
-              className="max-w-[50px] max-[870px]:max-w-none rounded-sm border-2 border-stone-700 hover:border-stone-300 mx-[1px] cursor-pointer opacity-70 hover:opacity-100"
-              key={index + 1}
-              src={imageSrc}
-              alt={`${name} Preview Image ${index + 1}`}
-              width={previewImgMenuWidthList[index]}
-              height={previewImgMenuHeightList[index]}
-              placeholder="blur"
-              blurDataURL={previewImgBase64DataList[index]}
-              onClick={() => setCurrentImageIndex(index)}
-            />
+            <div
+              className="mx-[1px] border-2 border-stone-700 hover:border-stone-300 hover:bg-stone-50 rounded-sm"
+              key={`thumbnail-div-${index + 1}`}
+            >
+              <Image
+                className="max-w-[50px] max-[870px]:max-w-none cursor-pointer hover:opacity-70"
+                key={`thumbnail-image-${index + 1}`}
+                src={imageSrc}
+                alt={`${name} Preview Image ${index + 1}`}
+                width={previewImgMenuWidthList[index]}
+                height={previewImgMenuHeightList[index]}
+                placeholder="blur"
+                blurDataURL={previewImgBase64DataList[index]}
+                onClick={() => setCurrentImageIndex(index)}
+              />
+            </div>
           ))}
         </div>
       </div>
