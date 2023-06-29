@@ -61,7 +61,7 @@ export default function ImageSlider({
         <div className="flex justify-center mt-2">
           {previewImgSrcList?.map((imageSrc: string, index: number) => (
             <div
-              className="mx-[1px] border-2 border-stone-700 hover:border-stone-300 hover:bg-stone-50 rounded-sm"
+              className="mx-[1px] p-0.5 bg-stone-700 hover:bg-lime-200 rounded-sm"
               key={`thumbnail-div-${index + 1}`}
             >
               <Image
