@@ -3,6 +3,7 @@ import { ProjectsInfoProps } from "@/typings";
 import Modal from "@/app/components/Modal";
 import ProjectPage from "@/app/components/ProjectPage";
 import CloseButton from "@/app/icons/CloseButton";
+import Link from "next/link";
 
 type PageProps = {
   params: {
