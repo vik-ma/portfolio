@@ -75,14 +75,20 @@ export default function ImageSlider({
           />
           <div className="absolute flex left-0 -translate-y-1/2 top-1/2 h-full">
             {currentImageIndex > 0 && (
-              <button className="" onClick={() => moveImageLeft()}>
+              <button
+                className="image-arrow-button"
+                onClick={() => moveImageLeft()}
+              >
                 <LeftArrow />
               </button>
             )}
           </div>
           <div className="absolute flex right-0 -translate-y-1/2 top-1/2 h-full">
             {currentImageIndex < maxSlideIndex && (
-              <button className="" onClick={() => moveImageRight()}>
+              <button
+                className="image-arrow-button"
+                onClick={() => moveImageRight()}
+              >
                 <RightArrow />
               </button>
             )}

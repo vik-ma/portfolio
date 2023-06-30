@@ -248,6 +248,15 @@ body {
   box-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
+.image-arrow-button {
+  opacity: 0.6;
+  transition: ease 0.2s;
+}
+
+.image-arrow-button:hover {
+  opacity: 1;
+}
+
 .GB {
   /* position: absolute; */
   width: 900px;

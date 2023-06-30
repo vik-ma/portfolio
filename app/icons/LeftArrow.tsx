@@ -1,6 +1,6 @@
 import { ArrowIconProps } from "@/typings";
 
-export default function LeftArrow({ color = "#bef264" }: ArrowIconProps) {
+export default function LeftArrow({ color = "#a3e635" }: ArrowIconProps) {
   return (
     <svg
       width="32px"
