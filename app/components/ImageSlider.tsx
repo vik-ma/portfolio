@@ -30,6 +30,18 @@ export default function ImageSlider({
       );
   }, []);
 
+  const moveImageLeft = () => {
+    if (currentImageIndex > 0) {
+      setCurrentImageIndex(currentImageIndex - 1);
+    }
+  };
+
+  const moveImageRight = () => {
+    if (currentImageIndex < previewImgSrcList.length - 1) {
+      setCurrentImageIndex(currentImageIndex + 1);
+    }
+  };
+
   return (
     <div className="flex justify-center mt-0.5">
       <div className="flex flex-col items-center">
@@ -60,12 +72,12 @@ export default function ImageSlider({
             blurDataURL={previewImgBase64DataList[currentImageIndex]}
           />
           <div className="absolute flex left-0 -translate-y-1/2 top-1/2 h-full">
-            <button className="">
+            <button className="" onClick={() => moveImageLeft()}>
               <LeftArrow />
             </button>
           </div>
           <div className="absolute flex right-0 -translate-y-1/2 top-1/2 h-full">
-            <button className="">
+            <button className="" onClick={() => moveImageRight()}>
               <RightArrow />
             </button>
           </div>
