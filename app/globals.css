@@ -250,11 +250,13 @@ body {
 
 .image-arrow-button {
   opacity: 0.6;
+  filter: invert(100%);
   transition: ease 0.2s;
 }
 
 .image-arrow-button:hover {
   opacity: 1;
+  filter: invert(79%) sepia(25%) saturate(811%) hue-rotate(37deg) brightness(108%) contrast(95%);
 }
 
 .GB {

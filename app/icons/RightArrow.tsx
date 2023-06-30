@@ -1,6 +1,6 @@
 import { ArrowIconProps } from "@/typings";
 
-export default function RightArrow({ color = "#a3e635" }: ArrowIconProps) {
+export default function RightArrow({ color = "#000" }: ArrowIconProps) {
   return (
     <svg
       width="32px"
