@@ -17,6 +17,8 @@ export default function ImageSlider({
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
   const [windowWidth, setWindowWidth] = useState<number>(900);
 
+  const maxSlideIndex: number = previewImgSrcList.length - 1;
+
   useEffect(() => {
     setWindowWidth(window.innerWidth);
   }, []);
@@ -37,7 +39,7 @@ export default function ImageSlider({
   };
 
   const moveImageRight = () => {
-    if (currentImageIndex < previewImgSrcList.length - 1) {
+    if (currentImageIndex < maxSlideIndex) {
       setCurrentImageIndex(currentImageIndex + 1);
     }
   };
@@ -79,7 +81,7 @@ export default function ImageSlider({
             )}
           </div>
           <div className="absolute flex right-0 -translate-y-1/2 top-1/2 h-full">
-            {currentImageIndex < previewImgSrcList.length - 1 && (
+            {currentImageIndex < maxSlideIndex && (
               <button className="" onClick={() => moveImageRight()}>
                 <RightArrow />
               </button>
