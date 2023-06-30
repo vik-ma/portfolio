@@ -55,8 +55,8 @@ export default function Modal({ children }: ModalProps) {
         ref={wrapper}
         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-3 md:py-4 rounded-xl project-page-container"
       >
-        <div className="absolute align-middle -top-11 right-0 rounded py-1 pr-1.5 pl-2.5 bg-[#202020] hover:bg-stone-700 border border-[#464646cc]">
-          <button className="" onClick={() => onDismiss()}>
+        <div className="absolute align-middle -top-11 right-0">
+          <button className="rounded-lg py-1 pr-1.5 pl-2.5 bg-[#202020] hover:bg-stone-700 border border-[#464646cc]" onClick={() => onDismiss()}>
             <span className="inline-block align-middle font-bold text-xl text-stone-200">
               Close
             </span>

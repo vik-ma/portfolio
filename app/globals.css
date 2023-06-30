@@ -89,6 +89,11 @@ body {
   background-color: #202020;
   border: 1px solid rgba(70, 70, 70, 0.8);
   box-shadow: 0px 0px 12px 1px rgb(0, 0, 0);
+  animation: project-modal-open 1.6s linear;
+}
+
+@keyframes project-modal-open {
+  
 }
 
 .lang-list-container {
