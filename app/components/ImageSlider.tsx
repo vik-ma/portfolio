@@ -2,6 +2,8 @@
 import { ImageSliderProps } from "@/typings";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import RightArrow from "../icons/RightArrow";
+import LeftArrow from "../icons/LeftArrow";
 
 export default function ImageSlider({
   name,
@@ -32,7 +34,7 @@ export default function ImageSlider({
     <div className="flex justify-center mt-0.5">
       <div className="flex flex-col items-center">
         <div
-          className={`flex flex-col p-1.5 justify-center rounded-md main-image-container`}
+          className={`relative flex flex-col p-1.5 justify-center rounded-md main-image-container`}
           style={{
             width:
               windowWidth > 870
@@ -57,6 +59,16 @@ export default function ImageSlider({
             placeholder="blur"
             blurDataURL={previewImgBase64DataList[currentImageIndex]}
           />
+          <div className="absolute flex left-0 -translate-y-1/2 top-1/2 h-full">
+            <button className="">
+              <LeftArrow />
+            </button>
+          </div>
+          <div className="absolute flex right-0 -translate-y-1/2 top-1/2 h-full">
+            <button className="">
+              <RightArrow />
+            </button>
+          </div>
         </div>
         <div className="flex justify-center mt-2">
           {previewImgSrcList?.map((imageSrc: string, index: number) => (
