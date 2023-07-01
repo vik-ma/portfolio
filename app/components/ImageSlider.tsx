@@ -1,7 +1,7 @@
 "use client";
 import { ImageSliderProps } from "@/typings";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import RightArrow from "../icons/RightArrow";
 import LeftArrow from "../icons/LeftArrow";
 
@@ -20,6 +20,8 @@ export default function ImageSlider({
 
   const maxSlideIndex: number = previewImgSrcList.length - 1;
 
+  const fullImageRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     setWindowWidth(window.innerWidth);
   }, []);
@@ -32,6 +34,24 @@ export default function ImageSlider({
         setWindowWidth(window.innerWidth)
       );
   }, []);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent): void {
+      if (
+        fullImageRef.current &&
+        !fullImageRef.current.contains(event.target as Node)
+      ) {
+        setTimeout(() => {
+          setShowFullImage(false);
+        }, 100);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  });
 
   const moveImageLeft = () => {
     if (currentImageIndex > 0) {
@@ -54,17 +74,20 @@ export default function ImageSlider({
       {showFullImage && (
         <div
           className="fixed top-0 left-0 bottom-0 right-0 z-20 bg-red-500/60 animate-fade"
-          onClick={() => setShowFullImage(false)} //CHANGE LATER
+          // onClick={() => setShowFullImage(false)} //CHANGE LATER
         >
           <div className="flex items-center justify-center h-screen">
-            <div className="rounded-lg p-3 main-image-container">
+            <div
+              className="rounded-lg p-3 main-image-container"
+              ref={fullImageRef}
+            >
               <Image
                 src={previewImgSrcList[currentImageIndex]}
                 alt={`${name} Preview Image ${currentImageIndex + 1}`}
                 width={0}
                 height={0}
                 sizes="100vw"
-                style={{ width: '100%', height: 'auto' }}
+                style={{ width: "100%", height: "auto" }}
               />
             </div>
           </div>
