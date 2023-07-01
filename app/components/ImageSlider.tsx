@@ -61,7 +61,10 @@ export default function ImageSlider({
               <Image
                 src={previewImgSrcList[currentImageIndex]}
                 alt={`${name} Preview Image ${currentImageIndex + 1}`}
-                fill={true}
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: '100%', height: 'auto' }}
               />
             </div>
           </div>
