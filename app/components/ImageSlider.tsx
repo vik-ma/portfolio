@@ -17,6 +17,7 @@ export default function ImageSlider({
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
   const [windowWidth, setWindowWidth] = useState<number>(900);
   const [showFullImage, setShowFullImage] = useState<boolean>(false);
+  const [isAnimOngoing, setIsAnimOngoing] = useState<boolean>(false);
 
   const maxSlideIndex: number = previewImgSrcList.length - 1;
 
@@ -62,7 +63,16 @@ export default function ImageSlider({
   const moveImageRight = () => {
     if (currentImageIndex < maxSlideIndex) {
       setCurrentImageIndex(currentImageIndex + 1);
+      animateImageChange();
     }
+  };
+
+  const animateImageChange = () => {
+    setIsAnimOngoing(true);
+    
+    setTimeout(() => {
+      setIsAnimOngoing(false);
+    }, 200);
   };
 
   const showFullSizeImage = () => {
@@ -108,7 +118,11 @@ export default function ImageSlider({
           }}
         >
           <Image
-            className="rounded cursor-zoom-in"
+            className={
+              isAnimOngoing
+                ? "rounded cursor-zoom-in animate-fade"
+                : "rounded cursor-zoom-in"
+            }
             src={previewImgSrcList[currentImageIndex]}
             alt={`${name} Preview Image ${currentImageIndex + 1}`}
             width={

@@ -17,7 +17,6 @@ module.exports = {
         modal: "openModal 0.2s",
       },
 
-      // that is actual animation
       keyframes: {
         fadeIn: {
           "0%": { opacity: "0" },
