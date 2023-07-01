@@ -57,6 +57,7 @@ export default function ImageSlider({
   const moveImageLeft = () => {
     if (currentImageIndex > 0) {
       setCurrentImageIndex(currentImageIndex - 1);
+      animateImageChange();
     }
   };
 
@@ -69,7 +70,7 @@ export default function ImageSlider({
 
   const animateImageChange = () => {
     setIsAnimOngoing(true);
-    
+
     setTimeout(() => {
       setIsAnimOngoing(false);
     }, 200);
