@@ -57,7 +57,7 @@ export default function Modal({ children }: ModalProps) {
       >
         <div className="absolute align-middle -top-11 right-0">
           <button
-            className="rounded-lg py-1 pr-1.5 pl-2.5 bg-[#202020] hover:bg-stone-700 border border-[#464646cc]"
+            className="rounded-lg py-1 pr-1.5 pl-2.5 bg-[#202020] hover:bg-neutral-700 border border-[#464646cc]"
             onClick={() => onDismiss()}
           >
             <span className="inline-block align-middle font-bold text-xl text-stone-200">
