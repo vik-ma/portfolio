@@ -53,7 +53,7 @@ export default function Modal({ children }: ModalProps) {
     >
       <div
         ref={wrapper}
-        className="relative px-4 py-3 md:py-4 rounded-xl project-page-container"
+        className="relative px-4 py-3 md:py-4 rounded-xl project-page-container animate-modal"
       >
         <div className="absolute align-middle -top-11 right-0">
           <button

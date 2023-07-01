@@ -24,8 +24,8 @@ module.exports = {
           "100%": { opacity: "1" },
         },
         openModal: {
-          "0%": { transform: " scale(0.9)" },
-          "100%": { transform: " scale(1)" },
+          "0%": { transform: "translateY(10%) scale(0.9)" },
+          "100%": { transform: "translateY(0%) scale(1)" },
         },
       },
     },
