@@ -89,16 +89,6 @@ body {
   background-color: #202020;
   border: 1px solid rgba(70, 70, 70, 0.8);
   box-shadow: 0px 0px 12px 1px rgb(0, 0, 0);
-  animation: project-modal-open 0.2s;
-}
-
-@keyframes project-modal-open {
-  from { 
-    transform: translate3d(-50%, -40%, 0);
-  }
-  to {
-    transform: translate3d(-50%, -50%, 0);
-  }
 }
 
 .lang-list-container {

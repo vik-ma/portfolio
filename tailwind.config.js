@@ -13,7 +13,8 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
-        fade: "fadeOut 0.2s",
+        fade: "fadeIn 0.2s",
+        modal: "openModal 0.2s",
       },
 
       // that is actual animation
@@ -21,6 +22,10 @@ module.exports = {
         fadeIn: {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
+        },
+        openModal: {
+          "0%": { transform: "translate3d(-50%, -40%, 0) scale(0.9)" },
+          "100%": { transform: "translate3d(-50%, -50%, 0) scale(1)" },
         },
       },
     },
