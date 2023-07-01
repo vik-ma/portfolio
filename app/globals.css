@@ -256,6 +256,7 @@ body {
 
 .image-arrow-button:hover {
   opacity: 1;
+  transform: scale(1.2);
   filter: invert(79%) sepia(25%) saturate(811%) hue-rotate(37deg) brightness(108%) contrast(95%);
 }
 
