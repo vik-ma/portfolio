@@ -16,6 +16,7 @@ export default function ImageSlider({
 }: ImageSliderProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
   const [windowWidth, setWindowWidth] = useState<number>(900);
+  const [showFullImage, setShowFullImage] = useState<boolean>(false);
 
   const maxSlideIndex: number = previewImgSrcList.length - 1;
 
@@ -44,8 +45,13 @@ export default function ImageSlider({
     }
   };
 
+  const showFullSizeImage = () => {
+    setShowFullImage(true);
+  };
+
   return (
     <div className="flex justify-center mt-0.5">
+      {/* <div className="fixed top-0 left-0 bottom-0 right-0 z-20 mx-auto bg-red-500/60 animate-fade">asdads</div> */}
       <div className="flex flex-col items-center">
         <div
           className={`relative flex flex-col p-1.5 justify-center rounded-md main-image-container`}
