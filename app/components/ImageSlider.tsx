@@ -57,15 +57,19 @@ export default function ImageSlider({
   const moveImageLeft = () => {
     if (currentImageIndex > 0) {
       setCurrentImageIndex(currentImageIndex - 1);
-      animateImageChange();
+    } else {
+      setCurrentImageIndex(maxSlideIndex);
     }
+    animateImageChange();
   };
 
   const moveImageRight = () => {
     if (currentImageIndex < maxSlideIndex) {
       setCurrentImageIndex(currentImageIndex + 1);
-      animateImageChange();
+    } else {
+      setCurrentImageIndex(0);
     }
+    animateImageChange();
   };
 
   const changeCurrentImageIndex = (index: number) => {
@@ -94,17 +98,35 @@ export default function ImageSlider({
         >
           <div className="flex items-center justify-center h-screen">
             <div
-              className="rounded-lg p-3 max-w-[900px] main-image-container"
+              className="relative rounded-lg p-3 max-w-[900px] main-image-container"
               ref={fullImageRef}
             >
-              <Image
-                src={previewImgSrcList[currentImageIndex]}
-                alt={`${name} Preview Image ${currentImageIndex + 1}`}
-                width={0}
-                height={0}
-                sizes="100vw"
-                style={{ width: "100%", height: "auto" }}
-              />
+              <div className="flex flex-row justify-between">
+                <div className="absolute flex -left-10 -translate-y-1/2 top-1/2 h-full">
+                  <button
+                    className="pr-10 pl-1 image-arrow-button"
+                    onClick={() => moveImageLeft()}
+                  >
+                    <LeftArrow />
+                  </button>
+                </div>
+                <Image
+                  src={previewImgSrcList[currentImageIndex]}
+                  alt={`${name} Preview Image ${currentImageIndex + 1}`}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: "100%", height: "auto" }}
+                />
+                <div className="absolute flex -right-10 -translate-y-1/2 top-1/2 h-full">
+                  <button
+                    className="pl-10 pr-1 image-arrow-button"
+                    onClick={() => moveImageRight()}
+                  >
+                    <RightArrow />
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -142,24 +164,20 @@ export default function ImageSlider({
             onClick={() => showFullSizeImage()}
           />
           <div className="absolute flex left-0 -translate-y-1/2 top-1/2 h-full">
-            {currentImageIndex > 0 && (
-              <button
-                className="image-arrow-button"
-                onClick={() => moveImageLeft()}
-              >
-                <LeftArrow />
-              </button>
-            )}
+            <button
+              className="image-arrow-button"
+              onClick={() => moveImageLeft()}
+            >
+              <LeftArrow />
+            </button>
           </div>
           <div className="absolute flex right-0 -translate-y-1/2 top-1/2 h-full">
-            {currentImageIndex < maxSlideIndex && (
-              <button
-                className="image-arrow-button"
-                onClick={() => moveImageRight()}
-              >
-                <RightArrow />
-              </button>
-            )}
+            <button
+              className="image-arrow-button"
+              onClick={() => moveImageRight()}
+            >
+              <RightArrow />
+            </button>
           </div>
         </div>
         <div className="flex justify-center mt-2">
