@@ -33,11 +33,6 @@ export default function Home() {
         </h2>
       </div> */}
       <section className="py-7" id="projects">
-        <div className="text-center">
-          <h2 className="pb-4 text-4xl md:text-6xl font-extrabold bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-amber-900 via-amber-100 to-amber-900 bg-clip-text text-transparent">
-            Projects
-          </h2>
-        </div>
         <ProjectsSection />
       </section>
     </main>
