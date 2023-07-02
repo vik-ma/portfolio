@@ -94,7 +94,7 @@ export default function ImageSlider({
         >
           <div className="flex items-center justify-center h-screen">
             <div
-              className="rounded-lg p-3 main-image-container"
+              className="rounded-lg p-3 max-w-[900px] main-image-container"
               ref={fullImageRef}
             >
               <Image
