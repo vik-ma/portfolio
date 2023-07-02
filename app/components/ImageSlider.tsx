@@ -68,6 +68,11 @@ export default function ImageSlider({
     }
   };
 
+  const changeCurrentImageIndex = (index: number) => {
+    setCurrentImageIndex(index);
+    animateImageChange();
+  };
+
   const animateImageChange = () => {
     setIsAnimOngoing(true);
 
@@ -176,7 +181,7 @@ export default function ImageSlider({
                 height={previewImgMenuHeightList[index]}
                 placeholder="blur"
                 blurDataURL={previewImgBase64DataList[index]}
-                onClick={() => setCurrentImageIndex(index)}
+                onClick={() => changeCurrentImageIndex(index)}
               />
             </div>
           ))}
