@@ -26,6 +26,8 @@ export default function ImageSlider({
 
   const fullImageRef = useRef<HTMLDivElement>(null);
 
+  const onlyOneImage: boolean = maxSlideIndex === 0 ? true : false;
+
   useEffect(() => {
     setWindowWidth(window.innerWidth);
   }, []);
@@ -116,12 +118,14 @@ export default function ImageSlider({
               ref={fullImageRef}
             >
               <div className="flex flex-row justify-center items-stretch">
-                <button
-                  className="image-arrow-button pr-1.5"
-                  onClick={() => moveImageLeft("full-size")}
-                >
-                  <LeftArrow />
-                </button>
+                {!onlyOneImage && (
+                  <button
+                    className="image-arrow-button pr-1.5"
+                    onClick={() => moveImageLeft("full-size")}
+                  >
+                    <LeftArrow />
+                  </button>
+                )}
                 <div className="max-w-[850px] full-sized-image-container">
                   <Image
                     className={isFullSizeAnimOngoing ? "animate-fade" : ""}
@@ -133,12 +137,14 @@ export default function ImageSlider({
                     style={{ width: "100%", height: "auto" }}
                   />
                 </div>
-                <button
-                  className="image-arrow-button pl-1.5"
-                  onClick={() => moveImageRight("full-size")}
-                >
-                  <RightArrow />
-                </button>
+                {!onlyOneImage && (
+                  <button
+                    className="image-arrow-button pl-1.5"
+                    onClick={() => moveImageRight("full-size")}
+                  >
+                    <RightArrow />
+                  </button>
+                )}
               </div>
             </div>
           </div>
@@ -177,20 +183,24 @@ export default function ImageSlider({
             onClick={() => showFullSizeImage()}
           />
           <div className="absolute flex left-0 -translate-y-1/2 top-1/2 h-full">
-            <button
-              className="image-arrow-button"
-              onClick={() => moveImageLeft("preview")}
-            >
-              <LeftArrow />
-            </button>
+            {!onlyOneImage && (
+              <button
+                className="image-arrow-button"
+                onClick={() => moveImageLeft("preview")}
+              >
+                <LeftArrow />
+              </button>
+            )}
           </div>
           <div className="absolute flex right-0 -translate-y-1/2 top-1/2 h-full">
-            <button
-              className="image-arrow-button"
-              onClick={() => moveImageRight("preview")}
-            >
-              <RightArrow />
-            </button>
+            {!onlyOneImage && (
+              <button
+                className="image-arrow-button"
+                onClick={() => moveImageRight("preview")}
+              >
+                <RightArrow />
+              </button>
+            )}
           </div>
         </div>
         <div className="flex justify-center mt-2">
