@@ -125,7 +125,7 @@ export default function ImageSlider({
                 className={
                   onlyOneImage
                     ? "absolute right-0 -top-11"
-                    : "flex justify-end mb-2 mr-0.5"
+                    : "flex justify-end mb-2.5 mr-0.5"
                 }
               >
                 <button
