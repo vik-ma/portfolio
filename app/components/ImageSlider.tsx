@@ -111,19 +111,25 @@ export default function ImageSlider({
   return (
     <div className="flex justify-center mt-0.5">
       {showFullImage && (
-        <div className="fixed top-0 left-0 bottom-0 right-0 z-20 bg-red-500/60 animate-fade">
+        <div className="fixed top-0 left-0 bottom-0 right-0 z-20 bg-black/80 animate-fade">
           <div className="flex items-center justify-center h-screen">
             <div
               className={
                 onlyOneImage
-                  ? "relative rounded-lg p-4 main-image-container"
+                  ? "relative rounded-lg p-2 pt-1.5 main-image-container"
                   : "relative rounded-lg pt-2 pb-4 px-1.5 main-image-container"
               }
               ref={fullImageRef}
             >
-              <div className="flex justify-end mb-2 mr-0.5">
+              <div
+                className={
+                  onlyOneImage
+                    ? "absolute right-0 -top-11"
+                    : "flex justify-end mb-2 mr-0.5"
+                }
+              >
                 <button
-                  className="rounded-lg py-1 pr-1.5 pl-2.5 bg-[#202020] hover:bg-stone-700 border border-[#464646cc]"
+                  className="rounded-lg py-1 pr-1.5 pl-2.5 bg-red-500 hover:bg-stone-700 border border-neutral-300/50"
                   onClick={() => setShowFullImage(false)}
                 >
                   <span className="inline-block align-middle font-bold text-xl text-stone-200">
@@ -157,23 +163,27 @@ export default function ImageSlider({
                       style={{ width: "100%", height: "auto" }}
                     />
                   </div>
-                  <div className="flex flex-col items-center mt-4">
-                    <div className="flex flex-row">
-                      {Array.from({ length: numImages }).map((item, index) => (
-                        <div
-                          className={
-                            currentImageIndex === index
-                              ? "full-size-image-slider-dot bg-stone-800"
-                              : "full-size-image-slider-dot bg-white"
-                          }
-                          key={`full-size-image-slider-dot-${index}`}
-                          onClick={() =>
-                            changeCurrentImageIndex(index, "full-size")
-                          }
-                        ></div>
-                      ))}
+                  {!onlyOneImage && (
+                    <div className="flex flex-col items-center mt-4">
+                      <div className="flex flex-row">
+                        {Array.from({ length: numImages }).map(
+                          (item, index) => (
+                            <div
+                              className={
+                                currentImageIndex === index
+                                  ? "full-size-image-slider-dot bg-stone-800"
+                                  : "full-size-image-slider-dot bg-white"
+                              }
+                              key={`full-size-image-slider-dot-${index}`}
+                              onClick={() =>
+                                changeCurrentImageIndex(index, "full-size")
+                              }
+                            ></div>
+                          )
+                        )}
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
                 {!onlyOneImage && (
                   <button
