@@ -98,7 +98,7 @@ export default function ImageSlider({
         >
           <div className="flex items-center justify-center h-screen">
             <div
-              className="relative rounded-lg py-3 px-1.5 main-image-container"
+              className="relative rounded-lg py-5 px-1.5 main-image-container"
               ref={fullImageRef}
             >
               <div className="flex flex-row justify-center items-stretch">
@@ -108,7 +108,7 @@ export default function ImageSlider({
                 >
                   <LeftArrow />
                 </button>
-                <div className="max-w-[850px]">
+                <div className="max-w-[850px] full-sized-image-container">
                   <Image
                     src={previewImgSrcList[currentImageIndex]}
                     alt={`${name} Preview Image ${currentImageIndex + 1}`}
