@@ -112,7 +112,7 @@ export default function ImageSlider({
     <div className="flex justify-center mt-0.5">
       {showFullImage && (
         <div className="fixed top-0 left-0 bottom-0 right-0 z-20 bg-black/80 animate-fade">
-          <div className="flex items-center justify-center h-screen">
+          <div className="flex items-center justify-center h-screen animate-modal">
             <div
               className={
                 onlyOneImage
