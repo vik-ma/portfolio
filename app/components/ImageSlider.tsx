@@ -114,7 +114,11 @@ export default function ImageSlider({
         >
           <div className="flex items-center justify-center h-screen">
             <div
-              className="relative rounded-lg py-5 px-1.5 main-image-container"
+              className={
+                onlyOneImage
+                  ? "relative rounded-lg p-4 main-image-container"
+                  : "relative rounded-lg py-5 px-1.5 main-image-container"
+              }
               ref={fullImageRef}
             >
               <div className="flex flex-row justify-center items-stretch">
