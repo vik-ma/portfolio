@@ -159,6 +159,9 @@ export default function ImageSlider({
                           : "full-size-image-slider-dot bg-white"
                       }
                       key={`full-size-image-slider-dot-${index}`}
+                      onClick={() =>
+                        changeCurrentImageIndex(index, "full-size")
+                      }
                     ></div>
                   ))}
                 </div>
