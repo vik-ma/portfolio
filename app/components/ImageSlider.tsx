@@ -17,7 +17,10 @@ export default function ImageSlider({
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
   const [windowWidth, setWindowWidth] = useState<number>(900);
   const [showFullImage, setShowFullImage] = useState<boolean>(false);
-  const [isAnimOngoing, setIsAnimOngoing] = useState<boolean>(false);
+  const [isPreviewAnimOngoing, setIsPreviewAnimOngoing] =
+    useState<boolean>(false);
+  const [isFullSizeAnimOngoing, setIsFullSizeAnimOngoing] =
+    useState<boolean>(false);
 
   const maxSlideIndex: number = previewImgSrcList.length - 1;
 
@@ -54,34 +57,45 @@ export default function ImageSlider({
     };
   });
 
-  const moveImageLeft = () => {
+  const moveImageLeft = (imageId: string) => {
     if (currentImageIndex > 0) {
       setCurrentImageIndex(currentImageIndex - 1);
     } else {
       setCurrentImageIndex(maxSlideIndex);
     }
-    animateImageChange();
+    if (imageId === "preview") animatePreviewImageChange();
+    if (imageId === "full-size") animateFullSizeImageChange();
   };
 
-  const moveImageRight = () => {
+  const moveImageRight = (imageId: string) => {
     if (currentImageIndex < maxSlideIndex) {
       setCurrentImageIndex(currentImageIndex + 1);
     } else {
       setCurrentImageIndex(0);
     }
-    animateImageChange();
+    if (imageId === "preview") animatePreviewImageChange();
+    if (imageId === "full-size") animateFullSizeImageChange();
   };
 
-  const changeCurrentImageIndex = (index: number) => {
+  const changeCurrentImageIndex = (index: number, imageId: string) => {
     setCurrentImageIndex(index);
-    animateImageChange();
+    if (imageId === "preview") animatePreviewImageChange();
+    if (imageId === "full-size") animateFullSizeImageChange();
   };
 
-  const animateImageChange = () => {
-    setIsAnimOngoing(true);
+  const animatePreviewImageChange = () => {
+    setIsPreviewAnimOngoing(true);
 
     setTimeout(() => {
-      setIsAnimOngoing(false);
+      setIsPreviewAnimOngoing(false);
+    }, 200);
+  };
+
+  const animateFullSizeImageChange = () => {
+    setIsFullSizeAnimOngoing(true);
+
+    setTimeout(() => {
+      setIsFullSizeAnimOngoing(false);
     }, 200);
   };
 
@@ -104,12 +118,13 @@ export default function ImageSlider({
               <div className="flex flex-row justify-center items-stretch">
                 <button
                   className="image-arrow-button pr-1.5"
-                  onClick={() => moveImageLeft()}
+                  onClick={() => moveImageLeft("full-size")}
                 >
                   <LeftArrow />
                 </button>
                 <div className="max-w-[850px] full-sized-image-container">
                   <Image
+                    className={isFullSizeAnimOngoing ? "animate-fade" : ""}
                     src={previewImgSrcList[currentImageIndex]}
                     alt={`${name} Preview Image ${currentImageIndex + 1}`}
                     width={0}
@@ -120,7 +135,7 @@ export default function ImageSlider({
                 </div>
                 <button
                   className="image-arrow-button pl-1.5"
-                  onClick={() => moveImageRight()}
+                  onClick={() => moveImageRight("full-size")}
                 >
                   <RightArrow />
                 </button>
@@ -145,7 +160,7 @@ export default function ImageSlider({
         >
           <Image
             className={
-              isAnimOngoing
+              isPreviewAnimOngoing
                 ? "rounded cursor-zoom-in animate-fade"
                 : "rounded cursor-zoom-in"
             }
@@ -164,7 +179,7 @@ export default function ImageSlider({
           <div className="absolute flex left-0 -translate-y-1/2 top-1/2 h-full">
             <button
               className="image-arrow-button"
-              onClick={() => moveImageLeft()}
+              onClick={() => moveImageLeft("preview")}
             >
               <LeftArrow />
             </button>
@@ -172,7 +187,7 @@ export default function ImageSlider({
           <div className="absolute flex right-0 -translate-y-1/2 top-1/2 h-full">
             <button
               className="image-arrow-button"
-              onClick={() => moveImageRight()}
+              onClick={() => moveImageRight("preview")}
             >
               <RightArrow />
             </button>
@@ -197,7 +212,7 @@ export default function ImageSlider({
                 height={previewImgMenuHeightList[index]}
                 placeholder="blur"
                 blurDataURL={previewImgBase64DataList[index]}
-                onClick={() => changeCurrentImageIndex(index)}
+                onClick={() => changeCurrentImageIndex(index, "preview")}
               />
             </div>
           ))}
