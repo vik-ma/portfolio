@@ -140,7 +140,9 @@ export default function ImageSlider({
                     className="image-arrow-button pr-2"
                     onClick={() => moveImageLeft("full-size")}
                   >
-                    <LeftArrow />
+                    <div className="image-arrow-icon">
+                      <LeftArrow />
+                    </div>
                   </button>
                 )}
                 <div>
@@ -178,7 +180,9 @@ export default function ImageSlider({
                     className="image-arrow-button pl-2"
                     onClick={() => moveImageRight("full-size")}
                   >
-                    <RightArrow />
+                    <div className="image-arrow-icon">
+                      <RightArrow />
+                    </div>
                   </button>
                 )}
               </div>
@@ -224,7 +228,9 @@ export default function ImageSlider({
                 className="image-arrow-button"
                 onClick={() => moveImageLeft("preview")}
               >
-                <LeftArrow />
+                <div className="image-arrow-icon">
+                  <LeftArrow />
+                </div>
               </button>
             )}
           </div>
@@ -234,7 +240,9 @@ export default function ImageSlider({
                 className="image-arrow-button"
                 onClick={() => moveImageRight("preview")}
               >
-                <RightArrow />
+                <div className="image-arrow-icon">
+                  <RightArrow />
+                </div>
               </button>
             )}
           </div>
