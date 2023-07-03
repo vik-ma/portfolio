@@ -116,14 +116,14 @@ export default function ImageSlider({
               className={
                 onlyOneImage
                   ? "relative rounded-lg p-4 main-image-container"
-                  : "relative rounded-lg py-5 px-1.5 main-image-container"
+                  : "relative rounded-lg pt-5 pb-4 px-1.5 main-image-container"
               }
               ref={fullImageRef}
             >
               <div className="flex flex-row justify-center items-stretch">
                 {!onlyOneImage && (
                   <button
-                    className="image-arrow-button pr-1.5"
+                    className="image-arrow-button pr-2"
                     onClick={() => moveImageLeft("full-size")}
                   >
                     <LeftArrow />
@@ -142,21 +142,21 @@ export default function ImageSlider({
                 </div>
                 {!onlyOneImage && (
                   <button
-                    className="image-arrow-button pl-1.5"
+                    className="image-arrow-button pl-2"
                     onClick={() => moveImageRight("full-size")}
                   >
                     <RightArrow />
                   </button>
                 )}
               </div>
-              <div className="flex flex-col items-center mt-3">
+              <div className="flex flex-col items-center mt-4">
                 <div className="flex flex-row">
                   {Array.from({ length: numImages }).map((item, index) => (
                     <div
                       className={
                         currentImageIndex === index
                           ? "full-size-image-slider-dot bg-stone-800"
-                          : "full-size-image-slider-dot bg-stone-200"
+                          : "full-size-image-slider-dot bg-white"
                       }
                       key={`full-size-image-slider-dot-${index}`}
                     ></div>
