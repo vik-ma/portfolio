@@ -122,7 +122,10 @@ export default function ImageSlider({
               ref={fullImageRef}
             >
               <div className="flex justify-end mb-2 mr-0.5">
-                <button className="rounded-lg py-1 pr-1.5 pl-2.5 bg-[#202020] hover:bg-stone-700 border border-[#464646cc]">
+                <button
+                  className="rounded-lg py-1 pr-1.5 pl-2.5 bg-[#202020] hover:bg-stone-700 border border-[#464646cc]"
+                  onClick={() => setShowFullImage(false)}
+                >
                   <span className="inline-block align-middle font-bold text-xl text-stone-200">
                     Close
                   </span>
