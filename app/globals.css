@@ -269,14 +269,15 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 4px solid white;
+  border: 4px solid #e7e5e4; /* Stone-200 */
   margin: 0 5px;
-  background: white;
   transition-duration: 0.2s;
+  cursor: pointer;
 }
 
-.full-size-image-slider-dot.active {
-  background: #292929;
+.full-size-image-slider-dot:hover {
+  transition-duration: 0.1s;
+  transform: scale(1.2); 
 }
 
 .GB {

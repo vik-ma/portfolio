@@ -155,8 +155,8 @@ export default function ImageSlider({
                     <div
                       className={
                         currentImageIndex === index
-                          ? "full-size-image-slider-dot active"
-                          : "full-size-image-slider-dot"
+                          ? "full-size-image-slider-dot bg-stone-800"
+                          : "full-size-image-slider-dot bg-stone-200"
                       }
                       key={`full-size-image-slider-dot-${index}`}
                     ></div>
