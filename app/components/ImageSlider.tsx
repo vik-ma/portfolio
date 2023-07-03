@@ -98,12 +98,12 @@ export default function ImageSlider({
         >
           <div className="flex items-center justify-center h-screen">
             <div
-              className="relative rounded-lg p-3 main-image-container"
+              className="relative rounded-lg py-3 px-1.5 main-image-container"
               ref={fullImageRef}
             >
               <div className="flex flex-row justify-center items-stretch">
                 <button
-                  className="image-arrow-button left-0"
+                  className="image-arrow-button pr-1.5"
                   onClick={() => moveImageLeft()}
                 >
                   <LeftArrow />
@@ -119,7 +119,7 @@ export default function ImageSlider({
                   />
                 </div>
                 <button
-                  className="image-arrow-button"
+                  className="image-arrow-button pl-1.5"
                   onClick={() => moveImageRight()}
                 >
                   <RightArrow />
