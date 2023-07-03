@@ -98,34 +98,32 @@ export default function ImageSlider({
         >
           <div className="flex items-center justify-center h-screen">
             <div
-              className="relative rounded-lg p-3 max-w-[900px] main-image-container"
+              className="relative rounded-lg p-3 main-image-container"
               ref={fullImageRef}
             >
-              <div className="flex flex-row justify-between">
-                <div className="absolute flex -left-10 -translate-y-1/2 top-1/2 h-full">
-                  <button
-                    className="pr-10 pl-1 image-arrow-button"
-                    onClick={() => moveImageLeft()}
-                  >
-                    <LeftArrow />
-                  </button>
+              <div className="flex flex-row justify-center items-stretch">
+                <button
+                  className="image-arrow-button left-0"
+                  onClick={() => moveImageLeft()}
+                >
+                  <LeftArrow />
+                </button>
+                <div className="max-w-[850px]">
+                  <Image
+                    src={previewImgSrcList[currentImageIndex]}
+                    alt={`${name} Preview Image ${currentImageIndex + 1}`}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "auto" }}
+                  />
                 </div>
-                <Image
-                  src={previewImgSrcList[currentImageIndex]}
-                  alt={`${name} Preview Image ${currentImageIndex + 1}`}
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  style={{ width: "100%", height: "auto" }}
-                />
-                <div className="absolute flex -right-10 -translate-y-1/2 top-1/2 h-full">
-                  <button
-                    className="pl-10 pr-1 image-arrow-button"
-                    onClick={() => moveImageRight()}
-                  >
-                    <RightArrow />
-                  </button>
-                </div>
+                <button
+                  className="image-arrow-button"
+                  onClick={() => moveImageRight()}
+                >
+                  <RightArrow />
+                </button>
               </div>
             </div>
           </div>
