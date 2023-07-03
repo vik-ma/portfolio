@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import RightArrow from "../icons/RightArrow";
 import LeftArrow from "../icons/LeftArrow";
+import CloseButton from "../icons/CloseButton";
 
 export default function ImageSlider({
   name,
@@ -116,10 +117,20 @@ export default function ImageSlider({
               className={
                 onlyOneImage
                   ? "relative rounded-lg p-4 main-image-container"
-                  : "relative rounded-lg pt-5 pb-4 px-1.5 main-image-container"
+                  : "relative rounded-lg pt-2 pb-4 px-1.5 main-image-container"
               }
               ref={fullImageRef}
             >
+              <div className="flex justify-end mb-2 mr-0.5">
+                <button className="rounded-lg py-1 pr-1.5 pl-2.5 bg-[#202020] hover:bg-stone-700 border border-[#464646cc]">
+                  <span className="inline-block align-middle font-bold text-xl text-stone-200">
+                    Close
+                  </span>
+                  <span className="inline-block align-middle ml-1">
+                    <CloseButton />
+                  </span>
+                </button>
+              </div>
               <div className="flex flex-row justify-center items-stretch">
                 {!onlyOneImage && (
                   <button
@@ -129,16 +140,35 @@ export default function ImageSlider({
                     <LeftArrow />
                   </button>
                 )}
-                <div className="max-w-[850px] full-sized-image-container">
-                  <Image
-                    className={isFullSizeAnimOngoing ? "animate-fade" : ""}
-                    src={previewImgSrcList[currentImageIndex]}
-                    alt={`${name} Preview Image ${currentImageIndex + 1}`}
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{ width: "100%", height: "auto" }}
-                  />
+                <div>
+                  <div className="max-w-[850px] full-sized-image-container">
+                    <Image
+                      className={isFullSizeAnimOngoing ? "animate-fade" : ""}
+                      src={previewImgSrcList[currentImageIndex]}
+                      alt={`${name} Preview Image ${currentImageIndex + 1}`}
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      style={{ width: "100%", height: "auto" }}
+                    />
+                  </div>
+                  <div className="flex flex-col items-center mt-4">
+                    <div className="flex flex-row">
+                      {Array.from({ length: numImages }).map((item, index) => (
+                        <div
+                          className={
+                            currentImageIndex === index
+                              ? "full-size-image-slider-dot bg-stone-800"
+                              : "full-size-image-slider-dot bg-white"
+                          }
+                          key={`full-size-image-slider-dot-${index}`}
+                          onClick={() =>
+                            changeCurrentImageIndex(index, "full-size")
+                          }
+                        ></div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
                 {!onlyOneImage && (
                   <button
@@ -148,23 +178,6 @@ export default function ImageSlider({
                     <RightArrow />
                   </button>
                 )}
-              </div>
-              <div className="flex flex-col items-center mt-4">
-                <div className="flex flex-row">
-                  {Array.from({ length: numImages }).map((item, index) => (
-                    <div
-                      className={
-                        currentImageIndex === index
-                          ? "full-size-image-slider-dot bg-stone-800"
-                          : "full-size-image-slider-dot bg-white"
-                      }
-                      key={`full-size-image-slider-dot-${index}`}
-                      onClick={() =>
-                        changeCurrentImageIndex(index, "full-size")
-                      }
-                    ></div>
-                  ))}
-                </div>
               </div>
             </div>
           </div>
