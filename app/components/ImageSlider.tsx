@@ -22,7 +22,9 @@ export default function ImageSlider({
   const [isFullSizeAnimOngoing, setIsFullSizeAnimOngoing] =
     useState<boolean>(false);
 
-  const maxSlideIndex: number = previewImgSrcList.length - 1;
+  const numImages: number = previewImgSrcList.length;
+
+  const maxSlideIndex: number = numImages - 1;
 
   const fullImageRef = useRef<HTMLDivElement>(null);
 
@@ -108,10 +110,7 @@ export default function ImageSlider({
   return (
     <div className="flex justify-center mt-0.5">
       {showFullImage && (
-        <div
-          className="fixed top-0 left-0 bottom-0 right-0 z-20 bg-red-500/60 animate-fade"
-          // onClick={() => setShowFullImage(false)} //CHANGE LATER
-        >
+        <div className="fixed top-0 left-0 bottom-0 right-0 z-20 bg-red-500/60 animate-fade">
           <div className="flex items-center justify-center h-screen">
             <div
               className={
@@ -149,6 +148,20 @@ export default function ImageSlider({
                     <RightArrow />
                   </button>
                 )}
+              </div>
+              <div className="flex flex-col items-center mt-3">
+                <div className="flex flex-row">
+                  {Array.from({ length: numImages }).map((item, index) => (
+                    <div
+                      className={
+                        currentImageIndex === index
+                          ? "full-size-image-slider-dot active"
+                          : "full-size-image-slider-dot"
+                      }
+                      key={`full-size-image-slider-dot-${index}`}
+                    ></div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
