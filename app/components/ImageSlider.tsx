@@ -105,7 +105,11 @@ export default function ImageSlider({
   };
 
   const showFullSizeImage = () => {
-    setShowFullImage(true);
+    if (windowWidth < 900) {
+      window.open(previewImgSrcList[currentImageIndex], "_blank");
+    } else {
+      setShowFullImage(true);
+    }
   };
 
   return (
