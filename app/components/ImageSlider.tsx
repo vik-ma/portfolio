@@ -47,6 +47,7 @@ export default function ImageSlider({
   useEffect(() => {
     function handleClickOutside(event: MouseEvent): void {
       if (
+        event.button === 0 &&
         fullImageRef.current &&
         !fullImageRef.current.contains(event.target as Node)
       ) {
@@ -161,10 +162,10 @@ export default function ImageSlider({
                       className={isFullSizeAnimOngoing ? "animate-fade" : ""}
                       src={previewImgSrcList[currentImageIndex]}
                       alt={`${name} Preview Image ${currentImageIndex + 1}`}
-                      width={0}
+                      width={850}
                       height={0}
-                      sizes="100vw"
-                      style={{ width: "100%", height: "auto" }}
+                      // sizes="100vw"
+                      // style={{ width: "100%", height: "auto" }}
                     />
                   </div>
                   {!onlyOneImage && (
