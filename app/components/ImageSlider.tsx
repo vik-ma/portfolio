@@ -32,7 +32,7 @@ export default function ImageSlider({
 
   const onlyOneImage: boolean = maxSlideIndex === 0 ? true : false;
 
-  const { isEnlargeModalOpen, setIsEnlargeModalOpen } = useModalContext();
+  const { setIsEnlargeModalOpen } = useModalContext();
 
   useEffect(() => {
     setWindowWidth(window.innerWidth);
@@ -63,6 +63,21 @@ export default function ImageSlider({
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+    };
+  });
+
+  useEffect(() => {
+    function handleKeyDown(event: KeyboardEvent): void {
+      if (event.key === "Escape") {
+        setTimeout(() => {
+          hideFullSizeImage();
+        }, 100);
+      }
+    }
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
     };
   });
 
