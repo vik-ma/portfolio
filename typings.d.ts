@@ -16,6 +16,7 @@ export interface ProjectsInfoProps {
         previewImgBase64DataList: string[];
         previewImgMenuWidthList: number[];
         previewImgMenuHeightList: number[];
+        fullSizeImgMaxWidth: number[];
       };
   };
 
@@ -35,6 +36,7 @@ export interface ProjectProps {
         previewImgBase64DataList: string[];
         previewImgMenuWidthList: number[];
         previewImgMenuHeightList: number[];
+        fullSizeImgMaxWidth: number[];
         };
 };
 
@@ -46,6 +48,7 @@ export interface ImageSliderProps {
     previewImgBase64DataList: string[];
     previewImgMenuWidthList: number[];
     previewImgMenuHeightList: number[];
+    fullSizeImgMaxWidth: number[];
 }
 
 export interface ArrowIconProps {
