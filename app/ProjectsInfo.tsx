@@ -39,7 +39,7 @@ export const ProjectsInfo = {
     ],
     previewImgMenuWidthList: [59, 59, 59, 59, 59],
     previewImgMenuHeightList: [48, 48, 48, 48, 48],
-    fullSizeImgMaxWidthList: [850, 850, 850, 850, 850],
+    fullSizeImgMaxWidth: 848,
     // cssGradient: "bg-gradient-to-r from-violet-500 via-rose-500 to-orange-600",
   },
   "pathfinding-race": {
@@ -72,7 +72,7 @@ export const ProjectsInfo = {
     ],
     previewImgMenuWidthList: [50, 50, 50, 50, 50],
     previewImgMenuHeightList: [50, 50, 50, 50, 50],
-    fullSizeImgMaxWidthList: [850, 850, 850, 850, 850],
+    fullSizeImgMaxWidth: 750,
     // cssGradient: "bg-gradient-to-r from-yellow-300 to-pink-600",
   },
   "paint-a-wave-function-collapse": {
@@ -103,7 +103,7 @@ export const ProjectsInfo = {
     ],
     previewImgMenuWidthList: [59, 59, 70],
     previewImgMenuHeightList: [48, 48, 48],
-    fullSizeImgMaxWidthList: [820, 820, 820],
+    fullSizeImgMaxWidth: 820,
     // cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
   },
   "screenshot-ocr": {
@@ -130,7 +130,7 @@ export const ProjectsInfo = {
     ],
     previewImgMenuWidthList: [85, 85],
     previewImgMenuHeightList: [50, 50],
-    fullSizeImgMaxWidthList: [832, 832],
+    fullSizeImgMaxWidth: 832,
     // cssGradient: "bg-gradient-to-r from-rose-600 to-red-600",
   },
   "file-opener": {
@@ -151,7 +151,7 @@ export const ProjectsInfo = {
     ],
     previewImgMenuWidthList: [81],
     previewImgMenuHeightList: [50],
-    fullSizeImgMaxWidthList: [702],
+    fullSizeImgMaxWidth: 702,
     // cssGradient: "bg-gradient-to-r from-orange-500 to-amber-400",
   },
   "link-opener": {
@@ -173,7 +173,7 @@ export const ProjectsInfo = {
     ],
     previewImgMenuWidthList: [90],
     previewImgMenuHeightList: [50],
-    fullSizeImgMaxWidthList: [602],
+    fullSizeImgMaxWidth: 602,
     // cssGradient: "bg-gradient-to-r from-blue-400 to-fuchsia-800",
   },
 };
