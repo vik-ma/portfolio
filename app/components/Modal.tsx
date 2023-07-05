@@ -17,7 +17,9 @@ export default function Modal({ children }: ModalProps) {
   const { isEnlargeModalOpen } = useModalContext();
 
   const onDismiss = useCallback(() => {
-    router.back();
+    setTimeout(() => {
+      router.back();
+    }, 100);
   }, [router]);
 
   const onClick = useCallback(
