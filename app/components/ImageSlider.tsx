@@ -15,7 +15,7 @@ export default function ImageSlider({
   previewImgBase64DataList,
   previewImgMenuWidthList,
   previewImgMenuHeightList,
-  fullSizeImgMaxWidth,
+  fullSizeImgMaxWidthList,
 }: ImageSliderProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
   const [windowWidth, setWindowWidth] = useState<number>(900);
@@ -187,7 +187,7 @@ export default function ImageSlider({
                       className={isFullSizeAnimOngoing ? "animate-fade" : ""}
                       src={previewImgSrcList[currentImageIndex]}
                       alt={`${name} Preview Image ${currentImageIndex + 1}`}
-                      width={fullSizeImgMaxWidth[currentImageIndex]}
+                      width={fullSizeImgMaxWidthList[currentImageIndex]}
                       height={0}
                       // sizes="100vw"
                       // style={{ width: "100%", height: "auto" }}

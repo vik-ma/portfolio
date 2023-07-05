@@ -15,7 +15,7 @@ export default function ProjectPage({ project }: ProjectProps) {
             previewImgBase64DataList={project?.previewImgBase64DataList}
             previewImgMenuWidthList={project?.previewImgMenuWidthList}
             previewImgMenuHeightList={project?.previewImgMenuHeightList}
-            fullSizeImgMaxWidth={project?.fullSizeImgMaxWidth}
+            fullSizeImgMaxWidthList={project?.fullSizeImgMaxWidthList}
           />
         </div>
         <div className="flex flex-wrap max-md:justify-center -ml-0.5 text-stone-200">
