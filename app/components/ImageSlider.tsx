@@ -5,6 +5,7 @@ import { useState, useEffect, useRef } from "react";
 import RightArrow from "../icons/RightArrow";
 import LeftArrow from "../icons/LeftArrow";
 import CloseButton from "../icons/CloseButton";
+import { useModalContext } from "../context/ModalContext";
 
 export default function ImageSlider({
   name,
@@ -31,6 +32,8 @@ export default function ImageSlider({
 
   const onlyOneImage: boolean = maxSlideIndex === 0 ? true : false;
 
+  const { isEnlargeModalOpen, setIsEnlargeModalOpen } = useModalContext();
+
   useEffect(() => {
     setWindowWidth(window.innerWidth);
   }, []);
@@ -52,7 +55,7 @@ export default function ImageSlider({
         !fullImageRef.current.contains(event.target as Node)
       ) {
         setTimeout(() => {
-          setShowFullImage(false);
+          hideFullSizeImage();
         }, 100);
       }
     }
@@ -110,7 +113,13 @@ export default function ImageSlider({
       window.open(previewImgSrcList[currentImageIndex], "_blank");
     } else {
       setShowFullImage(true);
+      setIsEnlargeModalOpen(true);
     }
+  };
+
+  const hideFullSizeImage = () => {
+    setShowFullImage(false);
+    setIsEnlargeModalOpen(false);
   };
 
   return (
@@ -135,7 +144,7 @@ export default function ImageSlider({
               >
                 <button
                   className="rounded-lg py-1 pr-1.5 pl-2.5 bg-red-500 hover:bg-stone-700 border border-neutral-300/50"
-                  onClick={() => setShowFullImage(false)}
+                  onClick={() => hideFullSizeImage()}
                 >
                   <span className="inline-block align-middle font-bold text-xl text-stone-200">
                     Close

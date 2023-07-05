@@ -1,4 +1,5 @@
 import "./globals.css";
+import { ModalContextProvider } from "./context/ModalContext";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -13,11 +14,13 @@ export default function RootLayout(props: {
   modal: React.ReactNode;
 }) {
   return (
-      <html lang="en">
-        <body className={inter.className}>
+    <html lang="en">
+      <body className={inter.className}>
+        <ModalContextProvider>
           {props.modal}
           {props.children}
-        </body>
-      </html>
+        </ModalContextProvider>
+      </body>
+    </html>
   );
 }

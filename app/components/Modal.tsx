@@ -3,6 +3,7 @@
 import { useCallback, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import CloseButton from "../icons/CloseButton";
+import { useModalContext } from "../context/ModalContext";
 
 interface ModalProps {
   children: React.ReactNode;
@@ -12,6 +13,8 @@ export default function Modal({ children }: ModalProps) {
   const overlay = useRef<HTMLDivElement>(null);
   const wrapper = useRef<HTMLDivElement>(null);
   const router = useRouter();
+
+  const { isEnlargeModalOpen } = useModalContext();
 
   const onDismiss = useCallback(() => {
     router.back();
@@ -35,7 +38,7 @@ export default function Modal({ children }: ModalProps) {
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onDismiss();
+      if (e.key === "Escape" && !isEnlargeModalOpen) onDismiss();
     };
 
     document.addEventListener("keydown", onKeyDown);
@@ -43,7 +46,7 @@ export default function Modal({ children }: ModalProps) {
     return () => {
       document.removeEventListener("keydown", onKeyDown);
     };
-  }, [onDismiss]);
+  }, [onDismiss, isEnlargeModalOpen]);
 
   return (
     <div
