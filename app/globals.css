@@ -184,10 +184,11 @@ body {
   bottom: 0;
   left: 0;
   transform: translate3d(0px, 4px, 0px) scale(1);
-  filter: blur(14px);
-  /* opacity: var(0.7);
-  transition: opacity 0.3s; */
-  background: linear-gradient(to top left, #ff3d00 0%, #0400ff 100%);
+  filter: blur(8px);
+  /* filter: blur(14px); */
+  /* background: linear-gradient(to top left, #ff3d00 0%, #3700ff 100%); */
+  /* background: linear-gradient(to bottom right, #ff9900 0%, #ff008c 50%, #0044ff 100%); */
+  background: linear-gradient(to bottom right, #fffb00 0%, #ff008c 50%, #0044ff 100%);
 }
 
 .project-box::after {
