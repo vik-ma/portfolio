@@ -15,10 +15,10 @@ import GitLogo from "../icons/GitLogo";
 export default function LanguagesSection() {
   return (
     <div className="text-center">
-      <h2 className="pb-4 text-4xl md:text-6xl font-extrabold bg-gradient-to-l from-blue-500 via-pink-500 to-yellow-500 bg-clip-text text-transparent">
+      <h2 className="pb-4 text-4xl md:text-6xl font-extrabold bg-gradient-to-l from-blue-500 via-pink-600 to-yellow-400 bg-clip-text text-transparent">
         Languages and Tools
       </h2>
-      <div className="rounded-3xl bg-gradient-to-l from-blue-500 via-pink-500 to-yellow-500 p-1.5">
+      <div className="rounded-3xl bg-gradient-to-l from-blue-500 via-pink-600 to-yellow-400 p-1.5">
         <div className="py-2 md:py-3 font-sans text-sm text-zinc-100 langs-section-box">
           <div className="flex flex-wrap justify-center lang-list-container md:gap-x-2 md:gap-y-1 mx-auto">
             <div className="text-center items-center p-3 logo-wrapper">
