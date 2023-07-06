@@ -1,7 +1,10 @@
 export default function HeroSection() {
   return (
-    <div className="">
-      <div className="GB">
+    <div className="relative">
+      <h1 className="text-7xl font-extrabold">
+        <span className="header-shadow-anim">Header</span>
+      </h1>
+      {/* <div className="GB">
         <span id="G" className="letter G">
           G
         </span>
@@ -23,7 +26,7 @@ export default function HeroSection() {
         <span id="Y" className="letter Y">
           Y
         </span>
-      </div>
+      </div> */}
     </div>
   );
 }
