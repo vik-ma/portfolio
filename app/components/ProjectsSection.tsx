@@ -7,8 +7,8 @@ export default function ProjectsSection() {
   const projects: ProjectsInfoProps = ProjectsInfo;
   return (
     <>
-      <div className="text-center">
-        <h2 className="pb-4 text-4xl md:text-6xl font-extrabold bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-amber-900 via-amber-100 to-amber-900 bg-clip-text text-transparent">
+      <div className="text-center flex justify-center">
+        <h2 className="pb-4 text-4xl w-fit md:text-6xl font-extrabold bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-stone-500 via-neutral-50 to-stone-500 bg-clip-text text-transparent">
           Projects
         </h2>
       </div>
