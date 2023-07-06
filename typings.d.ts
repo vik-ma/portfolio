@@ -5,7 +5,6 @@ export interface ProjectsInfoProps {
         name: string;
         shortDescription: string;
         fullDescription: ReactNode;
-        cssId: string;
         cssGradient: string;
         techStack: string[];
         thumbnailImgSrc: string;
@@ -25,7 +24,6 @@ export interface ProjectProps {
         name: string;
         shortDescription: string;
         fullDescription: ReactNode;
-        cssId: string;
         cssGradient: string;
         techStack: string[];
         thumbnailImgSrc: string;

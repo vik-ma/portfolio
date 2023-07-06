@@ -187,6 +187,7 @@ body {
   filter: blur(14px);
   /* opacity: var(0.7);
   transition: opacity 0.3s; */
+  background: linear-gradient(to top left, #ff3d00 0%, #0400ff 100%);
 }
 
 .project-box::after {
@@ -203,39 +204,6 @@ body {
 .project-box:hover {
   transform: scale(1.05);
   transition: ease 0.2s;
-}
-
-#project-pps:before {
-  background: linear-gradient(to top left, #ff3d00 0%, #0400ff 100%);
-}
-
-#project-pathfinding:before {
-  /* background: linear-gradient(to top left, #4c00ff 0%, #cc00ff 100%); */
-  /* background: linear-gradient(to top left, #d9ff00 0%, #ff21a2 100%); */
-  /* background: linear-gradient(to top left, #eeff00 0%, #ff2176 100%); */
-  background: linear-gradient(to top left, #ff3d00 0%, #0400ff 100%);
-}
-
-#project-wfc:before {
-  /* background: linear-gradient(to top left, #9dff00 0%, #00cc3d 100%); */
-  /* background: linear-gradient(to bottom right, #00cc3d 0%, #f3f520 100%); */
-  /* background: linear-gradient(to top left, #4c00ff 0%, #cc00ff 100%); */
-  background: linear-gradient(to top left, #ff3d00 0%, #0400ff 100%);
-}
-
-#project-ocr:before {
-  /* background: linear-gradient(to top left, #ff0000 0%, #ff0080 100%); */
-  background: linear-gradient(to top left, #ff3d00 0%, #0400ff 100%);
-}
-
-#project-file-opener:before {
-  /* background: linear-gradient(to top left, #ffda36 0%, #ff5100 100%); */
-  background: linear-gradient(to top left, #ff3d00 0%, #0400ff 100%);
-}
-
-#project-link-opener:before {
-  /* background: linear-gradient(to top left, #00b7ff 0%, #1d34ff 100%); */
-  background: linear-gradient(to top left, #ff3d00 0%, #0400ff 100%);
 }
 
 .project-box-content {
