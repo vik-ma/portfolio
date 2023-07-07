@@ -9,7 +9,7 @@ export default function ProjectPage({ project }: ProjectProps) {
       <div className="flex flex-col justify-between">
         <div className="flex flex-col md:flex-row justify-between mb-7">
           <div className="">
-            <div className="flex mt-1 mb-2 -ml-0.5">
+            <div className="flex justify-center md:justify-normal mt-1 mb-1 md:mb-2 -ml-0.5">
               <a
                 href={project?.githubLink}
                 target="_blank"
