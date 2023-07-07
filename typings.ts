@@ -18,7 +18,7 @@ export interface ProjectsInfoProps {
         fullSizeImgMaxWidth: number;
         githubLink: string;
         liveSiteLink: string;
-      };
+    };
   };
 
 export interface ProjectProps {
@@ -39,7 +39,7 @@ export interface ProjectProps {
         fullSizeImgMaxWidth: number;
         githubLink: string;
         liveSiteLink: string;
-        };
+    };
 };
 
 export interface ImageSliderProps {
