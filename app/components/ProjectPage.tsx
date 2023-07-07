@@ -10,7 +10,8 @@ export default function ProjectPage({ project }: ProjectProps) {
             <div className="mt-1 mb-2 -ml-0.5">
               <a
                 href={project?.githubLink}
-                className="px-2.5 py-1 font-bold rounded-lg cursor-pointer border-2 border-stone-100 text-stone-100 bg-stone-100/10"
+                target="_blank"
+                className="px-2.5 py-1 font-bold rounded-lg cursor-pointer border-2 border-lime-300 text-stone-50 bg-lime-400/20 hover:text-white hover:bg-lime-400/70 transition ease-in-out duration-200"
               >
                 GitHub Repository
               </a>
