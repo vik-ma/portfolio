@@ -1,5 +1,6 @@
 import { ProjectProps } from "@/typings";
 import ImageSlider from "./ImageSlider";
+import GitHubLogo from "../icons/GitHubLogo";
 
 export default function ProjectPage({ project }: ProjectProps) {
   return (
@@ -11,9 +12,12 @@ export default function ProjectPage({ project }: ProjectProps) {
               <a
                 href={project?.githubLink}
                 target="_blank"
-                className="px-2.5 py-1 font-bold rounded-lg cursor-pointer border-2 border-lime-300 text-stone-50 bg-lime-400/10 hover:text-white hover:bg-lime-400/70 transition ease-in-out duration-200"
+                className="flex w-fit py-1 px-2 font-bold rounded-lg cursor-pointer border-2 border-lime-300 text-stone-50 bg-lime-400/10 hover:text-white hover:bg-lime-400/70 transition ease-in-out duration-200"
               >
-                GitHub Repository
+                <span>
+                  <GitHubLogo />
+                </span>
+                <span className="ml-1">GitHub Repository</span>
               </a>
             </div>
             <div className="mb-2 md:mb-none text-stone-100">
