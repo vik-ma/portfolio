@@ -11,7 +11,7 @@ export default function ProjectPage({ project }: ProjectProps) {
               <a
                 href={project?.githubLink}
                 target="_blank"
-                className="px-2.5 py-1 font-bold rounded-lg cursor-pointer border-2 border-lime-300 text-stone-50 bg-lime-400/20 hover:text-white hover:bg-lime-400/70 transition ease-in-out duration-200"
+                className="px-2.5 py-1 font-bold rounded-lg cursor-pointer border-2 border-lime-300 text-stone-50 bg-lime-400/10 hover:text-white hover:bg-lime-400/70 transition ease-in-out duration-200"
               >
                 GitHub Repository
               </a>
