@@ -207,6 +207,10 @@ body {
   transition: ease 0.2s;
 }
 
+.project-box:hover .thumbnail-container {
+  opacity: 1;
+}
+
 .project-box-content {
   position: relative;
   z-index: 1;
@@ -219,6 +223,7 @@ body {
 .thumbnail-container {
   border: 1px solid rgba(70, 70, 70, 0.8);
   box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+  opacity: 0.8;
 }
 
 .full-sized-image-container {
