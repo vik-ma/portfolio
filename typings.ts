@@ -17,6 +17,7 @@ export interface ProjectsInfoProps {
         previewImgMenuHeightList: number[];
         fullSizeImgMaxWidth: number;
         githubLink: string;
+        liveSiteLink: string;
       };
   };
 
@@ -37,6 +38,7 @@ export interface ProjectProps {
         previewImgMenuHeightList: number[];
         fullSizeImgMaxWidth: number;
         githubLink: string;
+        liveSiteLink: string;
         };
 };
 

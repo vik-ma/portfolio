@@ -38,6 +38,7 @@ export const ProjectsInfo = {
     previewImgMenuHeightList: [48, 48, 48, 48, 48],
     fullSizeImgMaxWidth: 848,
     githubLink: "https://github.com/vik-ma/Price-Performance-Scraper",
+    liveSiteLink: "",
     // cssGradient: "bg-gradient-to-r from-violet-500 via-rose-500 to-orange-600",
   },
   "pathfinding-race": {
@@ -69,6 +70,7 @@ export const ProjectsInfo = {
     previewImgMenuHeightList: [50, 50, 50, 50, 50],
     fullSizeImgMaxWidth: 750,
     githubLink: "https://github.com/vik-ma/pathfinding-race",
+    liveSiteLink: "",
     // cssGradient: "bg-gradient-to-r from-yellow-300 to-pink-600",
   },
   "paint-a-wave-function-collapse": {
@@ -96,6 +98,7 @@ export const ProjectsInfo = {
     previewImgMenuHeightList: [48, 48, 48],
     fullSizeImgMaxWidth: 820,
     githubLink: "https://github.com/vik-ma/paint-a-wave-function-collapse",
+    liveSiteLink: "",
     // cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
   },
   "screenshot-ocr": {
@@ -121,6 +124,7 @@ export const ProjectsInfo = {
     previewImgMenuHeightList: [50, 50],
     fullSizeImgMaxWidth: 832,
     githubLink: "https://github.com/vik-ma/screenshot-OCR",
+    liveSiteLink: "",
     // cssGradient: "bg-gradient-to-r from-rose-600 to-red-600",
   },
   "file-opener": {
@@ -142,6 +146,7 @@ export const ProjectsInfo = {
     previewImgMenuHeightList: [50],
     fullSizeImgMaxWidth: 702,
     githubLink: "https://github.com/vik-ma/open-file-groups",
+    liveSiteLink: "",
     // cssGradient: "bg-gradient-to-r from-orange-500 to-amber-400",
   },
   "link-opener": {
@@ -164,6 +169,7 @@ export const ProjectsInfo = {
     previewImgMenuHeightList: [50],
     fullSizeImgMaxWidth: 602,
     githubLink: "https://github.com/vik-ma/open-links-from-txt-file",
+    liveSiteLink: "",
     // cssGradient: "bg-gradient-to-r from-blue-400 to-fuchsia-800",
   },
 };
