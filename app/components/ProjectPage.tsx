@@ -6,7 +6,19 @@ export default function ProjectPage({ project }: ProjectProps) {
     <div className="max-md:text-center px-0.5">
       <div className="flex flex-col justify-between">
         <div className="flex flex-col md:flex-row justify-between mb-7">
-          <div className="mb-2 md:mb-none">{project?.fullDescription}</div>
+          <div className="">
+            <div className="mt-1 mb-2 -ml-0.5">
+              <a
+                href={project?.githubLink}
+                className="px-2.5 py-1 font-bold rounded-lg cursor-pointer border-2 border-stone-100 text-stone-100 bg-stone-100/10"
+              >
+                GitHub Repository
+              </a>
+            </div>
+            <div className="mb-2 md:mb-none text-stone-100">
+              {project?.fullDescription}
+            </div>
+          </div>
           <ImageSlider
             name={project?.name}
             previewImgSrcList={project?.previewImgSrcList}
