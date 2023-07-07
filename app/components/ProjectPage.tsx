@@ -13,7 +13,7 @@ export default function ProjectPage({ project }: ProjectProps) {
               <a
                 href={project?.githubLink}
                 target="_blank"
-                className="flex w-fit py-1 px-2 font-bold rounded-lg cursor-pointer border-2 border-lime-300 text-stone-50 bg-lime-400/10 hover:text-white hover:bg-lime-400/60 transition ease-in-out duration-200"
+                className="flex w-fit py-1 pl-1.5 pr-2 font-bold rounded-lg cursor-pointer border-2 border-lime-300 text-stone-50 bg-lime-400/10 hover:text-white hover:bg-lime-400/60 transition ease-in-out duration-200"
               >
                 <span>
                   <GitHubLogo />
@@ -23,7 +23,7 @@ export default function ProjectPage({ project }: ProjectProps) {
               <a
                 href={""}
                 target="_blank"
-                className="flex w-fit py-1 px-2 font-bold rounded-lg cursor-pointer border-2 border-red-500 text-stone-50 bg-red-500/10 hover:text-white hover:bg-red-500/60 transition ease-in-out duration-200"
+                className="flex w-fit py-1 pl-1.5 pr-2 font-bold rounded-lg cursor-pointer border-2 border-red-500 text-stone-50 bg-red-500/10 hover:text-white hover:bg-red-500/60 transition ease-in-out duration-200"
               >
                 <span>
                   <LiveSite />
