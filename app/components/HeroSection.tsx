@@ -4,7 +4,7 @@ export default function HeroSection() {
   return (
     <div className="relative text-center">
       <h1 className="text-7xl font-extrabold">
-        <span className="header-shadow-anim">Header</span>
+        <span className="header-shadow-anim">Header Headertwoo</span>
       </h1>
       {/* <div className="GB">
         <span id="G" className="letter G">

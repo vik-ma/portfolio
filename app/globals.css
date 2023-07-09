@@ -47,7 +47,7 @@ body {
 }
 
 .header-shadow-anim:before {
-    content: 'Text Length';
+    content: '...........................';
     position: absolute;
     left: 0;
     top: 0;
@@ -57,10 +57,10 @@ body {
     filter: blur(17px);
     z-index: -1;
     animation: gradient-animation 6s infinite linear;
-    background: linear-gradient(130deg,#ff7e00,#00f,#5cff00,#ffeda0);
+    background: linear-gradient(130deg,#ffc400 15%, #ff008c 50%, #0044ff 85%);
     background-size: 200% 200%;
     border-radius: 36px;
-    transform: scale(1.2) skew(-12deg,2deg);
+    transform: scale(1.3) translate3d(40px, 10px, 0);
   }
 
 @keyframes gradient-animation {
