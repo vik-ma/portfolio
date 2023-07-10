@@ -2,7 +2,7 @@
 import { useRef } from "react";
 
 export default function HeaderAnimation() {
-  const headerRef = useRef<HTMLHeadingElement>(null);
+  const headerRef = useRef<HTMLSpanElement>(null);
 
   const toggleAnimCheckbox = (checked: boolean) => {
     if (checked) {
@@ -14,7 +14,7 @@ export default function HeaderAnimation() {
     }
   };
   return (
-    <div className="flex flex-col group">
+    <div className="flex flex-col group pt-14 pb-10">
       <div>
         <h1 className="text-7xl font-extrabold">
           <span
@@ -25,11 +25,11 @@ export default function HeaderAnimation() {
           </span>
         </h1>
       </div>
-      <div className="group mt-12 relative">
-        <label className="inline-flex items-center absolute right-5 cursor-pointer opacity-0 group-hover:opacity-80 transition duration-200 ease-out">
+      <div className="mt-12 relative">
+        <label className="inline-flex items-center absolute right-5 cursor-pointer opacity-0 group-hover:opacity-80 transition duration-300 ease-out">
           <input
             type="checkbox"
-            className="h-4 w-4 accent-neutral-100 text-gray-900 "
+            className="h-4 w-4 accent-neutral-100 text-gray-900"
             onChange={(event) => toggleAnimCheckbox(event.target.checked)}
           />
           <span className="text-neutral-100 font-semibold ml-1.5">
