@@ -61,7 +61,7 @@ body {
     background: linear-gradient(130deg,#ffc400 15%, #ff008c 50%, #0044ff 85%);
     background-size: 200% 200%;
     border-radius: 36px;
-    transform: scale(1.4) translate3d(40px, 10px, 0);
+    transform: scale(1.4) translate3d(40px, 8px, 0);
   }
 
 @keyframes gradient-animation {
