@@ -47,7 +47,6 @@ body {
 
 .header-shadow-anim:before {
     content: '...........................';
-    max-width: 900px;
     position: absolute;
     left: 0;
     top: 0;
@@ -61,7 +60,27 @@ body {
     background-size: 200% 200%;
     border-radius: 36px;
     transform: scale(1.4) translate3d(40px, 8px, 0);
-  }
+}
+
+.header-shadow-static {
+  position: relative;
+  z-index: 1;
+}
+
+.header-shadow-static:before {
+    content: '...........................';
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 800;
+    filter: blur(17px);
+    z-index: -1;
+    background: linear-gradient(130deg,#ffc400 5%, #ff008c 50%, #0044ff 95%);
+    border-radius: 36px;
+    transform: scale(1.4) translate3d(40px, 8px, 0);
+}
 
 @keyframes gradient-animation {
   0% {

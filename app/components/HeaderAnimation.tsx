@@ -7,7 +7,9 @@ export default function HeaderAnimation() {
   const toggleAnimCheckbox = (checked: boolean) => {
     if (checked) {
       headerRef.current?.classList.remove("header-shadow-anim");
+      headerRef.current?.classList.add("header-shadow-static");
     } else {
+      headerRef.current?.classList.remove("header-shadow-static");
       headerRef.current?.classList.add("header-shadow-anim");
     }
   };
