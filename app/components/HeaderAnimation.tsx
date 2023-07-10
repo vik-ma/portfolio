@@ -17,7 +17,7 @@ export default function HeaderAnimation() {
     <div className="flex flex-col">
       <div>
         <h1 className="text-7xl font-extrabold">
-          <span ref={headerRef} className="header-shadow-anim text-white">
+          <span ref={headerRef} className="header-shadow header-shadow-anim text-white">
             Header Headertwoo
           </span>
         </h1>

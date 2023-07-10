@@ -40,46 +40,33 @@ body {
   }
 }
 
-.header-shadow-anim {
+.header-shadow {
   position: relative;
   z-index: 1;
+}
+
+.header-shadow:before { 
+  content: '...........................';
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 800;
+  filter: blur(17px);
+  z-index: -1;
+  border-radius: 36px;
+  transform: scale(1.4) translate3d(40px, 8px, 0);
 }
 
 .header-shadow-anim:before {
-    content: '...........................';
-    position: absolute;
-    left: 0;
-    top: 0;
-    text-align: center;
-    font-size: 1em;
-    font-weight: 800;
-    filter: blur(17px);
-    z-index: -1;
-    animation: gradient-animation 6s infinite linear;
-    background: linear-gradient(130deg,#ffc400 15%, #ff008c 50%, #0044ff 85%);
-    background-size: 200% 200%;
-    border-radius: 36px;
-    transform: scale(1.4) translate3d(40px, 8px, 0);
-}
-
-.header-shadow-static {
-  position: relative;
-  z-index: 1;
+  animation: gradient-animation 6s infinite linear;
+  background: linear-gradient(130deg,#ffc400 15%, #ff008c 50%, #0044ff 85%);
+  background-size: 200% 200%;
 }
 
 .header-shadow-static:before {
-    content: '...........................';
-    position: absolute;
-    left: 0;
-    top: 0;
-    text-align: center;
-    font-size: 1em;
-    font-weight: 800;
-    filter: blur(17px);
-    z-index: -1;
-    background: linear-gradient(130deg,#ffc400 5%, #ff008c 50%, #0044ff 95%);
-    border-radius: 36px;
-    transform: scale(1.4) translate3d(40px, 8px, 0);
+  background: linear-gradient(130deg,#ffc400 5%, #ff008c 50%, #0044ff 95%);
 }
 
 @keyframes gradient-animation {
