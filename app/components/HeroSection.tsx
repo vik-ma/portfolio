@@ -1,11 +1,10 @@
 import Link from "next/link";
+import HeaderAnimation from "./HeaderAnimation";
 
 export default function HeroSection() {
   return (
     <div className="relative text-center">
-      <h1 className="text-7xl font-extrabold">
-        <span className="header-shadow-anim">Header Headertwoo</span>
-      </h1>
+      <HeaderAnimation />
       {/* <div className="GB">
         <span id="G" className="letter G">
           G
