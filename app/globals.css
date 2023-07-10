@@ -43,7 +43,6 @@ body {
 .header-shadow-anim {
   position: relative;
   z-index: 1;
-  color: #fff;
 }
 
 .header-shadow-anim:before {
