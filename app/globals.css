@@ -69,6 +69,10 @@ body {
   background: linear-gradient(130deg,#ffc400 5%, #ff008c 50%, #0044ff 95%);
 }
 
+.animate-enlargement {
+  animation: enlarge-animation 0.25s ease-out;
+}
+
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
@@ -78,6 +82,17 @@ body {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes enlarge-animation {
+  0% {
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 

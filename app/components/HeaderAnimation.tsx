@@ -3,16 +3,24 @@ import { useRef, useState } from "react";
 
 export default function HeaderAnimation() {
   const headerTextRef = useRef<HTMLSpanElement>(null);
+  const headerCheckRef = useRef<HTMLLabelElement>(null);
   const [disableAnimation, setDisableAnimation] = useState<boolean>(false);
 
   const toggleAnimCheckbox = () => {
     if (!disableAnimation) {
       headerTextRef.current?.classList.remove("header-shadow-anim");
       headerTextRef.current?.classList.add("header-shadow-static");
+
     } else {
       headerTextRef.current?.classList.remove("header-shadow-static");
       headerTextRef.current?.classList.add("header-shadow-anim");
     }
+
+    headerCheckRef.current?.classList.add("animate-enlargement");
+    setTimeout(() => {
+      headerCheckRef.current?.classList.remove("animate-enlargement");
+    }, 250);
+
     setDisableAnimation(!disableAnimation);
   };
 
@@ -32,7 +40,8 @@ export default function HeaderAnimation() {
         </h1>
       </div>
       <div className="mt-12 relative">
-        <label className="inline-flex items-center absolute right-5 opacity-0 group-hover:opacity-80 transition duration-300 ease-out -z-[1]">
+        <label className="inline-flex items-center absolute right-5 opacity-0 group-hover:opacity-80 transition duration-300 ease-out -z-[1]"
+        ref={headerCheckRef}>
           <input
             type="checkbox"
             className="h-4 w-4 accent-neutral-100 text-gray-900"
