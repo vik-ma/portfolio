@@ -25,7 +25,7 @@ export default function HeaderAnimation() {
         <h1 className="text-7xl font-extrabold">
           <span
             ref={headerTextRef}
-            className="header-shadow header-shadow-anim text-white"
+            className="header-shadow header-shadow-anim text-white select-none"
           >
             Header Headertwoo
           </span>
