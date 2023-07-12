@@ -36,13 +36,13 @@ export default function HeaderAnimation() {
           >
             {/* Header Headertwoo */}
             <span className="header-text-container">
-              <span className="letter G">G</span>
-              <span className="letter A">A</span>
-              <span className="letter M">M</span>
-              <span className="letter E">E</span>
-              <span className="letter B">B</span>
-              <span className="letter O">O</span>
-              <span className="letter Y">Y</span>
+              <span className="letter letter-f-1">G</span>
+              <span className="letter letter-f-2">A</span>
+              <span className="letter letter-f-3">M</span>
+              <span className="letter letter-f-4">E</span>
+              <span className="letter letter-f-5">B</span>
+              <span className="letter letter-f-6">O</span>
+              <span className="letter letter-l-1">Y</span>
             </span>
           </span>
         </h1>

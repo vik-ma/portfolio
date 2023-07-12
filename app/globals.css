@@ -292,39 +292,39 @@ body {
   font-weight: 900;
 }
 
-.G {
+.letter-f-1 {
   left: calc(var(--anim-x-offset)*0);
-  animation: color 1.6s linear both, G-entry 1.6s linear both;
+  animation: color 1.6s linear both, Letter-f-1-entry 1.6s linear both;
 }
 
-.A {
+.letter-f-2 {
   left: calc(var(--anim-x-offset)*1);
-  animation: color 1.6s linear .04s both, A-entry 1.6s linear both .04s;
+  animation: color 1.6s linear .04s both, Letter-f-2-entry 1.6s linear both .04s;
 }
 
-.M {
+.letter-f-3 {
   left: calc(var(--anim-x-offset)*2);
-  animation: color 1.6s linear .08s both, M-entry 1.6s linear both .08s;
+  animation: color 1.6s linear .08s both, Letter-f-3-entry 1.6s linear both .08s;
 }
 
-.E {
+.letter-f-4 {
   left: calc(var(--anim-x-offset)*3);
-  animation: color 1.6s linear .12s both, E-entry 1.6s linear both .12s;
+  animation: color 1.6s linear .12s both, Letter-f-4-entry 1.6s linear both .12s;
 }
 
-.B {
+.letter-f-5 {
   left: calc(var(--anim-x-offset)*5);
-  animation: color 1.6s linear .16s both, B-entry 1.6s linear both .16s;
+  animation: color 1.6s linear .16s both, Letter-f-5-entry 1.6s linear both .16s;
 }
 
-.O {
+.letter-f-6 {
   left: calc(var(--anim-x-offset)*6);
-  animation: color 1.6s linear .2s both, O-entry 1.6s linear both .2s;
+  animation: color 1.6s linear .2s both, Letter-f-6-entry 1.6s linear both .2s;
 }
 
-.Y {
+.letter-l-1 {
   left: calc(var(--anim-x-offset)*7);
-  animation: color 1.6s linear .24s both, Y-entry 1.6s linear both .24s;
+  animation: color 1.6s linear .24s both, Letter-l-1-entry 1.6s linear both .24s;
 }
 
 /*====ANIMATIONS====*/
@@ -353,7 +353,7 @@ body {
   }
 }
 
-@keyframes G-entry {
+@keyframes Letter-f-1-entry {
   0% {
     transform: scale(1.5) translate(-100px, 200px);
   }
@@ -384,7 +384,7 @@ body {
   100% {}
 }
 
-@keyframes A-entry {
+@keyframes Letter-f-2-entry {
   0% {
     transform: scale(1.5) translate(-80px, 200px);
   }
@@ -416,7 +416,7 @@ body {
   }
 }
 
-@keyframes M-entry {
+@keyframes Letter-f-3-entry {
   0% {
     transform: scale(1.5) translate(-30px, 200px);
   }
@@ -448,7 +448,7 @@ body {
   }
 }
 
-@keyframes E-entry {
+@keyframes Letter-f-4-entry {
   0% {
     transform: scale(1.5) translate(-30px, 200px);
   }
@@ -480,7 +480,7 @@ body {
   }
 }
 
-@keyframes B-entry {
+@keyframes Letter-f-5-entry {
   0% {
     transform: scale(1.5) translate(-30px, 200px);
   }
@@ -512,7 +512,7 @@ body {
   }
 }
 
-@keyframes O-entry {
+@keyframes Letter-f-6-entry {
   0% {
     transform: scale(1.5) translate(-30px, 200px);
   }
@@ -544,7 +544,7 @@ body {
   }
 }
 
-@keyframes Y-entry {
+@keyframes Letter-l-1-entry {
   0% {
     transform: scale(1.5) translate(80px, 200px);
   }
