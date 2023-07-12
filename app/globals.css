@@ -313,17 +313,57 @@ body {
 }
 
 .letter-f-5 {
-  left: calc(var(--anim-x-offset)*5);
+  left: calc(var(--anim-x-offset)*4);
   animation: color 1.6s linear .16s both, Letter-f-5-entry 1.6s linear both .16s;
 }
 
 .letter-f-6 {
-  left: calc(var(--anim-x-offset)*6);
+  left: calc(var(--anim-x-offset)*5);
   animation: color 1.6s linear .2s both, Letter-f-6-entry 1.6s linear both .2s;
 }
 
 .letter-l-1 {
   left: calc(var(--anim-x-offset)*7);
+  animation: color 1.6s linear .24s both, Letter-l-1-entry 1.6s linear both .24s;
+}
+
+.letter-l-2 {
+  left: calc(var(--anim-x-offset)*8);
+  animation: color 1.6s linear .24s both, Letter-l-1-entry 1.6s linear both .24s;
+}
+
+.letter-l-3 {
+  left: calc(var(--anim-x-offset)*9);
+  animation: color 1.6s linear .24s both, Letter-l-1-entry 1.6s linear both .24s;
+}
+
+.letter-l-4 {
+  left: calc(var(--anim-x-offset)*10);
+  animation: color 1.6s linear .24s both, Letter-l-1-entry 1.6s linear both .24s;
+}
+
+.letter-l-5 {
+  left: calc(var(--anim-x-offset)*11);
+  animation: color 1.6s linear .24s both, Letter-l-1-entry 1.6s linear both .24s;
+}
+
+.letter-l-6 {
+  left: calc(var(--anim-x-offset)*12);
+  animation: color 1.6s linear .24s both, Letter-l-1-entry 1.6s linear both .24s;
+}
+
+.letter-l-7 {
+  left: calc(var(--anim-x-offset)*13);
+  animation: color 1.6s linear .24s both, Letter-l-1-entry 1.6s linear both .24s;
+}
+
+.letter-l-8 {
+  left: calc(var(--anim-x-offset)*14);
+  animation: color 1.6s linear .24s both, Letter-l-1-entry 1.6s linear both .24s;
+}
+
+.letter-l-9 {
+  left: calc(var(--anim-x-offset)*15);
   animation: color 1.6s linear .24s both, Letter-l-1-entry 1.6s linear both .24s;
 }
 
