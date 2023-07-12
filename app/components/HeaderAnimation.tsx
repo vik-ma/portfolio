@@ -29,7 +29,7 @@ export default function HeaderAnimation() {
       onClick={() => toggleAnimCheckbox()}
     >
       <div className="">
-        <h1 className="text-7xl font-extrabold ">
+        <h1 className="text-7xl font-extrabold">
           <span
             ref={headerTextRef}
             className="header-shadow header-shadow-anim text-white select-none "

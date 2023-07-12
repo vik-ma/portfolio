@@ -43,14 +43,14 @@ body {
 .header-shadow {
   position: relative;
   z-index: 1;
-
 }
 
 .header-shadow:before { 
   content: '.......................................';
-  position: relative;
-  left: 10px;
-  top: 15px;
+  /* position: absolute; */
+  /* left: 0px; */
+  /* top: 0px; */
+
   text-align: center;
   font-size: 1em;
   font-weight: 800;
@@ -283,7 +283,8 @@ body {
 }
 
 .header-text-container {
-  /* position: absolute; */
+  position: absolute;
+  top: 5px;
   /* position: relative; */
 }
 
