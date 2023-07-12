@@ -50,7 +50,7 @@ body {
   content: '.......................................';
   position: relative;
   left: 10px;
-  top: 0;
+  top: 15px;
   text-align: center;
   font-size: 1em;
   font-weight: 800;
@@ -283,8 +283,7 @@ body {
 }
 
 .header-text-container {
-  position: relative;
-  margin-left: 100px;
+
 }
 
 .letter {

@@ -35,7 +35,7 @@ export default function HeaderAnimation() {
             className="header-shadow header-shadow-anim text-white select-none "
           >
             {/* Header Headertwoo */}
-            <span className="header-text-container flex justify-center">
+            <span className="header-text-container">
               <span className="letter G">G</span>
               <span className="letter A">A</span>
               <span className="letter M">M</span>
