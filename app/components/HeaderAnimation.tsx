@@ -25,7 +25,7 @@ export default function HeaderAnimation() {
 
   return (
     <div
-      className="flex flex-col group cursor-pointer"
+      className="flex flex-col group cursor-pointer pt-14 pb-10"
       onClick={() => toggleAnimCheckbox()}
     >
       <div className="">

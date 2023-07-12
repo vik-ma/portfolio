@@ -5,7 +5,7 @@ import HeroSection from "./components/HeroSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between py-20 px-2 md:px-5">
+    <main className="flex min-h-screen flex-col items-center justify-between pt-10 pb-20 px-2 md:px-5">
       <header className="py-7">
         <HeroSection />
       </header>
