@@ -43,12 +43,13 @@ body {
 .header-shadow {
   position: relative;
   z-index: 1;
+
 }
 
 .header-shadow:before { 
-  content: '...........................';
-  position: absolute;
-  left: 0;
+  content: '.......................................';
+  position: relative;
+  left: 10px;
   top: 0;
   text-align: center;
   font-size: 1em;
@@ -56,7 +57,7 @@ body {
   filter: blur(17px);
   z-index: -1;
   border-radius: 36px;
-  transform: scale(1.4) translate3d(40px, 8px, 0);
+  transform: scale(1.4);
 }
 
 .header-shadow-anim:before {
@@ -281,9 +282,9 @@ body {
   opacity: 1;
 }
 
-.GB {
-  /* position: absolute; */
-  width: 900px;
+.header-text-container {
+  position: relative;
+  margin-left: 100px;
 }
 
 .letter {

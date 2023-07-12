@@ -2,7 +2,7 @@
 import { useRef, useState } from "react";
 
 export default function HeaderAnimation() {
-  const headerTextRef = useRef<HTMLSpanElement>(null);
+  const headerTextRef = useRef<HTMLDivElement>(null);
   const headerCheckRef = useRef<HTMLLabelElement>(null);
   const [disableAnimation, setDisableAnimation] = useState<boolean>(false);
 
@@ -25,16 +25,25 @@ export default function HeaderAnimation() {
 
   return (
     <div
-      className="flex flex-col group pt-14 pb-10 cursor-pointer"
+      className="flex flex-col group  pb-10 cursor-pointer"
       onClick={() => toggleAnimCheckbox()}
     >
-      <div>
-        <h1 className="text-7xl font-extrabold">
+      <div className="">
+        <h1 className="text-7xl font-extrabold ">
           <span
             ref={headerTextRef}
-            className="header-shadow header-shadow-anim text-white select-none"
+            className="header-shadow header-shadow-anim text-white select-none "
           >
-            Header Headertwoo
+            {/* Header Headertwoo */}
+            <span className="header-text-container flex justify-center">
+              <span className="letter G">G</span>
+              <span className="letter A">A</span>
+              <span className="letter M">M</span>
+              <span className="letter E">E</span>
+              <span className="letter B">B</span>
+              <span className="letter O">O</span>
+              <span className="letter Y">Y</span>
+            </span>
           </span>
         </h1>
       </div>
