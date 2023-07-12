@@ -25,7 +25,7 @@ export default function HeaderAnimation() {
 
   return (
     <div
-      className="flex flex-col group  pb-10 cursor-pointer"
+      className="flex flex-col group cursor-pointer"
       onClick={() => toggleAnimCheckbox()}
     >
       <div className="">
@@ -35,8 +35,8 @@ export default function HeaderAnimation() {
             className="header-shadow header-shadow-anim text-white select-none "
           >
             {/* Header Headertwoo */}
-            <span className="header-text-container flex justify-center">
-              <span className="">
+            <span className="header-text-container flex flex-row justify-center">
+              <span className="flex flex-row">
                 <span className="letter letter-f-1">F</span>
                 <span className="letter letter-f-2">I</span>
                 <span className="letter letter-f-3">R</span>
@@ -44,7 +44,7 @@ export default function HeaderAnimation() {
                 <span className="letter letter-f-5">T</span>
                 <span className="letter letter-f-6">T</span>
               </span>
-              <span className="ml-10">
+              <span className="flex flex-row ml-10">
                 <span className="letter letter-l-1">L</span>
                 <span className="letter letter-l-2">A</span>
                 <span className="letter letter-l-3">S</span>
