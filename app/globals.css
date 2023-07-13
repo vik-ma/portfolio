@@ -40,63 +40,6 @@ body {
   }
 }
 
-.header-shadow {
-  position: relative;
-  z-index: 1;
-}
-
-.header-shadow:before { 
-  content: '.......................................';
-  /* position: absolute; */
-  /* left: 0px; */
-  /* top: 0px; */
-
-  text-align: center;
-  font-size: 1em;
-  font-weight: 800;
-  filter: blur(17px);
-  z-index: -1;
-  border-radius: 36px;
-  transform: scale(1.4);
-}
-
-.header-shadow-anim:before {
-  animation: gradient-animation 6s infinite linear;
-  background: linear-gradient(130deg,#ffc400 15%, #ff008c 50%, #0044ff 85%);
-  background-size: 200% 200%;
-}
-
-.header-shadow-static:before {
-  background: linear-gradient(130deg,#ffc400 5%, #ff008c 50%, #0044ff 95%);
-}
-
-.animate-enlargement {
-  animation: enlarge-animation 0.25s ease-out;
-}
-
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes enlarge-animation {
-  0% {
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 .langs-section-box {
   background-color: #242424;
   /* background: linear-gradient(to bottom, #2e2e2e 15%, rgb(29, 29, 29) 100%); */
@@ -280,6 +223,63 @@ body {
   transition-duration: 0.1s;
   transform: scale(1.2);
   opacity: 1;
+}
+
+.header-shadow {
+  position: relative;
+  z-index: 1;
+}
+
+.header-shadow:before { 
+  content: '.......................................';
+  /* position: absolute; */
+  /* left: 0px; */
+  /* top: 0px; */
+
+  text-align: center;
+  font-size: 1em;
+  font-weight: 800;
+  filter: blur(17px);
+  z-index: -1;
+  border-radius: 36px;
+  transform: scale(1.4);
+}
+
+.header-shadow-anim:before {
+  animation: gradient-animation 6s infinite linear;
+  background: linear-gradient(130deg,#ffc400 15%, #ff008c 50%, #0044ff 85%);
+  background-size: 200% 200%;
+}
+
+.header-shadow-static:before {
+  background: linear-gradient(130deg,#ffc400 5%, #ff008c 50%, #0044ff 95%);
+}
+
+.animate-enlargement {
+  animation: enlarge-animation 0.25s ease-out;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes enlarge-animation {
+  0% {
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .header-text-container {
