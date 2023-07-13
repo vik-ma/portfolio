@@ -39,23 +39,23 @@ export default function HeaderAnimation() {
             <span className="header-text-container flex flex-row justify-center w-full">
               {/* <span className="flex flex-col"> */}
                 <span className="flex flex-row justify-center text-[75px]">
-                  <span className="letter letter-f-1">F</span>
+                  <span className="letter letter-f-1">V</span>
                   <span className="letter letter-f-2">I</span>
-                  <span className="letter letter-f-3">R</span>
-                  <span className="letter letter-f-4">S</span>
-                  <span className="letter letter-f-5">T</span>
-                  <span className="letter letter-f-6">T</span>
+                  <span className="letter letter-f-3">K</span>
+                  <span className="letter letter-f-4">T</span>
+                  <span className="letter letter-f-5">O</span>
+                  <span className="letter letter-f-6">R</span>
                 </span>
                 <span className="flex flex-row justify-center text-[75px] ml-7 items-end">
-                  <span className="letter letter-l-1">L</span>
+                  <span className="letter letter-l-1">M</span>
                   <span className="letter letter-l-2">A</span>
-                  <span className="letter letter-l-3">S</span>
-                  <span className="letter letter-l-4">T</span>
-                  <span className="letter letter-l-5">L</span>
-                  <span className="letter letter-l-6">A</span>
+                  <span className="letter letter-l-3">G</span>
+                  <span className="letter letter-l-4">N</span>
+                  <span className="letter letter-l-5">U</span>
+                  <span className="letter letter-l-6">S</span>
                   <span className="letter letter-l-7">S</span>
-                  <span className="letter letter-l-8">T</span>
-                  <span className="letter letter-l-9">T</span>
+                  <span className="letter letter-l-8">O</span>
+                  <span className="letter letter-l-9">N</span>
                 </span>
               {/* </span> */}
             </span>
