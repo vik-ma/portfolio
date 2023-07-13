@@ -233,16 +233,16 @@ body {
 .header-shadow:before { 
   content: '';
   position: absolute;
-  width: 700px;
-  height: 250px;
+  width: 860px;
+  height: 85px;
   /* left: 0px; */
   /* top: 0px; */
   text-align: center;
   font-size: 1em;
   font-weight: 800;
-  filter: blur(20px);
+  filter: blur(17px);
   z-index: -1;
-  border-radius: 70px;
+  border-radius: 26px;
   /* transform: scale(1.7); */
 }
 
@@ -285,7 +285,7 @@ body {
 
 .header-text-container {
   position: absolute;
-  top: 75px;
+  top: 60px;
   /* position: relative; */
 }
 

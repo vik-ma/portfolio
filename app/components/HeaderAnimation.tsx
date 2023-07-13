@@ -37,8 +37,8 @@ export default function HeaderAnimation() {
           <span className="select-none">
             {/* Header Headertwoo */}
             <span className="header-text-container flex flex-row justify-center w-full">
-              <span className="flex flex-col">
-                <span className="flex flex-row justify-center text-[120px] ">
+              {/* <span className="flex flex-col"> */}
+                <span className="flex flex-row justify-center text-[75px]">
                   <span className="letter letter-f-1">F</span>
                   <span className="letter letter-f-2">I</span>
                   <span className="letter letter-f-3">R</span>
@@ -46,7 +46,7 @@ export default function HeaderAnimation() {
                   <span className="letter letter-f-5">T</span>
                   <span className="letter letter-f-6">T</span>
                 </span>
-                <span className="flex flex-row justify-center text-[90px]">
+                <span className="flex flex-row justify-center text-[75px] ml-7 items-end">
                   <span className="letter letter-l-1">L</span>
                   <span className="letter letter-l-2">A</span>
                   <span className="letter letter-l-3">S</span>
@@ -57,17 +57,17 @@ export default function HeaderAnimation() {
                   <span className="letter letter-l-8">T</span>
                   <span className="letter letter-l-9">T</span>
                 </span>
-              </span>
+              {/* </span> */}
             </span>
           </span>
         </h1>
       </div>
-      <div className="mt-[260px] relative">
+      <div className="mt-24 relative">
         <span className="font-semibold italic text-neutral-100 opacity-50 select-none md:hidden">
           Click to disable animation
         </span>
         <label
-          className="inline-flex items-center absolute right-20 opacity-0 group-hover:opacity-80 transition duration-300 ease-out -z-[1]"
+          className="inline-flex items-center absolute right-5 opacity-0 group-hover:opacity-80 transition duration-300 ease-out -z-[1]"
           ref={headerCheckRef}
         >
           <input
