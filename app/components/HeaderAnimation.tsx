@@ -33,12 +33,12 @@ export default function HeaderAnimation() {
         ref={headerTextRef}
       ></div>
       <div>
-        <h1 className="text-7xl font-extrabold">
+        <h1 className="text-[75px] font-extrabold">
           <span className="select-none">
             {/* Header Headertwoo */}
             <span className="header-text-container flex flex-row justify-center w-full">
               {/* <span className="flex flex-col"> */}
-                <span className="flex flex-row justify-center text-[75px]">
+                <span className="flex flex-row justify-center">
                   <span className="letter letter-f-1">V</span>
                   <span className="letter letter-f-2">I</span>
                   <span className="letter letter-f-3">K</span>
@@ -46,7 +46,7 @@ export default function HeaderAnimation() {
                   <span className="letter letter-f-5">O</span>
                   <span className="letter letter-f-6">R</span>
                 </span>
-                <span className="flex flex-row justify-center text-[75px] ml-7 items-end">
+                <span className="flex flex-row justify-center ml-7">
                   <span className="letter letter-l-1">M</span>
                   <span className="letter letter-l-2">A</span>
                   <span className="letter letter-l-3">G</span>
