@@ -235,15 +235,15 @@ body {
   content: '';
   position: absolute;
   width: 860px;
-  height: 84px;
+  height: 74px;
   /* left: 0px; */
   /* top: 0px; */
   text-align: center;
   font-size: 1em;
   font-weight: 800;
-  filter: blur(16px);
+  filter: blur(14px);
   z-index: -1;
-  border-radius: 38px;
+  border-radius: 24px;
   /* transform: scale(1.7); */
 }
 
@@ -297,7 +297,7 @@ body {
 
 .header-text-container {
   position: absolute;
-  top: 42px;
+  top: 37px;
   /* position: relative; */
 }
 
