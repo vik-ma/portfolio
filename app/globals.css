@@ -476,16 +476,16 @@ body {
     transform: translate(0px, 0px)
   }
   65% {
-    transform: translate(0px, -20px)
+    transform: translate(0px, -10px)
   }
   70% {
-    transform: scale(1) translateY(-40px);
+    transform: scale(1) translateY(-20px);
   }
   80% {
     transform: translateY(-0px);
   }
   90% {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
   100% {}
 }
