@@ -29,7 +29,7 @@ export default function HeaderAnimation() {
       onClick={() => toggleAnimCheckbox()}
     >
       <div
-        className="flex justify-center header-shadow header-shadow-anim"
+        className="flex justify-center header-shadow header-shadow-anim header-shadow-anim-start"
         ref={headerTextRef}
       ></div>
       <div>

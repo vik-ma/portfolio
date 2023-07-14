@@ -247,7 +247,7 @@ body {
   /* transform: scale(1.7); */
 }
 
-.header-shadow-anim {
+.header-shadow-anim-start {
   opacity: 0;
   animation: 1s linear 1.5s forwards fade-in;
 }
@@ -256,7 +256,6 @@ body {
   animation: gradient-animation 6s infinite linear;
   background: linear-gradient(130deg,#ffc400 15%, #ff008c 50%, #0044ff 85%);
   background-size: 200% 200%;
-  
 }
 
 .header-shadow-static:before {
