@@ -228,6 +228,7 @@ body {
 .header-shadow {
   position: relative;
   z-index: -1;
+  
 }
 
 .header-shadow:before { 
@@ -246,10 +247,16 @@ body {
   /* transform: scale(1.7); */
 }
 
+.header-shadow-anim {
+  opacity: 0;
+  animation: 1s linear 1.5s forwards fade-in;
+}
+
 .header-shadow-anim:before {
   animation: gradient-animation 6s infinite linear;
   background: linear-gradient(130deg,#ffc400 15%, #ff008c 50%, #0044ff 85%);
   background-size: 200% 200%;
+  
 }
 
 .header-shadow-static:before {
@@ -258,6 +265,12 @@ body {
 
 .animate-enlargement {
   animation: enlarge-animation 0.25s ease-out;
+}
+
+@keyframes fade-in {
+  to { 
+    opacity: 1; 
+  }
 }
 
 @keyframes gradient-animation {
