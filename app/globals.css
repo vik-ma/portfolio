@@ -370,6 +370,83 @@ body {
   animation: header-color-anim 1.6s linear .56s both, Letter-l-1-entry 1.6s linear both .56s;
 }
 
+/* aasddasa */
+
+.letter-f-12 {
+  /* left: calc(var(--anim-x-offset)*0); */
+  animation: header-color-anim 1.6s linear both, Letter-f-1-entry 1.6s linear both;
+}
+
+.letter-f-22 {
+  /* left: calc(var(--anim-x-offset)*1); */
+  animation: header-color-anim 1.6s linear .04s both, Letter-f-1-entry 1.6s linear both .04s;
+}
+
+.letter-f-32 {
+  /* left: calc(var(--anim-x-offset)*2); */
+  animation: header-color-anim 1.6s linear .08s both, Letter-f-1-entry 1.6s linear both .08s;
+}
+
+.letter-f-42 {
+  /* left: calc(var(--anim-x-offset)*3); */
+  animation: header-color-anim 1.6s linear .12s both, Letter-f-1-entry 1.6s linear both .12s;
+}
+
+.letter-f-52 {
+  /* left: calc(var(--anim-x-offset)*4); */
+  animation: header-color-anim 1.6s linear .16s both, Letter-f-1-entry 1.6s linear both .16s;
+}
+
+.letter-f-62 {
+  /* left: calc(var(--anim-x-offset)*5); */
+  animation: header-color-anim 1.6s linear .2s both, Letter-f-1-entry 1.6s linear both .2s;
+}
+
+.letter-l-12 {
+  /* left: calc(var(--anim-x-offset)*7); */
+  animation: header-color-anim 1.6s linear .24s both, Letter-f-1-entry 1.6s linear both .24s;
+}
+
+.letter-l-22 {
+  /* left: calc(var(--anim-x-offset)*8); */
+  animation: header-color-anim 1.6s linear .28s both, Letter-f-1-entry 1.6s linear both .28s;
+}
+
+.letter-l-32 {
+  /* left: calc(var(--anim-x-offset)*9); */
+  animation: header-color-anim 1.6s linear .32s both, Letter-f-1-entry 1.6s linear both .32s;
+}
+
+.letter-l-42 {
+  /* left: calc(var(--anim-x-offset)*10); */
+  animation: header-color-anim 1.6s linear .36s both, Letter-f-1-entry 1.6s linear both .36s;
+}
+
+.letter-l-52 {
+  /* left: calc(var(--anim-x-offset)*11); */
+  animation: header-color-anim 1.6s linear .40s both, Letter-f-1-entry 1.6s linear both .40s;
+}
+
+.letter-l-62 {
+  /* left: calc(var(--anim-x-offset)*12); */
+  animation: header-color-anim 1.6s linear .44s both, Letter-f-1-entry 1.6s linear both .44s;
+}
+
+.letter-l-72 {
+  /* left: calc(var(--anim-x-offset)*13); */
+  animation: header-color-anim 1.6s linear .48s both, Letter-f-1-entry 1.6s linear both .48s;
+}
+
+.letter-l-82 {
+  /* left: calc(var(--anim-x-offset)*14); */
+  animation: header-color-anim 1.6s linear .52s both, Letter-f-1-entry 1.6s linear both .52s;
+}
+
+.letter-l-92 {
+  /* left: calc(var(--anim-x-offset)*15); */
+  animation: header-color-anim 1.6s linear .56s both, Letter-f-1-entry 1.6s linear both .56s;
+}
+
 /*====ANIMATIONS====*/
 
 @keyframes header-color-anim {
