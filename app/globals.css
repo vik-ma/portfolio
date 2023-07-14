@@ -483,21 +483,23 @@ body {
 @keyframes header-color-anim {
   0% {
     color: #814ff7;
+    /* color: #984ff7; */
   }
   13.52% {
     color: #ff0062;
   }
   37.04% {
-    color: #ffd70e;
+    color: #ffda1f;
   }
   48.82% {
     color: #814ff7;
+    /* color: #984ff7; */
   }
   66.48% {
     color: #ff0062;
   }
   90% {
-    color: #ffd70e;
+    color: #ffda1f;
   }
   100% {
     color: #fff;
