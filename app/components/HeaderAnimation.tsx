@@ -35,7 +35,7 @@ export default function HeaderAnimation() {
       <div>
         <h1 className="text-[75px] font-extrabold select-none">
           <span className="header-text-container flex flex-row justify-center w-full">
-            <span className="flex flex-row justify-center">
+            {/* <span className="flex flex-row justify-center">
               <span className="letter letter-f-1">V</span>
               <span className="letter letter-f-2">I</span>
               <span className="letter letter-f-3">K</span>
@@ -53,11 +53,30 @@ export default function HeaderAnimation() {
               <span className="letter letter-l-7">S</span>
               <span className="letter letter-l-8">O</span>
               <span className="letter letter-l-9">N</span>
+            </span> */}
+            <span className="flex flex-row justify-center">
+              <span className="letter letter-f-12">V</span>
+              <span className="letter letter-f-22">I</span>
+              <span className="letter letter-f-32">K</span>
+              <span className="letter letter-f-42">T</span>
+              <span className="letter letter-f-52">O</span>
+              <span className="letter letter-f-62">R</span>
+            </span>
+            <span className="flex flex-row justify-center ml-7">
+              <span className="letter letter-l-12">M</span>
+              <span className="letter letter-l-22">A</span>
+              <span className="letter letter-l-32">G</span>
+              <span className="letter letter-l-42">N</span>
+              <span className="letter letter-l-52">U</span>
+              <span className="letter letter-l-62">S</span>
+              <span className="letter letter-l-72">S</span>
+              <span className="letter letter-l-82">O</span>
+              <span className="letter letter-l-92">N</span>
             </span>
           </span>
         </h1>
       </div>
-      <div className="mt-10">
+      {/* <div className="mt-10">
         <h1 className="text-[75px] font-extrabold select-none">
           <span className="header-text-container flex flex-row justify-center w-full mt-20">
             <span className="flex flex-row justify-center">
@@ -81,7 +100,7 @@ export default function HeaderAnimation() {
             </span>
           </span>
         </h1>
-      </div>
+      </div> */}
       <div className="mt-[100px] relative">
         <span className="font-semibold italic text-neutral-100 opacity-50 select-none md:hidden">
           Click to disable animation
