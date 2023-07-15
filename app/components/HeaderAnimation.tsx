@@ -62,7 +62,7 @@ export default function HeaderAnimation() {
               <span className="letter letter-f-52">O</span>
               <span className="letter letter-f-62">R</span>
             </span>
-            <span className="flex flex-row justify-center ml-3 sm:ml-4 md:ml-7">
+            <span className="flex flex-row justify-center ml-3.5 sm:ml-4 md:ml-7">
               <span className="letter letter-l-12">M</span>
               <span className="letter letter-l-22">A</span>
               <span className="letter letter-l-32">G</span>
