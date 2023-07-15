@@ -112,9 +112,13 @@ body {
   }
   .header-shadow {
     max-width: 630px;
+    max-height: 54px;
   }
   .header-text {
     font-size: 54px;
+  }
+  .header-text-container {
+    margin-top: 5px;
   }
 }
 
@@ -139,9 +143,13 @@ body {
   }
   .header-shadow {
     max-width: 510px;
+    max-height: 44px;
   }
   .header-text {
     font-size: 44px;
+  }
+  .header-text-container {
+    margin-top: 7px;
   }
 }
 
@@ -163,9 +171,13 @@ body {
   }
   .header-shadow {
     max-width: 410px;
+    max-height: 34px;
   }
   .header-text {
     font-size: 34px;
+  }
+  .header-text-container {
+    margin-top: 10px;
   }
 }
 
@@ -187,9 +199,13 @@ body {
   }
   .header-shadow {
     max-width: 340px;
+    max-height: 28px;
   }
   .header-text {
     font-size: 28px;
+  }
+  .header-text-container {
+    margin-top: 11px;
   }
 }
 
@@ -289,6 +305,7 @@ body {
   z-index: -1;
   width: 860px;
   height: 74px;
+  filter: blur(14px);
 }
 
 .header-shadow:before { 
@@ -299,7 +316,6 @@ body {
   text-align: center;
   font-size: 1em;
   font-weight: 800;
-  filter: blur(14px);
   z-index: -1;
   border-radius: 24px;
 }
@@ -357,12 +373,9 @@ body {
 .header-text-container {
   position: absolute;
   top: 22px;
-  /* position: relative; */
 }
 
 .letter {
-  /* position: absolute; */
-  /* font-size: 100px; */
   font-weight: 900;
 }
 
