@@ -76,6 +76,17 @@ body {
   width: 80px;
 }
 
+.header-wrapper {
+  width: 860px;
+}
+
+.hero-container {
+  background-color: #202020;
+  border: 1px solid rgba(70, 70, 70, 0.8);
+  box-shadow: 0px 0px 12px rgb(0, 0, 0);
+  border-radius: 20px;
+}
+
 .main-image-container {
   background-color: #202020;
   border: 1px solid rgba(90, 90, 90, 0.8);
@@ -228,14 +239,15 @@ body {
 .header-shadow {
   position: relative;
   z-index: -1;
-  
+  width: 860px;
+  height: 74px;
 }
 
 .header-shadow:before { 
   content: '';
   position: absolute;
-  width: 860px;
-  height: 74px;
+  width: 100%;
+  height: 100%;
   /* left: 0px; */
   /* top: 0px; */
   text-align: center;
