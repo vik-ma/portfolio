@@ -25,11 +25,11 @@ export default function HeaderAnimation() {
 
   return (
     <div
-      className="flex flex-col group cursor-pointer pt-10 pb-7"
+      className="flex flex-col mx-auto group cursor-pointer pt-10 pb-7"
       onClick={() => toggleAnimCheckbox()}
     >
       <div
-        className="flex justify-center header-shadow header-shadow-anim header-shadow-anim-start"
+        className="flex justify-center  header-shadow header-shadow-anim header-shadow-anim-start"
         ref={headerTextRef}
       ></div>
       <div>

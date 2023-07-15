@@ -103,7 +103,12 @@ body {
   .hero-container {
     width: 630px;
   }
-  
+  .header-wrapper {
+    width: 630px;
+  }
+  .header-shadow {
+    max-width: 630px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -122,6 +127,12 @@ body {
   .hero-container {
     width: 510px;
   }
+  .header-wrapper {
+    width: 510px;
+  }
+  .header-shadow {
+    max-width: 510px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -137,6 +148,12 @@ body {
   .hero-container {
     width: 410px;
   }
+  .header-wrapper {
+    width: 410px;
+  }
+  .header-shadow {
+    max-width: 410px;
+  }
 }
 
 @media (max-width: 490px) {
@@ -151,6 +168,12 @@ body {
   }
   .hero-container {
     width: 340px;
+  }
+  .header-wrapper {
+    width: 340px;
+  }
+  .header-shadow {
+    max-width: 340px;
   }
 }
 
