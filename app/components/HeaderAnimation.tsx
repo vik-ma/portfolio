@@ -29,11 +29,11 @@ export default function HeaderAnimation() {
       onClick={() => toggleAnimCheckbox()}
     >
       <div
-        className="flex justify-center  header-shadow header-shadow-anim header-shadow-anim-start"
+        className="flex justify-center header-shadow header-shadow-anim header-shadow-anim-start"
         ref={headerTextRef}
       ></div>
       <div>
-        <h1 className="text-[75px] font-extrabold select-none">
+        <h1 className="header-text font-extrabold select-none">
           <span className="header-text-container flex flex-row justify-center w-full">
             {/* <span className="flex flex-row justify-center">
               <span className="letter letter-f-1">V</span>
