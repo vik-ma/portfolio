@@ -514,7 +514,8 @@ body {
     color: #ffda1f;
   }
   100% {
-    color: #fff;
+    color: #fafafa;
+    /* color: #fff; */
   }
 }
 
