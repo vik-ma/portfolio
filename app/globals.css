@@ -81,6 +81,7 @@ body {
 }
 
 .hero-container {
+  width: 840px;
   background-color: #202020;
   border: 1px solid rgba(70, 70, 70, 0.8);
   box-shadow: 0px 0px 12px rgb(0, 0, 0);
@@ -103,6 +104,9 @@ body {
   .project-page-container {
     width: 630px;
   }
+  .hero-container {
+    width: 630px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -118,6 +122,9 @@ body {
   .project-page-container {
     width: 510px;
   }
+  .hero-container {
+    width: 510px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -128,6 +135,9 @@ body {
     width: 410px;
   }
   .project-page-container {
+    width: 410px;
+  }
+  .hero-container {
     width: 410px;
   }
 }
@@ -142,7 +152,9 @@ body {
   .project-page-container {
     width: 340px;
   }
-
+  .hero-container {
+    width: 340px;
+  }
 }
 
 .project-box {
