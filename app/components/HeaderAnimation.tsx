@@ -58,7 +58,7 @@ export default function HeaderAnimation() {
         </h1>
       </div>
       <div className="mt-2 sm:mt-2.5 md:mt-3.5 relative">
-        <span className="text-xs sm:text-sm font-semibold italic absolute left-1 sm:left-2 md:left-4 text-neutral-100 opacity-40 select-none md:hidden">
+        <span className="header-disable-anim-text-start text-xs sm:text-sm font-semibold italic absolute left-1 sm:left-2 md:left-4 text-neutral-100 select-none md:hidden">
           Click to disable animation
         </span>
         <label
