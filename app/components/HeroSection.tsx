@@ -15,6 +15,10 @@ export default function HeroSection() {
           <Link className="text-3xl" href={"/#projects"}>
             View Projects
           </Link>
+          <br />
+          <Link className="text-3xl" href={"/about"}>
+            About
+          </Link>
         </div>
       </div>
       {/* </div> */}
