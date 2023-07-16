@@ -147,7 +147,7 @@ export default function ImageSlider({
               className={
                 onlyOneImage
                   ? "relative rounded-lg p-2 pt-1.5 main-image-container"
-                  : "relative rounded-lg pt-2 pb-4 px-1.5 main-image-container"
+                  : "relative rounded-2xl pt-2 pb-4 px-1.5 main-image-container"
               }
               ref={fullImageRef}
             >
