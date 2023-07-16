@@ -58,7 +58,7 @@ export default function HeaderAnimation() {
         </h1>
       </div>
       <div className="mt-3.5 relative">
-        <span className="font-semibold italic text-neutral-100 opacity-50 select-none md:hidden">
+        <span className="text-sm font-semibold italic text-neutral-100 opacity-50 select-none md:hidden">
           Click to disable animation
         </span>
         <label
@@ -67,11 +67,11 @@ export default function HeaderAnimation() {
         >
           <input
             type="checkbox"
-            className="h-4 w-4 accent-neutral-100"
+            className="h-3.5 w-3.5 md:h-4 md:w-4 accent-neutral-100"
             checked={disableAnimation}
             readOnly={true}
           />
-          <span className="text-neutral-100 font-semibold ml-1.5">
+          <span className="text-sm md:text-base text-neutral-100 font-semibold ml-1 md:ml-1.5">
             Disable Animation
           </span>
         </label>
