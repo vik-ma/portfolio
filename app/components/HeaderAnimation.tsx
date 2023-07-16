@@ -58,7 +58,7 @@ export default function HeaderAnimation() {
         </h1>
       </div>
       <div className="mt-3.5 relative">
-        <span className="text-sm font-semibold italic text-neutral-100 opacity-50 select-none md:hidden">
+        <span className="text-xs sm:text-sm font-semibold italic absolute left-4 text-neutral-100 opacity-50 select-none md:hidden">
           Click to disable animation
         </span>
         <label
@@ -71,7 +71,7 @@ export default function HeaderAnimation() {
             checked={disableAnimation}
             readOnly={true}
           />
-          <span className="text-sm md:text-base text-neutral-100 font-semibold ml-1 md:ml-1.5">
+          <span className="text-xs sm:text-sm md:text-base text-neutral-100 font-semibold ml-1 md:ml-1.5">
             Disable Animation
           </span>
         </label>
