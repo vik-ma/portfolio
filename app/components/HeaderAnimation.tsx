@@ -57,17 +57,17 @@ export default function HeaderAnimation() {
           </span>
         </h1>
       </div>
-      <div className="mt-3.5 relative">
-        <span className="text-xs sm:text-sm font-semibold italic absolute left-4 text-neutral-100 opacity-50 select-none md:hidden">
+      <div className="mt-2 sm:mt-2.5 md:mt-3.5 relative">
+        <span className="text-xs sm:text-sm font-semibold italic absolute left-1 sm:left-2 md:left-4 text-neutral-100 opacity-40 select-none md:hidden">
           Click to disable animation
         </span>
         <label
-          className="inline-flex items-center absolute right-5 opacity-0 group-hover:opacity-80 transition duration-300 ease-out -z-[1]"
+          className="inline-flex items-center absolute right-1.5 sm:right-3 md:right-5 opacity-0 group-hover:opacity-80 transition duration-300 ease-out -z-[1]"
           ref={headerCheckRef}
         >
           <input
             type="checkbox"
-            className="h-3.5 w-3.5 md:h-4 md:w-4 accent-neutral-100"
+            className="h-3 w-3 sm:h-3.5 sm:w-3.5 md:h-4 md:w-4 accent-neutral-100"
             checked={disableAnimation}
             readOnly={true}
           />
