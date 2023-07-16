@@ -2,8 +2,6 @@ import { ProjectsInfo } from "@/app/ProjectsInfo";
 import { ProjectsInfoProps } from "@/typings";
 import Modal from "@/app/components/Modal";
 import ProjectPage from "@/app/components/ProjectPage";
-import CloseButton from "@/app/icons/CloseButton";
-import Link from "next/link";
 
 type PageProps = {
   params: {
@@ -23,11 +21,6 @@ export default function ProjectModal({ params: { id } }: PageProps) {
         >
           {project?.name}
         </h1>
-        {/* <div className="flex items-baseline -mt-1 -mr-1">
-          <div className="p-1.5 rounded-lg hover:bg-neutral-700">
-            <CloseButton />
-          </div>
-        </div> */}
       </div>
       <ProjectPage project={project} />
     </Modal>
