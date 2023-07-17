@@ -105,7 +105,7 @@ body {
   .project-page-container {
     width: 630px;
   }
-  .hero-container {
+  .hero-inner-container {
     width: 580px;
   }
   .header-wrapper {
@@ -137,7 +137,7 @@ body {
   .project-page-container {
     width: 510px;
   }
-  .hero-container {
+  .hero-inner-container {
     width: 510px;
   }
   .header-wrapper {
@@ -166,7 +166,7 @@ body {
   .project-page-container {
     width: 410px;
   }
-  .hero-container {
+  .hero-inner-container {
     width: 410px;
   }
   .header-wrapper {
@@ -195,7 +195,7 @@ body {
   .project-page-container {
     width: 340px;
   }
-  .hero-container {
+  .hero-inner-container {
     width: 340px;
   }
   .header-wrapper {

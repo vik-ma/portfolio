@@ -11,13 +11,13 @@ export default function HeroSection() {
             <div className="hero-inner-container flex flex-col justify-between p-2 h-full">
               <div></div>
               <div className="flex flex-row justify-evenly">
-                <Link className="font-bold text-3xl" href={"/#languages"}>
+                <Link className="font-bold text-xl md:text-3xl" href={"/#languages"}>
                   View Languages
                 </Link>
-                <Link className="font-bold text-3xl" href={"/#projects"}>
+                <Link className="font-bold text-xl md:text-3xl" href={"/#projects"}>
                   View Projects
                 </Link>
-                <Link className="font-bold text-3xl" href={"/about"}>
+                <Link className="font-bold text-xl md:text-3xl" href={"/about"}>
                   About
                 </Link>
               </div>
