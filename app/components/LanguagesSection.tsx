@@ -15,7 +15,7 @@ import GitLogo from "../icons/GitLogo";
 export default function LanguagesSection() {
   return (
     <div className="text-center">
-      <h2 className="pb-4 text-4xl md:text-6xl font-extrabold bg-gradient-to-l from-blue-500 via-pink-600 to-yellow-400 bg-clip-text text-transparent">
+      <h2 className="pb-4 text-4xl md:text-5xl min-[871px]:text-7xl font-extrabold bg-gradient-to-l from-blue-500 via-pink-600 to-yellow-400 bg-clip-text text-transparent">
         Languages and Tools
       </h2>
       <div className="rounded-3xl bg-gradient-to-l from-blue-500 via-pink-600 to-yellow-400 p-1.5">
