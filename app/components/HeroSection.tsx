@@ -6,7 +6,7 @@ export default function HeroSection() {
     <div className="relative header-wrapper flex flex-row justify-center">
       <div className="flex flex-col justify-center">
         <HeaderAnimation />
-        <div className="hero-container mt-20 rounded-3xl bg-gradient-to-r from-red-500 via-pink-500 to-indigo-500 p-1.5 p-1.5">
+        <div className="hero-container mt-20 rounded-3xl bg-gradient-to-l from-blue-500 via-pink-600 to-yellow-400 p-1.5 p-1.5">
           <div className="hero-inner-container h-[200px] mx-auto text-center py-2 md:py-3 font-sans text-sm text-zinc-100">
             <div className="flex flex-col justify-between p-2 h-full">
               <div></div>
