@@ -10,7 +10,7 @@
   --main-container-stage-2-width: 580px;
   --main-container-stage-3-width: 500px;
   --main-container-stage-4-width: 400px;
-  --main-container-stage-5-width: 300px;
+  --main-container-stage-5-width: 320px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -104,7 +104,7 @@ body {
     width: var(--main-container-stage-2-width);
   }
   .projects-container {
-    width: 610px;
+    width: 626px;
   }
   .project-page-container {
     width: 630px;
