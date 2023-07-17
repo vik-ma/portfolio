@@ -8,7 +8,7 @@ export default function HeroSection() {
         <HeaderAnimation />
         <div className="rounded-3xl mt-20 rounded-3xl bg-gradient-to-l from-blue-500 via-pink-600 to-yellow-400 p-1.5">
           <div className="hero-container h-[200px] text-center py-2 md:py-3 font-sans text-sm text-zinc-100">
-            <div className="hero-inner-container flex flex-col justify-between p-2 h-full">
+            <div className="hero-inner-container mx-auto flex flex-col justify-between p-2 h-full">
               <div></div>
               <div className="flex flex-row justify-evenly">
                 <Link className="font-bold text-xl md:text-3xl" href={"/#languages"}>
