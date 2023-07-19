@@ -389,6 +389,12 @@ body {
   }
 }
 
+.single-page-back-button {
+  background-color: #202020;
+  border: 1px solid rgba(70, 70, 70, 0.8);
+  box-shadow: 0px 0px 8px rgb(0, 0, 0);
+}
+
 .header-text-container {
   position: absolute;
   top: 22px;

@@ -1,7 +1,7 @@
 export default function BackArrow() {
   return (
     <svg
-      fill="#f4f4f5"
+      fill="#f5f5f4"
       width="22px"
       height="22px"
       viewBox="0 0 1024.00 1024.00"

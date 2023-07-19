@@ -21,7 +21,7 @@ export default function Project({ params: { id } }: PageProps) {
     <div className="flex h-screen justify-center items-center">
       <div>
         <Link href="/#projects">
-          <button className="mb-5 py-2.5 px-4 rounded-xl font-bold text-xl text-zinc-100 bg-neutral-800 hover:bg-neutral-700">
+          <button className="single-page-back-button mb-5 py-2 px-4 rounded-xl font-bold text-xl text-stone-100 hover:bg-stone-700">
             <span className="inline-block align-middle">
               <BackArrow />
             </span>
