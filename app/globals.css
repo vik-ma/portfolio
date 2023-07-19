@@ -52,7 +52,7 @@ body {
 
 .project-page-container {
   z-index: 2;
-  width: 840px;
+  width: calc(var(--main-container-stage-1-width) + 20px);
   background-color: #202020;
   border: 1px solid rgba(70, 70, 70, 0.8);
   box-shadow: 0px 0px 12px 1px rgb(0, 0, 0);
@@ -66,7 +66,7 @@ body {
 }
 
 .projects-container {
-  width: 840px;
+  width: calc(var(--main-container-stage-1-width) + 10px);
 }
 
 .logo-wrapper {  
@@ -98,10 +98,10 @@ body {
     width: var(--main-container-stage-2-width);
   }
   .projects-container {
-    width: 590px;
+    width: calc(var(--main-container-stage-2-width) + 10px);
   }
   .project-page-container {
-    width: 630px;
+    width: calc(var(--main-container-stage-2-width) + 20px);
   }
   .hero-container {
     width: var(--main-container-stage-2-width);
@@ -129,10 +129,10 @@ body {
     width: var(--main-container-stage-3-width);
   }
   .projects-container {
-    width: 510px;
+    width: calc(var(--main-container-stage-3-width) + 10px);
   }
   .project-page-container {
-    width: 510px;
+    width: calc(var(--main-container-stage-3-width) + 20px);
   }
   .hero-container {
     width: var(--main-container-stage-3-width);
@@ -158,10 +158,10 @@ body {
     width: var(--main-container-stage-4-width);
   }
   .projects-container {
-    width: 410px;
+    width: calc(var(--main-container-stage-4-width) + 10px);
   }
   .project-page-container {
-    width: 410px;
+    width: calc(var(--main-container-stage-4-width) + 20px);
   }
   .hero-container {
     width: var(--main-container-stage-4-width);
@@ -187,10 +187,10 @@ body {
     width: var(--main-container-stage-5-width);
   }
   .projects-container {
-    width: 330px;
+    width: calc(var(--main-container-stage-5-width) + 10px);
   }
   .project-page-container {
-    width: 340px;
+    width: calc(var(--main-container-stage-5-width) + 20px);
   }
   .hero-container {
     width: var(--main-container-stage-5-width);
