@@ -172,7 +172,7 @@ body {
   .header-shadow {
     max-width: 410px;
     max-height: 38px;
-    filter: blur(10px) !important;
+    filter: blur(9px) !important;
   }
   .header-text {
     font-size: 35px;
@@ -196,15 +196,15 @@ body {
     width: var(--main-container-stage-5-width);
   }
   .header-wrapper {
-    width: 340px;
+    width: 332px;
   }
   .header-shadow {
-    max-width: 340px;
-    max-height: 34px;
+    max-width: 332px;
+    max-height: 33px;
     filter: blur(8px) !important;
   }
   .header-text {
-    font-size: 29px;
+    font-size: 28px;
   }
   .header-text-container {
     margin-top: 14px;
