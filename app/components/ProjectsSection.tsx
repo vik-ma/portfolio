@@ -24,7 +24,7 @@ export default function ProjectsSection() {
                         {value.name}
                       </h3>
                       <div className="flex flex-row justify-between mt-1 mb-2">
-                        <p className="project-short-desc max-w-[50%] mr-1 max-w-[490px]:mr-0">
+                        <p className="project-short-desc max-w-[50%] max-[490px]:max-w-[40%] max-[490px]:mr-1">
                           {value.shortDescription}
                         </p>
                         <div className="max-h-full">
