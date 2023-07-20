@@ -142,14 +142,14 @@ body {
   }
   .header-shadow {
     max-width: 510px;
-    max-height: 44px;
-    filter: blur(10px) !important;
+    max-height: 48px;
+    filter: blur(12px) !important;
   }
   .header-text {
     font-size: 44px;
   }
   .header-text-container {
-    margin-top: 8px;
+    margin-top: 9px;
   }
 }
 
@@ -171,14 +171,14 @@ body {
   }
   .header-shadow {
     max-width: 410px;
-    max-height: 35px;
-    filter: blur(8px) !important;
+    max-height: 38px;
+    filter: blur(10px) !important;
   }
   .header-text {
     font-size: 35px;
   }
   .header-text-container {
-    margin-top: 10px;
+    margin-top: 11px;
   }
 }
 
@@ -200,14 +200,14 @@ body {
   }
   .header-shadow {
     max-width: 340px;
-    max-height: 28px;
-    filter: blur(7px) !important;
+    max-height: 34px;
+    filter: blur(8px) !important;
   }
   .header-text {
-    font-size: 28px;
+    font-size: 29px;
   }
   .header-text-container {
-    margin-top: 12px;
+    margin-top: 14px;
   }
 }
 
