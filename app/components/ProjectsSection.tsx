@@ -23,10 +23,11 @@ export default function ProjectsSection() {
                       <h3 className="text-xl font-bold text-zinc-100">
                         {value.name}
                       </h3>
-                      <div className="mt-1">
+                      <div className="mt-1 max-[490px]:mt-0.5">
                         <div className="ml-2.5 max-h-full float-right">
                           <div className="mt-1 thumbnail-container">
                             <Image
+                              className="max-[490px]:max-w-[140px]"
                               src={value.thumbnailImgSrc}
                               alt={`${value.name} Preview Image`}
                               width={160}
