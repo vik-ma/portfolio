@@ -23,11 +23,8 @@ export default function ProjectsSection() {
                       <h3 className="text-xl font-bold text-zinc-100">
                         {value.name}
                       </h3>
-                      <div className="flex flex-row justify-between mt-1 mb-2">
-                        <p className="project-short-desc max-w-[50%] max-[490px]:max-w-[40%] max-[490px]:mr-1">
-                          {value.shortDescription}
-                        </p>
-                        <div className="max-h-full">
+                      <div className="mt-1 mb-2">
+                        <div className="ml-1 max-h-full float-right">
                           <div className="mt-1 thumbnail-container">
                             <Image
                               src={value.thumbnailImgSrc}
@@ -39,6 +36,9 @@ export default function ProjectsSection() {
                             />
                           </div>
                         </div>
+                        <p className="project-short-desc max-w-[50%]">
+                          {value.shortDescription}
+                        </p>
                       </div>
                     </div>
                     <div className="flex flex-wrap -ml-1 text-stone-200">
