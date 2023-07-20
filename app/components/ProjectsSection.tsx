@@ -27,15 +27,17 @@ export default function ProjectsSection() {
                         <p className="project-short-desc max-w-[50%] mr-1 max-w-[490px]:mr-0">
                           {value.shortDescription}
                         </p>
-                        <div className=" mt-1 thumbnail-container">
-                          <Image
-                            src={value.thumbnailImgSrc}
-                            alt={`${value.name} Preview Image`}
-                            width={160}
-                            height={100}
-                            placeholder="blur"
-                            blurDataURL={value.thumbnailBase64Data}
-                          />
+                        <div className="max-h-full">
+                          <div className="mt-1 thumbnail-container">
+                            <Image
+                              src={value.thumbnailImgSrc}
+                              alt={`${value.name} Preview Image`}
+                              width={160}
+                              height={100}
+                              placeholder="blur"
+                              blurDataURL={value.thumbnailBase64Data}
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
