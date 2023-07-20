@@ -19,11 +19,11 @@ export default function ProjectsSection() {
               <Link key={key} href={`/projects/${key}`}>
                 <div className="p-2 h-full project-box">
                   <div className="flex flex-col justify-between px-1 h-full project-box-content">
-                    <div className="mb-2">
+                    <div className="mb-2.5">
                       <h3 className="text-xl font-bold text-zinc-100">
                         {value.name}
                       </h3>
-                      <div className="mt-1 mb-2">
+                      <div className="mt-1">
                         <div className="ml-2.5 max-h-full float-right">
                           <div className="mt-1 thumbnail-container">
                             <Image
