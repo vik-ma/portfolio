@@ -1,7 +1,7 @@
 export const ProjectsInfo = {
   "price-performance-scraper": {
     name: "Price-Performance Scraper",
-    shortDescription: "Short Description",
+    shortDescription: "Short Description asd ads asda asdasd asd asrd asd ased assd asd aaasd aaaaaaaa asd",
     fullDescription: <p>Price-Performance Scraper Description</p>,
     cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
     techStack: [
@@ -43,7 +43,7 @@ export const ProjectsInfo = {
   },
   "pathfinding-race": {
     name: "Pathfinding Race",
-    shortDescription: "Short Description",
+    shortDescription: "Short Description asd ads asda asdasd asd asrd asd ased assd asd aaasd aaaaaaaa asd",
     fullDescription: <p>Pathfinding Race Description</p>,
     cssGradient: "bg-gradient-to-r from-rose-600 to-amber-400",
     techStack: ["HTML", "CSS", "JavaScript", "React"],
@@ -75,7 +75,7 @@ export const ProjectsInfo = {
   },
   "paint-a-wave-function-collapse": {
     name: "Paint A Wave Function Collapse",
-    shortDescription: "Short Description",
+    shortDescription: "Short Description asd ads asda asdasd asd asrd asd ased assd asd aaasd aaaaaaaa asd",
     fullDescription: <p>Paint A Wave Function Collapse Description</p>,
     cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
     techStack: ["Python", "PyGame", "HTML", "CSS", "JavaScript", "WebAssembly"],
@@ -103,7 +103,7 @@ export const ProjectsInfo = {
   },
   "screenshot-ocr": {
     name: "Screenshot OCR",
-    shortDescription: "Short Description",
+    shortDescription: "Short Description asd ads asda asdasd asd asrd asd ased assd asd aaasd aaaaaaaa asd",
     fullDescription: <p>Screenshot OCR Description</p>,
     cssGradient: "bg-gradient-to-r from-rose-600 to-amber-400",
     techStack: ["Python", "PyQt"],
@@ -129,7 +129,7 @@ export const ProjectsInfo = {
   },
   "file-opener": {
     name: "File Opener",
-    shortDescription: "Short Description",
+    shortDescription: "Short Description asd ads asda asdasd asd asrd asd ased assd asd aaasd aaaaaaaa asd",
     fullDescription: <p>File Opener Description</p>,
     cssGradient: "bg-gradient-to-r from-rose-600 to-yellow-400",
     techStack: ["Python", "Tkinter"],
