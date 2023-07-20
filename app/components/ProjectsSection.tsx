@@ -30,7 +30,7 @@ export default function ProjectsSection() {
                               className="max-[490px]:max-w-[140px]"
                               src={value.thumbnailImgSrc}
                               alt={`${value.name} Preview Image`}
-                              width={160}
+                              width={176}
                               height={100}
                               placeholder="blur"
                               blurDataURL={value.thumbnailBase64Data}

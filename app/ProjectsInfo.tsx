@@ -1,7 +1,7 @@
 export const ProjectsInfo = {
   "price-performance-scraper": {
     name: "Price-Performance Scraper",
-    shortDescription: "Short Description asd ads asda asdasd asd asrd asd ased assd asd aaasd aaaaaaaa asd",
+    shortDescription: "Short Description asd ads asda asdasd asd asrd asd ased assd asd aaasd aaaaaaaa asd aaaaaaaa asd aaaaaaaa asd aaaaaaaa asd aaaaaaaa asd aaaaaaaa asd",
     fullDescription: <p>Price-Performance Scraper Description</p>,
     cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
     techStack: [
