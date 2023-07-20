@@ -24,10 +24,10 @@ export default function ProjectsSection() {
                         {value.name}
                       </h3>
                       <div className="flex flex-row justify-between mt-1 mb-2">
-                        <p className="project-short-desc max-w-[50%]">
+                        <p className="project-short-desc max-w-[50%] mr-1 max-w-[490px]:mr-0">
                           {value.shortDescription}
                         </p>
-                        <div className="mt-1 thumbnail-container">
+                        <div className=" mt-1 thumbnail-container">
                           <Image
                             src={value.thumbnailImgSrc}
                             alt={`${value.name} Preview Image`}
