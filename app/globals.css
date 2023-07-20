@@ -345,12 +345,18 @@ body {
 
 .header-disable-anim-text-start {
   opacity: 0;
-  animation: 0.5s linear 2.5s forwards fade-in-40;
+  animation: 0.5s linear 2.5s forwards fade-in-40, 0.5s linear 10s forwards fade-out;
 }
 
 @keyframes fade-in {
   to { 
     opacity: 1; 
+  }
+}
+
+@keyframes fade-out {
+  to { 
+    opacity: 0; 
   }
 }
 
