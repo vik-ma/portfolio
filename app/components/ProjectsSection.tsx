@@ -24,7 +24,7 @@ export default function ProjectsSection() {
                         {value.name}
                       </h3>
                       <div className="mt-1 max-[490px]:mt-0.5">
-                        <div className="ml-2.5 sm:ml-3 max-h-full float-right">
+                        <div className="ml-2.5 sm:ml-4 max-h-full float-right">
                           <div className="mt-1 thumbnail-container">
                             <Image
                               className="max-[490px]:max-w-[140px]"
