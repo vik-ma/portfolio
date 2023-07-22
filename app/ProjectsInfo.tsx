@@ -45,7 +45,7 @@ export const ProjectsInfo = {
   "pathfinding-race": {
     name: "Pathfinding Race",
     shortDescription:
-      "Short Description asd ads asda asdasd asd asrd asd ased assd asd aaasd aaaaaaaa asd",
+      "",
     fullDescription: <p>Pathfinding Race Description</p>,
     cssGradient: "bg-gradient-to-r from-rose-600 to-amber-400",
     techStack: ["HTML", "CSS", "JavaScript", "React"],
@@ -78,7 +78,7 @@ export const ProjectsInfo = {
   "paint-a-wave-function-collapse": {
     name: "Paint A Wave Function Collapse",
     shortDescription:
-      "Short Description asd ads asda asdasd asd asrd asd ased assd asd aaasd aaaaaaaa asd",
+      "Browser application that procedurally generates an image using the WFC algorithm from on a small pixel tile painted by the user.",
     fullDescription: <p>Paint A Wave Function Collapse Description</p>,
     cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
     techStack: ["Python", "PyGame", "HTML", "CSS", "JavaScript", "WebAssembly"],
@@ -107,7 +107,7 @@ export const ProjectsInfo = {
   "screenshot-ocr": {
     name: "Screenshot OCR",
     shortDescription:
-      "Desktop GUI front end for the Tesseract OCR engine that allows the user to perform OCR on a section of the screen without having to save or load an image file.",
+      "Desktop GUI front end for the Tesseract OCR engine that can perform OCR on a section of the screen without having to load an image file.",
     fullDescription: <p>Screenshot OCR Description</p>,
     cssGradient: "bg-gradient-to-r from-rose-600 to-amber-400",
     techStack: ["Python", "PyQt"],
@@ -133,7 +133,7 @@ export const ProjectsInfo = {
   },
   "file-opener": {
     name: "File Opener",
-    shortDescription: "Desktop application that allows the user to save a list of programs, files or folders to be simultaneously opened.",
+    shortDescription: "Desktop application that allows the user to save a group of programs, files or folders to be opened simultaneously with just one click.",
     fullDescription: <p>File Opener Description</p>,
     cssGradient: "bg-gradient-to-r from-rose-600 to-yellow-400",
     techStack: ["Python", "Tkinter"],
@@ -156,7 +156,7 @@ export const ProjectsInfo = {
   "link-opener": {
     name: "Link Opener",
     shortDescription:
-      "Desktop application that allows the user to filter and automatically open a saved list of URLs from a .txt file into any installed web browser.",
+      "Desktop application that can filter and open multiple URLs at once from a saved .txt file into any installed web browser.",
     fullDescription: <p>Link Opener Description</p>,
     cssGradient: "bg-gradient-to-r from-rose-600 to-yellow-400",
     techStack: ["Python", "Tkinter"],
