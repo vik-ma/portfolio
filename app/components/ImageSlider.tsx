@@ -252,8 +252,8 @@ export default function ImageSlider({
           <Image
             className={
               isPreviewAnimOngoing
-                ? "rounded cursor-pointer animate-fade"
-                : "rounded cursor-pointer"
+                ? "rounded cursor-zoom-in animate-fade"
+                : "rounded cursor-zoom-in"
             }
             src={previewImgSrcList[currentImageIndex]}
             alt={`${name} Preview Image ${currentImageIndex + 1}`}
