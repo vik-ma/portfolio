@@ -113,7 +113,7 @@ export default function ImageSlider({
 
     setTimeout(() => {
       setIsPreviewAnimOngoing(false);
-    }, 200);
+    }, 300);
   };
 
   const animateFullSizeImageChange = () => {
@@ -121,7 +121,7 @@ export default function ImageSlider({
 
     setTimeout(() => {
       setIsFullSizeAnimOngoing(false);
-    }, 200);
+    }, 300);
   };
 
   const showFullSizeImage = () => {

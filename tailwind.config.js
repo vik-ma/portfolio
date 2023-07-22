@@ -13,13 +13,13 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
-        fade: "fadeIn 0.2s",
+        fade: "fadeIn 0.3s",
         modal: "openModal 0.2s",
       },
 
       keyframes: {
         fadeIn: {
-          "0%": { opacity: "0" },
+          "0%": { opacity: "0.5" },
           "100%": { opacity: "1" },
         },
         openModal: {
