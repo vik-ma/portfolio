@@ -2,7 +2,7 @@ export const ProjectsInfo = {
   "price-performance-scraper": {
     name: "Price-Performance Scraper",
     shortDescription:
-      "Short Description asd ads asda asdasd asd asrd asd ased assd asd aaasd aaaaaaaa asd aaaaaaaa asd aaaaaaaa asd aaaaaaaa asd aaaaaaaa asd aaaaaaaa asd",
+      "A full stack application",
     fullDescription: <p>Price-Performance Scraper Description</p>,
     cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
     techStack: [
@@ -45,7 +45,7 @@ export const ProjectsInfo = {
   "pathfinding-race": {
     name: "Pathfinding Race",
     shortDescription:
-      "",
+      "A browser game that visualizes different pathfinding algorithms on randomized grids, and the player has to predict which algorithm will reach the goal first.",
     fullDescription: <p>Pathfinding Race Description</p>,
     cssGradient: "bg-gradient-to-r from-rose-600 to-amber-400",
     techStack: ["HTML", "CSS", "JavaScript", "React"],
