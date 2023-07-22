@@ -1,5 +1,6 @@
 import Link from "next/link";
 import BackArrow from "../icons/BackArrow";
+import AboutPage from "../components/AboutPage";
 
 export default function About() {
   return (
@@ -16,11 +17,7 @@ export default function About() {
           </button>
         </Link>
         <div className="px-4 py-3 md:py-4 rounded-xl max-md:text-center project-page-container">
-          <h1
-            className={`pb-0.5 md:pb-2 text-3xl md:text-5xl font-extrabold text-neutral-100`}
-          >
-            About
-          </h1>
+          <AboutPage />
         </div>
       </div>
     </div>
