@@ -19,18 +19,18 @@ export default function ProjectsSection() {
               <Link key={key} href={`/projects/${key}`}>
                 <div className="p-2 h-full project-box">
                   <div className="flex flex-col justify-between px-1 h-full project-box-content">
-                    <div className="mb-2.5">
+                    <div className="mb-1.5">
                       <h3 className="text-xl font-bold text-zinc-100">
                         {value.name}
                       </h3>
                       <div className="mt-1 max-[490px]:mt-0.5">
-                        <div className="ml-2.5 sm:ml-4 max-h-full float-right">
-                          <div className="mt-1 thumbnail-container">
+                        <div className="ml-2.5 sm:ml-3 max-h-full float-right">
+                          <div className="mt-1.5 thumbnail-container">
                             <Image
                               className="max-[490px]:max-w-[140px]"
                               src={value.thumbnailImgSrc}
                               alt={`${value.name} Preview Image`}
-                              width={176}
+                              width={168}
                               height={100}
                               placeholder="blur"
                               blurDataURL={value.thumbnailBase64Data}
