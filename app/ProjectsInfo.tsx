@@ -107,7 +107,7 @@ export const ProjectsInfo = {
   "screenshot-ocr": {
     name: "Screenshot OCR",
     shortDescription:
-      "Desktop GUI front end for the Tesseract OCR engine that can perform OCR on a section of the screen without having to load an image file.",
+      "Windows GUI application that serves as a front end for the Tesseract OCR engine. Performs OCR on a section of the screen without having to load an image file.",
     fullDescription: <p>Screenshot OCR Description</p>,
     cssGradient: "bg-gradient-to-r from-rose-600 to-amber-400",
     techStack: ["Python", "PyQt"],
