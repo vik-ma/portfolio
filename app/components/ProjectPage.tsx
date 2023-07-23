@@ -7,12 +7,12 @@ export default function ProjectPage({ project }: ProjectProps) {
   return (
     <div className="px-0.5">
       <div className="flex flex-col justify-between">
-        <div className="flex flex-col md:flex-row md:space-x-6 justify-between mb-2">
+        <div className="flex flex-col min-[871px]:flex-row min-[871px]:space-x-6 justify-between mb-2">
           <div className="flex flex-col justify-between">
             <div className="mb-2 md:mb-none text-stone-200">
               {project?.fullDescription}
             </div>
-            <div className="flex md:justify-normal my-1 -ml-0.5">
+            <div className="flex md:justify-normal mt-1 -ml-0.5">
               <a
                 href={project?.githubLink}
                 target="_blank"
