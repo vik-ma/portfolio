@@ -8,8 +8,11 @@ export default function ProjectPage({ project }: ProjectProps) {
     <div className="px-0.5">
       <div className="flex flex-col justify-between">
         <div className="flex flex-col md:flex-row md:space-x-6 justify-between mb-2">
-          <div className="">
-            <div className="flex md:justify-normal mt-1 mb-1 md:mb-2 -ml-0.5">
+          <div className="flex flex-col justify-between">
+            <div className="mb-2 md:mb-none text-stone-200">
+              {project?.fullDescription}
+            </div>
+            <div className="flex md:justify-normal my-1 -ml-0.5">
               <a
                 href={project?.githubLink}
                 target="_blank"
@@ -32,9 +35,6 @@ export default function ProjectPage({ project }: ProjectProps) {
                   <span className="ml-1.5">Live Site</span>
                 </a>
               )}
-            </div>
-            <div className="mb-2 md:mb-none text-stone-200">
-              {project?.fullDescription}
             </div>
           </div>
           <ImageSlider
