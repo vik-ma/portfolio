@@ -231,7 +231,7 @@ export default function ImageSlider({
         </div>
       )}
       <div className="flex flex-col items-center">
-        <p className="text-neutral-400 italic text-sm md:text-base mb-0.5">
+        <p className="text-neutral-400 italic text-sm mb-0.5">
           {windowWidth <= 870
             ? "Click to open image in new tab"
             : "Click to view larger image"}
