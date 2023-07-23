@@ -5,7 +5,7 @@ import LiveSite from "../icons/LiveSite";
 
 export default function ProjectPage({ project }: ProjectProps) {
   return (
-    <div className="max-md:text-center px-0.5">
+    <div className="px-0.5">
       <div className="flex flex-col justify-between">
         <div className="flex flex-col md:flex-row justify-between mb-7">
           <div className="">
