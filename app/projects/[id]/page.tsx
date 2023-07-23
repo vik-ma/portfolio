@@ -28,9 +28,9 @@ export default function Project({ params: { id } }: PageProps) {
             <span className="inline-block align-middle ml-2.5">Back To Projects</span>
           </button>
         </Link>
-        <div className="px-4 py-3 md:py-4 rounded-xl max-md:text-center project-page-container">
+        <div className="px-4 py-3 md:py-4 rounded-xl project-page-container">
           <h1
-            className={`pb-0.5 md:pb-2 text-3xl md:text-5xl font-extrabold bg-clip-text text-transparent ${project?.cssGradient}`}
+            className={`pb-1 md:pb-2 text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent ${project?.cssGradient}`}
           >
             {project?.name}
           </h1>
