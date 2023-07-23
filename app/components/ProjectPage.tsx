@@ -7,7 +7,7 @@ export default function ProjectPage({ project }: ProjectProps) {
   return (
     <div className="px-0.5">
       <div className="flex flex-col justify-between">
-        <div className="flex flex-col md:flex-row md:space-x-5 justify-between mb-7">
+        <div className="flex flex-col md:flex-row md:space-x-6 justify-between mb-7">
           <div className="">
             <div className="flex md:justify-normal mt-1 mb-1 md:mb-2 -ml-0.5">
               <a
@@ -33,7 +33,7 @@ export default function ProjectPage({ project }: ProjectProps) {
                 </a>
               )}
             </div>
-            <div className="mb-2 md:mb-none text-stone-100">
+            <div className="mb-2 md:mb-none text-stone-200">
               {project?.fullDescription}
             </div>
           </div>

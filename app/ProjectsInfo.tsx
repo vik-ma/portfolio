@@ -160,8 +160,8 @@ export const ProjectsInfo = {
       "Desktop application that can filter and open multiple URLs at once from a saved .txt file into any installed web browser.",
     fullDescription: (
       <p>
-        <strong>Link Opener</strong>, or{" "}
-        <strong>Open Links From Text File</strong>, is a desktop GUI application
+        <strong className="text-stone-100">Link Opener</strong>, or{" "}
+        <strong className="text-stone-100">Open Links From Text File</strong>, is a desktop GUI application
         made for Windows that allows the user to automatically open a batch of
         URLs stored in a .txt file (and most other line-based text files) into
         any installed web browser.
