@@ -133,7 +133,8 @@ export const ProjectsInfo = {
   },
   "file-opener": {
     name: "File Opener",
-    shortDescription: "Desktop application that allows the user to save a group of programs, files or folders to be opened simultaneously with just one click.",
+    shortDescription:
+      "Desktop application that allows the user to save a group of programs, files or folders to be opened simultaneously with just one click.",
     fullDescription: <p>File Opener Description</p>,
     cssGradient: "bg-gradient-to-r from-rose-600 to-yellow-400",
     techStack: ["Python", "Tkinter"],
@@ -157,7 +158,22 @@ export const ProjectsInfo = {
     name: "Link Opener",
     shortDescription:
       "Desktop application that can filter and open multiple URLs at once from a saved .txt file into any installed web browser.",
-    fullDescription: <p>Link Opener Description</p>,
+    fullDescription: (
+      <p>
+        <strong>Link Opener</strong>, or{" "}
+        <strong>Open Links From Text File</strong>, is a desktop GUI application
+        made for Windows that allows the user to automatically open a batch of
+        URLs stored in a .txt file (and most other line-based text files) into
+        any installed web browser.
+        <br />
+        <br />
+        The application is also includes additional feautures, such as the
+        ability to filter which links to open, and support for comments placed
+        next to the link. This makes it possible to, for example, only open
+        links from a specific domain, or links whose comments contain a specific
+        phrase.
+      </p>
+    ),
     cssGradient: "bg-gradient-to-r from-rose-600 to-yellow-400",
     techStack: ["Python", "Tkinter"],
     thumbnailImgSrc: "/images/link-opener-thumbnail.png",
