@@ -2,7 +2,7 @@ export const ProjectsInfo = {
   "price-performance-scraper": {
     name: "Price-Performance Scraper",
     shortDescription:
-      "A full stack application",
+      "A website where the user can select various GPU or CPU models and compare their price-performance score by scraping their prices in real time and comparing them to up-to-date benchmarks.",
     fullDescription: <p>Price-Performance Scraper Description</p>,
     cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
     techStack: [
