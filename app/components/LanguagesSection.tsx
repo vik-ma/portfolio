@@ -74,7 +74,7 @@ export default function LanguagesSection() {
                 <TailwindLogo />
               </div>
               <p className="font-semibold py-1 text-xs md:text-sm mt-0.5">
-                Tailwind
+                Tailwind CSS
               </p>
             </div>
             <div className="text-center items-center p-3 logo-wrapper">
