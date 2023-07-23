@@ -45,7 +45,7 @@ export const ProjectsInfo = {
   "pathfinding-race": {
     name: "Pathfinding Race",
     shortDescription:
-      "A browser game that visualizes different pathfinding algorithms on randomized grids, and the player has to predict which algorithm will reach the goal first.",
+      "A browser game where different pathfinding algorithms are facing off on a randomized grid. The aim of the game is to correctly predict which algorithm will find the goal first. After a prediction is made, all of the pathfinding algorithms will be visualized.",
     fullDescription: <p>Pathfinding Race Description</p>,
     cssGradient: "bg-gradient-to-r from-rose-600 to-amber-400",
     techStack: ["HTML", "CSS", "JavaScript", "React"],
@@ -78,7 +78,7 @@ export const ProjectsInfo = {
   "paint-a-wave-function-collapse": {
     name: "Paint A Wave Function Collapse",
     shortDescription:
-      "Browser application that procedurally generates an image using the WFC algorithm from on a small pixel tile painted by the user.",
+      "Browser application that procedurally generates an image using the WFC algorithm from on a small pixel tile sample painted by the user.",
     fullDescription: <p>Paint A Wave Function Collapse Description</p>,
     cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
     techStack: ["Python", "PyGame", "HTML", "CSS", "JavaScript", "WebAssembly"],
