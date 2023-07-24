@@ -4,7 +4,7 @@ export const ProjectsInfo = {
     shortDescription:
       "A website where the user can select various GPU or CPU models and compare their price-performance score by scraping their prices in real time and comparing them to up-to-date benchmarks.",
     fullDescription: <p>Price-Performance Scraper Description</p>,
-    cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
+    cssGradient: "bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400",
     techStack: [
       "Python",
       "Django",
@@ -47,7 +47,7 @@ export const ProjectsInfo = {
     shortDescription:
       "A browser game where different pathfinding algorithms are facing off on a randomized grid. The aim of the game is to correctly predict which algorithm will find the goal first. After a prediction is made, all of the pathfinding algorithms will be visualized.",
     fullDescription: <p>Pathfinding Race Description</p>,
-    cssGradient: "bg-gradient-to-r from-rose-600 to-amber-400",
+    cssGradient: "bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400",
     techStack: ["HTML", "CSS", "JavaScript", "React"],
     thumbnailImgSrc: "/images/pathfinding-race-thumbnail.png",
     thumbnailBase64Data:
@@ -80,7 +80,7 @@ export const ProjectsInfo = {
     shortDescription:
       "Browser application that procedurally generates an image using the WFC algorithm from on a small pixel tile sample painted by the user.",
     fullDescription: <p>Paint A Wave Function Collapse Description</p>,
-    cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
+    cssGradient: "bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400",
     techStack: ["Python", "PyGame", "HTML", "CSS", "JavaScript", "WebAssembly"],
     thumbnailImgSrc: "/images/wfc-thumbnail.png",
     thumbnailBase64Data:
@@ -109,7 +109,7 @@ export const ProjectsInfo = {
     shortDescription:
       "Windows GUI application that serves as a front end for the Tesseract OCR engine. Performs OCR on a section of the screen without having to load an image file.",
     fullDescription: <p>Screenshot OCR Description</p>,
-    cssGradient: "bg-gradient-to-r from-rose-600 to-amber-400",
+    cssGradient: "bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400",
     techStack: ["Python", "PyQt"],
     thumbnailImgSrc: "/images/screenshot-ocr-thumbnail.png",
     thumbnailBase64Data:
@@ -136,7 +136,7 @@ export const ProjectsInfo = {
     shortDescription:
       "Desktop application that allows the user to save a group of programs, files or folders to be opened simultaneously with just one click.",
     fullDescription: <p>File Opener Description</p>,
-    cssGradient: "bg-gradient-to-r from-rose-600 to-yellow-400",
+    cssGradient: "bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400",
     techStack: ["Python", "Tkinter"],
     thumbnailImgSrc: "/images/file-opener-thumbnail.png",
     thumbnailBase64Data:
@@ -174,7 +174,7 @@ export const ProjectsInfo = {
         phrase.
       </p>
     ),
-    cssGradient: "bg-gradient-to-r from-rose-600 to-yellow-400",
+    cssGradient: "bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400",
     techStack: ["Python", "Tkinter"],
     thumbnailImgSrc: "/images/link-opener-thumbnail.png",
     previewImgMainWidth: 402,
