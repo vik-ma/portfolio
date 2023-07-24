@@ -15,7 +15,7 @@ export default function AboutPage() {
         Credits
       </h2>
       <ul className="p-0.5 md:p-1 text-sm">
-        <li>
+        <li className="max-sm:mb-1.5">
           Icons for programming tools and languages from{" "}
           <a
             className="font-semibold text-blue-400 hover:underline"
@@ -25,7 +25,7 @@ export default function AboutPage() {
             Devicon
           </a>
         </li>
-        <li>
+        <li className="max-sm:mb-1.5">
           Modified GBA startup CSS animation originally made by{" "}
           <a
             className="font-semibold text-blue-400 hover:underline"
