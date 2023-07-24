@@ -12,7 +12,7 @@ export default function ProjectPage({ project }: ProjectProps) {
             <div className="mb-2 md:mb-none text-stone-200">
               {project?.fullDescription}
             </div>
-            <div className="flex justify-center md:justify-normal mt-1.5 md:mt-0.5 -ml-0.5 mb-2.5 md:mb-0">
+            <div className="flex justify-center min-[871px]:justify-normal mt-1.5 min-[871px]:mt-0.5 -ml-0.5 mb-2.5 min-[871px]:mb-0">
               <a
                 href={project?.githubLink}
                 target="_blank"
