@@ -16,11 +16,13 @@ export default function ProjectModal({ params: { id } }: PageProps) {
   return (
     <Modal>
       <div className="md:flex md:flex-row md:justify-between">
-        <h1
-          className={`pb-1 md:pb-2 text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent ${project?.cssGradient}`}
-        >
-          {project?.name}
-        </h1>
+        <div className="text-4xl md:text-5xl font-extrabold">
+          <h1
+            className={`w-fit pb-1 md:pb-2 bg-clip-text text-transparent ${project?.cssGradient}`}
+          >
+            {project?.name}
+          </h1>
+        </div>
       </div>
       <ProjectPage project={project} />
     </Modal>
