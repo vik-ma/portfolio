@@ -14,7 +14,7 @@ export default function AboutPage() {
         <strong className="text-stone-100">React</strong>,{" "}
         <strong className="text-stone-100">TypeScript</strong>,{" "}
         <strong className="text-stone-100">Next.js 13</strong> and{" "}
-        <strong className="text-stone-100">TailwindCSS</strong>.
+        <strong className="text-stone-100">Tailwind CSS</strong>.
       </p>
       <div className="flex justify-center gap-x-4 sm:gap-x-6 mt-1.5 sm:mt-2.5 overflow-hidden">
         <div id="logo-1" className="max-w-[50px] sm:max-w-[64px] w-full about-logo-anim-1">
