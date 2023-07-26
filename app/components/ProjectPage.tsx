@@ -52,7 +52,7 @@ export default function ProjectPage({ project }: ProjectProps) {
             fullSizeImgMaxWidth={project?.fullSizeImgMaxWidth}
           />
         </div>
-        <div className="flex flex-wrap max-md:justify-center -ml-0.5 text-stone-200">
+        <div className="flex flex-wrap max-[871px]:justify-center -ml-0.5 text-stone-200">
           {project?.techStack.map((lang: string) => (
             <div
               key={`${project?.name}-${lang}`}
