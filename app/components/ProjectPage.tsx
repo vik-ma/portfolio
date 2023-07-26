@@ -16,7 +16,7 @@ export default function ProjectPage({ project }: ProjectProps) {
                 More information about the project can be found on GitHub!
               </p>
             </div>
-            <div className="flex justify-center min-[871px]:justify-normal mt-1 min-[871px]:mt-0.5 min-[871px]:-ml-0.5 mb-2.5 min-[871px]:mb-0">
+            <div className="flex justify-center min-[871px]:justify-normal mt-0.5 min-[871px]:-ml-0.5 mb-3.5 min-[871px]:mb-0">
               <a
                 href={project?.githubLink}
                 target="_blank"
