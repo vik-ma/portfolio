@@ -484,6 +484,16 @@ body {
     animation: none;
     color: #fafafa;
   }
+  .header-shadow-anim-start {
+    opacity: 1;
+    animation: none;
+  }
+  .header-shadow-anim:before {
+    width: 100%;
+    animation: none;
+    background: linear-gradient(130deg,#ffc400 5%, #ff008c 50%, #0044ff 95%);
+  }
+
 }
 
 @keyframes Letter-entry {
