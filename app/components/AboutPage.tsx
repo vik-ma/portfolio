@@ -14,7 +14,7 @@ export default function AboutPage() {
       <h2 className="w-fit mt-2 text-2xl md:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-sky-400">
         Credits
       </h2>
-      <ul className="p-0.5 md:p-1 text-sm">
+      <ul className="p-0.5 md:p-1 text-sm text-stone-300">
         <li className="max-sm:mb-1.5">
           Icons for programming tools and languages from{" "}
           <a
