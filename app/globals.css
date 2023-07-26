@@ -349,6 +349,14 @@ body {
   animation: 0.5s linear 2.5s forwards fade-in-40, 0.5s linear 6s forwards fade-out;
 }
 
+.animate-fade {
+  animation: fade-in-from-50 0.2s ease-in;
+}
+
+.animate-modal {
+  animation: open-modal 0.2s;
+}
+
 @keyframes fade-in {
   to { 
     opacity: 1; 
@@ -364,6 +372,24 @@ body {
 @keyframes fade-in-40 {
   to { 
     opacity: 0.4; 
+  }
+}
+
+@keyframes fade-in-from-50 {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes open-modal {
+  0% {
+    transform: translateY(10%) scale(0.9);
+  }
+  100% {
+    transform: translateY(0%) scale(1);
   }
 }
 
@@ -495,6 +521,7 @@ body {
   }
   .project-box:hover {
     transform: none;
+    transition: ease 0.3s;
     background-color: #333333;
   }
 }
