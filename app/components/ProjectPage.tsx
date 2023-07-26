@@ -9,10 +9,14 @@ export default function ProjectPage({ project }: ProjectProps) {
       <div className="flex flex-col justify-between">
         <div className="flex flex-col min-[871px]:flex-row min-[871px]:space-x-6 justify-between mb-2">
           <div className="flex flex-col justify-between">
-            <div className="mb-2 md:mb-none text-stone-200">
+            <div className="mb-0.5 text-stone-200">
               {project?.fullDescription}
+              <br />
+              <p className="font-semibold text-stone-100">
+                More information about the project can be found on GitHub!
+              </p>
             </div>
-            <div className="flex justify-center min-[871px]:justify-normal mt-1.5 min-[871px]:mt-0.5 -ml-0.5 mb-2.5 min-[871px]:mb-0">
+            <div className="flex justify-center min-[871px]:justify-normal mt-1 min-[871px]:mt-0.5 min-[871px]:-ml-0.5 mb-2.5 min-[871px]:mb-0">
               <a
                 href={project?.githubLink}
                 target="_blank"
