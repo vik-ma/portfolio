@@ -465,6 +465,27 @@ body {
   animation: header-color-anim 1.4s linear .56s both, Letter-entry 1.2s linear both .56s;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .letter-f-1,
+  .letter-f-2,
+  .letter-f-3,
+  .letter-f-4,
+  .letter-f-5,
+  .letter-f-6,
+  .letter-l-1,
+  .letter-l-2,
+  .letter-l-3,
+  .letter-l-4,
+  .letter-l-5,
+  .letter-l-6,
+  .letter-l-7,
+  .letter-l-8,
+  .letter-l-9 {
+    animation: none;
+    color: #fafafa;
+  }
+}
+
 @keyframes Letter-entry {
   0% {
     transform: scale(3) translate(-10px, 20px);

@@ -135,7 +135,15 @@ export const ProjectsInfo = {
     name: "File Opener",
     shortDescription:
       "Desktop application that allows the user to save a group of programs, files or folders to be opened simultaneously with just one click.",
-    fullDescription: <p>File Opener Description</p>,
+    fullDescription: (
+      <p>
+        <strong className="text-stone-100">File Opener</strong>, or{" "}
+        <strong className="text-stone-100">Open File Groups</strong>,
+        is a desktop GUI application made for Windows that allows the user to select a 
+        <br />
+        <br />
+      </p>
+    ),
     cssGradient: "bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400",
     techStack: ["Python", "Tkinter"],
     thumbnailImgSrc: "/images/file-opener-thumbnail.png",
@@ -161,10 +169,10 @@ export const ProjectsInfo = {
     fullDescription: (
       <p>
         <strong className="text-stone-100">Link Opener</strong>, or{" "}
-        <strong className="text-stone-100">Open Links From Text File</strong>, is a desktop GUI application
-        made for Windows that allows the user to automatically open a batch of
-        URLs stored in a .txt file (and most other line-based text files) into
-        any installed web browser.
+        <strong className="text-stone-100">Open Links From Text File</strong>,
+        is a desktop GUI application made for Windows that allows the user to
+        automatically open a batch of URLs stored in a .txt file (and most other
+        line-based text files) into any installed web browser.
         <br />
         <br />
         The application is also includes additional feautures, such as the
