@@ -25,7 +25,7 @@ export default function HeaderAnimation() {
 
   return (
     <div
-      className="flex flex-col mx-auto group cursor-pointer pt-10 pb-7"
+      className="flex flex-col mx-auto group cursor-pointer motion-reduce:cursor-default pt-10 pb-7"
       onClick={() => toggleAnimCheckbox()}
     >
       <div
@@ -57,7 +57,7 @@ export default function HeaderAnimation() {
           </span>
         </h1>
       </div>
-      <div className="mt-2 sm:mt-2.5 md:mt-3.5 relative">
+      <div className="mt-2 sm:mt-2.5 md:mt-3.5 relative motion-reduce:hidden">
         <span className="ml-1.5 header-disable-anim-text-start text-xs sm:text-sm font-semibold italic absolute left-1 sm:left-2 md:left-4 text-neutral-100 select-none md:hidden">
           Click to disable animation
         </span>
