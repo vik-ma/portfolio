@@ -53,7 +53,7 @@ export default function Modal({ children }: ModalProps) {
   return (
     <div
       ref={overlay}
-      className="fixed inset-0 z-10 flex items-center justify-center bg-black/60 animate-fade"
+      className="fixed inset-0 z-10 flex items-center justify-center bg-black/70 animate-fade"
       onClick={onClick}
     >
       <div
