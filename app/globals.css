@@ -524,6 +524,12 @@ body {
     transition: ease 0.3s;
     background-color: #333333;
   }
+  .animate-fade {
+    animation: none;
+  }
+  .animate-modal {
+    animation: none;
+  }
 }
 
 @keyframes Letter-entry {
