@@ -1,3 +1,8 @@
+import NextJSLogo from "../icons/NextJSLogo";
+import ReactLogo from "../icons/ReactLogo";
+import TailwindLogo from "../icons/TailwindLogo";
+import TypeScriptLogo from "../icons/TypeScriptLogo";
+
 export default function AboutPage() {
   return (
     <div className="text-stone-200 text-left">
@@ -11,7 +16,21 @@ export default function AboutPage() {
         <strong className="text-stone-100">Next.js 13</strong> and{" "}
         <strong className="text-stone-100">TailwindCSS</strong>.
       </p>
-      <h2 className="w-fit mt-2 text-2xl md:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-sky-400">
+      <div className="flex justify-center gap-x-4 sm:gap-x-6 mt-2 overflow-hidden">
+        <div id="logo-1" className="max-w-[50px] sm:max-w-[64px] w-full about-logo-anim-1">
+          <ReactLogo />
+        </div>
+        <div id="logo-2" className="max-w-[50px] sm:max-w-[64px] w-full about-logo-anim-2">
+          <TypeScriptLogo />
+        </div>
+        <div id="logo-3" className="max-w-[50px] sm:max-w-[64px] w-full about-logo-anim-3">
+          <NextJSLogo />
+        </div>
+        <div id="logo-4" className="max-w-[50px] sm:max-w-[64px] w-full about-logo-anim-4">
+          <TailwindLogo />
+        </div>
+      </div>
+      <h2 className="w-fit mt-1 text-2xl md:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-sky-400">
         Credits
       </h2>
       <ul className="p-0.5 md:p-1 text-sm text-stone-300">
@@ -41,7 +60,9 @@ export default function AboutPage() {
             className="font-semibold text-blue-400 hover:underline"
             href="https://alvarotrigo.com/shadow-gradients/"
             target="_blank"
-          >alvarotrigo</a>
+          >
+            alvarotrigo
+          </a>
         </li>
       </ul>
     </div>

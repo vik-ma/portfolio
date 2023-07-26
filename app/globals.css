@@ -591,3 +591,34 @@ body {
     /* color: #fff; */
   }
 }
+
+.about-logo-anim-1 {
+  opacity: 0;
+  animation: logo-swoop-in 0.8s ease .1s forwards;
+}
+
+.about-logo-anim-2 {
+  opacity: 0;
+  animation: logo-swoop-in 0.8s ease .25s forwards;
+}
+
+.about-logo-anim-3 {
+  opacity: 0;
+  animation: logo-swoop-in 0.8s ease .4s forwards;
+}
+
+.about-logo-anim-4 {
+  opacity: 0;
+  animation: logo-swoop-in 0.8s ease .55s forwards;
+}
+
+@keyframes logo-swoop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
