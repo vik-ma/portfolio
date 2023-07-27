@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function NotFound() {
-  // Display this page if user types in Price Scrape ID that does not exist
+  // Display this page if user types in Project ID that does not exist
   return (
     <div className="flex flex-col h-screen justify-center items-center">
       <h1 className="text-neutral-100 font-extrabold text-2xl md:text-6xl pb-3 md:pb-5">
