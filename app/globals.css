@@ -221,12 +221,12 @@ body {
   content: "";
   z-index: 0;
   position: absolute;
-  top: -5px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translate3d(0px, 4px, 0px) scale(1);
-  filter: blur(8px);
+  top: -3px;
+  right: -4px;
+  bottom: -4px;
+  left: -3px;
+  /* transform: translate3d(0px, 0px, 0px) scale(1); */
+  filter: blur(6px);
   /* filter: blur(14px); */
   /* background: linear-gradient(to top left, #ff3d00 0%, #3700ff 100%); */
   /* background: linear-gradient(to bottom right, #ff9900 0%, #ff008c 50%, #0044ff 100%); */
