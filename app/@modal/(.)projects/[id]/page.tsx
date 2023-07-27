@@ -14,17 +14,20 @@ export default function ProjectModal({ params: { id } }: PageProps) {
   const project = projects[id];
 
   return (
-    <Modal>
-      <div className="md:flex md:flex-row md:justify-between">
-        <div className="text-4xl md:text-5xl font-extrabold">
-          <h1
-            className={`w-fit pb-1 md:pb-2 bg-clip-text text-transparent ${project?.cssGradient}`}
-          >
-            {project?.name}
-          </h1>
+    <>
+      <title>{project?.name}</title>
+      <Modal>
+        <div className="md:flex md:flex-row md:justify-between">
+          <div className="text-4xl md:text-5xl font-extrabold">
+            <h1
+              className={`w-fit pb-1 md:pb-2 bg-clip-text text-transparent ${project?.cssGradient}`}
+            >
+              {project?.name}
+            </h1>
+          </div>
         </div>
-      </div>
-      <ProjectPage project={project} />
-    </Modal>
+        <ProjectPage project={project} />
+      </Modal>
+    </>
   );
 }

@@ -18,29 +18,32 @@ export default function Project({ params: { id } }: PageProps) {
   if (!project) return notFound();
 
   return (
-    <div className="flex h-screen justify-center items-center">
-      <div>
-        <Link href="/#projects">
-          <button className="single-page-back-button mb-5 py-2 px-4 rounded-xl font-bold text-xl text-stone-100 hover:bg-stone-700">
-            <span className="inline-block align-middle">
-              <BackArrow />
-            </span>
-            <span className="inline-block align-middle ml-2.5">
-              Back To Projects
-            </span>
-          </button>
-        </Link>
-        <div className="px-4 py-3 md:py-4 rounded-xl project-page-container">
-          <div className="text-4xl md:text-5xl font-extrabold">
-            <h1
-              className={`w-fit pb-1 md:pb-2 bg-clip-text text-transparent ${project?.cssGradient}`}
-            >
-              {project?.name}
-            </h1>
+    <>
+      <title>{project?.name}</title>
+      <div className="flex h-screen justify-center items-center">
+        <div>
+          <Link href="/#projects">
+            <button className="single-page-back-button mb-5 py-2 px-4 rounded-xl font-bold text-xl text-stone-100 hover:bg-stone-700">
+              <span className="inline-block align-middle">
+                <BackArrow />
+              </span>
+              <span className="inline-block align-middle ml-2.5">
+                Back To Projects
+              </span>
+            </button>
+          </Link>
+          <div className="px-4 py-3 md:py-4 rounded-xl project-page-container">
+            <div className="text-4xl md:text-5xl font-extrabold">
+              <h1
+                className={`w-fit pb-1 md:pb-2 bg-clip-text text-transparent ${project?.cssGradient}`}
+              >
+                {project?.name}
+              </h1>
+            </div>
+            <ProjectPage project={project} />
           </div>
-          <ProjectPage project={project} />
         </div>
       </div>
-    </div>
+    </>
   );
 }
