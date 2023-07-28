@@ -8,7 +8,7 @@ export default function ProjectsSection() {
   return (
     <>
       <div className="text-center flex justify-center">
-        <h2 className="pb-1.5 sm:pb-2.5 md:pb-3 min-[871px]:pb-4 w-fit text-3xl sm:text-4xl md:text-5xl min-[871px]:text-7xl font-extrabold bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-stone-500 via-neutral-50 to-stone-500 bg-clip-text text-transparent">
+        <h2 className="pb-1.5 sm:pb-2.5 md:pb-3 min-[871px]:pb-4 w-fit text-3xl sm:text-4xl md:text-5xl min-[871px]:text-7xl font-extrabold bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-[#ffd92d] via-[#fff4ac] to-[#ffd92d] bg-clip-text text-transparent">
           Projects
         </h2>
       </div>
