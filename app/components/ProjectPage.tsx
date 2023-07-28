@@ -12,7 +12,7 @@ export default function ProjectPage({ project }: ProjectProps) {
             <div className="mb-0.5 text-stone-200">
               {project?.fullDescription}
               <br />
-              <p className="font-semibold text-stone-100">
+              <p className="font-semibold text-sm text-stone-100 max-[870px]:text-center min-[871px]:truncate">
                 More information about the project can be found on GitHub!
               </p>
             </div>
@@ -52,7 +52,7 @@ export default function ProjectPage({ project }: ProjectProps) {
             fullSizeImgMaxWidth={project?.fullSizeImgMaxWidth}
           />
         </div>
-        <div className="flex flex-wrap max-[871px]:justify-center -ml-0.5 text-stone-200">
+        <div className="flex flex-wrap max-[870px]:justify-center -ml-0.5 text-stone-200">
           {project?.techStack.map((lang: string) => (
             <div
               key={`${project?.name}-${lang}`}
