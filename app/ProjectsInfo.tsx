@@ -138,10 +138,20 @@ export const ProjectsInfo = {
     fullDescription: (
       <p>
         <strong className="text-stone-100">File Opener</strong>, or{" "}
-        <strong className="text-stone-100">Open File Groups</strong>,
-        is a desktop GUI application made for Windows that allows the user to select a 
+        <strong className="text-stone-100">Open File Groups</strong>, is a
+        desktop GUI application made for Windows that allows the user to save a
+        list of programs, files or folders on their system to be simultaneously
+        opened.
         <br />
         <br />
+        The application allows multiple lists, referred to as groups, to be
+        created, copied or modified at any time. The groups and the settings of
+        the application are saved to a .json file.
+        <br />
+        <br />
+        If the user is using <strong className="text-stone-100">VLC Media Player</strong> to open audio or video files, the
+        application is also able to change the user&apos;s VLC settings to
+        accomodate multiple media files being opened simultaneously.
       </p>
     ),
     cssGradient: "bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400",
