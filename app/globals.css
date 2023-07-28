@@ -44,6 +44,11 @@ body {
   }
 }
 
+::selection {
+  background: rgb(100, 100, 100);
+  color: #fafafa;
+}
+
 .projects-section-box {
   background-color: #202020;
   border: 1px solid rgba(70, 70, 70, 0.8);
