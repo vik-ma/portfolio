@@ -8,11 +8,11 @@ export default function ProjectsSection() {
   return (
     <>
       <div className="text-center flex justify-center">
-        <h2 className="pb-1.5 sm:pb-2.5 md:pb-3 min-[871px]:pb-4 w-fit text-3xl sm:text-4xl md:text-5xl min-[871px]:text-7xl font-extrabold bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-[#ffd92d] via-[#fff4ac] to-[#ffd92d] bg-clip-text text-transparent">
+        <h2 className="pb-1.5 sm:pb-2 md:pb-3 min-[871px]:pb-4 w-fit text-3xl sm:text-4xl md:text-5xl min-[871px]:text-7xl font-extrabold bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-[#ffd92d] via-[#fff4ac] to-[#ffd92d] bg-clip-text text-transparent">
           Projects
         </h2>
       </div>
-      <div className="py-2 md:py-3 md:mt-1 rounded-2xl projects-section-box">
+      <div className="py-2 md:py-3 md:mt-0.5 rounded-2xl projects-section-box">
         <div className="flex flex-wrap justify-center projects-container md:gap-x-2 md:gap-y-1 mx-auto">
           <div className="grid grid-cols-1 w-full min-[871px]:grid-cols-2 py-3 md:py-4 px-5 md:px-7 gap-x-8 gap-y-7 md:gap-y-9 font-sans text-md text-amber-50">
             {Object.entries(projects).map(([key, value]) => (
