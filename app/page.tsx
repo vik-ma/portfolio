@@ -14,10 +14,10 @@ export default function Home() {
       <header className="pb-6 md:pb-10">
         <HeroSection />
       </header>
-      <section className="pt-1 sm:pt-1.5 min-[871px]:pt-3 pb-6 md:pb-10" id="languages">
+      <section className="pt-1 sm:pt-1.5 pb-6 md:pb-10" id="languages">
         <LanguagesSection />
       </section>
-      <section className="pt-1 sm:pt-1.5 min-[871px]:pt-3" id="projects">
+      <section className="pt-1 sm:pt-1.5" id="projects">
         <ProjectsSection />
       </section>
     </main>
