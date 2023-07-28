@@ -14,7 +14,7 @@ export default function ProjectPage({ project }: ProjectProps) {
               <br />
             </div>
             <div>
-              <p className="mb-0.5 min-[871px]:mb-1 font-semibold text-sm text-stone-100 max-[870px]:text-center min-[871px]:truncate">
+              <p className="mb-0.5 min-[871px]:mb-1 font-semibold text-sm text-stone-100 max-[870px]:text-center">
                 More information about the project can be found on GitHub!
               </p>
               <div className="flex justify-center min-[871px]:justify-normal mt-0.5 min-[871px]:-ml-0.5 mb-3.5 min-[871px]:mb-0">
