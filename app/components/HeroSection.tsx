@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <div className="rounded-3xl mt-20 rounded-3xl bg-gradient-to-l from-blue-500 via-pink-600 to-yellow-400 p-1.5">
+    <div className="rounded-3xl mt-1.5 min-[491px]:mt-3 sm:mt-5 md:mt-6 min-[871px]:mt-10 rounded-3xl bg-gradient-to-l from-blue-500 via-pink-600 to-yellow-400 p-1.5">
       <div className="hero-container h-[200px] text-center py-2 md:py-3 font-sans text-sm text-zinc-100">
         <div className="flex flex-col justify-between p-2 h-full">
           <div></div>
