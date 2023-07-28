@@ -11,28 +11,13 @@ export default function Home() {
           <HeaderAnimation />
         </div>
       </div>
-      <header className="py-7">
+      <header className="pb-10">
         <HeroSection />
       </header>
-      <section className="py-7" id="languages">
+      <section className="pt-3 pb-10" id="languages">
         <LanguagesSection />
       </section>
-      {/* <div className="text-center">
-        <h2 className="pb-4 text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-blue-400 via-sky-300 to-cyan-300 bg-clip-text text-transparent">
-          Projects
-        </h2>
-      </div> */}
-      {/* <div className="text-center">
-        <h2 className="pb-4 text-4xl md:text-6xl font-extrabold bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-neutral-700 via-neutral-100 to-neutral-700 bg-clip-text text-transparent">
-          Projects
-        </h2>
-      </div> */}
-      {/* <div className="text-center">
-        <h2 className="pb-4 text-4xl md:text-6xl font-extrabold bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-blue-600 via-cyan-300 to-blue-600 bg-clip-text text-transparent">
-          Projects
-        </h2>
-      </div> */}
-      <section className="py-7" id="projects">
+      <section className="pt-3" id="projects">
         <ProjectsSection />
       </section>
     </main>
