@@ -239,6 +239,8 @@ body {
   background: linear-gradient(to bottom right, #fffb00 0%, #ff008c 50%, #0044ff 100%);
 }
 
+
+
 .project-box::after {
   content: "";
   z-index: 0;
@@ -344,6 +346,22 @@ body {
 .header-shadow-static:before {
   width: 100%;
   background: linear-gradient(130deg,#ffc400 5%, #ff008c 50%, #0044ff 95%);
+}
+
+.favicon-bg {
+  width: 32px;
+  height: 32px;
+  filter: blur(1px);
+  /* background: linear-gradient(300deg,#fffb00 15%, #ff008c 50%, #0077ff 95%);
+  background: linear-gradient(320deg,#0077ff 10%, #ff008c 50%, #fffb00 75%); */
+  background: linear-gradient(320deg,#0077ff 4%, #ff008c 50%, #fffb00 84%);
+  background-size: 100% 100%;
+} 
+
+.favicon-text {
+  -webkit-text-stroke: 2px rgba(31, 31, 31, 0.8);
+  color: #fafafa;
+  font-size: 31px;
 }
 
 .animate-enlargement {
