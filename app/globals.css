@@ -118,6 +118,7 @@ body {
     max-width: 630px;
     max-height: 54px;
     filter: blur(12px) !important;
+    transform: translateX(1px);
   }
   .header-text {
     font-size: 54px;
@@ -150,6 +151,7 @@ body {
     max-width: 510px;
     max-height: 48px;
     filter: blur(10px) !important;
+    transform: translateX(0px);
   }
   .header-text {
     font-size: 44px;
@@ -328,7 +330,7 @@ body {
   font-weight: 800;
   z-index: -1;
   border-radius: 24px;
-  transform: skew(10deg);
+  transform: skew(10deg) translateX(2px);
 }
 
 .header-shadow-anim-start {
