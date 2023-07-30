@@ -108,7 +108,26 @@ export const ProjectsInfo = {
     name: "Screenshot OCR",
     shortDescription:
       "Windows GUI application that serves as a front end for the Tesseract OCR engine. Performs OCR on a section of the screen without having to load an image file.",
-    fullDescription: <p>Screenshot OCR Description</p>,
+    fullDescription: (
+      <p>
+        <strong className="text-stone-100">Screenshot OCR</strong> is a desktop
+        GUI application made for Windows that works as a front end for
+        Google&apos;s{" "}
+        <strong className="text-stone-100">Tesseract OCR engine</strong>.
+        <br />
+        <br />
+        The main future of the application is the ability to select a section of
+        the screen, similar to how the{" "}
+        <strong className="text-stone-100">Windows Snipping Tool</strong> works,
+        and perform OCR directly on that section, instead of having to save or
+        load an actual image file.
+        <br />
+        <br />
+        The application also shows all of the user&apos;s installed languages in
+        Tesseract, and allows the user to store combinations of different
+        language parameters for subsequent uses.
+      </p>
+    ),
     cssGradient: "bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400",
     techStack: ["Python", "PyQt"],
     thumbnailImgSrc: "/images/screenshot-ocr-thumbnail.png",
@@ -149,9 +168,11 @@ export const ProjectsInfo = {
         the application are saved to a .json file.
         <br />
         <br />
-        If the user is using <strong className="text-stone-100">VLC Media Player</strong> to open audio or video files, the
-        application is also able to change the user&apos;s VLC settings to
-        accomodate multiple media files being opened simultaneously.
+        If the user is using{" "}
+        <strong className="text-stone-100">VLC Media Player</strong> to open
+        audio or video files, the application is also able to change the
+        user&apos;s VLC settings to accomodate multiple media files being opened
+        simultaneously.
       </p>
     ),
     cssGradient: "bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400",
