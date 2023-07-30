@@ -10,7 +10,7 @@ export default function HeroSection() {
             {/* <div className="">
               <div className="favicon-bg"></div>
             </div>
-            <div className="favicon-text text-3xl absolute font-extrabold -mt-[4px] ml-[1px] asda">
+            <div className="favicon-text text-3xl absolute font-extrabold -mt-[4px] ml-[1px]">
               V
             </div> */}
           </div>

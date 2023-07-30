@@ -14,14 +14,14 @@ export default function ProjectPage({ project }: ProjectProps) {
               <br />
             </div>
             <div>
-              <p className="mb-0.5 min-[871px]:mb-1 font-semibold text-sm text-stone-100 max-[870px]:text-center">
+              <p className="mb-1 min-[871px]:mb-1.5 font-semibold text-sm text-stone-100 max-[870px]:text-center">
                 More information about the project can be found on GitHub!
               </p>
               <div className="flex justify-center min-[871px]:justify-normal mt-0.5 min-[871px]:-ml-0.5 mb-3.5 min-[871px]:mb-0">
                 <a
                   href={project?.githubLink}
                   target="_blank"
-                  className="flex w-fit whitespace-nowrap mr-1.5 py-1 pl-1.5 pr-2 font-bold rounded-lg cursor-pointer border-2 border-lime-300 text-stone-50 bg-lime-400/10 hover:text-white hover:bg-lime-400/40 transition ease-in-out duration-200"
+                  className="flex w-fit whitespace-nowrap mr-1.5 py-1 pl-1.5 pr-2 font-bold rounded-lg cursor-pointer border-2 border-lime-300 text-stone-50 bg-lime-400/10 hover:text-white hover:bg-lime-400/40 transition ease-out duration-200"
                 >
                   <span>
                     <GitHubLogo />
@@ -32,7 +32,7 @@ export default function ProjectPage({ project }: ProjectProps) {
                   <a
                     href={project?.liveSiteLink}
                     target="_blank"
-                    className="flex w-fit whitespace-nowrap py-1 pl-1.5 pr-2 font-bold rounded-lg cursor-pointer border-2 border-red-500 text-stone-50 bg-red-500/10 hover:text-white hover:bg-red-500/40 transition ease-in-out duration-200"
+                    className="flex w-fit whitespace-nowrap py-1 pl-1.5 pr-2 font-bold rounded-lg cursor-pointer border-2 border-red-500 text-stone-50 bg-red-500/10 hover:text-white hover:bg-red-500/40 transition ease-out duration-200"
                   >
                     <span>
                       <LiveSite />
