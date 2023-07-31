@@ -5,14 +5,14 @@ import HeaderAnimation from "./components/HeaderAnimation";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pt-10 pb-8 px-2 md:px-5">
+    <main className="flex min-h-screen flex-col items-center justify-between pt-1 md:pt-10 pb-8 px-2 md:px-5">
       <div className="relative header-wrapper flex flex-row justify-center pt-10 pb-14">
         <HeaderAnimation />
       </div>
-      <header className="pb-6 md:pb-16">
+      <header className="pb-10 md:pb-16">
         <HeroSection />
       </header>
-      <section className="pt-1 sm:pt-1.5 pb-6 md:pb-16" id="languages">
+      <section className="pt-1 sm:pt-1.5 pb-10 md:pb-16" id="languages">
         <LanguagesSection />
       </section>
       <section className="pt-1 sm:pt-1.5" id="projects">

@@ -79,7 +79,19 @@ export const ProjectsInfo = {
     name: "Paint A Wave Function Collapse",
     shortDescription:
       "Browser application that procedurally generates an image using the WFC algorithm from on a small pixel tile sample painted by the user.",
-    fullDescription: <p>Paint A Wave Function Collapse Description</p>,
+    fullDescription: (
+      <p>
+        <strong className="text-stone-100">
+          Paint A Wave Function Collapse
+        </strong>{" "}
+        is a Python application developed in the PyGame engine that can be run
+        inside of a web browser through{" "}
+        <strong className="text-stone-100">WebAssembly</strong>.
+        <br />
+        <br />
+        The application is 
+      </p>
+    ),
     cssGradient: "bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400",
     techStack: ["Python", "PyGame", "HTML", "CSS", "JavaScript", "WebAssembly"],
     thumbnailImgSrc: "/images/wfc-thumbnail.png",
