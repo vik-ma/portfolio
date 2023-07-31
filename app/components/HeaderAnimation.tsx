@@ -26,7 +26,7 @@ export default function HeaderAnimation() {
   return (
     <div className="flex flex-col justify-center">
       <div
-        className="mx-auto group cursor-pointer motion-reduce:cursor-default"
+        className="mx-auto pt-10 pb-7 relative group cursor-pointer motion-reduce:cursor-default"
         onClick={() => toggleAnimCheckbox()}
       >
         <div

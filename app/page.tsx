@@ -5,8 +5,8 @@ import HeaderAnimation from "./components/HeaderAnimation";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pt-1 md:pt-10 pb-8 px-2 md:px-5">
-      <div className="relative header-wrapper flex flex-row justify-center pt-10 pb-14">
+    <main className="flex min-h-screen flex-col items-center justify-between pt-1 md:pt-7 pb-7">
+      <div className="relative header-wrapper flex flex-row justify-center pb-4 md:pb-8">
         <HeaderAnimation />
       </div>
       <header className="pb-10 md:pb-16">
