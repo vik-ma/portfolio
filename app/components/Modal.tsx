@@ -73,9 +73,11 @@ export default function Modal({ children }: ModalProps) {
       </div>
       <div
         ref={wrapper}
-        className="relative max-sm:h-full overflow-auto rounded-xl project-page-container animate-modal"
+        className="relative max-sm:h-full max-sm:max-h-max max-sm:overflow-auto"
       >
-        <div className="px-4 py-3 md:py-4">{children}</div>
+        <div className="rounded-xl project-page-container animate-modal">
+          <div className="px-4 py-3 md:py-4">{children}</div>
+        </div>
       </div>
     </div>
   );
