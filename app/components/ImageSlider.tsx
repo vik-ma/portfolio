@@ -159,7 +159,7 @@ export default function ImageSlider({
                 }
               >
                 <button
-                  className="rounded-lg py-1 pr-1.5 pl-2.5 bg-red-500 hover:bg-stone-700 border border-neutral-300/50"
+                  className="rounded-lg py-1 pr-1.5 pl-2.5 bg-red-500 hover:bg-stone-700 border border-neutral-300/40"
                   onClick={() => hideFullSizeImage()}
                 >
                   <span className="inline-block align-middle font-bold text-xl text-stone-200">
