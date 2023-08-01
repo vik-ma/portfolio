@@ -89,7 +89,23 @@ export const ProjectsInfo = {
         <strong className="text-stone-100">WebAssembly</strong>.
         <br />
         <br />
-        The application is 
+        The{" "}
+        <strong className="text-stone-100">
+          Wave Function Collapse Algorithm
+        </strong>{" "}
+        is an algorithm that procedurally generates an image based on a small
+        base tile sample.
+        <br />
+        <br />
+        This application allows the user to paint their own base tile samples
+        and then watch the WFC algorithm generate the image in real time.
+        <br />
+        <br />
+        <strong className="text-amber-500">
+          Do note that the browser version of this app is significantly slower
+          than the desktop version, since WebAssembly hosted PyGame applications
+          are a very new thing.
+        </strong>
       </p>
     ),
     cssGradient: "bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400",
