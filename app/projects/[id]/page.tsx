@@ -32,7 +32,7 @@ export default function Project({ params: { id } }: PageProps) {
               </span>
             </button>
           </Link>
-          <div className="px-4 py-3 md:py-4 rounded-xl project-page-container">
+          <div className="px-4 py-3 pt-3 min-[871px]:py-4 rounded-xl project-page-container">
             <div className="text-4xl md:text-5xl font-extrabold">
               <h1
                 className={`w-fit pb-1 md:pb-2 bg-clip-text text-transparent ${project?.cssGradient}`}

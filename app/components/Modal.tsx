@@ -89,7 +89,7 @@ export default function Modal({ children }: ModalProps) {
               </span>
             </button>
           </div>
-          <div className="px-4 py-3 md:py-4">{children}</div>
+          <div className="px-4 py-3 min-[871px]:py-4">{children}</div>
         </div>
       </div>
     </div>
