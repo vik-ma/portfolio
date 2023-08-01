@@ -53,7 +53,7 @@ export default function Modal({ children }: ModalProps) {
   return (
     <div
       ref={overlay}
-      className="fixed inset-0 max-sm:pt-12 max-sm:pb-5 z-10 flex items-center justify-center bg-black/70 animate-fade"
+      className="fixed inset-0 max-[490px]:pt-12 max-[490px]:pb-5 z-10 flex items-center justify-center bg-black/70 animate-fade"
       onClick={onClick}
     >
       <div className="fixed top-1 right-1">
@@ -73,7 +73,7 @@ export default function Modal({ children }: ModalProps) {
       </div>
       <div
         ref={wrapper}
-        className="relative max-sm:h-full max-sm:max-h-max max-sm:overflow-auto"
+        className="relative max-[490px]:h-full max-[490px]:max-h-max max-[490px]:overflow-auto"
       >
         <div className="rounded-xl project-page-container animate-modal">
           <div className="px-4 py-3 md:py-4">{children}</div>
