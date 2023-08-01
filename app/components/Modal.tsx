@@ -56,7 +56,7 @@ export default function Modal({ children }: ModalProps) {
       className="fixed inset-0 max-[490px]:pt-12 max-[490px]:pb-5 z-10 flex items-center justify-center bg-black/70 animate-fade"
       onClick={onClick}
     >
-      <div className="fixed flex flex-row justify-end w-[340px] top-1.5">
+      <div className="min-[491px]:hidden fixed flex flex-row justify-end w-[340px] top-1.5">
         <div className="align-middle">
           <button
             className="rounded-lg py-1 pr-1.5 pl-2.5 bg-[#202020] hover:bg-stone-700 border border-[#464646cc]"
@@ -76,6 +76,19 @@ export default function Modal({ children }: ModalProps) {
         className="relative max-[490px]:h-full max-[490px]:max-h-max max-[490px]:overflow-auto"
       >
         <div className="rounded-xl project-page-container animate-modal">
+          <div className="max-[490px]:hidden absolute align-middle -top-11 right-0">
+            <button
+              className="rounded-lg py-1 pr-1.5 pl-2.5 bg-[#202020] hover:bg-stone-700 border border-[#464646cc]"
+              onClick={() => onDismiss()}
+            >
+              <span className="inline-block align-middle font-bold text-xl text-stone-200">
+                Close
+              </span>
+              <span className="inline-block align-middle ml-1">
+                <CloseButton />
+              </span>
+            </button>
+          </div>
           <div className="px-4 py-3 md:py-4">{children}</div>
         </div>
       </div>
