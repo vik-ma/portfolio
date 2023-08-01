@@ -53,14 +53,11 @@ export default function Modal({ children }: ModalProps) {
   return (
     <div
       ref={overlay}
-      className="fixed inset-0 z-10 flex items-center justify-center bg-black/70 animate-fade"
+      className="fixed inset-0 max-sm:pt-12 max-sm:pb-5 z-10 flex items-center justify-center bg-black/70 animate-fade"
       onClick={onClick}
     >
-      <div
-        ref={wrapper}
-        className="relative rounded-xl project-page-container animate-modal"
-      >
-        <div className="absolute align-middle -top-11 right-0">
+      <div className="fixed top-1 right-1">
+        <div className="align-middle">
           <button
             className="rounded-lg py-1 pr-1.5 pl-2.5 bg-[#202020] hover:bg-stone-700 border border-[#464646cc]"
             onClick={() => onDismiss()}
@@ -73,6 +70,11 @@ export default function Modal({ children }: ModalProps) {
             </span>
           </button>
         </div>
+      </div>
+      <div
+        ref={wrapper}
+        className="relative max-sm:h-full overflow-auto rounded-xl project-page-container animate-modal"
+      >
         <div className="px-4 py-3 md:py-4">{children}</div>
       </div>
     </div>
