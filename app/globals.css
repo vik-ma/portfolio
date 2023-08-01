@@ -241,8 +241,6 @@ body {
   background: linear-gradient(to bottom right, #fffb00 0%, #ff008c 50%, #0044ff 100%);
 }
 
-
-
 .project-box::after {
   content: "";
   z-index: 0;

@@ -73,7 +73,7 @@ export default function Modal({ children }: ModalProps) {
       </div>
       <div
         ref={wrapper}
-        className="relative max-[490px]:h-full max-[490px]:max-h-max max-[490px]:overflow-auto"
+        className="relative max-[490px]:h-full max-[490px]:overflow-auto"
       >
         <div className="rounded-xl project-page-container animate-modal">
           <div className="max-[490px]:hidden absolute align-middle -top-11 right-0">
