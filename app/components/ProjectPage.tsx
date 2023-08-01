@@ -43,16 +43,18 @@ export default function ProjectPage({ project }: ProjectProps) {
               </div>
             </div>
           </div>
-          <ImageSlider
-            name={project?.name}
-            previewImgSrcList={project?.previewImgSrcList}
-            previewImgMainWidth={project?.previewImgMainWidth}
-            previewImgMainHeight={project?.previewImgMainHeight}
-            previewImgBase64DataList={project?.previewImgBase64DataList}
-            previewImgMenuWidthList={project?.previewImgMenuWidthList}
-            previewImgMenuHeightList={project?.previewImgMenuHeightList}
-            fullSizeImgMaxWidth={project?.fullSizeImgMaxWidth}
-          />
+          <div className="flex flex-col justify-center">
+            <ImageSlider
+              name={project?.name}
+              previewImgSrcList={project?.previewImgSrcList}
+              previewImgMainWidth={project?.previewImgMainWidth}
+              previewImgMainHeight={project?.previewImgMainHeight}
+              previewImgBase64DataList={project?.previewImgBase64DataList}
+              previewImgMenuWidthList={project?.previewImgMenuWidthList}
+              previewImgMenuHeightList={project?.previewImgMenuHeightList}
+              fullSizeImgMaxWidth={project?.fullSizeImgMaxWidth}
+            />
+          </div>
         </div>
         <div className="flex flex-wrap max-[870px]:justify-center -ml-0.5 text-stone-200">
           {project?.techStack.map((lang: string) => (
