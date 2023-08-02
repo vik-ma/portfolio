@@ -4,7 +4,6 @@ export const ProjectsInfo = {
     shortDescription:
       "A website where the user can select various GPU or CPU models and calculate their price-performance score by scraping their prices in real time and comparing them to up-to-date benchmarks.",
     fullDescription: <p>Price-Performance Scraper Description</p>,
-    cssGradient: "bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400",
     techStack: [
       "Python",
       "Django",
@@ -40,7 +39,6 @@ export const ProjectsInfo = {
     fullSizeImgMaxWidth: 848,
     githubLink: "https://github.com/vik-ma/Price-Performance-Scraper/",
     liveSiteLink: "",
-    // cssGradient: "bg-gradient-to-r from-violet-500 via-rose-500 to-orange-600",
   },
   "pathfinding-race": {
     name: "Pathfinding Race",
@@ -64,7 +62,6 @@ export const ProjectsInfo = {
         about each one.
       </p>
     ),
-    cssGradient: "bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400",
     techStack: ["HTML", "CSS", "JavaScript", "React"],
     thumbnailImgSrc: "/images/pathfinding-race-thumbnail.png",
     thumbnailBase64Data:
@@ -90,7 +87,6 @@ export const ProjectsInfo = {
     fullSizeImgMaxWidth: 750,
     githubLink: "https://github.com/vik-ma/pathfinding-race/",
     liveSiteLink: "https://vik-ma.github.io/pathfinding-race/",
-    // cssGradient: "bg-gradient-to-r from-yellow-300 to-pink-600",
   },
   "paint-a-wave-function-collapse": {
     name: "Paint A Wave Function Collapse",
@@ -125,7 +121,6 @@ export const ProjectsInfo = {
         </strong>
       </p>
     ),
-    cssGradient: "bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400",
     techStack: ["Python", "PyGame", "HTML", "CSS", "JavaScript", "WebAssembly"],
     thumbnailImgSrc: "/images/wfc-thumbnail.png",
     thumbnailBase64Data:
@@ -147,7 +142,6 @@ export const ProjectsInfo = {
     fullSizeImgMaxWidth: 820,
     githubLink: "https://github.com/vik-ma/paint-a-wave-function-collapse/",
     liveSiteLink: "https://vik-ma.github.io/paint-a-wave-function-collapse/",
-    // cssGradient: "bg-gradient-to-r from-rose-600 via-red-500 to-orange-400",
   },
   "screenshot-ocr": {
     name: "Screenshot OCR",
@@ -173,7 +167,6 @@ export const ProjectsInfo = {
         language parameters for subsequent uses.
       </p>
     ),
-    cssGradient: "bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400",
     techStack: ["Python", "PyQt"],
     thumbnailImgSrc: "/images/screenshot-ocr-thumbnail.png",
     thumbnailBase64Data:
@@ -193,7 +186,6 @@ export const ProjectsInfo = {
     fullSizeImgMaxWidth: 832,
     githubLink: "https://github.com/vik-ma/screenshot-OCR/",
     liveSiteLink: "",
-    // cssGradient: "bg-gradient-to-r from-rose-600 to-red-600",
   },
   "file-opener": {
     name: "File Opener",
@@ -220,7 +212,6 @@ export const ProjectsInfo = {
         simultaneously.
       </p>
     ),
-    cssGradient: "bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400",
     techStack: ["Python", "Tkinter"],
     thumbnailImgSrc: "/images/file-opener-thumbnail.png",
     thumbnailBase64Data:
@@ -236,7 +227,6 @@ export const ProjectsInfo = {
     fullSizeImgMaxWidth: 702,
     githubLink: "https://github.com/vik-ma/open-file-groups/",
     liveSiteLink: "",
-    // cssGradient: "bg-gradient-to-r from-orange-500 to-amber-400",
   },
   "link-opener": {
     name: "Link Opener",
@@ -258,7 +248,6 @@ export const ProjectsInfo = {
         phrase.
       </p>
     ),
-    cssGradient: "bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400",
     techStack: ["Python", "Tkinter"],
     thumbnailImgSrc: "/images/link-opener-thumbnail.png",
     previewImgMainWidth: 402,
@@ -274,6 +263,5 @@ export const ProjectsInfo = {
     fullSizeImgMaxWidth: 602,
     githubLink: "https://github.com/vik-ma/open-links-from-txt-file/",
     liveSiteLink: "",
-    // cssGradient: "bg-gradient-to-r from-blue-400 to-fuchsia-800",
   },
 };
