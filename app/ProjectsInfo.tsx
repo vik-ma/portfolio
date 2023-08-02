@@ -46,7 +46,24 @@ export const ProjectsInfo = {
     name: "Pathfinding Race",
     shortDescription:
       "A browser game where different pathfinding algorithms are facing off on a randomized grid. The aim of the game is to correctly predict which algorithm will find the goal first. After a prediction is made, all of the pathfinding algorithms will be visualized.",
-    fullDescription: <p>Pathfinding Race Description</p>,
+    fullDescription: (
+      <p>
+        <strong className="text-stone-100">Pathfinding Race</strong> is a
+        browser game made in JavaScript and React about{" "}
+        <strong className="text-stone-100">Pathfinding Algorithms</strong>.
+        <br />
+        <br />
+        In the game, a randomized grid is generated every round. On this grid,
+        different pathfinding algorithms will race against each other towards a
+        common Goal Node. The point of the game is for the player to correctly
+        guess which pathfinding algorithm will reach the Goal Node first!
+        <br />
+        <br />
+        Six different pathfinding algorithms have been implemented in this game,
+        and the Information section on the website provides additional details
+        about each one.
+      </p>
+    ),
     cssGradient: "bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400",
     techStack: ["HTML", "CSS", "JavaScript", "React"],
     thumbnailImgSrc: "/images/pathfinding-race-thumbnail.png",
