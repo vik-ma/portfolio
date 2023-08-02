@@ -147,7 +147,7 @@ export default function ImageSlider({
               className={
                 onlyOneImage
                   ? "relative rounded-lg p-2 pt-1.5 main-image-container"
-                  : "relative rounded-2xl pt-2 pb-4 px-1.5 main-image-container"
+                  : "relative rounded-2xl pt-2 pb-3.5 px-1.5 main-image-container"
               }
               ref={fullImageRef}
             >
@@ -194,7 +194,7 @@ export default function ImageSlider({
                     />
                   </div>
                   {!onlyOneImage && (
-                    <div className="flex flex-col items-center mt-4">
+                    <div className="flex flex-col items-center mt-3">
                       <div className="flex flex-row">
                         {Array.from({ length: numImages }).map(
                           (item, index) => (
