@@ -43,7 +43,7 @@ export default function ProjectPage({ project }: ProjectProps) {
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-evenly">
             <ImageSlider
               name={project?.name}
               previewImgSrcList={project?.previewImgSrcList}
@@ -54,6 +54,7 @@ export default function ProjectPage({ project }: ProjectProps) {
               previewImgMenuHeightList={project?.previewImgMenuHeightList}
               fullSizeImgMaxWidth={project?.fullSizeImgMaxWidth}
             />
+            <div></div>
           </div>
         </div>
         <div className="flex flex-wrap max-[870px]:justify-center -ml-0.5 text-stone-200">
