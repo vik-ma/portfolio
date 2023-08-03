@@ -147,7 +147,7 @@ export default function ImageSlider({
               className={
                 onlyOneImage
                   ? "relative rounded-lg p-2 pt-1.5 main-image-container"
-                  : "relative rounded-2xl pt-2 pb-3.5 px-1.5 main-image-container"
+                  : "relative rounded-2xl pt-2 pb-3 px-2 main-image-container"
               }
               ref={fullImageRef}
             >
@@ -155,7 +155,7 @@ export default function ImageSlider({
                 className={
                   onlyOneImage
                     ? "absolute right-0 -top-11"
-                    : "flex justify-end mb-2.5 mr-0.5"
+                    : "flex justify-end mb-2.5"
                 }
               >
                 <button
@@ -173,7 +173,7 @@ export default function ImageSlider({
               <div className="flex flex-row justify-center items-stretch">
                 {!onlyOneImage && (
                   <button
-                    className="image-arrow-button pr-2"
+                    className="image-arrow-button pr-2.5"
                     onClick={() => moveImageLeft("full-size")}
                   >
                     <div className="image-arrow-icon">
@@ -217,7 +217,7 @@ export default function ImageSlider({
                 </div>
                 {!onlyOneImage && (
                   <button
-                    className="image-arrow-button pl-2"
+                    className="image-arrow-button pl-2.5"
                     onClick={() => moveImageRight("full-size")}
                   >
                     <div className="image-arrow-icon">
