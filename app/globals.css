@@ -34,7 +34,7 @@ body {
     )
     rgb(var(--background-start-rgb)); */
   background-color: rgb(26, 26, 26);
-  background: radial-gradient(circle at 30%, #333, rgb(26, 26, 26) 50%);
+  background: radial-gradient(circle at 34%, #333, rgb(26, 26, 26) 50%);
   background-attachment: fixed;
 }
 
