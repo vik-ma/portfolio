@@ -56,7 +56,7 @@ export default function Modal({ children }: ModalProps) {
       className="fixed inset-0 max-[870px]:pt-12 max-[870px]:pb-5 z-10 flex items-center justify-center bg-black/70 animate-fade"
       onClick={onClick}
     >
-      <div className="min-[871px]:hidden fixed flex flex-row justify-end w-[340px] top-1.5">
+      <div className="min-[871px]:hidden fixed flex flex-row justify-end w-[340px] min-[491px]:w-[420px] sm:w-[520px] md:w-[600px] top-1.5">
         <div className="align-middle">
           <button
             className="rounded-lg py-1 pr-1.5 pl-2.5 bg-[#202020] hover:bg-stone-700 border border-[#464646cc]"
