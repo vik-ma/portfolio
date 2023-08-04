@@ -20,7 +20,7 @@ export const ProjectsInfo = {
           Django REST Framework API
         </strong>{" "}
         set up to communicate with the front end. A PostgreSQL database stores
-        the collected price scrape data, aswell as up-to-date benchmark data
+        the collected price scrape data, as well as up-to-date benchmark data
         that is automatically scraped every day.
         <br />
         <br />
@@ -137,8 +137,8 @@ export const ProjectsInfo = {
         base tile sample.
         <br />
         <br />
-        This application allows the user to paint their own base tile samples
-        and then watch the WFC algorithm generate the image in real time.
+        This application allows the user to paint custom base tile samples and
+        then watch the WFC algorithm generate the image in real time.
         <br />
         <br />
         <strong className="text-amber-500">
@@ -235,7 +235,7 @@ export const ProjectsInfo = {
         If the user is using{" "}
         <strong className="text-stone-100">VLC Media Player</strong> to open
         audio or video files, the application is also able to change the
-        user&apos;s VLC settings to accomodate multiple media files being opened
+        user&apos;s VLC settings to accommodate multiple media files being opened
         simultaneously.
       </p>
     ),
@@ -268,7 +268,7 @@ export const ProjectsInfo = {
         line-based text files) into any installed web browser.
         <br />
         <br />
-        The application is also includes additional feautures, such as the
+        The application is also includes additional features, such as the
         ability to filter which links to open, and support for comments placed
         next to the link. This makes it possible to, for example, only open
         links from a specific domain, or links whose comments contain a specific
