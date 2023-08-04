@@ -53,10 +53,10 @@ export default function Modal({ children }: ModalProps) {
   return (
     <div
       ref={overlay}
-      className="fixed inset-0 max-[870px]:pt-12 max-[870px]:pb-5 z-10 flex items-center justify-center bg-black/70 animate-fade"
+      className="fixed inset-0 modal-bg max-[870px]:pt-12 max-[870px]:pb-5 z-10 flex items-center justify-center bg-black/70 animate-fade"
       onClick={onClick}
     >
-      <div className="min-[871px]:hidden fixed flex flex-row justify-end w-[340px] min-[491px]:w-[420px] sm:w-[520px] md:w-[600px] top-1.5">
+      <div className="min-[871px]:hidden modal-small-close-button fixed flex flex-row justify-end w-[340px] min-[491px]:w-[420px] sm:w-[520px] md:w-[600px] min-[871px]:w-[850px] top-1.5">
         <div className="align-middle">
           <button
             className="rounded-lg py-1 pr-1.5 pl-2.5 bg-[#202020] hover:bg-stone-700 border border-[#464646cc]"
@@ -73,7 +73,7 @@ export default function Modal({ children }: ModalProps) {
       </div>
       <div
         ref={wrapper}
-        className="relative max-[870px]:h-full max-[870px]:overflow-auto"
+        className="relative modal-wrapper max-[870px]:h-full max-[870px]:overflow-auto"
       >
         <div className="rounded-xl project-page-container animate-modal">
           <div className="max-[870px]:hidden absolute align-middle -top-11 right-0">

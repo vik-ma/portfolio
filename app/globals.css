@@ -659,3 +659,17 @@ body {
     animation: none;
   }
 }
+
+@media (max-height: 849px) {
+  .modal-bg {
+    padding-top: 3rem !important;
+    padding-bottom: 1.25rem;
+  }
+  .modal-wrapper {
+    height: 100% !important;
+    overflow: auto !important;
+  }
+  .modal-small-close-button {
+    display: flex !important;
+  }
+}
