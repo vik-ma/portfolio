@@ -43,7 +43,7 @@ export default function ProjectPage({ project }: ProjectProps) {
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-evenly">
+          <div className="flex flex-col justify-around">
             <ImageSlider
               name={project?.name}
               previewImgSrcList={project?.previewImgSrcList}
