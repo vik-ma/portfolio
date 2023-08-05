@@ -120,8 +120,8 @@ export const ProjectsInfo = {
         <strong className="text-stone-100">
           Paint A Wave Function Collapse
         </strong>{" "}
-        is a Python application developed in the PyGame engine that can be run
-        inside of a web browser through{" "}
+        is a Python application developed in the PyGame engine that is able to
+        run inside of a web browser because of{" "}
         <strong className="text-stone-100">WebAssembly</strong>.
         <br />
         <br />
@@ -129,18 +129,19 @@ export const ProjectsInfo = {
         <strong className="text-stone-100">
           Wave Function Collapse Algorithm
         </strong>{" "}
-        is an algorithm that procedurally generates an image based on a small
-        base tile sample.
+        is an algorithm that can procedurally generate images based on the
+        patterns of a smaller base tile sample.
         <br />
         <br />
-        This application allows the user to paint custom base tile samples and
-        then watch the WFC algorithm generate the image in real time.
+        This application allows the user to paint base tile samples and then
+        watch the WFC algorithm generate an image from the base tile in real
+        time.
         <br />
         <br />
         <strong className="text-amber-500">
-          Do note that the browser version of this app is significantly slower
-          than the desktop version, since WebAssembly hosted PyGame applications
-          are very new thing and not well optimized.
+          NOTE: This application runs significantly slower in the browser
+          compared to on the desktop, because the technology to host PyGame
+          applications with WebAssembly is still very new and not optimized.
         </strong>
       </p>
     ),
