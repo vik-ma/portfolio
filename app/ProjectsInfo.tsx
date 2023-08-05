@@ -213,7 +213,7 @@ export const ProjectsInfo = {
   "file-opener": {
     name: "File Opener",
     shortDescription:
-      "Desktop application that allows the user to save a group of programs, files or folders to be opened simultaneously with just one click.",
+      "Desktop application that allows the user to create and save a list of programs, files and folders to be opened simultaneously with just one click.",
     fullDescription: (
       <p>
         <strong className="text-stone-100">File Opener</strong>, or{" "}
@@ -254,7 +254,7 @@ export const ProjectsInfo = {
   "link-opener": {
     name: "Link Opener",
     shortDescription:
-      "Desktop application that can filter and open multiple URLs at once from a saved .txt file into any installed web browser.",
+      "Desktop application that can filter and automatically open a list of URLs from a text file into any installed web browser.",
     fullDescription: (
       <p>
         <strong className="text-stone-100">Link Opener</strong>, or{" "}
