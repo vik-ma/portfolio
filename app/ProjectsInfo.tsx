@@ -2,7 +2,7 @@ export const ProjectsInfo = {
   "price-performance-scraper": {
     name: "Price-Performance Scraper",
     shortDescription:
-      "A website where the user can select various GPU or CPU models and calculate their price-performance score by scraping their prices in real time and comparing them to up-to-date benchmarks.",
+      "Website that calculates the price-performance scores of GPU and CPU models that the user selects by scraping online prices in real time and comparing them to up-to-date benchmarks.",
     fullDescription: (
       <p>
         <strong className="text-stone-100">Price-Performance Scraper</strong> is
@@ -70,7 +70,7 @@ export const ProjectsInfo = {
   "pathfinding-race": {
     name: "Pathfinding Race",
     shortDescription:
-      "A browser game where different pathfinding algorithms are facing off on a randomized grid. The aim of the game is to correctly predict which algorithm will find the goal first. After a prediction is made, all of the pathfinding algorithms will be visualized.",
+      "Browser game where different pathfinding algorithms are facing off on randomized grids. The objective of the game is to correctly predict which algorithm will find the goal first. After a prediction is made, the game visualizes the paths of the algorithms.",
     fullDescription: (
       <p>
         <strong className="text-stone-100">Pathfinding Race</strong> is a
@@ -118,7 +118,7 @@ export const ProjectsInfo = {
   "paint-a-wave-function-collapse": {
     name: "Paint A Wave Function Collapse",
     shortDescription:
-      "Browser application that procedurally generates an image using the WFC algorithm from on a small pixel tile sample painted by the user.",
+      "Browser application that procedurally generates pixel art using the WFC algorithm from on a small tile sample painted by the user.",
     fullDescription: (
       <p>
         <strong className="text-stone-100">
@@ -144,7 +144,7 @@ export const ProjectsInfo = {
         <strong className="text-amber-500">
           Do note that the browser version of this app is significantly slower
           than the desktop version, since WebAssembly hosted PyGame applications
-          are a very new thing.
+          are very new thing and not well optimized.
         </strong>
       </p>
     ),
@@ -173,7 +173,7 @@ export const ProjectsInfo = {
   "screenshot-ocr": {
     name: "Screenshot OCR",
     shortDescription:
-      "Windows GUI application that serves as a front end for the Tesseract OCR engine. Performs OCR on a section of the screen without having to load an image file.",
+      "Desktop application that serves as a front end GUI for the Tesseract OCR engine. Performs OCR on a section of the screen without having to load an image file.",
     fullDescription: (
       <p>
         <strong className="text-stone-100">Screenshot OCR</strong> is a desktop
@@ -235,8 +235,8 @@ export const ProjectsInfo = {
         If the user is using{" "}
         <strong className="text-stone-100">VLC Media Player</strong> to open
         audio or video files, the application is also able to change the
-        user&apos;s VLC settings to accommodate multiple media files being opened
-        simultaneously.
+        user&apos;s VLC settings to accommodate multiple media files being
+        opened simultaneously.
       </p>
     ),
     techStack: ["Python", "Tkinter"],
