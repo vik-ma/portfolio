@@ -140,8 +140,9 @@ export const ProjectsInfo = {
         <br />
         <strong className="text-amber-500">
           NOTE: This application runs significantly slower in the browser
-          compared to on the desktop, because the technology to host PyGame
-          applications with WebAssembly is still very new and not optimized.
+          compared to on the desktop because the technology to host PyGame
+          applications using WebAssembly is still very new and not well
+          optimized.
         </strong>
       </p>
     ),
