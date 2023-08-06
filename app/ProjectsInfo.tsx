@@ -220,13 +220,12 @@ export const ProjectsInfo = {
         <strong className="text-stone-100">File Opener</strong>, or{" "}
         <strong className="text-stone-100">Open File Groups</strong>, is a
         desktop GUI application made for Windows that allows the user to save a
-        list of programs, files or folders on their system to be simultaneously
-        opened.
+        list of programs, files and folders to be simultaneously opened with one
+        click.
         <br />
         <br />
-        The application allows multiple lists, referred to as groups, to be
-        created, copied or modified at any time. The groups and the settings of
-        the application are saved to a .json file.
+        The user can create multiple groups and modify them at any time. The
+        groups and the settings of the application are saved to a .json file.
         <br />
         <br />
         If the user is using{" "}
