@@ -13,10 +13,9 @@ export const ProjectsInfo = {
         <br />
         <br />
         Price scraping is done with Python, and the back end runs on a Django
-        server, with a REST API set up to communicate with the front end
-        website. A PostgreSQL database stores the collected price scrape data,
-        as well as up-to-date benchmark data that is automatically scraped every
-        day.
+        server with a REST API set up to communicate with the front end website.
+        A PostgreSQL database stores the collected price scrape data, as well as
+        up-to-date benchmark data that is automatically scraped every day.
         <br />
         <br />
         The website is made using React, TypeScript and Next.js 13. On the
