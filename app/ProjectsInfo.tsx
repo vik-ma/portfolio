@@ -174,21 +174,20 @@ export const ProjectsInfo = {
     fullDescription: (
       <p>
         <strong className="text-stone-100">Screenshot OCR</strong> is a desktop
-        GUI application made for Windows that works as a front end for
+        GUI application made for Windows that serves as a front end for
         Google&apos;s{" "}
         <strong className="text-stone-100">Tesseract OCR engine</strong>.
         <br />
         <br />
-        The main future of the application is the ability to select a section of
-        the screen, similar to how the{" "}
-        <strong className="text-stone-100">Windows Snipping Tool</strong> works,
-        and perform OCR directly on that section, instead of having to save or
-        load an actual image file.
+        The main feature of the application is the ability to mark a section of
+        the screen, in the same way as with{" "}
+        <strong className="text-stone-100">Windows&apos; Snipping Tool</strong>,
+        and automatically perform OCR on that section, without having to crop,
+        save and then load an actual image file.
         <br />
         <br />
-        The application also shows all of the user&apos;s installed languages in
-        Tesseract, and allows the user to store combinations of different
-        language parameters for subsequent uses.
+        The user can also save a combination of different language parameters to
+        be re-used later.
       </p>
     ),
     techStack: ["Python", "PyQt"],
