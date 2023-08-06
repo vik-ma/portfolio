@@ -260,15 +260,14 @@ export const ProjectsInfo = {
         <strong className="text-stone-100">Link Opener</strong>, or{" "}
         <strong className="text-stone-100">Open Links From Text File</strong>,
         is a desktop GUI application made for Windows that allows the user to
-        automatically open a batch of URLs stored in a .txt file (and most other
-        line-based text files) into any installed web browser.
+        automatically open a list of URLs stored in a text file into any
+        installed web browser.
         <br />
         <br />
-        The application is also includes additional features, such as the
-        ability to filter which links to open, and support for comments placed
-        next to the link. This makes it possible to, for example, only open
-        links from a specific domain, or links whose comments contain a specific
-        phrase.
+        The application also includes the ability to filter which links to open.
+        Inside the text file, the user can write comments next to the URLs and
+        then apply a filter to only open the links whose comment contains a
+        specific phrase. Filtering can also be performed on the URL itself.
       </p>
     ),
     techStack: ["Python", "Tkinter"],
