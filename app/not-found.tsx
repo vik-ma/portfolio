@@ -5,7 +5,7 @@ export default function NotFound() {
     <>
       <title>Page Does Not Exist</title>
       <div className="flex flex-col h-screen justify-center items-center">
-        <h1 className="text-neutral-100 font-extrabold text-2xl md:text-6xl pb-3 md:pb-5">
+        <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-100 via-amber-200 to-amber-200 font-extrabold text-2xl md:text-6xl pb-3 md:pb-5">
           404 - Page Does Not Exist!
         </h1>
         <Link href="/">
