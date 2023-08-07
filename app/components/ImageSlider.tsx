@@ -18,12 +18,15 @@ export default function ImageSlider({
   fullSizeImgMaxWidth,
 }: ImageSliderProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
-  const [windowWidth, setWindowWidth] = useState<number>(900);
+  // const [windowWidth, setWindowWidth] = useState<number>(900);
   const [showFullImage, setShowFullImage] = useState<boolean>(false);
   const [isPreviewAnimOngoing, setIsPreviewAnimOngoing] =
     useState<boolean>(false);
   const [isFullSizeAnimOngoing, setIsFullSizeAnimOngoing] =
     useState<boolean>(false);
+  const [windowResizeStage, setWindowResizeStage] = useState<number>(0);
+
+  const windowWidthRef = useRef(window.innerWidth);
 
   const numImages: number = previewImgSrcList.length;
 
@@ -51,19 +54,20 @@ export default function ImageSlider({
     ],
   ];
 
-  console.log(imageResizeList);
+  console.log("Re-rendered");
 
   useEffect(() => {
-    setWindowWidth(window.innerWidth);
-  }, []);
-
-  useEffect(() => {
-    window.addEventListener("resize", () => setWindowWidth(window.innerWidth));
-
-    return () =>
-      window.removeEventListener("resize", () =>
-        setWindowWidth(window.innerWidth)
-      );
+    const handleResize = () => {
+      const currWidth = window.innerWidth;
+      if (currWidth <= 870 && windowWidthRef.current > 870) {
+        setWindowResizeStage(1);
+      } else if (currWidth > 870 && windowWidthRef.current <= 870) {
+        setWindowResizeStage(0);
+      }
+      windowWidthRef.current = currWidth;
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   useEffect(() => {
@@ -143,7 +147,7 @@ export default function ImageSlider({
   };
 
   const showFullSizeImage = () => {
-    if (windowWidth < 870) {
+    if (windowResizeStage === 1) {
       window.open(previewImgSrcList[currentImageIndex], "_blank");
     } else {
       setShowFullImage(true);
@@ -257,7 +261,7 @@ export default function ImageSlider({
           <br />
         </noscript>
         <p className="text-neutral-400 italic text-sm mb-0.5">
-          {windowWidth <= 870
+          {windowResizeStage === 1
             ? "Tap image to open in new tab"
             : "Click to view larger image"}
         </p>
@@ -265,11 +269,11 @@ export default function ImageSlider({
           className={`relative flex flex-col p-1.5 justify-center rounded-md main-image-container max-[870px]:max-w-[284px]`}
           style={{
             width:
-              windowWidth > 870
+              windowResizeStage === 0
                 ? `${imageResizeList[0][0]}px`
                 : `${imageResizeList[3][0]}px`,
             height:
-              windowWidth > 870
+              windowResizeStage === 0
                 ? `${imageResizeList[0][1]}px`
                 : `${imageResizeList[3][1]}px`,
           }}
@@ -283,7 +287,7 @@ export default function ImageSlider({
             src={previewImgSrcList[currentImageIndex]}
             alt={`${name} Preview Image ${currentImageIndex + 1}`}
             width={
-              windowWidth > 870
+              windowResizeStage === 0
                 ? imageResizeList[0][0]
                 : imageResizeList[3][0]
             }
