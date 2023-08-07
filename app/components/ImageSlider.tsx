@@ -35,6 +35,24 @@ export default function ImageSlider({
 
   const { setIsEnlargeModalOpen } = useModalContext();
 
+  const imageResizeList: number[][] = [
+    [previewImgMainWidth, previewImgMainHeight],
+    [
+      Math.floor(previewImgMainWidth * 0.9),
+      Math.floor(previewImgMainHeight * 0.9),
+    ],
+    [
+      Math.floor(previewImgMainWidth * 0.8),
+      Math.floor(previewImgMainHeight * 0.8),
+    ],
+    [
+      Math.floor(previewImgMainWidth * 0.7),
+      Math.floor(previewImgMainHeight * 0.7),
+    ],
+  ];
+
+  console.log(imageResizeList);
+
   useEffect(() => {
     setWindowWidth(window.innerWidth);
   }, []);
@@ -244,16 +262,16 @@ export default function ImageSlider({
             : "Click to view larger image"}
         </p>
         <div
-          className={`relative flex flex-col p-1.5 justify-center rounded-md main-image-container max-[870px]:max-w-[282px]`}
+          className={`relative flex flex-col p-1.5 justify-center rounded-md main-image-container max-[870px]:max-w-[284px]`}
           style={{
             width:
               windowWidth > 870
-                ? `${previewImgMainWidth}px`
-                : `${Math.floor(previewImgMainWidth * 0.7)}px`,
+                ? `${imageResizeList[0][0]}px`
+                : `${imageResizeList[3][0]}px`,
             height:
               windowWidth > 870
-                ? `${previewImgMainHeight}px`
-                : `${Math.floor(previewImgMainHeight * 0.7)}px`,
+                ? `${imageResizeList[0][1]}px`
+                : `${imageResizeList[3][1]}px`,
           }}
         >
           <Image
@@ -266,8 +284,8 @@ export default function ImageSlider({
             alt={`${name} Preview Image ${currentImageIndex + 1}`}
             width={
               windowWidth > 870
-                ? previewImgMainWidth
-                : Math.floor(previewImgMainWidth * 0.7)
+                ? imageResizeList[0][0]
+                : imageResizeList[3][0]
             }
             height={previewImgMainHeight}
             placeholder="blur"
