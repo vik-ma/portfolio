@@ -231,6 +231,13 @@ export default function ImageSlider({
         </div>
       )}
       <div className="flex flex-col items-center">
+        <noscript>
+          <span className="rounded-xl font-semibold text-neutral-50 bg-red-500 px-2.5 py-1.5">
+            Enable JavaScript to view the images
+          </span>
+          <br />
+          <br />
+        </noscript>
         <p className="text-neutral-400 italic text-sm mb-0.5">
           {windowWidth <= 870
             ? "Tap image to open in new tab"
