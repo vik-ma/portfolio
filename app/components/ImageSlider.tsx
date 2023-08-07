@@ -233,7 +233,7 @@ export default function ImageSlider({
       <div className="flex flex-col items-center">
         <noscript>
           <span className="rounded-xl font-semibold text-neutral-50 bg-red-500 px-2.5 py-1.5">
-            Enable JavaScript to view the images
+            Enable JavaScript to view images
           </span>
           <br />
           <br />
