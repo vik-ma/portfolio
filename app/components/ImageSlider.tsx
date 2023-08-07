@@ -244,7 +244,7 @@ export default function ImageSlider({
             : "Click to view larger image"}
         </p>
         <div
-          className={`relative flex flex-col p-1.5 justify-center rounded-md main-image-container`}
+          className={`relative flex flex-col p-1.5 justify-center rounded-md main-image-container max-[870px]:max-w-[282px]`}
           style={{
             width:
               windowWidth > 870
