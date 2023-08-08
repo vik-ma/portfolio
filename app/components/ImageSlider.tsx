@@ -53,7 +53,7 @@ export default function ImageSlider({
     ],
   ];
 
-  console.log(windowResizeStage);
+  console.log(imageResizeList[windowResizeStage]);
 
   const resizeBp1: number = 767;
   const resizeBp2: number = 639;
@@ -300,10 +300,18 @@ export default function ImageSlider({
             width:
               windowResizeStage === 0
                 ? `${imageResizeList[0][0]}px`
+                : windowResizeStage === 1
+                ? `${imageResizeList[1][0]}px`
+                : windowResizeStage === 2
+                ? `${imageResizeList[2][0]}px`
                 : `${imageResizeList[3][0]}px`,
             height:
               windowResizeStage === 0
                 ? `${imageResizeList[0][1]}px`
+                : windowResizeStage === 1
+                ? `${imageResizeList[1][1]}px`
+                : windowResizeStage === 2
+                ? `${imageResizeList[2][1]}px`
                 : `${imageResizeList[3][1]}px`,
           }}
         >
@@ -318,6 +326,10 @@ export default function ImageSlider({
             width={
               windowResizeStage === 0
                 ? imageResizeList[0][0]
+                : windowResizeStage === 1
+                ? imageResizeList[1][0]
+                : windowResizeStage === 2
+                ? imageResizeList[2][0]
                 : imageResizeList[3][0]
             }
             height={previewImgMainHeight}
