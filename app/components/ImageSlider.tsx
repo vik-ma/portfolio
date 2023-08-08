@@ -26,7 +26,7 @@ export default function ImageSlider({
   const [windowResizeStage, setWindowResizeStage] = useState<number>(0);
   const [isScreenSmall, setIsScreenSmall] = useState<boolean>(false);
 
-  const windowWidthRef = useRef<number>(0);
+  const prevWindowWidthRef = useRef<number>(0);
 
   const numImages: number = previewImgSrcList.length;
 
@@ -53,8 +53,6 @@ export default function ImageSlider({
       Math.floor(previewImgMainHeight * 0.7),
     ],
   ];
-
-  console.log(isScreenSmall, windowResizeStage);
 
   const resizeBp0: number = 870;
   const resizeBp1: number = 767;
@@ -86,30 +84,30 @@ export default function ImageSlider({
       const currWidth = window.innerWidth;
 
       if (currWidth > resizeBp1) {
-        if (windowWidthRef.current <= resizeBp1) setWindowResizeStage(0);
+        if (prevWindowWidthRef.current <= resizeBp1) setWindowResizeStage(0);
       } else if (currWidth <= resizeBp1 && currWidth > resizeBp2) {
         if (
-          windowWidthRef.current > resizeBp1 ||
-          windowWidthRef.current <= resizeBp2
+          prevWindowWidthRef.current > resizeBp1 ||
+          prevWindowWidthRef.current <= resizeBp2
         )
           setWindowResizeStage(1);
       } else if (currWidth <= resizeBp2 && currWidth > resizeBp3) {
         if (
-          windowWidthRef.current > resizeBp2 ||
-          windowWidthRef.current <= resizeBp3
+          prevWindowWidthRef.current > resizeBp2 ||
+          prevWindowWidthRef.current <= resizeBp3
         )
           setWindowResizeStage(2);
       } else if (currWidth <= resizeBp3) {
-        if (windowWidthRef.current > resizeBp3) setWindowResizeStage(3);
+        if (prevWindowWidthRef.current > resizeBp3) setWindowResizeStage(3);
       }
 
-      if (currWidth <= resizeBp0 && windowWidthRef.current > resizeBp0) {
+      if (currWidth <= resizeBp0 && prevWindowWidthRef.current > resizeBp0) {
         setIsScreenSmall(true);
-      } else if (currWidth > resizeBp0 && windowWidthRef.current <= resizeBp0) {
+      } else if (currWidth > resizeBp0 && prevWindowWidthRef.current <= resizeBp0) {
         setIsScreenSmall(false);
       }
 
-      windowWidthRef.current = currWidth;
+      prevWindowWidthRef.current = currWidth;
     };
 
     window.addEventListener("resize", handleResize);
