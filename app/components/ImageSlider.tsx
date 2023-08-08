@@ -53,7 +53,7 @@ export default function ImageSlider({
     ],
   ];
 
-  console.log(imageResizeList[windowResizeStage]);
+  console.log(windowResizeStage, imageResizeList[windowResizeStage]);
 
   const resizeBp1: number = 767;
   const resizeBp2: number = 639;
@@ -295,7 +295,7 @@ export default function ImageSlider({
             : "Click to view larger image"}
         </p>
         <div
-          className={`relative flex flex-col p-1.5 justify-center rounded-md main-image-container max-[490px]:max-w-[284px]`}
+          className={`relative flex flex-col p-1.5 justify-center rounded-md main-image-container max-[490px]:max-w-[284px] max-sm:max-w-[325px] max-md:max-w-[366px]`}
           style={{
             width:
               windowResizeStage === 0
