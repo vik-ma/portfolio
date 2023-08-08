@@ -24,6 +24,7 @@ export default function ImageSlider({
   const [isFullSizeAnimOngoing, setIsFullSizeAnimOngoing] =
     useState<boolean>(false);
   const [windowResizeStage, setWindowResizeStage] = useState<number>(0);
+  const [isScreenSmall, setIsScreenSmall] = useState<boolean>(false);
 
   const windowWidthRef = useRef<number>(0);
 
@@ -53,14 +54,16 @@ export default function ImageSlider({
     ],
   ];
 
-  console.log(windowResizeStage, imageResizeList[windowResizeStage]);
+  console.log(isScreenSmall, windowResizeStage);
 
+  const resizeBp0: number = 870;
   const resizeBp1: number = 767;
   const resizeBp2: number = 639;
   const resizeBp3: number = 490;
 
   useEffect(() => {
     const currWidth = window.innerWidth;
+
     if (currWidth > resizeBp1) {
       setWindowResizeStage(0);
     } else if (currWidth <= resizeBp1 && currWidth > resizeBp2) {
@@ -70,11 +73,18 @@ export default function ImageSlider({
     } else if (currWidth <= resizeBp3) {
       setWindowResizeStage(3);
     }
+
+    if (currWidth > resizeBp0) {
+      setIsScreenSmall(false);
+    } else {
+      setIsScreenSmall(true);
+    }
   }, []);
 
   useEffect(() => {
     const handleResize = () => {
       const currWidth = window.innerWidth;
+
       if (currWidth > resizeBp1) {
         if (windowWidthRef.current <= resizeBp1) setWindowResizeStage(0);
       } else if (currWidth <= resizeBp1 && currWidth > resizeBp2) {
@@ -92,6 +102,13 @@ export default function ImageSlider({
       } else if (currWidth <= resizeBp3) {
         if (windowWidthRef.current > resizeBp3) setWindowResizeStage(3);
       }
+
+      if (currWidth <= resizeBp0 && windowWidthRef.current > resizeBp0) {
+        setIsScreenSmall(true);
+      } else if (currWidth > resizeBp0 && windowWidthRef.current <= resizeBp0) {
+        setIsScreenSmall(false);
+      }
+
       windowWidthRef.current = currWidth;
     };
 
@@ -176,7 +193,7 @@ export default function ImageSlider({
   };
 
   const showFullSizeImage = () => {
-    if (windowResizeStage === 1) {
+    if (isScreenSmall) {
       window.open(previewImgSrcList[currentImageIndex], "_blank");
     } else {
       setShowFullImage(true);
@@ -290,7 +307,7 @@ export default function ImageSlider({
           <br />
         </noscript>
         <p className="text-neutral-400 italic text-sm mb-0.5">
-          {windowResizeStage === 1
+          {isScreenSmall
             ? "Tap image to open in new tab"
             : "Click to view larger image"}
         </p>
