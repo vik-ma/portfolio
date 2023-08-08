@@ -18,7 +18,6 @@ export default function ImageSlider({
   fullSizeImgMaxWidth,
 }: ImageSliderProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
-  // const [windowWidth, setWindowWidth] = useState<number>(900);
   const [showFullImage, setShowFullImage] = useState<boolean>(false);
   const [isPreviewAnimOngoing, setIsPreviewAnimOngoing] =
     useState<boolean>(false);
@@ -57,6 +56,14 @@ export default function ImageSlider({
   console.log("Re-rendered");
 
   useEffect(() => {
+    if (window.innerWidth <= 870) {
+      setWindowResizeStage(1);
+    } else {
+      setWindowResizeStage(0);
+    }
+  }, []);
+
+  useEffect(() => {
     const handleResize = () => {
       const currWidth = window.innerWidth;
       if (currWidth <= 870 && windowWidthRef.current > 870) {
@@ -66,6 +73,7 @@ export default function ImageSlider({
       }
       windowWidthRef.current = currWidth;
     };
+
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
