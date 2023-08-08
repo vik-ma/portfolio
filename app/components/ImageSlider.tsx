@@ -67,7 +67,7 @@ export default function ImageSlider({
       setWindowResizeStage(1);
     } else if (currWidth <= resizeBp2 && currWidth > resizeBp3) {
       setWindowResizeStage(2);
-    } else if (currWidth < resizeBp3) {
+    } else if (currWidth <= resizeBp3) {
       setWindowResizeStage(3);
     }
   }, []);
@@ -75,10 +75,22 @@ export default function ImageSlider({
   useEffect(() => {
     const handleResize = () => {
       const currWidth = window.innerWidth;
-      if (currWidth > resizeBp1 && windowWidthRef.current <= resizeBp1) {
-        setWindowResizeStage(0);
-      } else if (currWidth <= resizeBp1 && windowWidthRef.current > resizeBp1) {
-        setWindowResizeStage(1);
+      if (currWidth > resizeBp1) {
+        if (windowWidthRef.current <= resizeBp1) setWindowResizeStage(0);
+      } else if (currWidth <= resizeBp1 && currWidth > resizeBp2) {
+        if (
+          windowWidthRef.current > resizeBp1 ||
+          windowWidthRef.current <= resizeBp2
+        )
+          setWindowResizeStage(1);
+      } else if (currWidth <= resizeBp2 && currWidth > resizeBp3) {
+        if (
+          windowWidthRef.current > resizeBp2 ||
+          windowWidthRef.current <= resizeBp3
+        )
+          setWindowResizeStage(2);
+      } else if (currWidth <= resizeBp3) {
+        if (windowWidthRef.current > resizeBp3) setWindowResizeStage(3);
       }
       windowWidthRef.current = currWidth;
     };
