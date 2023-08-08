@@ -25,7 +25,7 @@ export default function ImageSlider({
     useState<boolean>(false);
   const [windowResizeStage, setWindowResizeStage] = useState<number>(0);
 
-  const windowWidthRef = useRef(window.innerWidth);
+  const windowWidthRef = useRef<number>(0);
 
   const numImages: number = previewImgSrcList.length;
 
