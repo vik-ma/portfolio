@@ -53,23 +53,32 @@ export default function ImageSlider({
     ],
   ];
 
-  console.log("Re-rendered");
+  console.log(windowResizeStage);
+
+  const resizeBp1: number = 767;
+  const resizeBp2: number = 639;
+  const resizeBp3: number = 490;
 
   useEffect(() => {
-    if (window.innerWidth <= 870) {
-      setWindowResizeStage(1);
-    } else {
+    const currWidth = window.innerWidth;
+    if (currWidth > resizeBp1) {
       setWindowResizeStage(0);
+    } else if (currWidth <= resizeBp1 && currWidth > resizeBp2) {
+      setWindowResizeStage(1);
+    } else if (currWidth <= resizeBp2 && currWidth > resizeBp3) {
+      setWindowResizeStage(2);
+    } else if (currWidth < resizeBp3) {
+      setWindowResizeStage(3);
     }
   }, []);
 
   useEffect(() => {
     const handleResize = () => {
       const currWidth = window.innerWidth;
-      if (currWidth <= 870 && windowWidthRef.current > 870) {
-        setWindowResizeStage(1);
-      } else if (currWidth > 870 && windowWidthRef.current <= 870) {
+      if (currWidth > resizeBp1 && windowWidthRef.current <= resizeBp1) {
         setWindowResizeStage(0);
+      } else if (currWidth <= resizeBp1 && windowWidthRef.current > resizeBp1) {
+        setWindowResizeStage(1);
       }
       windowWidthRef.current = currWidth;
     };
@@ -274,7 +283,7 @@ export default function ImageSlider({
             : "Click to view larger image"}
         </p>
         <div
-          className={`relative flex flex-col p-1.5 justify-center rounded-md main-image-container max-[870px]:max-w-[284px]`}
+          className={`relative flex flex-col p-1.5 justify-center rounded-md main-image-container max-[490px]:max-w-[284px]`}
           style={{
             width:
               windowResizeStage === 0
