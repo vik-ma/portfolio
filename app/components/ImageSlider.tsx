@@ -26,11 +26,15 @@ export default function ImageSlider({
   const [windowResizeStage, setWindowResizeStage] = useState<number>(0);
   const [isScreenSmall, setIsScreenSmall] = useState<boolean>(false);
 
-  const prevWindowWidthRef = useRef<number>(0);
+  const previousWindowWidthRef = useRef<number>(0);
 
   const numImages: number = previewImgSrcList.length;
 
   const maxSlideIndex: number = numImages - 1;
+
+  const fullSizeImgMaxHeight: number = Math.floor(
+    (previewImgMainHeight / previewImgMainWidth) * fullSizeImgMaxWidth
+  );
 
   const fullImageRef = useRef<HTMLDivElement>(null);
 
@@ -84,30 +88,37 @@ export default function ImageSlider({
       const currWidth = window.innerWidth;
 
       if (currWidth > resizeBp1) {
-        if (prevWindowWidthRef.current <= resizeBp1) setWindowResizeStage(0);
+        if (previousWindowWidthRef.current <= resizeBp1)
+          setWindowResizeStage(0);
       } else if (currWidth <= resizeBp1 && currWidth > resizeBp2) {
         if (
-          prevWindowWidthRef.current > resizeBp1 ||
-          prevWindowWidthRef.current <= resizeBp2
+          previousWindowWidthRef.current > resizeBp1 ||
+          previousWindowWidthRef.current <= resizeBp2
         )
           setWindowResizeStage(1);
       } else if (currWidth <= resizeBp2 && currWidth > resizeBp3) {
         if (
-          prevWindowWidthRef.current > resizeBp2 ||
-          prevWindowWidthRef.current <= resizeBp3
+          previousWindowWidthRef.current > resizeBp2 ||
+          previousWindowWidthRef.current <= resizeBp3
         )
           setWindowResizeStage(2);
       } else if (currWidth <= resizeBp3) {
-        if (prevWindowWidthRef.current > resizeBp3) setWindowResizeStage(3);
+        if (previousWindowWidthRef.current > resizeBp3) setWindowResizeStage(3);
       }
 
-      if (currWidth <= resizeBp0 && prevWindowWidthRef.current > resizeBp0) {
+      if (
+        currWidth <= resizeBp0 &&
+        previousWindowWidthRef.current > resizeBp0
+      ) {
         setIsScreenSmall(true);
-      } else if (currWidth > resizeBp0 && prevWindowWidthRef.current <= resizeBp0) {
+      } else if (
+        currWidth > resizeBp0 &&
+        previousWindowWidthRef.current <= resizeBp0
+      ) {
         setIsScreenSmall(false);
       }
 
-      prevWindowWidthRef.current = currWidth;
+      previousWindowWidthRef.current = currWidth;
     };
 
     window.addEventListener("resize", handleResize);
@@ -254,9 +265,9 @@ export default function ImageSlider({
                       src={previewImgSrcList[currentImageIndex]}
                       alt={`${name} Preview Image ${currentImageIndex + 1}`}
                       width={fullSizeImgMaxWidth}
-                      height={0}
-                      // sizes="100vw"
-                      // style={{ width: "100%", height: "auto" }}
+                      height={fullSizeImgMaxHeight}
+                      placeholder="blur"
+                      blurDataURL={previewImgBase64DataList[currentImageIndex]}
                     />
                   </div>
                   {!onlyOneImage && (
