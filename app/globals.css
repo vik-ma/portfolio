@@ -348,22 +348,6 @@ body {
   background: linear-gradient(130deg,#ffc400 5%, #ff008c 50%, #0044ff 95%);
 }
 
-/* Background for favicon art */
-/* .favicon-bg {
-  width: 30px;
-  height: 30px;
-  filter: blur(1px);
-  background: linear-gradient(320deg,#0077ff 4%, #ff008c 50%, #fffb00 80%);
-  background-size: 100% 100%;
-}  */
-
-/* Text inside favicon art */
-/* .favicon-text {
-  -webkit-text-stroke: 2px rgba(31, 31, 31, 0.8);
-  color: #fafafa;
-  font-size: 29px;
-} */
-
 .animate-enlargement {
   animation: enlarge-animation 0.25s ease-out;
 }

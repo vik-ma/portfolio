@@ -6,13 +6,6 @@ export default function HeroSection() {
       <div className="hero-container h-[200px] text-center py-2 md:py-3 font-sans text-sm text-zinc-100">
         <div className="flex flex-col justify-between p-2 h-full">
           <div className="flex justify-center mt-10">
-            {/* Box containing the favicon art */}
-            {/* <div className="">
-              <div className="favicon-bg"></div>
-            </div>
-            <div className="favicon-text text-3xl absolute font-extrabold -mt-[4px] ml-[1px]">
-              V
-            </div> */}
           </div>
           <div className="flex flex-row justify-evenly">
             <Link
