@@ -20,10 +20,10 @@ export default function ProjectsSection() {
                 <div className="p-2 h-full project-box">
                   <div className="flex flex-col justify-between px-1 h-full project-box-content">
                     <div className="mb-0.5">
-                      <h3 className="text-xl font-bold text-zinc-100">
+                      <h3 className="text-xl font-bold text-neutral-200">
                         {value.name}
                       </h3>
-                      <div className="mt-0.5">
+                      <div className="mt-[1px]">
                         <div className="ml-2.5 sm:ml-3 max-h-full float-right">
                           <div className="mt-1 min-[491px]:mt-2 thumbnail-container">
                             <Image

@@ -19,7 +19,7 @@ export default function LanguagesSection() {
         Languages and Tools
       </h2>
       <div className="rounded-3xl bg-gradient-to-l from-blue-500 via-pink-600 to-yellow-400 p-1.5">
-        <div className="py-2 md:py-3 font-sans text-sm text-zinc-100 lang-list-container">
+        <div className="py-2 md:py-3 font-sans text-sm text-stone-100 lang-list-container">
           <div className="flex flex-wrap justify-center md:gap-x-2 md:gap-y-1 mx-auto">
             <div className="text-center items-center p-3 logo-wrapper">
               <div className="logo-container m-auto">
