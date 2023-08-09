@@ -17,27 +17,36 @@ export default function HeroSection() {
             </p>
             <div className="flex flex-row justify-evenly text-stone-100">
               <Link
-                className="flex w-fit whitespace-nowrap mr-1.5 py-1 pl-1.5 pr-2 text-base font-bold rounded-lg cursor-pointer border-2 border-stone-500 text-stone-50 bg-stone-500/10 hover:text-white hover:bg-stone-500/40 transition ease-out duration-200"
+                className="flex w-fit whitespace-nowrap mr-1.5 py-1 pl-1.5 pr-2 text-base font-bold rounded-lg cursor-pointer border-2 border-neutral-600 text-stone-50 bg-neutral-600/10 hover:text-white hover:bg-neutral-600/30 transition ease-out duration-200"
                 href={"/#languages"}
               >
-                View Languages
+                <span>
+                  <GitHubLogo />
+                </span>
+                <span className="ml-1.5">Skills</span>
               </Link>
               <Link
-                className="flex w-fit whitespace-nowrap mr-1.5 py-1 pl-1.5 pr-2 text-base font-bold rounded-lg cursor-pointer border-2 border-stone-500 text-stone-50 bg-stone-500/10 hover:text-white hover:bg-stone-500/40 transition ease-out duration-200"
+                className="flex w-fit whitespace-nowrap mr-1.5 py-1 pl-1.5 pr-2 text-base font-bold rounded-lg cursor-pointer border-2 border-neutral-600 text-stone-50 bg-neutral-600/10 hover:text-white hover:bg-neutral-600/30 transition ease-out duration-200"
                 href={"/#projects"}
               >
-                View Projects
+                <span>
+                  <GitHubLogo />
+                </span>
+                <span className="ml-1.5">Projects</span>
               </Link>
               <Link
-                className="flex w-fit whitespace-nowrap mr-1.5 py-1 pl-1.5 pr-2 text-base font-bold rounded-lg cursor-pointer border-2 border-stone-500 text-stone-50 bg-stone-500/10 hover:text-white hover:bg-stone-500/40 transition ease-out duration-200"
+                className="flex w-fit whitespace-nowrap mr-1.5 py-1 pl-1.5 pr-2 text-base font-bold rounded-lg cursor-pointer border-2 border-neutral-600 text-stone-50 bg-neutral-600/10 hover:text-white hover:bg-neutral-600/30 transition ease-out duration-200"
                 href={"/about"}
               >
-                About
+                <span>
+                  <GitHubLogo />
+                </span>
+                <span className="ml-1.5">About Site</span>
               </Link>
               <a
                 href="https://github.com/vik-ma"
                 target="_blank"
-                className="flex w-fit whitespace-nowrap mr-1.5 py-1 pl-1.5 pr-2 text-base font-bold rounded-lg cursor-pointer border-2 border-stone-500 text-stone-50 bg-stone-500/10 hover:text-white hover:bg-stone-500/40 transition ease-out duration-200"
+                className="flex w-fit whitespace-nowrap mr-1.5 py-1 pl-1.5 pr-2 text-base font-bold rounded-lg cursor-pointer border-2 border-neutral-600 text-stone-50 bg-neutral-600/10 hover:text-white hover:bg-neutral-600/30 transition ease-out duration-200"
               >
                 <span>
                   <GitHubLogo />
