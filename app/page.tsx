@@ -9,10 +9,10 @@ export default function Home() {
       <div className="relative header-wrapper flex flex-row justify-center pb-4 md:pb-7">
         <HeaderAnimation />
       </div>
-      <header className="pb-10 md:pb-12">
+      <header className="pb-10 md:pb-14">
         <HeroSection />
       </header>
-      <section className="pt-1 sm:pt-1.5 pb-10 md:pb-12" id="languages">
+      <section className="pt-1 sm:pt-1.5 pb-10 md:pb-14" id="languages">
         <LanguagesSection />
       </section>
       <section className="pt-1 sm:pt-1.5" id="projects">

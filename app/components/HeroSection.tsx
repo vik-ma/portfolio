@@ -7,7 +7,7 @@ import ProjectIcon from "../icons/ProjectIcon";
 export default function HeroSection() {
   return (
     <div className="rounded-3xl mt-1.5 min-[491px]:mt-3 sm:mt-5 md:mt-6 min-[871px]:mt-10 rounded-3xl bg-gradient-to-l from-blue-500 via-pink-600 to-yellow-400 p-1.5">
-      <div className="hero-container h-[240px] text-center p-1">
+      <div className="hero-container h-[240px] min-[871px]:h-[230px] text-center p-1">
         <div className="flex flex-col justify-between h-full">
           <div className="flex flex-col justify-around h-full py-1 px-5 font-semibold text-2xl">
             <p className="text-stone-50">
@@ -22,8 +22,8 @@ export default function HeroSection() {
               of my programming projects and the technologies I used to develop
               them. Click on the projects to learn more about them!
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-y-1 gap-x-2 md:gap-x-5 text-stone-100">
-              <div className="flex flex-row justify-between gap-x-2 md:gap-x-5">
+            <div className="flex flex-col sm:flex-row justify-center gap-y-1 gap-x-2 md:gap-x-4 min-[871px]:gap-x-5 text-stone-100">
+              <div className="flex flex-row justify-between gap-x-2 md:gap-x-4 min-[871px]:gap-x-5">
                 <Link
                   className="flex w-fit whitespace-nowrap py-1 pl-1.5 pr-2 text-base font-bold rounded-[10px] cursor-pointer border-2 border-stone-500 text-stone-100 bg-stone-600/20 hover:text-white hover:bg-stone-400/30 transition ease-out duration-200"
                   href={"/#languages"}
@@ -43,7 +43,7 @@ export default function HeroSection() {
                   <span className="ml-1.5">Projects</span>
                 </Link>
               </div>
-              <div className="flex flex-row justify-between gap-x-2 md:gap-x-5">
+              <div className="flex flex-row justify-between gap-x-2 md:gap-x-4 min-[871px]:gap-x-5">
                 <Link
                   className="flex w-fit whitespace-nowrap py-1 pl-1.5 pr-2 text-base font-bold rounded-[10px] cursor-pointer border-2 border-stone-500 text-stone-100 bg-stone-600/20 hover:text-white hover:bg-stone-400/30 transition ease-out duration-200"
                   href={"/about"}
