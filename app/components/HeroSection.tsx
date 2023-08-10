@@ -7,12 +7,12 @@ import ProjectIcon from "../icons/ProjectIcon";
 export default function HeroSection() {
   return (
     <div className="rounded-3xl mt-1.5 min-[491px]:mt-3 sm:mt-5 md:mt-6 min-[871px]:mt-10 rounded-3xl bg-gradient-to-l from-blue-500 via-pink-600 to-yellow-400 p-1.5">
-      <div className="hero-container h-[240px] min-[871px]:h-[230px] text-center p-1">
+      <div className="hero-container h-[370px] min-[491px]:h-[320px] sm:h-[260px] md:h-[240px] min-[871px]:h-[230px] text-center p-1">
         <div className="flex flex-col justify-between h-full">
-          <div className="flex flex-col justify-around h-full py-1 px-5 font-semibold text-2xl">
+          <div className="flex flex-col justify-around h-full py-1 px-3 sm:px-5 font-semibold text-lg min-[491px]:text-xl md:text-2xl">
             <p className="text-stone-50">
               I&apos;m{" "}
-              <span className="font-extrabold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-orange-400">
+              <span className="font-extrabold text-xl min-[491px]:text-2xl md:text-3xl bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-orange-400">
                 Viktor Magnusson
               </span>
               ,<br /> a full-stack developer based in Sweden.
