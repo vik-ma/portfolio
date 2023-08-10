@@ -23,43 +23,47 @@ export default function HeroSection() {
               them. Click on the projects to learn more about them!
             </p>
             <div className="flex flex-row justify-center gap-x-3 text-stone-100">
-              <Link
-                className="flex w-fit whitespace-nowrap mr-1.5 py-1 pl-1.5 pr-2 text-base font-bold rounded-[10px] cursor-pointer border-2 border-stone-500 text-stone-100 bg-stone-600/20 hover:text-white hover:bg-stone-400/30 transition ease-out duration-200"
-                href={"/#languages"}
-              >
-                <span>
-                  <CodeIcon />
-                </span>
-                <span className="ml-1.5">Skills</span>
-              </Link>
-              <Link
-                className="flex w-fit whitespace-nowrap mr-1.5 py-1 pl-1.5 pr-2 text-base font-bold rounded-[10px] cursor-pointer border-2 border-stone-500 text-stone-100 bg-stone-600/20 hover:text-white hover:bg-stone-400/30 transition ease-out duration-200"
-                href={"/#projects"}
-              >
-                <span>
-                  <ProjectIcon />
-                </span>
-                <span className="ml-1.5">Projects</span>
-              </Link>
-              <Link
-                className="flex w-fit whitespace-nowrap mr-1.5 py-1 pl-1.5 pr-2 text-base font-bold rounded-[10px] cursor-pointer border-2 border-stone-500 text-stone-100 bg-stone-600/20 hover:text-white hover:bg-stone-400/30 transition ease-out duration-200"
-                href={"/about"}
-              >
-                <span>
-                  <InfoIcon />
-                </span>
-                <span className="ml-1.5">About Site</span>
-              </Link>
-              <a
-                href="https://github.com/vik-ma"
-                target="_blank"
-                className="flex w-fit whitespace-nowrap mr-1.5 py-1 pl-1.5 pr-2 text-base font-bold rounded-[10px] cursor-pointer border-2 border-stone-500 text-stone-100 bg-stone-600/20 hover:text-white hover:bg-stone-400/30 transition ease-out duration-200"
-              >
-                <span>
-                  <GitHubLogo />
-                </span>
-                <span className="ml-1.5">GitHub</span>
-              </a>
+              <div className="flex flex-row gap-x-3">
+                <Link
+                  className="flex w-fit whitespace-nowrap mr-1.5 py-1 pl-1.5 pr-2 text-base font-bold rounded-[10px] cursor-pointer border-2 border-stone-500 text-stone-100 bg-stone-600/20 hover:text-white hover:bg-stone-400/30 transition ease-out duration-200"
+                  href={"/#languages"}
+                >
+                  <span>
+                    <CodeIcon />
+                  </span>
+                  <span className="ml-1.5">Skills</span>
+                </Link>
+                <Link
+                  className="flex w-fit whitespace-nowrap mr-1.5 py-1 pl-1.5 pr-2 text-base font-bold rounded-[10px] cursor-pointer border-2 border-stone-500 text-stone-100 bg-stone-600/20 hover:text-white hover:bg-stone-400/30 transition ease-out duration-200"
+                  href={"/#projects"}
+                >
+                  <span>
+                    <ProjectIcon />
+                  </span>
+                  <span className="ml-1.5">Projects</span>
+                </Link>
+              </div>
+              <div className="flex flex-row gap-x-3">
+                <Link
+                  className="flex w-fit whitespace-nowrap mr-1.5 py-1 pl-1.5 pr-2 text-base font-bold rounded-[10px] cursor-pointer border-2 border-stone-500 text-stone-100 bg-stone-600/20 hover:text-white hover:bg-stone-400/30 transition ease-out duration-200"
+                  href={"/about"}
+                >
+                  <span>
+                    <InfoIcon />
+                  </span>
+                  <span className="ml-1.5">About Site</span>
+                </Link>
+                <a
+                  href="https://github.com/vik-ma"
+                  target="_blank"
+                  className="flex w-fit whitespace-nowrap mr-1.5 py-1 pl-1.5 pr-2 text-base font-bold rounded-[10px] cursor-pointer border-2 border-stone-500 text-stone-100 bg-stone-600/20 hover:text-white hover:bg-stone-400/30 transition ease-out duration-200"
+                >
+                  <span>
+                    <GitHubLogo />
+                  </span>
+                  <span className="ml-1.5">GitHub</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
