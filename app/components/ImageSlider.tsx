@@ -232,11 +232,11 @@ export default function ImageSlider({
                 className={
                   onlyOneImage
                     ? "absolute right-0 -top-11"
-                    : "flex justify-end mb-2.5"
+                    : "flex justify-end mb-[9px]"
                 }
               >
                 <button
-                  className="rounded-lg py-1 pr-1.5 pl-2.5 bg-red-500 hover:bg-stone-700 border border-neutral-300/40"
+                  className="rounded-lg py-1 pr-1.5 pl-2.5 bg-[#df4343] hover:bg-stone-700 border border-[#fc9d9d73] hover:border-[#464646cc]"
                   onClick={() => hideFullSizeImage()}
                 >
                   <span className="inline-block align-middle font-bold text-xl text-stone-200">
