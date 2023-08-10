@@ -2,6 +2,7 @@ import Link from "next/link";
 import GitHubLogo from "../icons/GitHubLogo";
 import InfoIcon from "../icons/InfoIcon";
 import CodeIcon from "../icons/CodeIcon";
+import ProjectIcon from "../icons/ProjectIcon";
 
 export default function HeroSection() {
   return (
@@ -21,7 +22,7 @@ export default function HeroSection() {
               of my programming projects and the technologies I used to develop
               them. Click on the projects to learn more about them!
             </p>
-            <div className="flex flex-row justify-center gap-x-1 text-stone-100">
+            <div className="flex flex-row justify-center gap-x-3 text-stone-100">
               <Link
                 className="flex w-fit whitespace-nowrap mr-1.5 py-1 pl-1.5 pr-2 text-base font-bold rounded-[10px] cursor-pointer border-2 border-stone-500 text-stone-100 bg-stone-600/20 hover:text-white hover:bg-stone-400/30 transition ease-out duration-200"
                 href={"/#languages"}
@@ -29,14 +30,14 @@ export default function HeroSection() {
                 <span>
                   <CodeIcon />
                 </span>
-                <span className="ml-1.5">Languages</span>
+                <span className="ml-1.5">Skills</span>
               </Link>
               <Link
                 className="flex w-fit whitespace-nowrap mr-1.5 py-1 pl-1.5 pr-2 text-base font-bold rounded-[10px] cursor-pointer border-2 border-stone-500 text-stone-100 bg-stone-600/20 hover:text-white hover:bg-stone-400/30 transition ease-out duration-200"
                 href={"/#projects"}
               >
                 <span>
-                  <GitHubLogo />
+                  <ProjectIcon />
                 </span>
                 <span className="ml-1.5">Projects</span>
               </Link>
@@ -47,7 +48,7 @@ export default function HeroSection() {
                 <span>
                   <InfoIcon />
                 </span>
-                <span className="ml-1.5">About This Site</span>
+                <span className="ml-1.5">About Site</span>
               </Link>
               <a
                 href="https://github.com/vik-ma"
