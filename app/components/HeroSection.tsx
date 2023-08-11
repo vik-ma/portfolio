@@ -22,8 +22,8 @@ export default function HeroSection() {
               of my programming projects and the technologies I used to develop
               them. Click on the projects to learn more about them!
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-y-1.5 gap-x-2 md:gap-x-4 min-[871px]:gap-x-6 text-stone-100">
-              <div className="flex flex-row justify-between gap-x-2 md:gap-x-4 min-[871px]:gap-x-6">
+            <div className="flex flex-col sm:flex-row justify-center gap-y-2 gap-x-2 md:gap-x-4 min-[871px]:gap-x-6 text-stone-100">
+              <div className="flex flex-row justify-center gap-x-2 min-[491px]:gap-x-3 sm:gap-x-2 md:gap-x-4 min-[871px]:gap-x-6">
                 <Link
                   className="flex w-[140px] sm:w-fit justify-center whitespace-nowrap py-1 pl-1.5 pr-2 text-base font-bold rounded-[10px] cursor-pointer border-2 border-stone-500 text-stone-100 bg-stone-600/20 hover:text-white hover:bg-stone-400/30 transition ease-out duration-200"
                   href={"/#languages"}
@@ -43,7 +43,7 @@ export default function HeroSection() {
                   <span className="ml-1.5">Projects</span>
                 </Link>
               </div>
-              <div className="flex flex-row justify-between gap-x-2 md:gap-x-4 min-[871px]:gap-x-6">
+              <div className="flex flex-row justify-center gap-x-2 min-[491px]:gap-x-3 sm:gap-x-2 md:gap-x-4 min-[871px]:gap-x-6">
                 <Link
                   className="flex w-[140px] sm:w-fit justify-center whitespace-nowrap py-1 pl-1.5 pr-2 text-base font-bold rounded-[10px] cursor-pointer border-2 border-stone-500 text-stone-100 bg-stone-600/20 hover:text-white hover:bg-stone-400/30 transition ease-out duration-200"
                   href={"/about"}
