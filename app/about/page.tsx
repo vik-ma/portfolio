@@ -6,7 +6,7 @@ export default function About() {
   return (
     <>
       <title>About</title>
-      <div className="flex justify-center items-center min-[871px]:h-screen py-6">
+      <div className="flex justify-center items-center h-screen py-6">
         <div className="m-auto">
           <Link href="/">
             <button className="single-page-back-button mb-4 py-2.5 px-4 rounded-xl font-bold text-xl text-stone-100 hover:bg-stone-700">

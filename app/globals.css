@@ -646,8 +646,8 @@ body {
 
 @media (max-width: 870px), (max-height: 849px) {
   .modal-bg {
-    padding-top: 3rem !important;
-    padding-bottom: 1.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 1rem;
   }
   .modal-wrapper {
     height: 100% !important;
