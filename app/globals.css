@@ -130,7 +130,7 @@ body {
 
 @media (max-width: 767px) {
   .logo-container {
-    width: 40px;
+    width: 70px;
   }
   .lang-list-container {
     width: var(--main-container-stage-3-width);
@@ -162,6 +162,9 @@ body {
 }
 
 @media (max-width: 639px) {
+  .logo-container {
+    width: 50px;
+  }
   .lang-list-container {
     width: var(--main-container-stage-4-width);
   }
