@@ -651,9 +651,13 @@ body {
   }
   .modal-wrapper {
     height: 100% !important;
-    overflow: auto !important;
   }
   .modal-small-close-button {
     display: flex !important;
+  }
+  .project-page-container {
+    overflow: auto !important;
+    height: auto !important;
+    max-height: 100% !important;
   }
 }
