@@ -194,6 +194,9 @@ body {
 }
 
 @media (max-width: 490px) {
+  .logo-container {
+    width: 48px;
+  }
   .lang-list-container {
     width: var(--main-container-stage-5-width);
   }
