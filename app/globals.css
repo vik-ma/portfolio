@@ -42,6 +42,9 @@ body {
   body {
     background: rgb(36, 36, 36);
   }
+  .project-tech-stack-text {
+    font-weight: 700;
+  }
 }
 
 ::selection {
