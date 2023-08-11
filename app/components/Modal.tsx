@@ -71,11 +71,8 @@ export default function Modal({ children }: ModalProps) {
           </button>
         </div>
       </div>
-      <div
-        ref={wrapper}
-        className="relative modal-wrapper max-[870px]:h-full max-[870px]:overflow-auto"
-      >
-        <div className="rounded-xl project-page-container animate-modal">
+      <div ref={wrapper} className="relative modal-wrapper">
+        <div className="rounded-xl project-page-container max-[870px]:h-full max-[870px]:overflow-auto animate-modal">
           <div className="max-[870px]:hidden absolute align-middle -top-11 right-0">
             <button
               className="rounded-lg py-1 pr-1.5 pl-2.5 bg-[#202020] hover:bg-stone-700 border border-[#464646cc]"
