@@ -71,9 +71,9 @@ export default function Modal({ children }: ModalProps) {
           </button>
         </div>
       </div>
-      <div ref={wrapper} className="relative modal-wrapper">
+      <div ref={wrapper} className="relative modal-wrapper flex flex-col justify-center">
         <div className="rounded-xl project-page-container animate-modal">
-          <div className="max-[870px]:hidden absolute align-middle -top-11 right-0">
+          <div className="modal-wide-close-button absolute align-middle -top-11 right-0">
             <button
               className="rounded-lg py-1 pr-1.5 pl-2.5 bg-[#202020] hover:bg-stone-700 border border-[#464646cc]"
               onClick={() => onDismiss()}

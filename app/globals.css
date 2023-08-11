@@ -660,4 +660,7 @@ body {
     height: auto !important;
     max-height: 100% !important;
   }
+  .modal-wide-close-button {
+    display: none !important;
+  }
 }
