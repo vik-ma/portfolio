@@ -132,9 +132,9 @@ export const ProjectsInfo = {
         patterns of a smaller base tile sample.
         <br />
         <br />
-        This application allows the user to paint base tile samples and then
-        watch the WFC algorithm generate an image from the base tile in real
-        time.
+        This application allows the user to paint base tile samples and then,
+        because the application is multithreaded, watch the WFC algorithm
+        generate an image from the base tile in real time.
         <br />
         <br />
         <strong className="text-amber-500">
