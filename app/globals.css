@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* Widths for the container of the site at different viewport sizes */
   --main-container-stage-1-width: 830px;
   --main-container-stage-2-width: 580px;
   --main-container-stage-3-width: 500px;
@@ -13,33 +11,19 @@
   --main-container-stage-5-width: 320px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 html {
   scroll-behavior: smooth !important;
 }
 
 body {
-  /* color: rgb(var(--foreground-rgb)); */
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
-  background-color: rgb(26, 26, 26);
+  background-color: rgb(36, 36, 36);
   background: radial-gradient(circle at 34%, #333, rgb(26, 26, 26) 50%);
   background-attachment: fixed;
 }
 
 @supports (-moz-appearance:none) {
   body {
+    /* Remove background gradient on Firefox, as it looks very choppy */
     background: rgb(36, 36, 36);
   }
   .project-tech-stack-text {
@@ -52,12 +36,362 @@ body {
   color: #fafafa;
 }
 
+/* Container for the background gradient for the header on home page */
+.header-shadow {
+  position: relative;
+  z-index: -1;
+  width: 860px;
+  height: 74px;
+  filter: blur(14px);
+}
+
+/* Adjustments to only the gradient */
+.header-shadow:before { 
+  content: '';
+  position: absolute;
+  height: 100%;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 800;
+  z-index: -1;
+  border-radius: 24px;
+  transform: skew(10deg) translateX(2px);
+}
+
+/* Class to hide the header-shadow background gradient until the header letter animation has finished */
+.header-shadow-anim-start {
+  opacity: 0;
+  animation: 1s linear 1.5s forwards fade-in;
+}
+
+/* Animated background gradient */
+.header-shadow-anim:before {
+  width: 100%;
+  animation: gradient-animation 6s infinite linear;
+  background: linear-gradient(130deg,#ffc400 15%, #ff008c 50%, #0044ff 85%);
+  background-size: 200% 200%;
+}
+
+/* Static background gradient */
+.header-shadow-static:before {
+  width: 100%;
+  background: linear-gradient(130deg,#ffc400 5%, #ff008c 50%, #0044ff 95%);
+}
+
+/* Animation for header-shadow-anim */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Container for the text inside header-shadow */
+.header-text-container {
+  position: absolute;
+  top: 22px;
+}
+
+/* Text inside header-text-container */
+.header-text {
+  font-size: 75px;
+}
+
+/* Letter inside header-text */
+.letter {
+  font-weight: 900;
+}
+
+/* Classes for every individual letter inside header-text */
+/* Every letter will have a slight delay for when its animation starts */
+/* f = first name, l = last name */
+.letter-f-1 {
+  animation: header-color-anim 1.4s linear both, header-movement-anim 1.2s linear both;
+}
+
+.letter-f-2 {
+  animation: header-color-anim 1.4s linear .04s both, header-movement-anim 1.2s linear both .04s;
+}
+
+.letter-f-3 {
+  animation: header-color-anim 1.4s linear .08s both, header-movement-anim 1.2s linear both .08s;
+}
+
+.letter-f-4 {
+  animation: header-color-anim 1.4s linear .12s both, header-movement-anim 1.2s linear both .12s;
+}
+
+.letter-f-5 {
+  animation: header-color-anim 1.4s linear .16s both, header-movement-anim 1.2s linear both .16s;
+}
+
+.letter-f-6 {
+  animation: header-color-anim 1.4s linear .2s both, header-movement-anim 1.2s linear both .2s;
+}
+
+.letter-l-1 {
+  animation: header-color-anim 1.4s linear .24s both, header-movement-anim 1.2s linear both .24s;
+}
+
+.letter-l-2 {
+  animation: header-color-anim 1.4s linear .28s both, header-movement-anim 1.2s linear both .28s;
+}
+
+.letter-l-3 {
+  animation: header-color-anim 1.4s linear .32s both, header-movement-anim 1.2s linear both .32s;
+}
+
+.letter-l-4 {
+  animation: header-color-anim 1.4s linear .36s both, header-movement-anim 1.2s linear both .36s;
+}
+
+.letter-l-5 {
+  animation: header-color-anim 1.4s linear .40s both, header-movement-anim 1.2s linear both .40s;
+}
+
+.letter-l-6 {
+  animation: header-color-anim 1.4s linear .44s both, header-movement-anim 1.2s linear both .44s;
+}
+
+.letter-l-7 {
+  animation: header-color-anim 1.4s linear .48s both, header-movement-anim 1.2s linear both .48s;
+}
+
+.letter-l-8 {
+  animation: header-color-anim 1.4s linear .52s both, header-movement-anim 1.2s linear both .52s;
+}
+
+.letter-l-9 {
+  animation: header-color-anim 1.4s linear .56s both, header-movement-anim 1.2s linear both .56s;
+}
+
+/* Movement animation for letters in header-text */
+@keyframes header-movement-anim {
+  0% {
+    transform: scale(3) translate(-10px, 20px);
+  }
+  45% {
+    transform: translate(10px, -50px)
+  }
+  50% {
+    transform: translate(20px, -10px)
+  }
+  55% {
+    transform: translate(10px, 0px)
+  }
+  60% {
+    transform: translate(0px, 0px)
+  }
+  65% {
+    transform: translate(0px, -10px)
+  }
+  70% {
+    transform: scale(1) translateY(-20px);
+  }
+  80% {
+    transform: translateY(-0px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {}
+}
+
+/* Color animation for letters in header-text */
+@keyframes header-color-anim {
+  0% {
+    color: #814ff7;
+  }
+  13.52% {
+    color: #ff0062;
+  }
+  37.04% {
+    color: #ffda1f;
+  }
+  48.82% {
+    color: #814ff7;
+  }
+  66.48% {
+    color: #ff0062;
+  }
+  90% {
+    color: #ffda1f;
+  }
+  100% {
+    color: #fafafa;
+  }
+}
+
+/* Mobile hint text to disable animated background gradient */
+.header-disable-anim-text-start {
+  opacity: 0;
+  animation: 0.5s linear 2.5s forwards fade-in-40, 0.5s linear 6s forwards fade-out;
+}
+
+.animate-enlargement {
+  animation: enlarge-animation 0.25s ease-out;
+}
+
+@keyframes enlarge-animation {
+  0% {
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-fade {
+  animation: fade-in-from-50 0.2s ease-in;
+}
+
+@keyframes fade-in {
+  to { 
+    opacity: 1; 
+  }
+}
+
+@keyframes fade-out {
+  to { 
+    opacity: 0; 
+  }
+}
+
+@keyframes fade-in-40 {
+  to { 
+    opacity: 0.4; 
+  }
+}
+
+@keyframes fade-in-from-50 {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animation that plays when a modal is opened */
+.animate-modal {
+  animation: open-modal 0.2s;
+}
+
+@keyframes open-modal {
+  0% {
+    transform: translateY(10%) scale(0.9);
+  }
+  100% {
+    transform: translateY(0%) scale(1);
+  }
+}
+
+/* Container for Hero Section */
+.hero-container {
+  background-color: #242424;
+  /* background: linear-gradient(to bottom, #2e2e2e 15%, rgb(29, 29, 29) 100%); */
+  border-radius: 20px;
+  width: var(--main-container-stage-1-width);
+}
+
+/* Container for Languages Section */
+.lang-list-container {
+  background-color: #242424;
+  /* background: linear-gradient(to bottom, #2e2e2e 15%, rgb(29, 29, 29) 100%); */
+  border-radius: 20px;
+  width: var(--main-container-stage-1-width);
+}
+
+/* Wrapper for programming language logo + text inside Languages Section */
+.logo-wrapper {  
+  min-width: fit-content;
+}
+
+/* Container for SVG logo inside logo-wrapper */
+.logo-container {
+  width: 80px;
+}
+
+/* Outer container for Projects Section */
 .projects-section-box {
   background-color: #202020;
   border: 1px solid rgba(70, 70, 70, 0.8);
   box-shadow: 0px 0px 12px rgb(0, 0, 0);
 }
 
+/* Inner container for Projects Section */
+.projects-container {
+  width: calc(var(--main-container-stage-1-width) + 10px);
+}
+
+/* Container for individual project inside projects-container */
+.project-box {
+  background-color: #242424;
+  position: relative;
+  border: 1px solid rgba(173, 173, 173, 0.5);
+}
+
+/* Gradient border for project-box */
+.project-box::before {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  top: -3px;
+  right: -4px;
+  bottom: -4px;
+  left: -3px;
+  filter: blur(6px);
+  background: linear-gradient(to bottom right, #fffb00 0%, #ff008c 50%, #0044ff 100%);
+}
+
+/* Force ::before styling to appear below project-box background */
+.project-box::after {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+}
+
+.project-box:hover {
+  transform: scale(1.05);
+  transition: ease 0.2s;
+}
+
+/* Increase opacity for thumbnail image when hovering over a project */
+.project-box:hover .thumbnail-container {
+  opacity: 1;
+}
+
+/* Container for content inside project-box */
+.project-box-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Short description text for every project inside project-box-content */
+.project-short-desc {
+  color: #B6B3AF;
+}
+
+/* Container for thumbnail image inside project-box-content */
+.thumbnail-container {
+  border: 1px solid rgba(70, 70, 70, 0.8);
+  box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+  opacity: 0.8;
+}
+
+/* Main container for Projects pages */
 .project-page-container {
   z-index: 2;
   width: calc(var(--main-container-stage-1-width) + 20px);
@@ -66,40 +400,100 @@ body {
   box-shadow: 0px 0px 12px 1px rgb(0, 0, 0);
 }
 
-.lang-list-container {
-  background-color: #242424;
-  /* background: linear-gradient(to bottom, #2e2e2e 15%, rgb(29, 29, 29) 100%); */
-  border-radius: 20px;
-  width: var(--main-container-stage-1-width);
-}
-
-.projects-container {
-  width: calc(var(--main-container-stage-1-width) + 10px);
-}
-
-.logo-wrapper {  
-  min-width: fit-content;
-}
-
-.logo-container {
-  width: 80px;
-}
-
-.hero-container {
-  background-color: #242424;
-  border-radius: 20px;
-  width: var(--main-container-stage-1-width);
-}
-
+/* Container for the main image inside Projects pages */
 .main-image-container {
   background-color: #202020;
   border: 1px solid rgba(90, 90, 90, 0.8);
   box-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
-.header-text {
-  font-size: 75px;
+/* SVG arrow icons for ImageSlider */
+.image-arrow-icon {
+  opacity: 0.6;
+  filter: invert(100%);
+  transition: ease 0.2s;
 }
+
+/* Change image-arrow-icon when hovering over its container */
+.image-arrow-button:hover>.image-arrow-icon {
+  opacity: 1;
+  transform: scale(1.2);
+  filter: invert(79%) sepia(25%) saturate(811%) hue-rotate(37deg) brightness(108%) contrast(95%);
+}
+
+/* Container for window that displays enlarged images in ImageSlider */
+.full-sized-image-container {
+  border: 1px solid rgba(70, 70, 70, 0.8);
+  box-shadow: 0px 0px 6px rgb(0, 0, 0);
+}
+
+/* Dots to represent image indices in full-sized-image-container */
+.full-size-image-slider-dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 4px solid #ffffff; 
+  margin: 0 5px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.full-size-image-slider-dot:hover {
+  transition-duration: 0.1s;
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/* Back button for pages that are not opened in a modal */
+.single-page-back-button {
+  background-color: #202020;
+  border: 1px solid rgba(70, 70, 70, 0.5);
+  box-shadow: 0px 0px 8px rgb(0, 0, 0);
+}
+
+/* Back button for not-found pages */
+.not-found-page-back-button {
+  border: 1px solid rgba(70, 70, 70, 0.8);
+  box-shadow: 0px 0px 8px rgb(0, 0, 0);
+}
+
+/* Classes for every individual language logo that appears in About page */
+/* Every logo will have a slight delay for when its animation starts */
+.about-logo-anim-1 {
+  opacity: 0;
+  animation: logo-swoop-in 0.8s ease .1s forwards;
+}
+
+.about-logo-anim-2 {
+  opacity: 0;
+  animation: logo-swoop-in 0.8s ease .25s forwards;
+}
+
+.about-logo-anim-3 {
+  opacity: 0;
+  animation: logo-swoop-in 0.8s ease .4s forwards;
+}
+
+.about-logo-anim-4 {
+  opacity: 0;
+  animation: logo-swoop-in 0.8s ease .55s forwards;
+}
+
+/* Animation for language logos in About section */
+@keyframes logo-swoop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Responsive media queries */
 
 @media (max-width: 870px) {
   .lang-list-container {
@@ -228,383 +622,33 @@ body {
   }
 }
 
-.project-box {
-  background-color: #242424;
-  position: relative;
-  border: 1px solid rgba(173, 173, 173, 0.5);
-}
-
-.project-box::before {
-  content: "";
-  z-index: 0;
-  position: absolute;
-  top: -3px;
-  right: -4px;
-  bottom: -4px;
-  left: -3px;
-  /* transform: translate3d(0px, 0px, 0px) scale(1); */
-  filter: blur(6px);
-  /* filter: blur(14px); */
-  /* background: linear-gradient(to top left, #ff3d00 0%, #3700ff 100%); */
-  /* background: linear-gradient(to bottom right, #ff9900 0%, #ff008c 50%, #0044ff 100%); */
-  background: linear-gradient(to bottom right, #fffb00 0%, #ff008c 50%, #0044ff 100%);
-}
-
-.project-box::after {
-  content: "";
-  z-index: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: inherit;
-}
-
-.project-box:hover {
-  transform: scale(1.05);
-  transition: ease 0.2s;
-}
-
-.project-box:hover .thumbnail-container {
-  opacity: 1;
-}
-
-.project-box-content {
-  position: relative;
-  z-index: 1;
-}
-
-.project-short-desc {
-  color: #B6B3AF;
-}
-
-.thumbnail-container {
-  border: 1px solid rgba(70, 70, 70, 0.8);
-  box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
-  opacity: 0.8;
-}
-
-.full-sized-image-container {
-  border: 1px solid rgba(70, 70, 70, 0.8);
-  box-shadow: 0px 0px 6px rgb(0, 0, 0);
-}
-
-.image-arrow-icon {
-  opacity: 0.6;
-  filter: invert(100%);
-  transition: ease 0.2s;
-}
-
-.image-arrow-button:hover>.image-arrow-icon {
-  opacity: 1;
-  transform: scale(1.2);
-  filter: invert(79%) sepia(25%) saturate(811%) hue-rotate(37deg) brightness(108%) contrast(95%);
-}
-
-.full-size-image-slider-dot {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 4px solid #ffffff; 
-  margin: 0 5px;
-  transition-duration: 0.2s;
-  cursor: pointer;
-  opacity: 0.9;
-}
-
-.full-size-image-slider-dot:hover {
-  transition-duration: 0.1s;
-  transform: scale(1.2);
-  opacity: 1;
-}
-
-.header-shadow {
-  position: relative;
-  z-index: -1;
-  width: 860px;
-  height: 74px;
-  filter: blur(14px);
-}
-
-.header-shadow:before { 
-  content: '';
-  position: absolute;
-  /* width: 100%; */
-  height: 100%;
-  text-align: center;
-  font-size: 1em;
-  font-weight: 800;
-  z-index: -1;
-  border-radius: 24px;
-  transform: skew(10deg) translateX(2px);
-}
-
-.header-shadow-anim-start {
-  opacity: 0;
-  animation: 1s linear 1.5s forwards fade-in;
-}
-
-.header-shadow-anim:before {
-  width: 100%;
-  animation: gradient-animation 6s infinite linear;
-  background: linear-gradient(130deg,#ffc400 15%, #ff008c 50%, #0044ff 85%);
-  background-size: 200% 200%;
-}
-
-.header-shadow-static:before {
-  width: 100%;
-  background: linear-gradient(130deg,#ffc400 5%, #ff008c 50%, #0044ff 95%);
-}
-
-.animate-enlargement {
-  animation: enlarge-animation 0.25s ease-out;
-}
-
-.header-disable-anim-text-start {
-  opacity: 0;
-  animation: 0.5s linear 2.5s forwards fade-in-40, 0.5s linear 6s forwards fade-out;
-}
-
-.animate-fade {
-  animation: fade-in-from-50 0.2s ease-in;
-}
-
-.animate-modal {
-  animation: open-modal 0.2s;
-}
-
-@keyframes fade-in {
-  to { 
-    opacity: 1; 
+/* Special media query for wide view ports with short height */
+@media (max-width: 870px), (max-height: 849px) {
+  .modal-bg {
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+  }
+  .modal-wrapper {
+    /* Make modal fill height of screen */
+    height: 100% !important;
+  }
+  .modal-small-close-button {
+    /* Display close button for narrow screens */
+    display: flex !important;
+  }
+  .project-page-container {
+    /* Make container scrollable */
+    overflow: auto !important;
+    height: auto !important;
+    max-height: 100% !important;
+  }
+  .modal-wide-close-button {
+    /* Don't display close button for wide screens */
+    display: none !important;
   }
 }
 
-@keyframes fade-out {
-  to { 
-    opacity: 0; 
-  }
-}
-
-@keyframes fade-in-40 {
-  to { 
-    opacity: 0.4; 
-  }
-}
-
-@keyframes fade-in-from-50 {
-  0% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes open-modal {
-  0% {
-    transform: translateY(10%) scale(0.9);
-  }
-  100% {
-    transform: translateY(0%) scale(1);
-  }
-}
-
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes enlarge-animation {
-  0% {
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.single-page-back-button {
-  background-color: #202020;
-  border: 1px solid rgba(70, 70, 70, 0.5);
-  box-shadow: 0px 0px 8px rgb(0, 0, 0);
-}
-
-.not-found-page-back-button {
-  /* background-color: #202020; */
-  border: 1px solid rgba(70, 70, 70, 0.8);
-  box-shadow: 0px 0px 8px rgb(0, 0, 0);
-}
-
-.header-text-container {
-  position: absolute;
-  top: 22px;
-}
-
-.letter {
-  font-weight: 900;
-}
-
-.letter-f-1 {
-  animation: header-color-anim 1.4s linear both, Letter-entry 1.2s linear both;
-}
-
-.letter-f-2 {
-  animation: header-color-anim 1.4s linear .04s both, Letter-entry 1.2s linear both .04s;
-}
-
-.letter-f-3 {
-  animation: header-color-anim 1.4s linear .08s both, Letter-entry 1.2s linear both .08s;
-}
-
-.letter-f-4 {
-  animation: header-color-anim 1.4s linear .12s both, Letter-entry 1.2s linear both .12s;
-}
-
-.letter-f-5 {
-  animation: header-color-anim 1.4s linear .16s both, Letter-entry 1.2s linear both .16s;
-}
-
-.letter-f-6 {
-  animation: header-color-anim 1.4s linear .2s both, Letter-entry 1.2s linear both .2s;
-}
-
-.letter-l-1 {
-  animation: header-color-anim 1.4s linear .24s both, Letter-entry 1.2s linear both .24s;
-}
-
-.letter-l-2 {
-  animation: header-color-anim 1.4s linear .28s both, Letter-entry 1.2s linear both .28s;
-}
-
-.letter-l-3 {
-  animation: header-color-anim 1.4s linear .32s both, Letter-entry 1.2s linear both .32s;
-}
-
-.letter-l-4 {
-  animation: header-color-anim 1.4s linear .36s both, Letter-entry 1.2s linear both .36s;
-}
-
-.letter-l-5 {
-  animation: header-color-anim 1.4s linear .40s both, Letter-entry 1.2s linear both .40s;
-}
-
-.letter-l-6 {
-  animation: header-color-anim 1.4s linear .44s both, Letter-entry 1.2s linear both .44s;
-}
-
-.letter-l-7 {
-  animation: header-color-anim 1.4s linear .48s both, Letter-entry 1.2s linear both .48s;
-}
-
-.letter-l-8 {
-  animation: header-color-anim 1.4s linear .52s both, Letter-entry 1.2s linear both .52s;
-}
-
-.letter-l-9 {
-  animation: header-color-anim 1.4s linear .56s both, Letter-entry 1.2s linear both .56s;
-}
-
-@keyframes Letter-entry {
-  0% {
-    transform: scale(3) translate(-10px, 20px);
-  }
-  45% {
-    transform: translate(10px, -50px)
-  }
-  50% {
-    transform: translate(20px, -10px)
-  }
-  55% {
-    transform: translate(10px, 0px)
-  }
-  60% {
-    transform: translate(0px, 0px)
-  }
-  65% {
-    transform: translate(0px, -10px)
-  }
-  70% {
-    transform: scale(1) translateY(-20px);
-  }
-  80% {
-    transform: translateY(-0px);
-  }
-  90% {
-    transform: translateY(-10px);
-  }
-  100% {}
-}
-
-/*====ANIMATIONS====*/
-
-@keyframes header-color-anim {
-  0% {
-    color: #814ff7;
-    /* color: #984ff7; */
-  }
-  13.52% {
-    color: #ff0062;
-  }
-  37.04% {
-    color: #ffda1f;
-  }
-  48.82% {
-    color: #814ff7;
-    /* color: #984ff7; */
-  }
-  66.48% {
-    color: #ff0062;
-  }
-  90% {
-    color: #ffda1f;
-  }
-  100% {
-    color: #fafafa;
-    /* color: #fff; */
-  }
-}
-
-.about-logo-anim-1 {
-  opacity: 0;
-  animation: logo-swoop-in 0.8s ease .1s forwards;
-}
-
-.about-logo-anim-2 {
-  opacity: 0;
-  animation: logo-swoop-in 0.8s ease .25s forwards;
-}
-
-.about-logo-anim-3 {
-  opacity: 0;
-  animation: logo-swoop-in 0.8s ease .4s forwards;
-}
-
-.about-logo-anim-4 {
-  opacity: 0;
-  animation: logo-swoop-in 0.8s ease .55s forwards;
-}
-
-@keyframes logo-swoop-in {
-  0% {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/* Reduced motion media query */
 @media (prefers-reduced-motion: reduce) {
   .letter-f-1,
   .letter-f-2,
@@ -653,23 +697,3 @@ body {
   }
 }
 
-@media (max-width: 870px), (max-height: 849px) {
-  .modal-bg {
-    padding-top: 0.5rem;
-    padding-bottom: 0.75rem;
-  }
-  .modal-wrapper {
-    height: 100% !important;
-  }
-  .modal-small-close-button {
-    display: flex !important;
-  }
-  .project-page-container {
-    overflow: auto !important;
-    height: auto !important;
-    max-height: 100% !important;
-  }
-  .modal-wide-close-button {
-    display: none !important;
-  }
-}
