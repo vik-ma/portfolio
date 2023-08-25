@@ -13,6 +13,7 @@ export default function ProjectModal({ params: { id } }: PageProps) {
   const projects: ProjectsInfoProps = ProjectsInfo;
   const project = projects[id];
 
+  // Display the Project page inside of a Modal instead of sending the user to a new page
   return (
     <>
       <title>{project?.name}</title>

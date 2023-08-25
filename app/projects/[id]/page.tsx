@@ -15,6 +15,7 @@ export default function Project({ params: { id } }: PageProps) {
   const projects: ProjectsInfoProps = ProjectsInfo;
   const project = projects[id];
 
+  // Display projects/not-found.tsx if Project ID is not found
   if (!project) return notFound();
 
   return (

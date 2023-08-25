@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 export default function NotFound() {
+  // Display this page if user types in a page that does not exist
   return (
     <>
       <title>Page Does Not Exist</title>
