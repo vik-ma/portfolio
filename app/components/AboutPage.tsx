@@ -2,6 +2,7 @@ import NextJSLogo from "../icons/NextJSLogo";
 import ReactLogo from "../icons/ReactLogo";
 import TailwindLogo from "../icons/TailwindLogo";
 import TypeScriptLogo from "../icons/TypeScriptLogo";
+import GitHubLogo from "../icons/GitHubLogo";
 
 // The content that appears inside the /about page
 export default function AboutPage() {
@@ -11,25 +12,50 @@ export default function AboutPage() {
         About
       </h1>
       <p className="max-sm:mt-1 p-0.5 pt-0 md:p-1">
-        This website was designed by me, <strong className="text-stone-100">Viktor Magnusson</strong>, and made using{" "}
-        <strong className="text-stone-100">React</strong>,{" "}
+        This website was designed by me,{" "}
+        <strong className="text-stone-100">Viktor Magnusson</strong>, and made
+        using <strong className="text-stone-100">React</strong>,{" "}
         <strong className="text-stone-100">TypeScript</strong>,{" "}
         <strong className="text-stone-100">Next.js 13</strong> and{" "}
         <strong className="text-stone-100">Tailwind CSS</strong>.
       </p>
       <div className="flex justify-center gap-x-4 sm:gap-x-6 mt-4 sm:mt-2.5 overflow-hidden">
-        <div id="logo-1" className="max-w-[50px] sm:max-w-[64px] w-full about-logo-anim-1">
+        <div
+          id="logo-1"
+          className="max-w-[50px] sm:max-w-[64px] w-full about-logo-anim-1"
+        >
           <ReactLogo />
         </div>
-        <div id="logo-2" className="max-w-[50px] sm:max-w-[64px] w-full about-logo-anim-2">
+        <div
+          id="logo-2"
+          className="max-w-[50px] sm:max-w-[64px] w-full about-logo-anim-2"
+        >
           <TypeScriptLogo />
         </div>
-        <div id="logo-3" className="max-w-[50px] sm:max-w-[64px] w-full about-logo-anim-3">
+        <div
+          id="logo-3"
+          className="max-w-[50px] sm:max-w-[64px] w-full about-logo-anim-3"
+        >
           <NextJSLogo />
         </div>
-        <div id="logo-4" className="max-w-[50px] sm:max-w-[64px] w-full about-logo-anim-4">
+        <div
+          id="logo-4"
+          className="max-w-[50px] sm:max-w-[64px] w-full about-logo-anim-4"
+        >
           <TailwindLogo />
         </div>
+      </div>
+      <div className="flex justify-center mt-6 mb-1">
+        <a
+          href={"https://github.com/vik-ma/vik-ma.github.io"}
+          target="_blank"
+          className="flex w-fit whitespace-nowrap py-1 pl-1.5 pr-2 font-bold rounded-lg cursor-pointer border-2 border-blue-500 text-stone-50 bg-blue-500/10 hover:text-white hover:bg-blue-500/40 transition ease-out duration-200"
+        >
+          <span>
+            <GitHubLogo />
+          </span>
+          <span className="ml-1.5">GitHub Repository</span>
+        </a>
       </div>
       <h2 className="w-fit mt-3.5 sm:mt-1 text-2xl md:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-sky-400">
         Credits
