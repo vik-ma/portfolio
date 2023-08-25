@@ -3,6 +3,7 @@ import ReactLogo from "../icons/ReactLogo";
 import TailwindLogo from "../icons/TailwindLogo";
 import TypeScriptLogo from "../icons/TypeScriptLogo";
 
+// The content that appears inside the /about page
 export default function AboutPage() {
   return (
     <div className="text-stone-200 text-left">

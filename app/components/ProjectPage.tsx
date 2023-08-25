@@ -3,6 +3,7 @@ import ImageSlider from "./ImageSlider";
 import GitHubLogo from "../icons/GitHubLogo";
 import LiveSite from "../icons/LiveSite";
 
+// The content that appears inside /projects/[id] pages
 export default function ProjectPage({ project }: ProjectProps) {
   return (
     <div className="px-0.5">
@@ -29,6 +30,7 @@ export default function ProjectPage({ project }: ProjectProps) {
                   <span className="ml-1.5">GitHub Repository</span>
                 </a>
                 {project?.liveSiteLink !== "" && (
+                  // Display a button that links to the project's website if a link exists
                   <a
                     href={project?.liveSiteLink}
                     target="_blank"

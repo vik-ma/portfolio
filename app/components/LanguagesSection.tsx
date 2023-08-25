@@ -12,6 +12,7 @@ import TailwindLogo from "../icons/TailwindLogo";
 import DockerLogo from "../icons/DockerLogo";
 import GitLogo from "../icons/GitLogo";
 
+// Languages and Tools section on the Home page
 export default function LanguagesSection() {
   return (
     <div className="text-center">

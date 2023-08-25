@@ -7,6 +7,9 @@ import {
   useState,
 } from "react";
 
+// Context for Modal component to deal with the additional modal 
+// opened by enlarging a preview image on a project's page
+
 interface ModalContextProps {
   isEnlargeModalOpen: boolean;
   setIsEnlargeModalOpen: Dispatch<SetStateAction<boolean>>;

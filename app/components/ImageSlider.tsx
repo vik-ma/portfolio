@@ -17,31 +17,42 @@ export default function ImageSlider({
   previewImgMenuHeightList,
   fullSizeImgMaxWidth,
 }: ImageSliderProps) {
+  // Index of which image is displayed in the main image container
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
+  // Boolean that tracks if the enlarged image modal is opened
   const [showFullImage, setShowFullImage] = useState<boolean>(false);
+  // Short fade animation that plays when switching images in main image container
   const [isPreviewAnimOngoing, setIsPreviewAnimOngoing] =
     useState<boolean>(false);
+  // Short fade animation that plays when switching images in the enlarged image modal
   const [isFullSizeAnimOngoing, setIsFullSizeAnimOngoing] =
     useState<boolean>(false);
+  // useState that keeps track of the user's viewport width
   const [windowResizeStage, setWindowResizeStage] = useState<number>(0);
+  // Boolean that is true if user's viewport width is smaller than the first resize breakpoint
   const [isScreenSmall, setIsScreenSmall] = useState<boolean>(false);
 
+  // useRef that keeps track of the user window width before the last resize
   const previousWindowWidthRef = useRef<number>(0);
 
   const numImages: number = previewImgSrcList.length;
 
   const maxSlideIndex: number = numImages - 1;
 
+  // Calculate the height of the enlarged image based on its width
   const fullSizeImgMaxHeight: number = Math.floor(
     (previewImgMainHeight / previewImgMainWidth) * fullSizeImgMaxWidth
   );
 
+  // useRef for the enlarged image modal
   const fullImageRef = useRef<HTMLDivElement>(null);
 
   const onlyOneImage: boolean = maxSlideIndex === 0 ? true : false;
 
+  // useContext boolean variable that is true if the enlarged image modal is opened
   const { setIsEnlargeModalOpen } = useModalContext();
 
+  // List of what the width of the main image container should be at different viewport widths
   const imageResizeList: number[][] = [
     [previewImgMainWidth, previewImgMainHeight],
     [
@@ -58,11 +69,13 @@ export default function ImageSlider({
     ],
   ];
 
+  // Viewport width breakpoints for when component should rerender after a window resize
   const resizeBp0: number = 870;
   const resizeBp1: number = 767;
   const resizeBp2: number = 639;
   const resizeBp3: number = 490;
 
+  // Set windowResizeStage and isScreenSmall on page load
   useEffect(() => {
     const currWidth = window.innerWidth;
 
@@ -83,6 +96,8 @@ export default function ImageSlider({
     }
   }, []);
 
+  // useEffect that only rerenders the component when a resize breakpoint
+  // has been passed, instead of every time the window is resized
   useEffect(() => {
     const handleResize = () => {
       const currWidth = window.innerWidth;
@@ -125,6 +140,7 @@ export default function ImageSlider({
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Close enlarged image modal when user clicks outside of it
   useEffect(() => {
     function handleClickOutside(event: MouseEvent): void {
       if (
@@ -144,6 +160,7 @@ export default function ImageSlider({
     };
   });
 
+  // Close enlarged image modal when user presses Escape
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent): void {
       if (event.key === "Escape") {
@@ -179,12 +196,14 @@ export default function ImageSlider({
     if (imageId === "full-size") animateFullSizeImageChange();
   };
 
+  // Change the current image to the specific one the user clicked on
   const changeCurrentImageIndex = (index: number, imageId: string) => {
     setCurrentImageIndex(index);
     if (imageId === "preview") animatePreviewImageChange();
     if (imageId === "full-size") animateFullSizeImageChange();
   };
 
+  // Add short fade animation to main image container
   const animatePreviewImageChange = () => {
     setIsPreviewAnimOngoing(true);
 
@@ -193,6 +212,7 @@ export default function ImageSlider({
     }, 200);
   };
 
+  // Add short fade animation to enlarged image modal
   const animateFullSizeImageChange = () => {
     setIsFullSizeAnimOngoing(true);
 
@@ -201,6 +221,7 @@ export default function ImageSlider({
     }, 200);
   };
 
+  // Open full sized image in new tab if user viewport width is small
   const showFullSizeImage = () => {
     if (isScreenSmall) {
       window.open(previewImgSrcList[currentImageIndex], "_blank");
@@ -210,6 +231,7 @@ export default function ImageSlider({
     }
   };
 
+  // Close the enlarged image modal
   const hideFullSizeImage = () => {
     setShowFullImage(false);
     setIsEnlargeModalOpen(false);
@@ -218,6 +240,7 @@ export default function ImageSlider({
   return (
     <div className="flex justify-center">
       {showFullImage && (
+        // Shows the enlarged image modal if true
         <div className="fixed top-0 left-0 bottom-0 right-0 z-20 bg-black/60 animate-fade">
           <div className="flex items-center justify-center h-screen animate-modal">
             <div
@@ -248,6 +271,7 @@ export default function ImageSlider({
                 </button>
               </div>
               <div className="flex flex-row justify-center items-stretch">
+                {/* Displays arrow buttons to change image in slide if more than one preview image */}
                 {!onlyOneImage && (
                   <button
                     className="image-arrow-button pr-2.5"
@@ -271,6 +295,7 @@ export default function ImageSlider({
                     />
                   </div>
                   {!onlyOneImage && (
+                    // Display dots representing the preview images if more than one preview image
                     <div className="flex flex-col items-center mt-3">
                       <div className="flex flex-row">
                         {Array.from({ length: numImages }).map(
@@ -309,6 +334,7 @@ export default function ImageSlider({
       )}
       <div className="flex flex-col items-center">
         <noscript>
+          {/* Display error message if user has JavaScript disable */}
           <span className="rounded-xl font-semibold text-neutral-50 bg-red-500 px-2.5 py-1.5">
             Enable JavaScript to view images
           </span>
@@ -322,6 +348,7 @@ export default function ImageSlider({
         </p>
         <div
           className={`relative flex flex-col p-1.5 justify-center rounded-md main-image-container max-[490px]:max-w-[284px] max-sm:max-w-[325px] max-md:max-w-[366px]`}
+          // Change the width and height of the main image based on the user's viewport width
           style={{
             width:
               windowResizeStage === 0
@@ -390,6 +417,7 @@ export default function ImageSlider({
         </div>
         <div className="flex justify-center mt-2">
           {previewImgSrcList?.map((imageSrc: string, index: number) => (
+            // Show menu with thumbnails of all preview images in project
             <div
               className={
                 currentImageIndex === index

@@ -4,6 +4,7 @@ import InfoIcon from "../icons/InfoIcon";
 import CodeIcon from "../icons/CodeIcon";
 import ProjectIcon from "../icons/ProjectIcon";
 
+// Hero section on the Home page
 export default function HeroSection() {
   return (
     <div className="rounded-3xl mt-1.5 min-[491px]:mt-3 sm:mt-5 md:mt-6 min-[871px]:mt-10 rounded-3xl bg-gradient-to-l from-blue-500 via-pink-600 to-yellow-400 p-1.5">

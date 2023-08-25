@@ -1,11 +1,13 @@
 "use client";
 import { useRef, useState } from "react";
 
+// Header animation at the top of the Home page
 export default function HeaderAnimation() {
   const headerTextRef = useRef<HTMLDivElement>(null);
   const headerCheckRef = useRef<HTMLLabelElement>(null);
   const [disableAnimation, setDisableAnimation] = useState<boolean>(false);
 
+  // Switch between animated gradient background or static gradient background
   const toggleAnimCheckbox = () => {
     if (!disableAnimation) {
       headerTextRef.current?.classList.remove("header-shadow-anim");
@@ -15,6 +17,7 @@ export default function HeaderAnimation() {
       headerTextRef.current?.classList.add("header-shadow-anim");
     }
 
+    // Make "Disable Animation" checkbox and label bounce slightly when clicked
     headerCheckRef.current?.classList.add("animate-enlargement");
     setTimeout(() => {
       headerCheckRef.current?.classList.remove("animate-enlargement");
@@ -59,6 +62,7 @@ export default function HeaderAnimation() {
           </h1>
         </div>
         <div className="mt-2 sm:mt-2.5 md:mt-3.5 relative motion-reduce:hidden">
+          {/* Hint that is only shown for smaller screens */}
           <span className="ml-1.5 header-disable-anim-text-start text-xs sm:text-sm font-semibold italic absolute left-1 sm:left-2 md:left-4 text-neutral-100 select-none min-[871px]:hidden">
             Tap to disable animation
           </span>
