@@ -199,7 +199,7 @@ export default function ImageSlider({
   // Change the current image to the specific one the user clicked on
   const changeCurrentImageIndex = (index: number, imageId: string) => {
     setCurrentImageIndex(index);
-    if (imageId === "preview") animatePreviewImageChange();
+    if (imageId === "preview" && !onlyOneImage) animatePreviewImageChange();
     if (imageId === "full-size") animateFullSizeImageChange();
   };
 
