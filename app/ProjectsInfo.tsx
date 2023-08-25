@@ -1,3 +1,19 @@
+// Information for every project on website
+// name: Name of project
+// shortDescription: Description of project that appears on Home page
+// fullDescription: Description of project that appears on the project's page
+// teckStack: Technologies used in the project
+// thumbnailImgSrc: Image source of the project thumbnail image that appears on Home page
+// thumbnailBase64Data: Base64 Data of placeholder image for thumbnail image
+// previewImgSrcList: List of Image sources for every project preview image that appears on the project's page
+// previewImgMainWidth: Widths of the main preview image on the project's page
+// previewImgMenuHeightList: Height of the main preview image on the project's page
+// previewImgBase64DataList: List of Base64 Data of placeholder images for every preview image in project
+// previewImgMenuWidthList: List of widths for every preview image thumbnail that appears below the main image on the project's page
+// previewImgMenuHeightList: List of heights for every preview image thumbnail that appears below the main image on the project's page
+// fullSizeImgMaxWidth: Widths of enlarged preview images that appears when clicking on the main preview image on the project's page
+// githubLink: Link to the project's GitHub Repository
+// liveSiteLink: Link to the live website of the project, if it exists
 export const ProjectsInfo = {
   "price-performance-scraper": {
     name: "Price-Performance Scraper",
