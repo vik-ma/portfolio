@@ -1,5 +1,5 @@
 import { ProjectsInfo } from "@/app/ProjectsInfo";
-import { ProjectsInfoProps } from "@/typings";
+import { ProjectProps, ProjectsInfoProps } from "@/typings";
 import ProjectPage from "@/app/components/ProjectPage";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -45,4 +45,13 @@ export default function Project({ params: { id } }: PageProps) {
       </div>
     </>
   );
+}
+
+// Function to statically generate all Project pages
+export function generateStaticParams() {
+  const projects: ProjectsInfoProps = ProjectsInfo;
+
+  return Object.keys(projects).map((project: string) => ({
+    id: project,
+  }));
 }
