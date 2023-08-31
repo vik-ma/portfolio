@@ -268,6 +268,7 @@ export default function ImageSlider({
                       placeholder="blur"
                       blurDataURL={previewImgBase64DataList[currentImageIndex]}
                       loading="eager"
+                      priority={true}
                     />
                   </div>
                   {!onlyOneImage && (
@@ -360,6 +361,7 @@ export default function ImageSlider({
             blurDataURL={previewImgBase64DataList[currentImageIndex]}
             onClick={() => showFullSizeImage()}
             loading="eager"
+            priority={true}
           />
           <div className="absolute flex left-0 -translate-y-1/2 top-1/2 h-full">
             {!onlyOneImage && (
@@ -407,6 +409,7 @@ export default function ImageSlider({
                 placeholder="blur"
                 blurDataURL={previewImgBase64DataList[index]}
                 onClick={() => changeCurrentImageIndex(index)}
+                priority={true}
               />
             </div>
           ))}
