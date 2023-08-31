@@ -1,5 +1,5 @@
 import { ProjectsInfo } from "@/app/ProjectsInfo";
-import { ProjectProps, ProjectsInfoProps } from "@/typings";
+import { ProjectsInfoProps } from "@/typings";
 import ProjectPage from "@/app/components/ProjectPage";
 import Link from "next/link";
 import { notFound } from "next/navigation";

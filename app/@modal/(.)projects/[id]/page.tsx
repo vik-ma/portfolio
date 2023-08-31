@@ -2,6 +2,7 @@ import { ProjectsInfo } from "@/app/ProjectsInfo";
 import { ProjectsInfoProps } from "@/typings";
 import Modal from "@/app/components/Modal";
 import ProjectPage from "@/app/components/ProjectPage";
+import NotFound from "@/app/projects/[id]/not-found";
 
 type PageProps = {
   params: {
@@ -12,6 +13,9 @@ type PageProps = {
 export default function ProjectModal({ params: { id } }: PageProps) {
   const projects: ProjectsInfoProps = ProjectsInfo;
   const project = projects[id];
+
+  // Display projects/not-found.tsx if Project ID is not found
+  if (!project) return NotFound();
 
   // Display the Project page inside of a Modal instead of sending the user to a new page
   return (
