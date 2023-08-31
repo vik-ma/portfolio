@@ -700,5 +700,17 @@ body {
     opacity: 1;
     animation: none;
   }
+  .image-arrow-icon {
+    opacity: 0.6;
+    filter: invert(100%);
+    transition: ease 0.3s;
+  }
+  .image-arrow-button:hover>.image-arrow-icon {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  .image-arrow-button:active>.image-arrow-icon {
+    transform: scale(1.2);
+  }
 }
 
