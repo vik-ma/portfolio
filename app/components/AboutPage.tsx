@@ -17,7 +17,11 @@ export default function AboutPage() {
         using <strong className="text-stone-100">React</strong>,{" "}
         <strong className="text-stone-100">TypeScript</strong>,{" "}
         <strong className="text-stone-100">Next.js 13</strong> and{" "}
-        <strong className="text-stone-100">Tailwind CSS</strong>.
+        <strong className="text-stone-100">Tailwind CSS</strong>. The brand new{" "}
+        <strong className="text-stone-100">Parallel Routing</strong> feature
+        introduced in <strong className="text-stone-100">Next.js 13.3</strong>{" "}
+        is used to render the different pages on the site in modals, instead of
+        sending the user to a brand new page!
       </p>
       <div className="flex justify-center gap-x-4 sm:gap-x-6 mt-4 sm:mt-2.5 overflow-hidden">
         <div
