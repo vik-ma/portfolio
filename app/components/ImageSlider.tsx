@@ -176,49 +176,25 @@ export default function ImageSlider({
     };
   });
 
-  const moveImageLeft = (imageId: string) => {
+  const moveImageLeft = () => {
     if (currentImageIndex > 0) {
       setCurrentImageIndex(currentImageIndex - 1);
     } else {
       setCurrentImageIndex(maxSlideIndex);
     }
-    if (imageId === "preview") animatePreviewImageChange();
-    if (imageId === "full-size") animateFullSizeImageChange();
   };
 
-  const moveImageRight = (imageId: string) => {
+  const moveImageRight = () => {
     if (currentImageIndex < maxSlideIndex) {
       setCurrentImageIndex(currentImageIndex + 1);
     } else {
       setCurrentImageIndex(0);
     }
-    if (imageId === "preview") animatePreviewImageChange();
-    if (imageId === "full-size") animateFullSizeImageChange();
   };
 
   // Change the current image to the specific one the user clicked on
-  const changeCurrentImageIndex = (index: number, imageId: string) => {
+  const changeCurrentImageIndex = (index: number) => {
     setCurrentImageIndex(index);
-    if (imageId === "preview" && !onlyOneImage) animatePreviewImageChange();
-    if (imageId === "full-size") animateFullSizeImageChange();
-  };
-
-  // Add short fade animation to main image container
-  const animatePreviewImageChange = () => {
-    setIsPreviewAnimOngoing(true);
-
-    setTimeout(() => {
-      setIsPreviewAnimOngoing(false);
-    }, 200);
-  };
-
-  // Add short fade animation to enlarged image modal
-  const animateFullSizeImageChange = () => {
-    setIsFullSizeAnimOngoing(true);
-
-    setTimeout(() => {
-      setIsFullSizeAnimOngoing(false);
-    }, 200);
   };
 
   // Open full sized image in new tab if user viewport width is small
@@ -275,7 +251,7 @@ export default function ImageSlider({
                 {!onlyOneImage && (
                   <button
                     className="image-arrow-button pr-2.5"
-                    onClick={() => moveImageLeft("full-size")}
+                    onClick={() => moveImageLeft()}
                   >
                     <div className="image-arrow-icon">
                       <LeftArrow />
@@ -285,13 +261,13 @@ export default function ImageSlider({
                 <div>
                   <div className="max-w-[850px] full-sized-image-container">
                     <Image
-                      className={isFullSizeAnimOngoing ? "animate-fade" : ""}
                       src={previewImgSrcList[currentImageIndex]}
                       alt={`${name} Preview Image ${currentImageIndex + 1}`}
                       width={fullSizeImgMaxWidth}
                       height={fullSizeImgMaxHeight}
                       placeholder="blur"
                       blurDataURL={previewImgBase64DataList[currentImageIndex]}
+                      loading="eager"
                     />
                   </div>
                   {!onlyOneImage && (
@@ -307,9 +283,7 @@ export default function ImageSlider({
                                   : "full-size-image-slider-dot bg-white"
                               }
                               key={`full-size-image-slider-dot-${index}`}
-                              onClick={() =>
-                                changeCurrentImageIndex(index, "full-size")
-                              }
+                              onClick={() => changeCurrentImageIndex(index)}
                             ></div>
                           )
                         )}
@@ -320,7 +294,7 @@ export default function ImageSlider({
                 {!onlyOneImage && (
                   <button
                     className="image-arrow-button pl-2.5"
-                    onClick={() => moveImageRight("full-size")}
+                    onClick={() => moveImageRight()}
                   >
                     <div className="image-arrow-icon">
                       <RightArrow />
@@ -369,11 +343,7 @@ export default function ImageSlider({
           }}
         >
           <Image
-            className={
-              isPreviewAnimOngoing
-                ? "rounded cursor-zoom-in animate-fade"
-                : "rounded cursor-zoom-in"
-            }
+            className="rounded cursor-zoom-in"
             src={previewImgSrcList[currentImageIndex]}
             alt={`${name} Preview Image ${currentImageIndex + 1}`}
             width={
@@ -389,12 +359,13 @@ export default function ImageSlider({
             placeholder="blur"
             blurDataURL={previewImgBase64DataList[currentImageIndex]}
             onClick={() => showFullSizeImage()}
+            loading="eager"
           />
           <div className="absolute flex left-0 -translate-y-1/2 top-1/2 h-full">
             {!onlyOneImage && (
               <button
                 className="image-arrow-button"
-                onClick={() => moveImageLeft("preview")}
+                onClick={() => moveImageLeft()}
               >
                 <div className="image-arrow-icon">
                   <LeftArrow />
@@ -406,7 +377,7 @@ export default function ImageSlider({
             {!onlyOneImage && (
               <button
                 className="image-arrow-button"
-                onClick={() => moveImageRight("preview")}
+                onClick={() => moveImageRight()}
               >
                 <div className="image-arrow-icon">
                   <RightArrow />
@@ -435,7 +406,7 @@ export default function ImageSlider({
                 height={previewImgMenuHeightList[index]}
                 placeholder="blur"
                 blurDataURL={previewImgBase64DataList[index]}
-                onClick={() => changeCurrentImageIndex(index, "preview")}
+                onClick={() => changeCurrentImageIndex(index)}
               />
             </div>
           ))}

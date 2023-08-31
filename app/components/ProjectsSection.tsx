@@ -35,6 +35,7 @@ export default function ProjectsSection() {
                               height={100}
                               placeholder="blur"
                               blurDataURL={value.thumbnailBase64Data}
+                              loading="eager"
                             />
                           </div>
                         </div>
