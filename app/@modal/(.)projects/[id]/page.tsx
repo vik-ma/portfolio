@@ -30,3 +30,12 @@ export default function ProjectModal({ params: { id } }: PageProps) {
     </>
   );
 }
+
+// Function to statically generate all Project pages
+export function generateStaticParams() {
+  const projects: ProjectsInfoProps = ProjectsInfo;
+
+  return Object.keys(projects).map((project: string) => ({
+    id: project,
+  }));
+}
