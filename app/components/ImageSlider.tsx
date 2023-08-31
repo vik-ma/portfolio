@@ -21,12 +21,6 @@ export default function ImageSlider({
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
   // Boolean that tracks if the enlarged image modal is opened
   const [showFullImage, setShowFullImage] = useState<boolean>(false);
-  // Short fade animation that plays when switching images in main image container
-  const [isPreviewAnimOngoing, setIsPreviewAnimOngoing] =
-    useState<boolean>(false);
-  // Short fade animation that plays when switching images in the enlarged image modal
-  const [isFullSizeAnimOngoing, setIsFullSizeAnimOngoing] =
-    useState<boolean>(false);
   // useState that keeps track of the user's viewport width
   const [windowResizeStage, setWindowResizeStage] = useState<number>(0);
   // Boolean that is true if user's viewport width is smaller than the first resize breakpoint
