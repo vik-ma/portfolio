@@ -1,6 +1,7 @@
 import "./globals.css";
 import { ModalContextProvider } from "./context/ModalContext";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout(props: {
           {props.modal}
           {props.children}
         </ModalContextProvider>
+        <Analytics />
       </body>
     </html>
   );
