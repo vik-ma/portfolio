@@ -131,7 +131,7 @@ export const ProjectsInfo = {
   "paint-a-wave-function-collapse": {
     name: "Paint A Wave Function Collapse",
     shortDescription:
-      "Browser application that procedurally generates pixel art using the WFC algorithm from on a small tile sample painted by the user.",
+      "Browser application that will procedurally generate pixel art using the Wave Function Collapse Algorithm from small base samples painted by the user.",
     fullDescription: (
       <p>
         <strong className="text-stone-100">
