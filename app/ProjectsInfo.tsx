@@ -188,7 +188,7 @@ export const ProjectsInfo = {
   "screenshot-ocr": {
     name: "Screenshot OCR",
     shortDescription:
-      "Desktop application that serves as a front end GUI for the Tesseract OCR engine. Performs OCR on a section of the screen without having to load an image file.",
+      "Desktop application that lets the user extract text from images by just marking a section of the screen, instead of having to load an image file. Serves as a front-end for the Tesseract OCR Engine.",
     fullDescription: (
       <p>
         <strong className="text-stone-100">Screenshot OCR</strong> is a desktop
