@@ -231,7 +231,7 @@ export const ProjectsInfo = {
   "file-opener": {
     name: "File Opener",
     shortDescription:
-      "Desktop application that allows the user to create and save a list of programs, files and folders to be opened simultaneously with just one click.",
+      "Desktop application that automates the opening of multiple programs, files or folders. User can save groups of items to be opened simultaneously.",
     fullDescription: (
       <p>
         <strong className="text-stone-100">File Opener</strong>, or{" "}
