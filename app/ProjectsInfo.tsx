@@ -83,7 +83,7 @@ export const ProjectsInfo = {
   "pathfinding-race": {
     name: "Pathfinding Race",
     shortDescription:
-      "Browser game where different pathfinding algorithms are facing off on randomized grids. The objective of the game is to correctly predict which algorithm will find the goal first. After a prediction is made, the game visualizes the paths of the algorithms.",
+      "Browser game where the player has to guess which pathfinding algorithm will reach the goal first! After the user makes their prediction, the algorithms will be visualized. Next turn, the game will randomize a new grid, featuring new positions and algorithms.",
     fullDescription: (
       <p>
         <strong className="text-stone-100">Pathfinding Race</strong> is a
