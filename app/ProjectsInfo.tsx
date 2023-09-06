@@ -18,7 +18,7 @@ export const ProjectsInfo = {
   "price-performance-scraper": {
     name: "Price-Performance Scraper",
     shortDescription:
-      "Website that calculates the price-performance scores of GPU and CPU models that the user selects by scraping online prices in real time and comparing them to up-to-date benchmarks.",
+      "Website that allows the user to calculate the Price-Performance Scores of selected GPU and CPU models by scraping their online prices in real time and comparing them to up-to-date benchmarks.",
     fullDescription: (
       <p>
         <strong className="text-stone-100">Price-Performance Scraper</strong> is
