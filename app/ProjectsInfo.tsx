@@ -271,7 +271,7 @@ export const ProjectsInfo = {
   "link-opener": {
     name: "Link Opener",
     shortDescription:
-      "Desktop application that can filter and automatically open a list of URLs from a text file into any installed web browser.",
+      "Desktop application that automates the opening of multiple links. User can load URLs from a text file, filter and open them in any installed browser.",
     fullDescription: (
       <p>
         <strong className="text-stone-100">Link Opener</strong>, or{" "}
