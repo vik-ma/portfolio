@@ -290,8 +290,9 @@ export const ProjectsInfo = {
         <br />
         The application also includes the ability to filter which links to open.
         Inside the text file, the user can write comments next to the URLs and
-        then apply a filter to only open the links whose comment contains a
-        specific phrase. Filtering can also be performed on the URLs themselves.
+        then apply a filter in the application to only open the links whose
+        comment contains a specific phrase. Filtering can also be performed on
+        the URLs themselves.
       </p>
     ),
     techStack: ["Python", "Tkinter"],
