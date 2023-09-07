@@ -31,7 +31,8 @@ export const ProjectsInfo = {
         Price scraping is done with Python, and the back end runs on a Django
         server with a REST API set up to communicate with the front end website.
         A PostgreSQL database stores the collected price scrape data, as well as
-        up-to-date benchmark data that gets automatically scraped every single day.
+        up-to-date benchmark data that gets automatically scraped every single
+        day.
         <br />
         <br />
         The website is made using React, TypeScript and Next.js 13. On the
@@ -83,7 +84,7 @@ export const ProjectsInfo = {
   "pathfinding-race": {
     name: "Pathfinding Race",
     shortDescription:
-      "Browser game where the player has to guess which pathfinding algorithm will reach the goal first! After the user makes their prediction, the algorithms will be visualized. Next turn, the game will randomize a new grid, featuring new positions and algorithms.",
+      "Browser game about pathfinding algorithms! The objective of the game is to correctly predict which pathfinding algorithm will reach the goal first. The game is meant to provide a fun and intuitive way to learn about pathfinding algorithms!",
     fullDescription: (
       <p>
         <strong className="text-stone-100">Pathfinding Race</strong> is a
