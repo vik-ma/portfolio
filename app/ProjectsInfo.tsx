@@ -105,7 +105,7 @@ export const ProjectsInfo = {
         <br />
         <br />
         Six different types of pathfinding algorithms have been implemented in
-        this game, and a Information section with detailed explainations of all
+        this game, and a Information section with detailed explanations of all
         of the algorithms is included in the game.
       </p>
     ),
@@ -199,7 +199,7 @@ export const ProjectsInfo = {
     fullDescription: (
       <p>
         <strong className="text-stone-100">Screenshot OCR</strong> is a desktop
-        GUI application made for Windows that serves as a front end for
+        application made for Windows that serves as a front end for
         Google&apos;s{" "}
         <strong className="text-stone-100">Tesseract OCR engine</strong>.
         <br />
@@ -243,8 +243,8 @@ export const ProjectsInfo = {
       <p>
         <strong className="text-stone-100">File Opener</strong>, or{" "}
         <strong className="text-stone-100">Open File Groups</strong>, is a
-        desktop GUI application made for Windows that allows the user to save a
-        list of programs, files and folders to be simultaneously opened with one
+        desktop application made for Windows that allows the user to save a list
+        of programs, files and folders to be simultaneously opened with one
         click.
         <br />
         <br />
@@ -283,7 +283,7 @@ export const ProjectsInfo = {
       <p>
         <strong className="text-stone-100">Link Opener</strong>, or{" "}
         <strong className="text-stone-100">Open Links From Text File</strong>,
-        is a desktop GUI application made for Windows that allows the user to
+        is a desktop application made for Windows that allows the user to
         automatically open a list of URLs stored in a text file into any
         installed web browser.
         <br />
@@ -291,7 +291,7 @@ export const ProjectsInfo = {
         The application also includes the ability to filter which links to open.
         Inside the text file, the user can write comments next to the URLs and
         then apply a filter to only open the links whose comment contains a
-        specific phrase. Filtering can also be performed on the URL itself.
+        specific phrase. Filtering can also be performed on the URLs themselves.
       </p>
     ),
     techStack: ["Python", "Tkinter"],
