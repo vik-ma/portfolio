@@ -160,7 +160,7 @@ export const ProjectsInfo = {
         This application allows the user to paint their own base tile samples
         and then watch the Wave Function Collapse Algorithm procedurally
         generate an image from the sample. Since the application is
-        multi-threaded, the image will get gradually updated as the algorithm is
+        multi-threaded, the image will be updated gradually as the algorithm is
         executing.
         <br />
         <br />
