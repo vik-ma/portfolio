@@ -22,17 +22,18 @@ export const ProjectsInfo = {
     fullDescription: (
       <p>
         <strong className="text-stone-100">Price-Performance Scraper</strong> is
-        a full-stack web application that can scrape real-time price listings of
-        GPU and CPU models and calculate the{" "}
-        <strong className="text-stone-100">Price-Performance Score</strong> of
-        the products by comparing the price to their performance benchmarks.
+        a full-stack web application designed to help users find out which GPU
+        and CPU products currently listed on the market have the best{" "}
+        <strong className="text-stone-100">Price-Performance Score</strong> by
+        scraping online prices in real time and comparing them to up-to-date
+        performance benchmarks.
         <br />
         <br />
-        Price scraping is done with Python, and the back end runs on a Django
-        server with a REST API set up to communicate with the front end website.
-        A PostgreSQL database stores the collected price scrape data, as well as
-        up-to-date benchmark data that gets automatically scraped every single
-        day.
+        Price scraping is done with Python on the back end, which runs on a
+        Django server with a REST API set up to communicate with the front end
+        website. A PostgreSQL database stores the collected price scrape data,
+        as well as benchmark data that gets automatically scraped and updated
+        every day.
         <br />
         <br />
         The website is made using React, TypeScript and Next.js 13. On the
