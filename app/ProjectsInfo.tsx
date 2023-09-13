@@ -262,9 +262,11 @@ export const ProjectsInfo = {
       <p>
         <strong className="text-stone-100">File Opener</strong>, or{" "}
         <strong className="text-stone-100">Open File Groups</strong>, is a
-        desktop application made for Windows that allows the user to save a list
-        of programs, files and folders to be simultaneously opened with one
-        click.
+        desktop application made for Windows that allows the user to{" "}
+        <strong className="text-stone-100">
+          save a list of programs, files and folders to be simultaneously opened
+          with one click.
+        </strong>
         <br />
         <br />
         The user can create multiple groups and modify them at any time. The
