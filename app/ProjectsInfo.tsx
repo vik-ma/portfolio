@@ -179,7 +179,7 @@ export const ProjectsInfo = {
         Since the application is{" "}
         <strong className="text-stone-100">multi-threaded</strong>, the image
         will get gradually updated as the algorithm is executing, and the UI
-        will remain responsive during this period.
+        remains responsive during this period.
         <br />
         <br />
         <strong className="text-amber-500">
