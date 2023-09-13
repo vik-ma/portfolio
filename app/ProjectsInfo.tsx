@@ -95,19 +95,25 @@ export const ProjectsInfo = {
         <br />
         In the game, a randomized grid is generated every round. On this grid,
         different pathfinding algorithms will race against each other towards a
-        common Goal Node. The objective of the game is to correctly predict
-        which pathfinding algorithm will reach the Goal Node first!
+        common Goal Node.{" "}
+        <strong className="text-stone-100">
+          The objective of the game is to correctly predict which pathfinding
+          algorithm will reach the Goal Node first!
+        </strong>
         <br />
         <br />
-        The purpose of the game is to provide a fun and easy way to learn about
+        The game was designed to provide a fun and easy way to learn about
         pathfinding algorithms! After the player makes their prediction, the
         game will visualize the paths of the algorithms until the first one
         finds the goal.
         <br />
         <br />
-        Six different types of pathfinding algorithms have been implemented in
-        this game, and a Information section with detailed explanations of all
-        of the algorithms is included in the game.
+        <strong className="text-stone-100">
+          Six different types of pathfinding algorithms have been implemented in
+          this game
+        </strong>
+        , and a Information section with detailed explanations of all of the
+        algorithms is included in the game.
       </p>
     ),
     techStack: ["HTML", "CSS", "JavaScript", "React"],
