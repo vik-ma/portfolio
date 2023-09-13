@@ -304,12 +304,17 @@ export const ProjectsInfo = {
       <p>
         <strong className="text-stone-100">Link Opener</strong>, or{" "}
         <strong className="text-stone-100">Open Links From Text File</strong>,
-        is a desktop application made for Windows that allows the user to
-        automatically open a list of URLs stored in a text file into any
-        installed web browser.
+        is a desktop application made for Windows that allows the user to{" "}
+        <strong className="text-stone-100">
+          automatically open a list of URLs stored in a text file into any
+          installed web browser.
+        </strong>
         <br />
         <br />
-        The application also includes the ability to filter which links to open.
+        The application also includes the{" "}
+        <strong className="text-stone-100">
+          ability to filter which links to open.
+        </strong>{" "}
         Inside the text file, the user can write comments next to the URLs and
         then apply a filter in the application to only open the links whose
         comment contains a specific phrase. Filtering can also be performed on
