@@ -22,23 +22,29 @@ export const ProjectsInfo = {
     fullDescription: (
       <p>
         <strong className="text-stone-100">Price-Performance Scraper</strong> is
-        a full-stack web application designed to help users find out which GPU
-        and CPU products currently listed on the market have the best{" "}
-        <strong className="text-stone-100">Price-Performance Score</strong> by
-        scraping online prices in real time and comparing them to up-to-date
+        a full-stack web application{" "}
+        <strong className="text-stone-100">
+          designed to help users find out which GPU and CPU products currently
+          listed on the market have the best Price-Performance Score
+        </strong>{" "}
+        by scraping online prices in real time and comparing them to up-to-date
         performance benchmarks.
         <br />
         <br />
         Price scraping is done with Python on the back end, which runs on a
         Django server with a REST API set up to communicate with the front end
         website. A PostgreSQL database stores the collected price scrape data,
-        as well as benchmark data that gets automatically scraped and updated
-        every day.
+        as well as{" "}
+        <strong className="text-stone-100">
+          benchmark data that gets automatically scraped and updated every day.
+        </strong>
         <br />
         <br />
-        The website is made using React, TypeScript and Next.js 13. On the
-        website, the user can select which products to perform a{" "}
-        <strong className="text-stone-100">Price-Performance Scrape</strong> on.
+        The website is made using React, TypeScript and Next.js 13.{" "}
+        <strong className="text-stone-100">
+          On the website, the user can select which products to perform a
+          Price-Performance Scrape on.
+        </strong>{" "}
         Once the scrape has finished, a table will display every product listing
         found, ranked by their{" "}
         <strong className="text-stone-100">Price-Performance Score</strong>.
