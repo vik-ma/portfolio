@@ -223,11 +223,13 @@ export const ProjectsInfo = {
         <strong className="text-stone-100">Tesseract OCR engine</strong>.
         <br />
         <br />
-        The main feature of the application is the ability to mark a section of
-        the screen, in the same way as with{" "}
-        <strong className="text-stone-100">Windows&apos; Snipping Tool</strong>,
-        and automatically perform OCR on that section, without having to crop,
-        save and then load an actual image file.
+        The main feature of the application is the ability to{" "}
+        <strong className="text-stone-100">
+          mark a section of the screen, in the same way as with Windows&apos;
+          Snipping Tool, and automatically perform OCR on the text within that
+          section
+        </strong>
+        , without having to crop, save and then load an actual image file.
         <br />
         <br />
         The user can also save a combination of different language parameters to
