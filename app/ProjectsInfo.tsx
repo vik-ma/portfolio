@@ -48,6 +48,12 @@ export const ProjectsInfo = {
         Once the scrape has finished, a table will display every product listing
         found, ranked by their{" "}
         <strong className="text-stone-100">Price-Performance Score</strong>.
+        <br />
+        <br />
+        Next.js&apos;{" "}
+        <strong className="text-stone-100">Static Site Generation</strong> makes
+        loading past Price-Performance Scrapes{" "}
+        <strong className="text-orange-500">blazingly fast!</strong>
       </p>
     ),
     techStack: [
@@ -118,8 +124,8 @@ export const ProjectsInfo = {
           Six different types of pathfinding algorithms have been implemented in
           this game
         </strong>
-        , and a Information section with detailed explanations of all of the
-        algorithms is included in the game.
+        , and the Information tab on the website contains detailed explanations
+        of every algorithm.
       </p>
     ),
     techStack: ["HTML", "CSS", "JavaScript", "React"],
