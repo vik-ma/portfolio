@@ -51,7 +51,7 @@ export default function AboutPage() {
       </div>
       <div className="flex justify-center mt-6 mb-1">
         <a
-          href={"https://github.com/vik-ma/vik-ma.github.io"}
+          href={"https://github.com/vik-ma/portfolio"}
           target="_blank"
           className="flex w-fit whitespace-nowrap py-1 pl-1.5 pr-2 font-bold rounded-lg cursor-pointer border-2 border-blue-500 text-stone-50 bg-blue-500/10 hover:text-white hover:bg-blue-500/40 transition ease-out duration-200"
         >
