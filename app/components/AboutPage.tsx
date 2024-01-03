@@ -17,7 +17,7 @@ export default function AboutPage() {
         using <strong className="text-stone-100">React</strong>,{" "}
         <strong className="text-stone-100">TypeScript</strong>,{" "}
         <strong className="text-stone-100">Next.js 13</strong> and{" "}
-        <strong className="text-stone-100">Tailwind CSS</strong>. The brand new{" "}
+        <strong className="text-stone-100">Tailwind CSS</strong>. The new{" "}
         <strong className="text-stone-100">Parallel Routing</strong> feature
         introduced in <strong className="text-stone-100">Next.js 13.3</strong>{" "}
         is used to render the different pages on the site in modals, instead of
