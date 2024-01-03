@@ -11,6 +11,7 @@ import GraphQLLogo from "../icons/GraphQLLogo";
 import TailwindLogo from "../icons/TailwindLogo";
 import DockerLogo from "../icons/DockerLogo";
 import GitLogo from "../icons/GitLogo";
+import CSharpLogo from "../icons/CSharpLogo";
 
 // Languages and Tools section on the Home page
 export default function LanguagesSection() {
@@ -100,6 +101,14 @@ export default function LanguagesSection() {
               </div>
               <p className="font-semibold py-1 text-xs md:text-sm mt-0.5">
                 PostgreSQL
+              </p>
+            </div>
+            <div className="text-center items-center p-3 logo-wrapper">
+              <div className="logo-container m-auto">
+                <CSharpLogo />
+              </div>
+              <p className="font-semibold py-1 text-xs md:text-sm mt-0.5">
+                C#
               </p>
             </div>
             <div className="text-center items-center p-3 logo-wrapper">
