@@ -42,11 +42,11 @@ export const ProjectsInfo = {
         <br />
         The website is made using React, TypeScript and Next.js 13.{" "}
         <strong className="text-stone-100">
-          On the website, the user can select which products to perform a
+          On the website, the user can select products to perform a
           Price-Performance Scrape on.
         </strong>{" "}
-        Once the scrape has finished, a table will display every product listing
-        found, ranked by their{" "}
+        Once the scrape has finished, every product listing found will be
+        displayed in a table, ranked by their{" "}
         <strong className="text-stone-100">Price-Performance Score</strong>.
         <br />
         <br />
