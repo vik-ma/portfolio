@@ -16,12 +16,22 @@ export default function HeroSection() {
               <span className="font-extrabold text-xl min-[491px]:text-2xl md:text-3xl bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-orange-400">
                 Viktor Magnusson
               </span>
-              ,<br /> a full-stack developer based in Sweden.
+              ,<br /> a software developer based in Sweden.
             </p>
             <p className="text-base font-medium text-[#cccac8]">
-              Welcome to my portfolio! Down below you&apos;ll find a compilation
-              of my programming projects and the technologies I used to develop
-              them. Click on the projects to learn more about them!
+              <strong className="text-stone-100">
+                Welcome to my portfolio!
+              </strong>{" "}
+              I design and develop{" "}
+              <strong className="text-stone-100">websites</strong>,{" "}
+              <strong className="text-stone-100">back end servers</strong>,{" "}
+              <strong className="text-stone-100">databases</strong> and{" "}
+              <strong className="text-stone-100">desktop applications</strong>.
+              Down below you&apos;ll find a compilation of my completed projects
+              and the technologies I used to develop them.{" "}
+              <strong className="text-stone-100">
+                Click on the projects to visit or learn more about them!
+              </strong>
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-y-2 gap-x-2 md:gap-x-4 min-[871px]:gap-x-6 text-stone-100">
               <div className="flex flex-row justify-center gap-x-2 min-[491px]:gap-x-3 sm:gap-x-2 md:gap-x-4 min-[871px]:gap-x-6">
