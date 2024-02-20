@@ -7,11 +7,11 @@ import CSSLogo from "../icons/CSSLogo";
 import DjangoLogo from "../icons/DjangoLogo";
 import NextJSLogo from "../icons/NextJSLogo";
 import PostgresLogo from "../icons/PostgresLogo";
-import GraphQLLogo from "../icons/GraphQLLogo";
 import TailwindLogo from "../icons/TailwindLogo";
 import DockerLogo from "../icons/DockerLogo";
 import GitLogo from "../icons/GitLogo";
 import CSharpLogo from "../icons/CSharpLogo";
+import DotNetLogo from "../icons/DotNetLogo";
 
 // Languages and Tools section on the Home page
 export default function LanguagesSection() {
@@ -57,6 +57,52 @@ export default function LanguagesSection() {
             </div>
             <div className="text-center items-center p-3 logo-wrapper">
               <div className="logo-container m-auto">
+                <CSharpLogo />
+              </div>
+              <p className="font-semibold py-1 text-xs md:text-sm mt-0.5">C#</p>
+            </div>
+            <div className="text-center items-center p-3 logo-wrapper">
+              <div className="logo-container m-auto">
+                <DotNetLogo />
+              </div>
+              <p className="font-semibold py-1 text-xs md:text-sm mt-0.5">
+                .NET
+              </p>
+            </div>
+            <div className="text-center items-center p-3 logo-wrapper">
+              <div className="logo-container m-auto">
+                <PostgresLogo />
+              </div>
+              <p className="font-semibold py-1 text-xs md:text-sm mt-0.5">
+                PostgreSQL
+              </p>
+            </div>
+            <div className="text-center items-center p-3 logo-wrapper">
+              <div className="logo-container m-auto">
+                <DjangoLogo />
+              </div>
+              <p className="font-semibold py-1 text-xs md:text-sm mt-0.5">
+                Django
+              </p>
+            </div>
+            <div className="text-center items-center p-3 logo-wrapper">
+              <div className="logo-container m-auto">
+                <NextJSLogo />
+              </div>
+              <p className="font-semibold py-1 text-xs md:text-sm mt-0.5">
+                Next.js
+              </p>
+            </div>
+            <div className="text-center items-center p-3 logo-wrapper">
+              <div className="logo-container m-auto">
+                <GitLogo />
+              </div>
+              <p className="font-semibold py-1 text-xs md:text-sm mt-0.5">
+                Git
+              </p>
+            </div>
+            <div className="text-center items-center p-3 logo-wrapper">
+              <div className="logo-container m-auto">
                 <HTMLLogo />
               </div>
               <p className="font-semibold py-1 text-xs md:text-sm mt-0.5">
@@ -81,58 +127,10 @@ export default function LanguagesSection() {
             </div>
             <div className="text-center items-center p-3 logo-wrapper">
               <div className="logo-container m-auto">
-                <DjangoLogo />
-              </div>
-              <p className="font-semibold py-1 text-xs md:text-sm mt-0.5">
-                Django
-              </p>
-            </div>
-            <div className="text-center items-center p-3 logo-wrapper">
-              <div className="logo-container m-auto">
-                <NextJSLogo />
-              </div>
-              <p className="font-semibold py-1 text-xs md:text-sm mt-0.5">
-                Next.js
-              </p>
-            </div>
-            <div className="text-center items-center p-3 logo-wrapper">
-              <div className="logo-container m-auto">
-                <PostgresLogo />
-              </div>
-              <p className="font-semibold py-1 text-xs md:text-sm mt-0.5">
-                PostgreSQL
-              </p>
-            </div>
-            <div className="text-center items-center p-3 logo-wrapper">
-              <div className="logo-container m-auto">
-                <CSharpLogo />
-              </div>
-              <p className="font-semibold py-1 text-xs md:text-sm mt-0.5">
-                C#
-              </p>
-            </div>
-            <div className="text-center items-center p-3 logo-wrapper">
-              <div className="logo-container m-auto">
-                <GraphQLLogo />
-              </div>
-              <p className="font-semibold py-1 text-xs md:text-sm mt-0.5">
-                GraphQL
-              </p>
-            </div>
-            <div className="text-center items-center p-3 logo-wrapper">
-              <div className="logo-container m-auto">
                 <DockerLogo />
               </div>
               <p className="font-semibold py-1 text-xs md:text-sm mt-0.5">
                 Docker
-              </p>
-            </div>
-            <div className="text-center items-center p-3 logo-wrapper">
-              <div className="logo-container m-auto">
-                <GitLogo />
-              </div>
-              <p className="font-semibold py-1 text-xs md:text-sm mt-0.5">
-                Git
               </p>
             </div>
           </div>
