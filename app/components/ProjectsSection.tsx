@@ -17,7 +17,7 @@ export default function ProjectsSection() {
         <div className="flex flex-wrap justify-center projects-container md:gap-x-2 md:gap-y-1 mx-auto">
           <div className="grid grid-cols-1 w-full min-[871px]:grid-cols-2 py-3 md:py-4 px-5 md:px-7 gap-x-8 gap-y-7 md:gap-y-9 text-md text-amber-50">
             {Object.entries(projects).map(([key, value]) => (
-              <Link key={key} href={`/projects/${key}`}>
+              <Link className="project-link" key={key} href={`/projects/${key}`}>
                 <div className="p-2 h-full project-box">
                   <div className="flex flex-col justify-between px-1 h-full project-box-content">
                     <div className="mb-0.5">

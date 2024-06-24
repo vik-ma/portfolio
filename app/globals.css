@@ -363,13 +363,15 @@ body {
   background: inherit;
 }
 
-.project-box:hover {
+.project-box:hover, 
+.project-link:focus .project-box {
   transform: scale(1.05);
   transition: ease 0.2s;
 }
 
-/* Increase opacity for thumbnail image when hovering over a project */
-.project-box:hover .thumbnail-container {
+/* Increase opacity for thumbnail image when hovering over or focusing a project */
+.project-box:hover .thumbnail-container,
+.project-link:focus .thumbnail-container {
   opacity: 1;
 }
 
