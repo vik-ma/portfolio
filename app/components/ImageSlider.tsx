@@ -338,27 +338,28 @@ export default function ImageSlider({
                 : `${imageResizeList[3][1]}px`,
           }}
         >
-          <Image
-            className="rounded cursor-zoom-in"
-            src={previewImgSrcList[currentImageIndex]}
-            alt={`${name} Preview Image ${currentImageIndex + 1}`}
-            width={
-              windowResizeStage === 0
-                ? imageResizeList[0][0]
-                : windowResizeStage === 1
-                ? imageResizeList[1][0]
-                : windowResizeStage === 2
-                ? imageResizeList[2][0]
-                : imageResizeList[3][0]
-            }
-            height={previewImgMainHeight}
-            placeholder="blur"
-            blurDataURL={previewImgBase64DataList[currentImageIndex]}
-            onClick={() => showFullSizeImage()}
-            loading="eager"
-            priority={true}
-            unoptimized={true}
-          />
+          <button onClick={() => showFullSizeImage()}>
+            <Image
+              className="rounded cursor-zoom-in"
+              src={previewImgSrcList[currentImageIndex]}
+              alt={`${name} Preview Image ${currentImageIndex + 1}`}
+              width={
+                windowResizeStage === 0
+                  ? imageResizeList[0][0]
+                  : windowResizeStage === 1
+                  ? imageResizeList[1][0]
+                  : windowResizeStage === 2
+                  ? imageResizeList[2][0]
+                  : imageResizeList[3][0]
+              }
+              height={previewImgMainHeight}
+              placeholder="blur"
+              blurDataURL={previewImgBase64DataList[currentImageIndex]}
+              loading="eager"
+              priority={true}
+              unoptimized={true}
+            />
+          </button>
           <div className="absolute flex left-0 -translate-y-1/2 top-1/2 h-full">
             {!onlyOneImage && (
               <button
