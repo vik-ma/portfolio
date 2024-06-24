@@ -67,7 +67,7 @@ export default function HeaderAnimation() {
             Tap to disable animation
           </span>
           <label
-            className="inline-flex items-center absolute right-1.5 sm:right-3 md:right-5 opacity-0 group-hover:opacity-80 transition duration-300 ease-out -z-[1]"
+            className="inline-flex items-center absolute right-1.5 sm:right-3 md:right-5 opacity-0 group-hover:opacity-80 transition duration-300 ease-out -z-[1] focus-within:opacity-80"
             ref={headerCheckRef}
           >
             <input
