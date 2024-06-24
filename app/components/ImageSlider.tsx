@@ -272,7 +272,7 @@ export default function ImageSlider({
                       <div className="flex flex-row">
                         {Array.from({ length: numImages }).map(
                           (item, index) => (
-                            <div
+                            <button
                               className={
                                 currentImageIndex === index
                                   ? "full-size-image-slider-dot bg-stone-800"
@@ -280,7 +280,7 @@ export default function ImageSlider({
                               }
                               key={`full-size-image-slider-dot-${index}`}
                               onClick={() => changeCurrentImageIndex(index)}
-                            ></div>
+                            ></button>
                           )
                         )}
                       </div>
