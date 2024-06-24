@@ -387,13 +387,14 @@ export default function ImageSlider({
         <div className="flex justify-center mt-2">
           {previewImgSrcList?.map((imageSrc: string, index: number) => (
             // Show menu with thumbnails of all preview images in project
-            <div
+            <button
               className={
                 currentImageIndex === index
                   ? "mx-[1px] p-0.5 bg-lime-300 hover:bg-lime-300 rounded-sm"
                   : "mx-[1px] p-0.5 bg-stone-700 hover:bg-lime-300 rounded-sm"
               }
               key={`thumbnail-div-${index + 1}`}
+              onClick={() => changeCurrentImageIndex(index)}
             >
               <Image
                 className="max-w-none max-[490px]:max-w-[46px] max-sm:max-w-[50px] h-full cursor-pointer hover:opacity-70"
@@ -404,11 +405,10 @@ export default function ImageSlider({
                 height={previewImgMenuHeightList[index]}
                 placeholder="blur"
                 blurDataURL={previewImgBase64DataList[index]}
-                onClick={() => changeCurrentImageIndex(index)}
                 priority={true}
                 unoptimized={true}
               />
-            </div>
+            </button>
           ))}
         </div>
       </div>
