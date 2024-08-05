@@ -1,7 +1,7 @@
 "use client";
 import { ImageSliderProps } from "@/typings";
 import Image from "next/image";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import RightArrow from "../icons/RightArrow";
 import LeftArrow from "../icons/LeftArrow";
 import CloseButton from "../icons/CloseButton";
@@ -34,9 +34,11 @@ export default function ImageSlider({
   const maxSlideIndex: number = numImages - 1;
 
   // Calculate the height of the enlarged image based on its width
-  const fullSizeImgMaxHeight: number = Math.floor(
-    (previewImgMainHeight / previewImgMainWidth) * fullSizeImgMaxWidth
-  );
+  const fullSizeImgMaxHeight: number = useMemo(() => {
+    return Math.floor(
+      (previewImgMainHeight / previewImgMainWidth) * fullSizeImgMaxWidth
+    );
+  }, [previewImgMainHeight, previewImgMainWidth, fullSizeImgMaxWidth]);
 
   // useRef for the enlarged image modal
   const fullImageRef = useRef<HTMLDivElement>(null);
@@ -47,21 +49,23 @@ export default function ImageSlider({
   const { setIsEnlargeModalOpen } = useModalContext();
 
   // List of what the width of the main image container should be at different viewport widths
-  const imageResizeList: number[][] = [
-    [previewImgMainWidth, previewImgMainHeight],
-    [
-      Math.floor(previewImgMainWidth * 0.9),
-      Math.floor(previewImgMainHeight * 0.9),
-    ],
-    [
-      Math.floor(previewImgMainWidth * 0.8),
-      Math.floor(previewImgMainHeight * 0.8),
-    ],
-    [
-      Math.floor(previewImgMainWidth * 0.7),
-      Math.floor(previewImgMainHeight * 0.7),
-    ],
-  ];
+  const imageResizeList: number[][] = useMemo(() => {
+    return [
+      [previewImgMainWidth, previewImgMainHeight],
+      [
+        Math.floor(previewImgMainWidth * 0.9),
+        Math.floor(previewImgMainHeight * 0.9),
+      ],
+      [
+        Math.floor(previewImgMainWidth * 0.8),
+        Math.floor(previewImgMainHeight * 0.8),
+      ],
+      [
+        Math.floor(previewImgMainWidth * 0.7),
+        Math.floor(previewImgMainHeight * 0.7),
+      ],
+    ];
+  }, [previewImgMainWidth, previewImgMainHeight]);
 
   // Viewport width breakpoints for when component should rerender after a window resize
   const resizeBp0: number = 870;
