@@ -53,12 +53,12 @@ export default function AboutPage() {
         <a
           href={"https://github.com/vik-ma/portfolio"}
           target="_blank"
-          className="flex w-fit whitespace-nowrap py-1 pl-1.5 pr-2 font-bold rounded-lg cursor-pointer border-2 border-blue-500 text-stone-50 bg-blue-500/10 hover:text-white hover:bg-blue-500/40 transition ease-out duration-200"
+          className="flex w-fit items-center whitespace-nowrap py-1 pl-1.5 pr-2 font-bold rounded-lg cursor-pointer border-2 border-blue-500 text-stone-50 bg-blue-500/10 hover:text-white hover:bg-blue-500/40 transition ease-out duration-200"
         >
           <span>
             <GitHubLogo />
           </span>
-          <span className="ml-1.5">GitHub Repository</span>
+          <span className="ml-1.5 text-sm sm:text-base">GitHub Repository</span>
         </a>
       </div>
       <h2 className="w-fit mt-3.5 sm:mt-1 text-2xl md:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-sky-400">
