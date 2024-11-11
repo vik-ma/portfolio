@@ -61,7 +61,7 @@ body {
 /* Class to hide the header-shadow background gradient until the header letter animation has finished */
 .header-shadow-anim-start {
   opacity: 0;
-  animation: 1s linear 1.5s forwards fade-in;
+  animation: 1s linear 2s forwards fade-in;
 }
 
 /* Animated background gradient */
@@ -105,69 +105,85 @@ body {
 /* Letter inside header-text */
 .letter {
   font-weight: 900;
+  opacity: 0;
 }
 
 /* Classes for every individual letter inside header-text */
 /* Every letter will have a slight delay for when its animation starts */
 /* f = first name, l = last name */
 .letter-f-1 {
-  animation: header-color-anim 1.4s linear both, header-movement-anim 1.2s linear both;
+  animation: fade-in 0.2s linear both, header-color-anim 1.4s linear both, header-movement-anim 1.2s linear both;
+  animation-delay: 0.5s;
 }
 
 .letter-f-2 {
-  animation: header-color-anim 1.4s linear .04s both, header-movement-anim 1.2s linear both .04s;
+  animation: fade-in 0.2s linear both, header-color-anim 1.4s linear .04s both, header-movement-anim 1.2s linear both .04s;
+  animation-delay: 0.54s;
 }
 
 .letter-f-3 {
-  animation: header-color-anim 1.4s linear .08s both, header-movement-anim 1.2s linear both .08s;
+  animation: fade-in 0.2s linear both, header-color-anim 1.4s linear .08s both, header-movement-anim 1.2s linear both .08s;
+  animation-delay: 0.58s;
 }
 
 .letter-f-4 {
-  animation: header-color-anim 1.4s linear .12s both, header-movement-anim 1.2s linear both .12s;
+  animation: fade-in 0.2s linear both, header-color-anim 1.4s linear .12s both, header-movement-anim 1.2s linear both .12s;
+  animation-delay: 0.62s;
 }
 
 .letter-f-5 {
-  animation: header-color-anim 1.4s linear .16s both, header-movement-anim 1.2s linear both .16s;
+  animation: fade-in 0.2s linear both, header-color-anim 1.4s linear .16s both, header-movement-anim 1.2s linear both .16s;
+  animation-delay: 0.66s;
 }
 
 .letter-f-6 {
-  animation: header-color-anim 1.4s linear .2s both, header-movement-anim 1.2s linear both .2s;
+  animation: fade-in 0.2s linear both, header-color-anim 1.4s linear .2s both, header-movement-anim 1.2s linear both .2s;
+  animation-delay: 0.7s;
 }
 
 .letter-l-1 {
-  animation: header-color-anim 1.4s linear .24s both, header-movement-anim 1.2s linear both .24s;
+  animation: fade-in 0.2s linear both, header-color-anim 1.4s linear .24s both, header-movement-anim 1.2s linear both .24s;
+  animation-delay: 0.74s;
 }
 
 .letter-l-2 {
-  animation: header-color-anim 1.4s linear .28s both, header-movement-anim 1.2s linear both .28s;
+  animation: fade-in 0.2s linear both, header-color-anim 1.4s linear .28s both, header-movement-anim 1.2s linear both .28s;
+  animation-delay: 0.78s;
 }
 
 .letter-l-3 {
-  animation: header-color-anim 1.4s linear .32s both, header-movement-anim 1.2s linear both .32s;
+  animation: fade-in 0.2s linear both, header-color-anim 1.4s linear .32s both, header-movement-anim 1.2s linear both .32s;
+  animation-delay: 0.82s;
 }
 
 .letter-l-4 {
-  animation: header-color-anim 1.4s linear .36s both, header-movement-anim 1.2s linear both .36s;
+  animation: fade-in 0.2s linear both, header-color-anim 1.4s linear .36s both, header-movement-anim 1.2s linear both .36s;
+  animation-delay: 0.86s;
 }
 
 .letter-l-5 {
-  animation: header-color-anim 1.4s linear .40s both, header-movement-anim 1.2s linear both .40s;
+  animation: fade-in 0.2s linear both, header-color-anim 1.4s linear .40s both, header-movement-anim 1.2s linear both .40s;
+  animation-delay: 0.9s;
 }
 
 .letter-l-6 {
-  animation: header-color-anim 1.4s linear .44s both, header-movement-anim 1.2s linear both .44s;
+  animation: fade-in 0.2s linear both, header-color-anim 1.4s linear .44s both, header-movement-anim 1.2s linear both .44s;
+  animation-delay: 0.94s;
 }
 
 .letter-l-7 {
-  animation: header-color-anim 1.4s linear .48s both, header-movement-anim 1.2s linear both .48s;
+  animation: fade-in 0.2s linear both, header-color-anim 1.4s linear .48s both, header-movement-anim 1.2s linear both .48s;
+  animation-delay: 0.98s;
 }
 
 .letter-l-8 {
-  animation: header-color-anim 1.4s linear .52s both, header-movement-anim 1.2s linear both .52s;
+  animation: fade-in 0.2s linear both, header-color-anim 1.4s linear .52s both, header-movement-anim 1.2s linear both .52s;
+  animation-delay: 1.02s;
 }
 
 .letter-l-9 {
-  animation: header-color-anim 1.4s linear .56s both, header-movement-anim 1.2s linear both .56s;
+  animation: fade-in 0.2s linear both, header-color-anim 1.4s linear .56s both, header-movement-anim 1.2s linear both .56s;
+  animation-delay: 1.06s;
 }
 
 /* Movement animation for letters in header-text */
@@ -230,7 +246,7 @@ body {
 /* Mobile hint text to disable animated background gradient */
 .header-disable-anim-text-start {
   opacity: 0;
-  animation: 0.5s linear 2.5s forwards fade-in-40, 0.5s linear 6s forwards fade-out;
+  animation: 0.5s linear 3s forwards fade-in-40, 0.5s linear 6s forwards fade-out;
 }
 
 .animate-enlargement {
@@ -657,6 +673,9 @@ body {
 
 /* Reduced motion media query */
 @media (prefers-reduced-motion: reduce) {
+  .letter { 
+    opacity: 1;
+  }
   .letter-f-1,
   .letter-f-2,
   .letter-f-3,
