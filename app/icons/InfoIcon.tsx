@@ -1,4 +1,4 @@
-export default function InfoIcon() {
+export const InfoIcon = () => {
   // SVG Icon depicting an Information Icon
   return (
     <svg

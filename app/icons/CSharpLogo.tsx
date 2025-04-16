@@ -1,4 +1,4 @@
-export default function CSharpLogo() {
+export const CSharpLogo = () => {
   // SVG Icon depicting the C# Logo
   return (
     <svg viewBox="0 0 128 128">

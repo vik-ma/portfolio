@@ -1,4 +1,4 @@
-export default function DockerLogo() {
+export const DockerLogo = () => {
   // SVG Icon depicting the Docker Logo
   return (
     <svg viewBox="0 0 128 128">

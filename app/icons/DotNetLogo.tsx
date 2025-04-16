@@ -1,4 +1,4 @@
-export default function DotNetLogo() {
+export const DotNetLogo = () => {
   // SVG Icon depicting the .NET Logo
   return (
     <svg viewBox="0 0 128 128">

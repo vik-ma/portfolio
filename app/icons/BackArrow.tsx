@@ -1,4 +1,4 @@
-export default function BackArrow() {
+export const BackArrow = () => {
   return (
     <svg
       fill="#f5f5f4"

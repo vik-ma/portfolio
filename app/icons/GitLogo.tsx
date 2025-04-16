@@ -1,4 +1,4 @@
-export default function GitLogo() {
+export const GitLogo = () => {
   // SVG Icon depicting the Git Logo
   return (
     <svg viewBox="0 0 128 128">

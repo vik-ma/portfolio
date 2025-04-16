@@ -1,4 +1,4 @@
-export default function ReactLogo() {
+export const ReactLogo = () => {
   // SVG Icon depicting the React Logo
   return (
     <svg viewBox="0 0 128 128">

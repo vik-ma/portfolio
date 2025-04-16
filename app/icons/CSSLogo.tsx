@@ -1,4 +1,4 @@
-export default function CSSLogo() {
+export const CSSLogo = () => {
   // SVG Icon depicting the CSS Logo
   return (
     <svg viewBox="0 0 128 128">

@@ -1,8 +1,5 @@
 import Link from "next/link";
-import GitHubLogo from "../icons/GitHubLogo";
-import InfoIcon from "../icons/InfoIcon";
-import CodeIcon from "../icons/CodeIcon";
-import ProjectIcon from "../icons/ProjectIcon";
+import { InfoIcon, CodeIcon, ProjectIcon, GitHubLogo } from "../icons";
 
 // Hero section on the Home page
 export default function HeroSection() {

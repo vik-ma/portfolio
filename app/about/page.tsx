@@ -1,5 +1,5 @@
 import Link from "next/link";
-import BackArrow from "../icons/BackArrow";
+import { BackArrow } from "../icons";
 import AboutPage from "../components/AboutPage";
 
 export default function About() {

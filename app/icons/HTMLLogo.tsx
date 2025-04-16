@@ -1,4 +1,4 @@
-export default function HTMLLogo() {
+export const HTMLLogo = () => {
   // SVG Icon depicting the HTML Logo
   return (
     <svg viewBox="0 0 128 128">

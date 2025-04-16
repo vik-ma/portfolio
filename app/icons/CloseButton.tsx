@@ -1,4 +1,4 @@
-export default function CloseButton() {
+export const CloseButton = () => {
   return (
     <svg
       width="24px"

@@ -1,4 +1,4 @@
-export default function ProjectIcon() {
+export const ProjectIcon = () => {
   // SVG Icon depicting a Project Icon
   return (
     <svg

@@ -1,4 +1,4 @@
-export default function DjangoLogo() {
+export const DjangoLogo = () => {
   // SVG Icon depicting the Django Logo
   return (
     <svg viewBox="0 0 128 128">

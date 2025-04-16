@@ -1,4 +1,4 @@
-export default function PostgresLogo() {
+export const PostgresLogo = () => {
   // SVG Icon depicting the PostgreSQL Logo
   return (
     <svg viewBox="0 0 128 128">

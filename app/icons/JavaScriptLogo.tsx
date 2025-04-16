@@ -1,4 +1,4 @@
-export default function JavaScriptLogo() {
+export const JavaScriptLogo = () => {
   // SVG Icon depicting the JavaScript Logo
   return (
     <svg viewBox="0 0 128 128">

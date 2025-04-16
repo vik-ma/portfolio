@@ -1,8 +1,10 @@
-import NextJSLogo from "../icons/NextJSLogo";
-import ReactLogo from "../icons/ReactLogo";
-import TailwindLogo from "../icons/TailwindLogo";
-import TypeScriptLogo from "../icons/TypeScriptLogo";
-import GitHubLogo from "../icons/GitHubLogo";
+import {
+  NextJSLogo,
+  ReactLogo,
+  TailwindLogo,
+  TypeScriptLogo,
+  GitHubLogo,
+} from "../icons";
 
 // The content that appears inside the /about page
 export default function AboutPage() {

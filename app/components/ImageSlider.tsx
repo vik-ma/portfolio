@@ -2,9 +2,7 @@
 import { ImageSliderProps } from "@/typings";
 import Image from "next/image";
 import { useState, useEffect, useRef, useMemo } from "react";
-import RightArrow from "../icons/RightArrow";
-import LeftArrow from "../icons/LeftArrow";
-import CloseButton from "../icons/CloseButton";
+import { RightArrow, LeftArrow, CloseButton } from "../icons/";
 import { useModalContext } from "../context/ModalContext";
 
 export default function ImageSlider({

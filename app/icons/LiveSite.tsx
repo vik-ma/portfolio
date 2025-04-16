@@ -1,4 +1,4 @@
-export default function LiveSite() {
+export const LiveSite = () => {
   // SVG Icon depicting a Live icon
   return (
     <svg width="24px" height="24px" viewBox="0 0 24 24" fill="#ef4444">

@@ -1,4 +1,4 @@
-export default function PythonLogo() {
+export const PythonLogo = () => {
   // SVG Icon depicting the Python Logo
   return (
     <svg viewBox="0 0 128 128">

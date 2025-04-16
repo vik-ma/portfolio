@@ -1,4 +1,4 @@
-export default function GraphQLLogo() {
+export const GraphQLLogo = () => {
   // SVG Icon depicting the GraphQL Logo
   return (
     <svg viewBox="0 0 128 128">

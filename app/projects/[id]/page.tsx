@@ -3,7 +3,7 @@ import { ProjectsInfoProps } from "@/typings";
 import ProjectPage from "@/app/components/ProjectPage";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import BackArrow from "@/app/icons/BackArrow";
+import { BackArrow } from "@/app/icons";
 
 type PageProps = {
   params: {

@@ -1,4 +1,4 @@
-export default function CodeIcon() {
+export const CodeIcon = () => {
   // SVG Icon depicting a Code Icon
   return (
     <svg

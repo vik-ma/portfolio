@@ -1,4 +1,4 @@
-export default function TypeScriptLogo() {
+export const TypeScriptLogo = () => {
   // SVG Icon depicting the TypeScript Logo
   return (
     <svg viewBox="0 0 128 128">

@@ -1,6 +1,6 @@
 import { ArrowIconProps } from "@/typings";
 
-export default function LeftArrow({ color = "#000" }: ArrowIconProps) {
+export const LeftArrow = ({ color = "#000" }: ArrowIconProps) => {
   return (
     <svg
       width="32px"
@@ -15,4 +15,4 @@ export default function LeftArrow({ color = "#000" }: ArrowIconProps) {
       <path d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z"></path>
     </svg>
   );
-}
+};

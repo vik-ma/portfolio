@@ -1,4 +1,4 @@
-export default function GitHubLogo() {
+export const GitHubLogo = () => {
   // SVG Icon depicting the GitHub Logo
   return (
     <svg width="24px" height="24px" viewBox="0 0 128 128" fill="#fff">

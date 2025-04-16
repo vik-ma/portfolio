@@ -2,7 +2,7 @@
 
 import { useCallback, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import CloseButton from "../icons/CloseButton";
+import { CloseButton } from "../icons";
 import { useModalContext } from "../context/ModalContext";
 
 // Component that opens a different page inside of a Modal instead of sending the user to that page

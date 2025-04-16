@@ -1,4 +1,4 @@
-export default function NextJSLogo() {
+export const NextJSLogo = () => {
   // SVG Icon depicting the NextJS Logo
   return (
     <svg viewBox="0 0 128 128">

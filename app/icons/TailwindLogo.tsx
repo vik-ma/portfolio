@@ -1,4 +1,4 @@
-export default function TailwindLogo() {
+export const TailwindLogo = () => {
   // SVG Icon depicting the TailwindCSS Logo
   return (
     <svg viewBox="0 0 128 128">

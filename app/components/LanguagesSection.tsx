@@ -1,17 +1,19 @@
-import PythonLogo from "../icons/PythonLogo";
-import ReactLogo from "../icons/ReactLogo";
-import JavaScriptLogo from "../icons/JavaScriptLogo";
-import TypeScriptLogo from "../icons/TypeScriptLogo";
-import HTMLLogo from "../icons/HTMLLogo";
-import CSSLogo from "../icons/CSSLogo";
-import DjangoLogo from "../icons/DjangoLogo";
-import NextJSLogo from "../icons/NextJSLogo";
-import PostgresLogo from "../icons/PostgresLogo";
-import TailwindLogo from "../icons/TailwindLogo";
-import DockerLogo from "../icons/DockerLogo";
-import GitLogo from "../icons/GitLogo";
-import CSharpLogo from "../icons/CSharpLogo";
-import DotNetLogo from "../icons/DotNetLogo";
+import {
+  PythonLogo,
+  ReactLogo,
+  JavaScriptLogo,
+  TypeScriptLogo,
+  HTMLLogo,
+  CSSLogo,
+  DjangoLogo,
+  NextJSLogo,
+  PostgresLogo,
+  TailwindLogo,
+  DockerLogo,
+  GitLogo,
+  CSharpLogo,
+  DotNetLogo,
+} from "../icons/";
 
 // Languages and Tools section on the Home page
 export default function LanguagesSection() {
