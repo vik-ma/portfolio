@@ -11,8 +11,6 @@ import {
   TailwindLogo,
   DockerLogo,
   GitLogo,
-  CSharpLogo,
-  DotNetLogo,
   SQLiteLogo,
   TauriIcon,
 } from "../icons/";
