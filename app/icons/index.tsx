@@ -22,3 +22,5 @@ export { ReactLogo } from "./ReactLogo";
 export { RightArrow } from "./RightArrow";
 export { TailwindLogo } from "./TailwindLogo";
 export { TypeScriptLogo } from "./TypeScriptLogo";
+export { TauriIcon } from "./TauriIcon";
+export { SQLiteLogo } from "./SQLiteLogo";
