@@ -13,6 +13,8 @@ import {
   GitLogo,
   CSharpLogo,
   DotNetLogo,
+  SQLiteLogo,
+  TauriIcon,
 } from "../icons/";
 
 // Languages and Tools section on the Home page
@@ -59,16 +61,18 @@ export const LanguagesSection = () => {
             </div>
             <div className="text-center items-center p-3 logo-wrapper">
               <div className="logo-container m-auto">
-                <CSharpLogo />
+                <TauriIcon />
               </div>
-              <p className="font-semibold py-1 text-xs md:text-sm mt-0.5">C#</p>
+              <p className="font-semibold py-1 text-xs md:text-sm mt-0.5">
+                Tauri
+              </p>
             </div>
             <div className="text-center items-center p-3 logo-wrapper">
               <div className="logo-container m-auto">
-                <DotNetLogo />
+                <SQLiteLogo />
               </div>
               <p className="font-semibold py-1 text-xs md:text-sm mt-0.5">
-                .NET
+                SQLite
               </p>
             </div>
             <div className="text-center items-center p-3 logo-wrapper">
@@ -140,4 +144,4 @@ export const LanguagesSection = () => {
       </div>
     </div>
   );
-}
+};
