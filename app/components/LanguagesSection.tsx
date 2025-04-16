@@ -16,7 +16,7 @@ import {
 } from "../icons/";
 
 // Languages and Tools section on the Home page
-export default function LanguagesSection() {
+export const LanguagesSection = () => {
   return (
     <div className="text-center">
       <h2 className="pb-1 sm:pb-1.5 md:pb-2.5 min-[871px]:pb-4 text-3xl sm:text-4xl md:text-5xl min-[871px]:text-7xl font-extrabold bg-gradient-to-l from-blue-500 via-pink-600 to-yellow-400 bg-clip-text text-transparent">

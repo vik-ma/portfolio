@@ -1,7 +1,9 @@
-import LanguagesSection from "./components/LanguagesSection";
-import ProjectsSection from "./components/ProjectsSection";
-import HeroSection from "./components/HeroSection";
-import HeaderAnimation from "./components/HeaderAnimation";
+import {
+  LanguagesSection,
+  ProjectsSection,
+  HeroSection,
+  HeaderAnimation,
+} from "./components";
 
 export default function Home() {
   return (

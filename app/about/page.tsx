@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { BackArrow } from "../icons";
-import AboutPage from "../components/AboutPage";
+import { AboutPage } from "../components";
 
 export default function About() {
   return (

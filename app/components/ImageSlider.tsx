@@ -5,7 +5,7 @@ import { useState, useEffect, useRef, useMemo } from "react";
 import { RightArrow, LeftArrow, CloseButton } from "../icons/";
 import { useModalContext } from "../context/ModalContext";
 
-export default function ImageSlider({
+export const ImageSlider = ({
   name,
   previewImgSrcList,
   previewImgMainWidth,
@@ -14,7 +14,7 @@ export default function ImageSlider({
   previewImgMenuWidthList,
   previewImgMenuHeightList,
   fullSizeImgMaxWidth,
-}: ImageSliderProps) {
+}: ImageSliderProps) => {
   // Index of which image is displayed in the main image container
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
   // Boolean that tracks if the enlarged image modal is opened
@@ -417,4 +417,4 @@ export default function ImageSlider({
       </div>
     </div>
   );
-}
+};

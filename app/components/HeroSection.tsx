@@ -2,7 +2,7 @@ import Link from "next/link";
 import { InfoIcon, CodeIcon, ProjectIcon, GitHubLogo } from "../icons";
 
 // Hero section on the Home page
-export default function HeroSection() {
+export const HeroSection = () => {
   return (
     <div className="mt-0 min-[491px]:mt-0.5 sm:mt-1.5 md:mt-2 min-[871px]:mt-6 rounded-3xl bg-gradient-to-l from-blue-500 via-pink-600 to-yellow-400 p-1.5">
       <div className="hero-container text-center p-1">

@@ -1,9 +1,9 @@
 import { ProjectProps } from "@/typings";
-import ImageSlider from "./ImageSlider";
+import { ImageSlider } from ".";
 import { GitHubLogo, LiveSite } from "../icons/";
 
 // The content that appears inside /projects/[id] pages
-export default function ProjectPage({ project }: ProjectProps) {
+export const ProjectPage = ({ project }: ProjectProps) => {
   return (
     <div className="px-0.5">
       <div className="flex flex-col justify-between">
@@ -75,4 +75,4 @@ export default function ProjectPage({ project }: ProjectProps) {
       </div>
     </div>
   );
-}
+};

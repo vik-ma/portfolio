@@ -1,7 +1,6 @@
 import { ProjectsInfo } from "@/app/ProjectsInfo";
 import { ProjectsInfoProps } from "@/typings";
-import Modal from "@/app/components/Modal";
-import ProjectPage from "@/app/components/ProjectPage";
+import { Modal, ProjectPage } from "@/app/components";
 import { notFound } from "next/navigation";
 
 type PageProps = {

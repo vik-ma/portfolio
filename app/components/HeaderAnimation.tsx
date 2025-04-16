@@ -2,7 +2,7 @@
 import { useRef, useState } from "react";
 
 // Header animation at the top of the Home page
-export default function HeaderAnimation() {
+export const HeaderAnimation = () => {
   const headerTextRef = useRef<HTMLDivElement>(null);
   const headerCheckRef = useRef<HTMLLabelElement>(null);
   const [disableAnimation, setDisableAnimation] = useState<boolean>(false);

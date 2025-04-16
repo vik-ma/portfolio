@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 // Projects section on the Home Page
-export default function ProjectsSection() {
+export const ProjectsSection = () => {
   const projects: ProjectsInfoProps = ProjectsInfo;
   return (
     <>

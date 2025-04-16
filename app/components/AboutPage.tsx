@@ -7,7 +7,7 @@ import {
 } from "../icons";
 
 // The content that appears inside the /about page
-export default function AboutPage() {
+export const AboutPage = () => {
   return (
     <div className="text-stone-200 text-left">
       <h1 className="w-fit text-3xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-sky-400">
