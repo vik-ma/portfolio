@@ -2,7 +2,7 @@
 // name: Name of project
 // shortDescription: Description of project that appears on Home page
 // fullDescription: Description of project that appears on the project's page
-// teckStack: Technologies used in the project
+// techStack: Technologies used in the project
 // thumbnailImgSrc: Image source of the project thumbnail image that appears on Home page
 // thumbnailBase64Data: Base64 Data of placeholder image for thumbnail image
 // previewImgSrcList: List of Image sources for every project preview image that appears on the project's page
