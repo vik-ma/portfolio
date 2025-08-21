@@ -92,7 +92,7 @@ export const ProjectsInfo = {
     previewImgMenuHeightList: [48, 48, 48, 48, 48, 48],
     fullSizeImgMaxWidth: 848,
     githubLink: "https://github.com/vik-ma/Price-Performance-Scraper/",
-    liveSiteLink: "https://price-performance-scraper.vercel.app/",
+    liveSiteLink: "",
   },
   "pathfinding-race": {
     name: "Pathfinding Race",
