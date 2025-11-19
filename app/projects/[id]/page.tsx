@@ -6,12 +6,14 @@ import { notFound } from "next/navigation";
 import { BackArrow } from "@/app/icons";
 
 type PageProps = {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 };
 
-export default function Project({ params: { id } }: PageProps) {
+export default async function Project({ params }: PageProps) {
+  const { id } = await params;
+
   const projects: ProjectsInfoProps = ProjectsInfo;
   const project = projects[id];
 
@@ -48,7 +50,7 @@ export default function Project({ params: { id } }: PageProps) {
 }
 
 // Function to statically generate all Project pages
-export function generateStaticParams() {
+export async function generateStaticParams() {
   const projects: ProjectsInfoProps = ProjectsInfo;
 
   return Object.keys(projects).map((project: string) => ({

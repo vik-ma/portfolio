@@ -4,12 +4,14 @@ import { Modal, ProjectPage } from "@/app/components";
 import { notFound } from "next/navigation";
 
 type PageProps = {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 };
 
-export default function ProjectModal({ params: { id } }: PageProps) {
+export default async function ProjectModal({ params }: PageProps) {
+  const { id } = await params;
+
   const projects: ProjectsInfoProps = ProjectsInfo;
   const project = projects[id];
 
@@ -35,7 +37,7 @@ export default function ProjectModal({ params: { id } }: PageProps) {
 }
 
 // Function to statically generate all Project pages
-export function generateStaticParams() {
+export async function generateStaticParams() {
   const projects: ProjectsInfoProps = ProjectsInfo;
 
   return Object.keys(projects).map((project: string) => ({
