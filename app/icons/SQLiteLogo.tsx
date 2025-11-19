@@ -12,9 +12,9 @@ export const SQLiteLogo = () => {
           gradientTransform="rotate(90 -90.486 64.634) scale(9.2712)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#95d7f4" offset="0"></stop>
-          <stop stop-color="#0f7fcc" offset=".92"></stop>
-          <stop stop-color="#0f7fcc" offset="1"></stop>
+          <stop stopColor="#95d7f4" offset="0"></stop>
+          <stop stopColor="#0f7fcc" offset=".92"></stop>
+          <stop stopColor="#0f7fcc" offset="1"></stop>
         </linearGradient>
       </defs>
       <path
